@@ -1,0 +1,101 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+
+}
+.head{
+  height: 70px;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  background: gray;
+  
+
+
+}
+ 
+.sidebar{
+ 
+    height: 90%;
+    width: 280px;
+    background-color: rgb(162, 29, 29);
+    transition: all 0.5s ease;
+    bottom: 0;
+    border-radius:  0px 30px 30px 0px;
+    
+   
+}
+
+.profil_image {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border: 1px black;
+  border-radius: 100%;
+  align-items: center;
+ justify-items: center;
+  margin-top: 40px;
+  margin-left: 60px;
+  
+  
+}
+.name{
+  margin-left: 82px;
+  color: white;
+}
+ .active{
+    width: 60px;
+}
+
+
+ i{
+    font-size: 28px;
+    font-weight: 500;
+    min-width: 60px;
+    text-align: center;
+}
+
+
+.sidebar .nav-links{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .sidebar .nav-links li{
+    position: relative;
+    list-style: none;
+    height: 50px;
+  }
+  .sidebar .nav-links li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+
+  
+  .sidebar .nav-links li a:hover{
+    background: #5d7db9;
+  }
+  .sidebar .nav-links li i{
+    min-width: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+  }
+  .sidebar .nav-links li a .links_name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+ 
+  
+
+

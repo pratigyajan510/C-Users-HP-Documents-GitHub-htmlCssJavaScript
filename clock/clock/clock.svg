@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="947" height="947" viewBox="0 0 947 947">
+  <g id="clock" transform="translate(-93 -270)">
+    <rect id="Rectangle_8020" data-name="Rectangle 8020" width="947" height="947" transform="translate(93 270)" fill="#091921"/>
+    <text id="_9" data-name="9" transform="translate(191 784)" fill="#bdbdbd" font-size="107" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="-30.407" y="0">9</tspan></text>
+    <text id="_3" data-name="3" transform="translate(941 784)" fill="#bdbdbd" font-size="107" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="-30.407" y="0">3</tspan></text>
+    <text id="_6" data-name="6" transform="translate(566 1147)" fill="#bdbdbd" font-size="107" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="-30.407" y="0">6</tspan></text>
+    <text id="_12" data-name="12" transform="translate(566 411)" fill="#bdbdbd" font-size="106" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="-60.246" y="0">12</tspan></text>
+    <g id="Group_1937" data-name="Group 1937" transform="translate(225.605 404.948)">
+      <rect id="Rectangle_8022" data-name="Rectangle 8022" width="7.577" height="56.831" rx="2" transform="matrix(0.545, -0.839, 0.839, 0.545, 0, 124.927)" fill="#bdbdbd"/>
+      <rect id="Rectangle_8024" data-name="Rectangle 8024" width="7.577" height="56.831" rx="2" transform="translate(114.941 4.769) rotate(-39)" fill="#bdbdbd"/>
+    </g>
+    <g id="Group_1938" data-name="Group 1938" transform="translate(740.872 404.948)">
+      <rect id="Rectangle_8022-2" data-name="Rectangle 8022" width="7.577" height="56.831" rx="2" transform="matrix(-0.545, -0.839, 0.839, -0.545, 108.932, 155.881)" fill="#bdbdbd"/>
+      <rect id="Rectangle_8024-2" data-name="Rectangle 8024" width="7.577" height="56.831" rx="2" transform="translate(5.889 48.935) rotate(-141)" fill="#bdbdbd"/>
+    </g>
+    <g id="Group_1939" data-name="Group 1939" transform="translate(740.872 931.58)">
+      <rect id="Rectangle_8022-3" data-name="Rectangle 8022" width="7.577" height="56.831" rx="2" transform="matrix(-0.545, 0.839, -0.839, -0.545, 156.595, 30.952)" fill="#bdbdbd"/>
+      <rect id="Rectangle_8024-3" data-name="Rectangle 8024" width="7.577" height="56.831" rx="2" transform="translate(41.654 151.113) rotate(141)" fill="#bdbdbd"/>
+    </g>
+    <g id="Group_1940" data-name="Group 1940" transform="translate(225.605 931.581)">
+      <rect id="Rectangle_8022-4" data-name="Rectangle 8022" width="7.577" height="56.831" rx="2" transform="matrix(0.545, 0.839, -0.839, 0.545, 47.663, 0)" fill="#bdbdbd"/>
+      <rect id="Rectangle_8024-4" data-name="Rectangle 8024" width="7.577" height="56.831" rx="2" transform="translate(150.706 106.947) rotate(39)" fill="#bdbdbd"/>
+    </g>
+  </g>
+</svg>

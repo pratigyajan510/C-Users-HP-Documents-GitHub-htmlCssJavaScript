@@ -1,0 +1,3514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>css</title>
+</head>
+
+<body>
+    <div class="header">
+       
+
+       
+        <div class="heding">
+            <h1>Css Properties</h1>
+        </div>
+        <div class="btn">
+            <button >
+            <a href="idx.html">Html Tags
+             
+           </a></button>
+           <button >
+            
+                <a href="index.html"> Css Property</a>
+           </a></button>
+           <button >
+            
+            <a href="index.html"> javascript </a>
+       </a></button>
+    </div>
+        <div class="content">
+
+            <ul>
+                <li>
+                    <b>accent-color :- </b> accent-color property user-interface control जैसे accent color को specifies
+                    करती है |
+                    जैसे :-< input type="checkbox"> ,< input type="radio">,< input type="range"> and < progress>
+                                    <h2>syntax</h2>
+                                    <p> accent-color: auto/color/initial/inherit; </p>
+
+                                    <h2>property value</h2>
+                                    <table id="customers">
+                                        <tr>
+                                            <th>Value</th>
+                                            <th>description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>auto</td>
+                                            <td>Default value. The browser choose the accent color</td>
+                                        </tr>
+                                        <tr>
+                                            <td>color</td>
+                                            <td>accent color के रूप मे use किए जाने वाले color को specifies करता है |all
+                                                legal color values का use किया जा सकता है (rgb,hex, named-color, etc)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>initial</td>
+                                            <td>Default value . set की जाती है </td>
+                                        </tr>
+                                        <tr>
+                                            <td>inherit </td>
+                                            <td>parent element की value को set किया जाता है </td>
+                                        </tr>
+                                    </table>
+                </li>
+
+                <li>
+                    <b>align-content :- </b> align-content property का इस्तेमाल Browser किस तरह Flex Container के child
+                    element के बीच मे या element के arms cross -axis पर space देता है ये flex -wrap की मदत से किया जाता
+                    है |
+
+                    <h2>syntax</h2>
+                    <p> align-content:
+                        strech/flex-start/flex-end/center/space-between/space-around/space-evenly/initial/inherit; </p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>strech</td>
+                            <td>Default start-edge से end-edge तक flex item फैलाये जाते है | अगर cross-axis पर बचा हुआ
+                                space होता है तो items के बीच मे equal space होता है </td>
+                        </tr>
+                        <tr>
+                            <td>flex-start</td>
+                            <td>flex container के start-edge पर cross-axis से alignment होती है </td>
+                        </tr>
+                        <tr>
+                            <td>flex-end </td>
+                            <td>flex container के end-edge पर cross-axis से alignment होती है </td>
+                        </tr>
+                        <tr>
+                            <td>center</td>
+                            <td>flex container के center पर cross-axis से alignment होती है </td>
+                        </tr>
+                        <tr>
+                            <td>space-between</td>
+                            <td>flex container के first flex item से last flex item तक के बीच के items मे एक जैसी space
+                                होती है </td>
+                        </tr>
+                        <tr>
+                            <td>space-around</td>
+                            <td>flex container के first flex item से last flex item तक के बीच के items मे एक जैसे space
+                                होती है। start edge ओर first flex item मे ओर end edge ओर last flex item के बीच मे भी
+                                space दी जाती है </td>
+                        </tr>
+                        <tr>
+                            <td>space-evenly </td>
+                            <td>flex container के start-edge से लेकर end edge तक flex item के बीच मे एक जैसी space दी
+                                जाती है </td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value . set की जाती है </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है </td>
+                        </tr>
+                    </table>
+                </li>
+
+                <li>
+                    <b>align-items :- </b> align-items property का इस्तेमाल Flex Container के child element के aligin के
+                    लिए इस्तेमाल किया जाता है। align-self से property flex container के हर child element को किए हुए
+                    align-items की property को overwrite करता है।
+
+                    <h2>syntax</h2>
+                    <p> align-items : strech/flex-start/flex-end/center/baseline /initial/inherit;
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>strech</td>
+                            <td>Default flex container के child element को बचे हुए space पर strech किया जाता है </td>
+                        </tr>
+                        <tr>
+                            <td>flex-start</td>
+                            <td>flex container के start पर alignment होती है </td>
+                        </tr>
+                        <tr>
+                            <td>flex-end </td>
+                            <td>flex container के end पर alignment होती है </td>
+                        </tr>
+                        <tr>
+                            <td>center</td>
+                            <td>flex container के center पर alignment होती है </td>
+                        </tr>
+                        <tr>
+                            <td>baseline</td>
+                            <td>flex container के baseline पर alignment होती है </td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value . set की जाती है </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है </td>
+                        </tr>
+                    </table>
+                </li>
+
+                <li>
+                    <b>align-self :- </b> align-self property का इस्तेमाल Flex Container सिर्फ एक child element के
+                    aligining के लिए इस्तेमाल किया जाता है। align-self से property flex container के हर child element को
+                    किए हुए align-self की property को overwrite करता है।
+
+                    <h2>syntax</h2>
+                    <p> align-self : auto/strech/flex-start/flex-end/center/baseline /initial/inherit; </p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>auto</td>
+                            <td>अगर parent element पर align-items property होती है तो ये default होता है </td>
+                        </tr>
+                        <tr>
+                            <td>strech</td>
+                            <td>अगर parent element नहीं होता है तो default होती है । flex container के child element को
+                                बचे हुए space पर strech किया जाता है । </td>
+                        </tr>
+                        <tr>
+                            <td>flex-start</td>
+                            <td>flex container के start पर alignment होती है </td>
+                        </tr>
+                        <tr>
+                            <td>flex-end </td>
+                            <td>flex container के end पर alignment होती है </td>
+                        </tr>
+                        <tr>
+                            <td>center</td>
+                            <td>flex container के center पर alignment होती है </td>
+                        </tr>
+                        <tr>
+                            <td>baseline</td>
+                            <td>flex container के baseline पर alignment होती है </td>
+                        </tr>
+
+                        <td>initial</td>
+                        <td>Default value . set की जाती है </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है </td>
+                        </tr>
+                    </table>
+                </li>
+
+                <li>
+                    <b>all :- </b> all Properties unicode-bidi ओर direction के अलावा all Property को उनके initial or
+                    inherited value पर resets करती है ।
+
+                    <h2>syntax</h2>
+                    <p>all : initial/inherit/unset; </p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr></tr>
+                        <td>initial</td>
+                        <td> element या element's के parent पर applied all Properties को उनके initial value मे बदल देता
+                            है </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td> element या element's के parent पर applied all Properties को उनके parent value मे बदल
+                                देता है </td>
+                        </tr>
+                        <tr>
+                            <td>unset </td>
+                            <td> element या element's के parent पर applied all Properties को उनके parent value मे बदल
+                                देता है यदि वे inheritable मे हे या उनके initial value मे नहीं है </td>
+                        </tr>
+                    </table>
+                </li>
+
+                <li>
+                    <b> Css Animation :- </b> css Animation के लिए Animation property का इस्तेमाल किया जाता है ।
+                    Animation मे element के css style का कुछ समय देकर एक से ज्यादा css style मे change किया जा सकता है ।
+                    <br>
+                    Animation के लिए @keyframes rule की जरूरत होती है । Animation किस प्रकार से होनी चाहिए वो @keyframes
+                    के अंदर define किया जाता है। <br>
+                    Animation ये 0% पर start होता है ओर 100% पर end होता है । starting मे background-color ये black होगा
+                    ओर 5 second के बाद background-color ये white हो जाएगा । ये प्रक्रिया infinite time होती है। <br><br>
+                    <b>@keyframes rule :- </b> @keyframes पर Animation का behavior दिया जाता है। animation को @keyframes
+                    के साथ दिए हुए animation name पर store किया जाता है। <br>
+                    इस animation को execute करने के लिए animation property का इस्तेमाल किया जाता है
+                </li>
+
+                <li>
+                    <b>Animation</b> Animation Property ये animation की सभी Properties की value को define करते है ।
+                    <br><br><br>
+                    Animation property पर नीचे दिए हुए सभी property की value को इस्तेमाल किया जाता है। <br> <br>
+
+                    <ol>
+                        <li>animation-name</li>
+                        <li>animation-duration</li>
+                        <li>animation-timimg-function</li>
+                        <li>animation-delay</li>
+                        <li>animation-iteration-count</li>
+                        <li>animation-direction</li>
+                        <li>animation-fill-mode</li>
+                        <li>animation-play-state</li>
+                    </ol>
+
+                    <h2>syntax</h2>
+                    <p> animation:name/duration/ timing-function/delay/
+                        iteration-count/direction/fill-mode/play-state/initial/inherit; </p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>name</td>
+                            <td> Default 'none' Animation का नाम दिया जाता है | </td>
+                        </tr>
+                        <tr>
+                            <td>duration</td>
+                            <td> Default '0' Animation एक time पर कितनी देर चलना चाहिए वो milliseconds या seconds में
+                                दिया जाता है | </td>
+                        </tr>
+                        <tr>
+                            <td>timimg-function </td>
+                            <td>Optional. Default 'ease' Animation किस प्रकार की speed देकर घूमना चाहिए वो दिया जाता है
+                                |</td>
+                        </tr>
+                        <tr>
+                            <td>dealy</td>
+                            <td>Optional. Default '0' animation कितने वक्त के बाद start होना चाहिए वो milliseconds या
+                                seconds में दिया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>iteration-count</td>
+                            <td>Optional. Default '1' Animation कितनी बार repeat होना चाहिए वो दिया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>direction </td>
+                            <td>Optional. Default 'normal' animation की direction दी जाती है|</td>
+                        </tr>
+                        <tr>
+                            <td>fill-mode</td>
+                            <td>Optional. Default 'none' Animation complete होने पे कहा पर स्थित होना चाहिए वो दिया जाता
+                                है|</td>
+                        </tr>
+                        <tr>
+                            <td>play-state</td>
+                            <td>Optional. Default 'running' Animation को run या pause करने के लिए इस्तेमाल किया जाता है
+                                |</td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value . set की जाती है </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है </td>
+                        </tr>
+
+                    </table>
+                </li>
+
+                <li>
+                    <b> Animation-delay :- </b> animation-delay Property ये animation को दिए हुए milliseconds या seconds
+                    के बाद शुरू करने के लिए इस्तेमाल किया जाता है |
+
+                    <h2>syntax</h2>
+                    <p>animation-delay : delay/initial/inherit; </p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>dealy </td>
+                            <td> यहाँ पर seconds या microseconds में delay time दिया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value; set की जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td> parent element की value को set किया जाता है |</td>
+                        </tr>
+
+                    </table>
+                </li>
+
+                <li>
+                    <b> Animation-direction :- </b> animation-direction Property ये animation को दिए हुए value के हिसाब
+                    से direction दी जाती है |
+
+                    <h2>syntax</h2>
+                    <p>animation-direction : normal/reverse/alternate/alternate-reverse/initial/inherit;</p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>normal </td>
+                            <td> Default. Animation को starting से शुरू किया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>reverse</td>
+                            <td> Animation को end से शुरू किया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>alternate</td>
+                            <td> Animation को starting से शुरू करके end पर लाया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>alternate-reverse</td>
+                            <td> Animation को end से शुरू करके starting पर लाया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value; set की जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है | </td>
+                        </tr>
+
+                    </table>
+                </li>
+
+                <li>
+                    <b> Animation-duration :- </b> animation-duration Property ये animation को दिए हुए milliseconds या
+                    seconds तक complete करने के लिए इस्तेमाल किया जाता है |
+
+                    <h2>syntax</h2>
+                    <p>animation-duration :duration/initial/inherit;</p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>duration </td>
+                            <td> Default 0. यहाँ पर seconds या microseconds में duration दिया जाता है |</td>
+                        </tr>
+
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value; set की जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है | </td>
+                        </tr>
+
+                    </table>
+                </li>
+
+                <li>
+                    <b> Animation-fill-mode :- </b> animation-fill-mode Property ये animation-iteration-count:1 के
+                    अनुसार animation complete होने पर या कुछ iteration-count के बाद कहा पर स्थित करना है वो तय करने के
+                    लिए इस्तेमाल किया जाता है |<br>
+                    अगर animation-iteration-count ये 'infinite' होता है तो animation-fill-mode का effect नहीं दिखता है |
+                    <h2>syntax</h2>
+                    <p>animation-fill-mode : none/forwards/backwards/both/initial/inherit;</p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td> Default. animation को कहा पर भी स्थित होने के लिए नहीं कहा जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>forwards</td>
+                            <td> Complete होने पर Animation को normally flex-end में स्थित किया जाता है | ये
+                                animation-direction पर depend होता है |</td>
+                        </tr>
+                        <tr>
+                            <td>backwards</td>
+                            <td> Complete होने पर Animation को normally starting में स्थित किया जाता है | ये
+                                animation-direction पर depend होता है |</td>
+                        </tr>
+                        <tr>
+                            <td>both</td>
+                            <td> Animation अगर starting से शुरू होता है तो end पर स्थित किया जाता है और अगर end से शुरू
+                                किया जाता है तो starting पर स्थित किया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value; set की जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है | </td>
+                        </tr>
+
+                    </table>
+                </li>
+
+                <li>
+                    <b> Animation-iteration-count :- </b> animation-iteration-count Property ये animation को कितनी बार
+                    iterate करना है वो number में या keyword(infinite) में दिया जाता है |
+                    <h2>syntax</h2>
+                    <p>animation-iteration-count : number/infinite/initial/inherit;</p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                number
+                            </td>
+                            <td>Default 1. यहाँ पर दिए जानेवाले number तक animation को iterate किया जाता है |</td>
+                        </tr>
+
+                        <tr>
+                            <td>infinite</td>
+                            <td> animation को time-limit के लिए iterate किया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value; set की जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है | </td>
+                        </tr>
+
+                    </table>
+                </li>
+
+                <li>
+                    <b> Animation-name :- </b>animation-name Property का इस्तेमाल animation name देने के लिए किया जाता
+                    है | <br><br>
+                    <h2>Rules for animation-name Property's Value</h2>
+                    Animation name ये alphabetic हो सकता है | for eg. pratigya, pjajin <br>
+                    Animation name ये alphanumeric हो सकता है | for eg. pratigya123 ,pj4 <br>
+                    Animation name के शुरुआत पर _(underscore) हो सकता है | for eg. _pjjain, _4nanu <br>
+                    Animation name के शुरुआत पर numeric characters नहीं हो सकते है | for eg. 4pj, 123pratigya <br>
+                    Animation name में special characters नहीं हो सकते है | for eg. pj23@, nanu# <br>
+                    Animation के name के बीच में या आखिर पर -(hyphen) हो सकता है | for eg. pratigya-4, pj-
+
+                    <h2>syntax</h2>
+                    <p>animation-name: keyframe name/none/initial/inherit;</p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                keyframe name
+                            </td>
+                            <td>उस keyframe का name specifies करता है जिसे आप selector से bind करना चाहते है । </td>
+                        </tr>
+
+                        <tr>
+                            <td>none </td>
+                            <td> Default value specifies करता है की कोई animation नहीं होगा (casecade से आने वाला
+                                animation को overwrite करने के लिए इस्तेमाल किया जा सकता है। )</td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value; set की जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है | </td>
+                        </tr>
+
+                    </table>
+                </li>
+
+                <li>
+                    <b> Animation-play-state :- </b>
+           
+                    animation-play-state Property का इस्तेमाल animation को pause या play करने के लिए किया जाता है |
+
+                    <h2>syntax</h2>
+                    <p>animation-play-state : paused/runing/initial/inherit;</p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>
+                             paused
+                            </td>
+                            <td>Animation को pause किया जाता है | </td>
+                        </tr>
+
+                        <tr>
+                            <td>runing</td>
+                            <td>Default. Animation को play किया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value; set की जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है | </td>
+                        </tr>
+
+                    </table>
+                </li>
+
+                <li>
+                    <b> Animation-timing-function :- </b>
+                    animation-timing-function Property का इस्तेमाल bezier curve के हिसाब से animation के speed को देने के लिए किया जाता है |
+                    <h2>syntax</h2>
+                    <p>animation-timing-function :ease/linear/ease-in/ease-out/ease-in-out/step-start/step-end/steps(int,start/end)/cubic-bezier(n,n,n,n)/initial/inherit;</p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>  ease</td>
+                            <td>Default. slow start होता है बाद में fast होता है और last में फिर slow होता है | </td>
+                        </tr>
+
+                        <tr>
+                            <td>linear</td>
+                            <td>startingसे last तक same speed से होता है | </td>
+                        </tr>
+                        <tr>
+                            <td>ease-in</td>
+                            <td>	slow start होता है | </td>
+                        </tr>
+                        <tr>
+                            <td>ease-out</td>
+                            <td> 	fast start होता है |</td>
+                        </tr>
+                        <tr>
+                            <td>ease-in-out</td>
+                            <td>	slow start और slow end होता है  </td>
+                        </tr>
+                        <tr>
+                            <td>step-start</td>
+                            <td> Duration के अनुसार start से directly end पर जाता है | ये steps(1, start) के equal होता है |</td>
+                        </tr>
+                        <tr>
+                            <td>step-end</td>
+                            <td>Duration के अनुसार end से directly start पर जाता है | ये steps(1, end) के equal  होता है | </td>
+                        </tr>
+                        <tr>
+                            <td>steps(int,start/end)</td>
+                            <td>first parameter पर positive number of intervals दिए जाते है और second parameter optional होता है | वहा पर start या end value दी जाती है, यह intervals के बीच की value होती है | अगर नहीं दी जाती है तो by default 'end' ये value होती है | </td>
+                        </tr>
+                        <tr>
+                            <td>cubic-bezier(n,n,n,n)</td>
+                            <td>चारों points के लिए 0 से 1 के बीच की value दी जाती है | ये values cubic-bezier curve को define करके animation को represent करता है | </td>
+                        </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value; set की जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है | </td>
+                        </tr>
+
+                    </table>
+                </li>
+
+                <li>
+                  <b>aspect-ratio:-</b>aspect-ratio property  आपको किसी element की width and height के ratio between को define करने की permision देता है aspect ratio  ओर width Properties set  है तो height aspect ratio के  according  होगी। 
+
+                    <h2>syntax</h2>
+                    <p>aspect-ratio: number/number/initial/inherit;</p>
+
+                    <h2>property value</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>  number</td>
+                            <td> first number aspect ratio मे width के लिए number specifie होती है ।  </td>
+                        </tr>
+
+                        <tr>
+                            <td>number</td>
+                            <td>second number aspect ratio मे height के लिए number specifies होती है optional यदि set नहीं है तो height के लिए number default रूप से 1 है ।  </td>
+                        </tr>
+                    
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value; set की जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है | </td>
+                        </tr>
+
+                    </table>
+                </li>
+
+                <li>
+                    <b>backdrop-filter:-</b>backdrop-filter property का  use  किसी element  के पीछे के area मे graphic effect apply करने के लिए किए जाता है  । 
+  
+                      <h2>syntax</h2>
+                      <p>aspect-ratio: none /filter /initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>  none </td>
+                              <td>Default value। backdrop पर कोईऊ filter  apply नहीं  किया जा सकता ।   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>filter </td>
+                              <td> filter function की एक space -separated list :- 
+                                <ol>
+                                <li>blur</li>
+                                <li>brightnes</li>
+                                <li>contrast</li>
+                                <li>drop-shadow</li>
+                                <li>gray scale</li>
+                                <li>hue-rotated</li>
+                                <li>invert</li>
+                                <li>opacity</li>
+                                <li>sepia</li>
+                                <li>saturate</li>
+                            </ol>
+                            or किसी SVG filter का URL जो backdrop पर apply  किया जाये 
+                             </td>
+                          </tr>
+                      
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>backface-visibility :-</b>backface-visibility Property define करती है की user का face  करते time किसी element का पिछला face दिखाई देना चाहिए या नहीं । <br>
+                    एक  element का back face display होने  वाले front face की mirror image है। <br>
+                    यह property तब useful होती है जब किसी element को घुमाया जाता है। यह  आपको choose  करने देता है की user  के back face देखना चाहिए या नहीं 
+  
+                      <h2>syntax</h2>
+                      <p>backface-visibility: visible/hidden/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td> visible</td>
+                              <td>Default value backside visible रहती है  ।  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>hidden </td>
+                              <td>backside visible नहीं  रहती है ।  </td>
+                          </tr>
+                      
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background :-</b> Websites के categories के अनुसार उसका background भी बदलना जरुरी होता है | आपने देखा होगा कि कई websites का backgrounds; अलग-अलग colors में होता है या कुछ websites के backgrounds पर images होते है |<br>
+                    HTML का default background color ये white होता है, लेकिन अगर कुछ लोग चाहते है तो इस background color को बदल भी सकते है |<br><br><br>
+
+Background Related CSS Properties <br><br>
+<ol>
+<li> background</li>
+<li>background-image</li>
+<li>background-color</li>
+
+<li>background-attachment</li>
+<li>background-repeat</li>
+<li>background-position</li>
+<li>background-size</li>
+<li>background-clip</li>
+<li>background-position</li>
+</ol>
+                      <h2>syntax</h2>
+                      <p>background: bg-color/ bg-image/ bg-position/bg-size/ bg-repeat/ bg-origin/ bg-clip/ bg-attachment/ initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>bg-color</td>
+                              <td> used किए जाने वाले background-color को specifie करता है </td>
+                          </tr>
+  
+                          <tr>
+                              <td>bg-image </td>
+                              <td>used किए जाने वाले one or more background-image को specifie करता है|  </td>
+                          </tr>
+                          <tr>
+                            <td>bg-position</td>
+                            <td> background की position set की जाती है | </td>
+                        </tr>  <tr>
+                            <td>bg-size </td>
+                            <td>  background की size  set  की जाती है </td>
+                        </tr>  <tr>
+                            <td>bg-repeat </td>
+                            <td>background को किस तरह repeat होना चाहिए या repeat नहीं होना चाहिए ये set किया जाता है   </td>
+                        </tr>  <tr>
+                            <td>bg-origin</td>
+                            <td>background की positioning area set  की जाती है </td>
+                        </tr>  <tr>
+                            <td>bg-clip </td>
+                            <td> background की  painting area set  की जाती है  </td>
+                        </tr>  <tr>
+                            <td>bg-attachment </td>
+                            <td> Webpage पर background attachment को fixed या scroll set किया जाता है | </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-attachment :-</b>background-attachment से image(s) की position को viewport में fixed या scroll; set की जाती है |
+                      <h2>syntax</h2>
+                      <p>background-attachment: scroll/fixed/local/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td> scroll</td>
+                              <td>Default. Element के साथ background को scroll किया जाता है |  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>fixed </td>
+                              <td>Element के साथ viewport पर background; fixed की जाती है |।  </td>
+                          </tr>
+                          <tr>
+                            <td>local </td>
+                            <td>Element के content के साथ background; scroll की जाती है |  </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-blend-mode:-</b>background-blend-mode property प्रत्येक  background layer(color and/or image) के blending mode को define करता है।
+                      <h2>syntax</h2>
+                      <p>background-blend-mode: normal/multiply/screen/overlay/darken/lighten/color-dodge/saturation/color/luminosity;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>normal</td>
+                              <td>default.blending mode को normal पर set करता है</td>
+                          </tr>
+  
+                          <tr>
+                              <td>multiply </td>
+                              <td>blending mode को multiply पर set करता है</td>
+                          </tr>
+                          <tr>
+                            <td>screen </td>
+                            <td> blending mode को screen पर set करता है </td>
+                        </tr>
+                        <tr>
+                            <td>overlay</td>
+                            <td> blending mode को overlay पर set करता है </td>
+                        </tr>
+                        <tr>
+                            <td>darken</td>
+                            <td>blending mode को darken पर set करता है  </td>
+                        </tr>
+                        <tr>
+                            <td>lighten</td>
+                            <td>blending mode को lighten पर set करता है  </td>
+                        </tr>
+
+                        <tr>
+                            <td>saturation </td>
+                            <td> blending mode को saturation पर set करता है </td>
+                        </tr>
+                        <tr>
+                            <td>color </td>
+                            <td> blending mode को color पर set करता है </td>
+                        </tr>
+                        <tr>
+                            <td>luminosity </td>
+                            <td> blending mode को luminosity पर set करता है </td>
+                        </tr>
+
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-clip:-</b>background-clip property define करता है कि किसी element के भीतर background (color or image)कितनी दूर होनी चाहिए।
+                      <h2>syntax</h2>
+                      <p>background-clip: border-box/padding-box/content-box/initial/inherit; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td> border-box</td>
+                              <td>Default.background  border के पीछे  extends  हुई है  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>padding-box</td>
+                              <td>background  border के inside edge तक  extends  हुई है   </td>
+                          </tr>
+                          <tr>
+                            <td>content-box </td>
+                            <td> background  content box के  edge तक  extends  हुई है  </td>
+                        </tr>
+                      
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-color:-</b>background-color इस property द्वारा HTML Elements को background color दिया जाता है |
+                    <h2>Use four types of values for background-color Property</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Type of Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>color_name</td>
+                              <td> यहाँ पर color का नाम दिया जाता है | For Example, red </td>
+                          </tr>
+  
+                          <tr>
+                              <td>hexadecimal color code </td>
+                              <td>यहाँ पर hex code color भी दिया जाता है | For Example, #FF0000  </td>
+                          </tr>
+                          
+                          <tr>
+                              <td>rgb color code</td>
+                              <td>यहाँ पर rgb(red,green,blue) color code भी दिया जाता है | For Example, rgb(255, 0, 0) </td>
+                          </tr>
+                          <tr>
+                              <td>hsl color code</td>
+                              <td>यहाँ पर hsl(hue,saturation,luminance) color code भी दिया जाता है | For Example, hsl(360, 100%, 50%) </td>
+                          </tr>
+  
+                      </table>    
+                      <h2>syntax</h2>
+                      <p>background-color: color/transparent/initial/inherit; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>color</td>
+                              <td>color name, hex color code, rgb color code या hsl color code दिया जाता है |  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>transparent </td>
+                              <td> Default. background; transparent set की जाती है | </td>
+                          </tr>
+                          
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-image:-</b>background-image से Elements पर एक या उससे ज्यादा images को set किया जाता है |
+                      <h2>syntax</h2>
+                      <p>background-image: url/none/initial/inherit; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>url</td>
+                              <td>एक या उससे ज्यादा images का path set किया जाता है |  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>none </td>
+                              <td> 	Default. background image नहीं दी जाती है | </td>
+                          </tr>
+                          <tr>
+                            <td>conic-gradient() </td>
+                            <td> background-image के रूप में एक conic gradient set  करता है। कम से कम दो color को define करें | </td>
+                        </tr>
+                        <tr>
+                            <td>linear-gradient() </td>
+                            <td> 	 background-image के रूप में एक linear gradient set  करता है। कम से कम दो color को define करें(top to bottom) | </td>
+                        </tr>
+
+                          <tr>
+                              <td>radial-gradient()</td>
+                              <td> 	 background-image के रूप में एक radial-gradient  set  करता है। कम से कम दो color को define करें(center to edges) | </td>
+                          </tr>
+                          <tr>
+                            <td>repeating-conic-gradient() </td>
+                            <td> 	एक conic-gradient को repeat है | </td>
+                        </tr>
+
+                        <tr>
+                            <td>repeating-linear-gradient() </td>
+                            <td> एक linear-gradient को repeat है | </td>
+                        </tr>
+                        <tr>
+                            <td>repeating-radial-gradient() </td>
+                            <td> एक radial-gradient को repeat है | </td>
+                        </tr>
+
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-orign:-</b>background-origin property background image की origin position को (background positioning area )  specifies करती है।
+                      <h2>syntax</h2>
+                      <p>background-orign: padding-box/border-box/content-box/initial/inherit; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>padding-box</td>
+                              <td>Default.background की image padding edge  के  upper left corner से शुरू होती है  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>border-box </td>
+                              <td> background की image border के  upper left corner से शुरू होती है </td>
+                          </tr>
+                          <tr>
+                            <td>content-box </td>
+                            <td>background की image content  के  upper left corner से शुरू होती है  </td>
+                        </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-position:-</b>background-position property से background की position को set किया जाता है |
+                      <h2>syntax</h2>
+                      <p>background-position: value </p>
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td> 
+                                <ol>
+                                <li>left top  </li>
+                                <li>left center</li>
+                                <li>left bottom</li>
+                                <li>right top</li>
+                                <li>right center</li>
+
+                                <li> right bottom</li>
+                                <li>center  top</li>
+
+                                <li>center center</li>
+                                <li>center bottom</li>
+                              </ol>
+                             </td>
+                              <td>value ये position होती है | अगर single keyword दिया जाता है तो default 'center' जोडा जाता है |</td>
+                          </tr>
+  
+                          <tr>
+                              <td>x% y%</td>
+                              <td>  0% 0%(top left) Default. यहाँ पर horizontal(x-axis) position और vertical(y-axis) position value दी जाती है | अगर single value दी जाती है तो by default दूसरी value ये 50% होती है |</td>
+                          </tr>
+                          <tr>
+                            <td>xpos ypos  </td>
+                            <td> Using Measurement Units यहाँ पर आप measurement units के साथ % का भी इस्तेमाल कर सकते है | अगर single value दी जाती है तो by default दूसरी value ये 50% होती है | 0 0 ये left top position होती है | </td>
+                        </tr>
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-position-x:-</b>background-position-x property x-axis पर  background image की position set रहती है। 
+                      <h2>syntax</h2>
+                      <p>background-position-x: value; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>left</td>
+                              <td>background  को left side  ओर x-axis  पर	Positions करता है.  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>right </td>
+                              <td> background  को right  side  ओर x-axis  पर	Positions करता है.  </td>
+                          </tr>
+                          <tr>
+                            <td>center </td>
+                            <td> background  को center  side  ओर x-axis  पर	Positions करता है.  </td>
+                        </tr>
+                        <tr>
+                            <td>x%</td>
+                            <td>x -axis पर left side 0% है, और right side 100% है। persentage value  background-position area की width minus background-image की width को refers करता है।  </td>
+                        </tr>
+                        <tr>
+                            <td>xpos</td>
+                            <td> left side ओर से  horizontal distance । units pixels (0px) या ant other CSS units हो सकती हैं। </td>
+                        </tr>
+                        <tr>
+                            <td>xpos offset</td>
+                            <td>  two value syntax, केवल firefoxऔर safari में supported है । <br>
+                                - xpos या तो "left" या "right" पर set  है। <br>
+                                - offset background image से horizontal distance और xpos के साथ set "left" या "right" side है। units pixels  या कोई other CSS units हो सकती हैं।</td>
+                        </tr>
+
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-position-y:-</b>background-position-y property y-axis पर  background image की position set रहती है। 
+                      <h2>syntax</h2>
+                      <p>background-position-y: value; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>top</td>
+                              <td> background  को top  ओर y-axis  पर	Positions करता है.  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>bottom </td>
+                              <td> background  को bottom  ओर y-axis  पर	Positions करता है.  </td>
+                          </tr>
+                          <tr>
+                            <td>center </td>
+                            <td> background  को center  ओर y-axis  पर	Positions करता है.  </td>
+                        </tr>
+                        <tr>
+                            <td>y%</td>
+                            <td>y -axis पर top side 0% है, और bottom side 100% है। persentage value  background-position area की height minus background-image की height को refers करता है।  </td>
+                        </tr>
+                        <tr>
+                            <td>ypos</td>
+                            <td>  top side ओर से  horizontal distance । units pixels (0px) या ant other CSS units हो सकती हैं। </td>
+                        </tr>
+                        <tr>
+                            <td>ypos offset</td>
+                            <td>  two value syntax, केवल firefoxऔर safari में supported है । <br>
+                                - ypos या तो "top" या "bottom" पर set  है। <br>
+                                - offset background image से vertical distance और ypos के साथ set "top" या "bottom" side है। units pixels  या कोई other CSS units हो सकती हैं।  </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-repeat:-</b>background-repeat property से background को repeat किया जाता है या नहीं किया जाता है |
+                      <h2>syntax</h2>
+                      <p>background-repeat: repeat/repeat-x/repeat-y/no-repeat/initial/inherit </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>repeat</td>
+                              <td>default. background को screen resolution के हिसाब से vertically और horizontally; repeat किया जाता है |  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>repeat-x </td>
+                              <td> background को horizontally(x-axis) repeat किया जाता है | </td>
+                          </tr>
+                          <tr>
+                            <td>repeat-y </td>
+                            <td> background को vertically(y-axis) repeat किया जाता है | </td>
+                        </tr>
+                        <tr>
+                            <td>no-repeat</td>
+                            <td>background को repeat नहीं किया जाता है |  </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>background-size:-</b>
+                      <h2>syntax</h2>
+                      <p>background-size:auto/length/cover/contain/initial/inherit</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>  </td>
+                          </tr>
+                          <tr>
+                            <td>persentage</td>
+                            <td>  </td>
+                        </tr>
+                          <tr>
+                            <td>cover </td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>contain</td>
+                            <td>  </td>
+                        </tr>
+                      
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border:-</b>
+                    CSS में Box Model को border दी जाती है | CSS में border के लिए style, width और color दिया जाता है  |<br> border property से element पर border की सभी properties की values को set किया जाता है |
+                      <h2>syntax</h2>
+                      <p>border: border-width/ border-style /border-color/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>border-width</td>
+                              <td> Default medium. border की width; measurement units में दी जाती है | </td>
+                          </tr>
+  
+                          <tr>
+                              <td>border-style  </td>
+                              <td> Required. Default none. border की style दी जाती है | </td>
+                          </tr>
+                          <tr>
+                            <td>border-color </td>
+                            <td> Default value element पर दी हुई color attribute की value होती है | border को color दिया जाता है | </td>
+                        </tr>
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-bottom:-</b>border-bottom property से element पर bottom border की सभी properties की values को set किया जाता है |
+                      <h2>syntax</h2>
+                      <p>border-bottom: border-width/ border-style /border-color/initial/inherit; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                            <td>border-width</td>
+                            <td>Default medium. border-bottom की width; measurement units में दी जाती है |  </td>
+                        </tr>
+
+                        <tr>
+                            <td>border-style  </td>
+                            <td>  Required. Default none. border-bottom की style दी जाती है |</td>
+                        </tr>
+                        <tr>
+                          <td>border-color </td>
+                          <td> Default value element पर दी हुई color attribute की value होती है | border-bottom को color दिया जाता है | </td>
+                      </tr>
+                     
+
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                   <li>
+                    <b>border-bottom-color:-</b>border-bottom-color property से element के bottom border पर color को set किया जाता है |<br>
+
+                    border-bottom-color के लिए border style को define करना जरुरी होता है |
+                      <h2>syntax</h2>
+                      <p>border-bottom-color:   color/transparent/initial/inherit; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                        
+                        <tr>
+                            <td>color </td>
+                            <td>  	Default color ये color attribute पर दिया हुआ color होता है | color ये color name, hex color code, rgb color code या hsl color code हो सकता है |</td>
+                        </tr>
+                        <tr>
+                            <td>transparent </td>
+                            <td>transparent; border color दिया जाता है |  </td>
+                        </tr>
+
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  
+                  <li>
+                    <b>border-bottom-left-radius:-</b>border-bottom-left-radius property से element के bottom-left corner पर radius को set किया जाता है |<br>
+
+                    border-bottom-left-radius के लिए border style को define करना जरुरी होता है |
+                      <h2>syntax</h2>
+                      <p>border-bottom-left-radius:  length/% [length|%]/initial/inherit; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                        
+                        <tr>
+                            <td>length </td>
+                            <td>bottom-left corner के shaped को define करता है। Default value  0 है  </td>
+                        </tr>
+                        <tr>
+                            <td>% </td>
+                            <td>bottom-left corner के shaped को % में define करता है  </td>
+                        </tr>
+
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-bottom-right-radius:-</b>border-bottom-right-radius property से element के bottom-right corner पर radius को set किया जाता है |<br>
+
+                    border-bottom-right-radius के लिए border style को define करना जरुरी होता है |
+                      <h2>syntax</h2>
+                      <p>border-bottom-right-radius:  length/% [length|%]/initial/inherit; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                        
+                        <tr>
+                            <td>length </td>
+                            <td> bottom-right corner के shaped को define करता है। Default value  0 है  </td>
+                        </tr>
+                        <tr>
+                            <td>% </td>
+                            <td> bottom-right corner के shaped को % में define करता है </td>
+                        </tr>
+
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-bottom-style:-</b>border-bottom-style property से element के bottom border पर style को set किया जाता है |
+                      <h2>syntax</h2>
+                      <p>background-clip:  none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset/initial/inherit; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td> Default. bottom border style नहीं होती है | </td>
+                          </tr>
+  
+                          <tr>
+                              <td>hidden </td>
+                              <td>none value जैसे होता है | table element के लिए इस्तेमाल किया जाता है लेकिन जहा पर conflicting borders होती है वहा पर इस्तेमाल किया जाता है |  </td>
+                          </tr>
+                          <tr>
+                            <td>dotted </td>
+                            <td>dotted bottom border दी जाती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>dashed</td>
+                            <td> dashes bottom border दी जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>solid</td>
+                            <td> solid lining bottom border दी जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>double</td>
+                            <td> दो solid lines में bottom border दी जाती है | </td>
+                        </tr>
+
+                        <tr>
+                            <td>groove </td>
+                            <td> grooved bottom border होती है | ये border color पर प्रभाव डालता है | ये ridge के Opposite होता है </td>
+                        </tr>
+                        <tr>
+                            <td>ridge </td>
+                            <td> ridged bottom border होती है | ये border color पर प्रभाव डालता है | ये groove के Opposite होता है</td>
+                        </tr>
+                        <tr>
+                            <td>inset</td>
+                            <td>inset bottom border होती है | ये border color पर प्रभाव डालता है | ये outset के Opposite होता है | </td>
+                        </tr>
+                        <tr>
+                            <td>outset</td>
+                            <td> outset bottom border होती है | ये border color पर प्रभाव डालता है | ये inset के Opposite होता है | </td>
+                        </tr>
+
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-bottom-width:-</b>border-bottom-width property से element के bottom border पर width को set किया जाता है |<br>
+
+                    border-bottom-width के लिए border style को define करना जरुरी होता है |
+                      <h2>syntax</h2>
+                      <p>border-bottom-width: medium/thin/thick/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>medium</td>
+                              <td>Default. medium bottom border होती है   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>thin  </td>
+                              <td>  thin bottom border होती है |</td>
+                          </tr>
+                          <tr>
+                            <td>thick </td>
+                            <td>thick bottom border होती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>length</td>
+                            <td> bottom border width को measurement units में दिया जाता है | </td>
+                        </tr>
+
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-collapse:-</b>यह border-collapse property set करता है कि table border को एक  में  separated किया जाना चाहिए या standard HTML की तरह अलग किया जाना चाहिए।
+
+                      <h2>syntax</h2>
+                      <p>border-collapse:  separate/collapse/initial/inherit; </p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>separated</td>
+                              <td> borders  अलग हो गई हैं; each cells  अपनी borders को separated करेगा। यह default है।  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>collapse  </td>
+                              <td> borders को जब possible हो तो एक ही border  में collapse दिया जाता है (border-spacing और empty-cell property का कोई effect नहीं पड़ता)</td>
+                          </tr>
+                         
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-color:-</b>border-color property से element के चारों borders पर color को set किया जाता है |<br>
+
+                    border-color के लिए border style को define करना जरुरी होता है |
+                    
+                    
+                      <h2>syntax</h2>
+                      <p>border-color: color/transparent/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>color</td>
+                              <td>Default color ये color attribute पर दिया हुआ color होता है | color ये color name, hex color code, rgb color code या hsl color code हो सकता है    </td>
+                          </tr>
+  
+                          <tr>
+                              <td>transparent  </td>
+                              <td>transparent; border color दिया जाता है |</td>
+                          </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-image:-</b>border-image property आपको एक element के चारों ओर border के रूप में use की जाने वाली image specifie करने की permision देती है ।
+
+                   
+                      <h2>syntax</h2>
+                      <p>border-image: source slice width outset repeat/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>border-image-source</td>
+                              <td>border के रूप में use की जाने वाली image का path  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>border-image-slice  </td>
+                              <td>  border-image को कैसे slice करें |</td>
+                          </tr>
+                          <tr>
+                            <td>border-image-width </td>
+                            <td>border-image की  width  </td>
+                        </tr>
+                        <tr>
+                            <td>border-image-outset</td>
+                            <td> वह amount जिसके द्वारा border-image area  border-box के बाहर beyond होता है| </td>
+                        </tr>
+                        <tr>
+                            <td>border-image-repeat</td>
+                            <td>क्या border-image को repeated जाना चाहिए, rounded or stretched जाना चाहिए | </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-image-outset:-</b>border-image-outset propertyउस amount को specifie करती है जिसके द्वारा border image area border box से आगे बढ़ता है।
+
+                        
+                      <h2>syntax</h2>
+                      <p>border-image-outset: length/number/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>एक lenth unit specifie करती है कि edges से कितनी दूर border-image दिखाई देगी। default value 0 है  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>number  </td>
+                              <td>  corresponding border-width के multiply का represent करें |</td>
+                          </tr>
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-image-repeat:-</b>border-image-repeat property specifie  करती है कि border-image को  repeated जाना चाहिए, rounded, spaced or stretched जाना चाहिए।
+                      <h2>syntax</h2>
+                      <p>border-image-repeat: stretch/repeat/round/space/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>stretch</td>
+                              <td>Default.  area को भरने के लिए image को फैलाया जाता है   </td>
+                          </tr>
+                         
+                          <tr>
+                              <td>repeat  </td>
+                              <td>  area को भरने के लिए image को tiled (repeated) गया है|</td>
+                          </tr>
+                          <tr>
+                            <td>round </td>
+                            <td> area को भरने के लिए image को tiled (repeated) गया है| यदि यह area को tiles की पूरी number से नहीं भरता है, तो image  को फिर से scale किया जाता है ताकि यह fit हो सके|  </td>
+                        </tr>
+                        <tr>
+                            <td>space</td>
+                            <td> area को भरने के लिए image को tiled (repeated) गया है| यदि यह area को tiles  से नहीं भरता है, तो whole area  को tiles के चारों ओर distributed कर दिया जाता है  </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-image-slice:-</b> border-image-slice property specifies करती है कि  border-image-source द्वारा specifies image को कैसे विभाजित किया जाए। image को हमेशा  9 section में विभाजित किया जाता है: four corners, four edges और middle। <br>
+                    "middle" part को पूरी तरह से transparent माना जाता है, जब तक कि fill keyboard set न हो।
+                      <h2>syntax</h2>
+                      <p>border-image-slice: number/%/fill/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>number</td>
+                              <td>number(s)  raster images के लिए pixels का represent करती हैं या vector images के लिए coordinates  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>%  </td>
+                              <td> 	Percentages image की height or width के  relative होते हैं |</td>
+                          </tr>
+                          <tr>
+                            <td>fill </td>
+                            <td>image के middle part को display करने का कारण बनता है |  </td>
+                        </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-image-source:-</b>border-image-source property border के रूप में use की जाने वाली  image के path को specifie करती है (element के चारों ओर normal border के बजाय)।
+                      <h2>syntax</h2>
+                      <p>border-image-source: none/image/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td>किसी image का use नहीं किया जाएगा   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>image  </td>
+                              <td> border के रूप में use की जाने वाली image का path|</td>
+                          </tr>
+                          
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-image-width:-</b>border-image-width property border-image  की width specifie करती है।
+                      <h2>syntax</h2>
+                      <p>border-image-width: number/%/auto/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                            <td>length</td>
+                            <td> length की एक units (px) जो border-width के size को specifie करती है | </td>
+                        </tr>
+                          <tr>
+                              <td>number</td>
+                              <td>Default  value 1. corresponding border-width के multiply का represent करता है   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>% </td>
+                              <td> border-image area के size  को refers करता है: horizontal offsets, के लिए area की width, vertical offsets के लिए  length   |</td>
+                          </tr>
+                          <tr>
+                            <td>auto </td>
+                            <td>यदि specifie किया गया है, तो width संबंधित image slice की intrinsic width or height है  </td>
+                        </tr>
+                      
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+
+
+
+
+
+
+
+
+
+
+
+                  <li>
+                    <b>border-left:-</b>border-left property से element पर left border की सभी properties की values को set किया जाता है 
+
+                      <h2>syntax</h2>
+                      <p>border-left:border-width/ border-style/ border-color/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>border-width</td>
+                              <td> Default medium. border-left की width; measurement units में दी जाती है |  </td>
+                          </tr>
+                          <tr>
+                              <td>border-style  </td>
+                              <td>Required. Default none. border-left की style दी जाती है | |</td>
+                          </tr>
+                          <tr>
+                            <td>border-color </td>
+                            <td>Default value element पर दी हुई color attribute की value होती है | border-left को color दिया जाता है|  </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-left-color:-</b>border-left-color property से element के left border पर color को set किया जाता है |
+
+                    border-left-color के लिए border style को define करना जरुरी होता है |
+                    
+                    
+                    
+                      <h2>syntax</h2>
+                      <p>border-left-color: color/transparent/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>color</td>
+                              <td> Default color ये color attribute पर दिया हुआ color होता है | color ये color name, hex color code, rgb color code या hsl color code हो सकता है  </td>
+                          </tr>
+                          <tr>
+                              <td>transparent </td>
+                              <td>transparent; border color दिया जाता है |  </td>
+                          </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-left-style:-</b>border-left-style property से element के left border पर style को set किया जाता है |
+
+                      <h2>syntax</h2>
+                      <p>border-left-style: none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td>  Default. left border style नहीं होती है | </td>
+                          </tr>
+                          <tr>
+                              <td>hidden  </td>
+                              <td>  none value जैसे होता है | table element के लिए इस्तेमाल किया जाता है लेकिन जहा पर conflicting borders होती है वहा पर इस्तेमाल किया जाता है  |</td>
+                          </tr>
+                          <tr>
+                            <td>dotted </td>
+                            <td> dotted left border दी जाती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>dashed</td>
+                            <td>dashes left border दी जाती है  | </td>
+                        </tr>
+                        <tr>
+                            <td>solid</td>
+                            <td> solid lining left border दी जाती है | | </td>
+                        </tr>
+                        <tr>
+                            <td>double</td>
+                            <td>  दो solid lines में left border दी जाती है || </td>
+                        </tr>
+                        <tr>
+                            <td>groove</td>
+                            <td> grooved left border होती है | ये border color पर प्रभाव डालता है | ये ridge के विरुद्ध होता है | </td>
+                        </tr>
+                        <tr>
+                            <td>ridge</td>
+                            <td> ridged left border होती है | ये border color पर प्रभाव डालता है | ये groove के विरुद्ध होता है | </td>
+                        </tr>
+                        <tr>
+                            <td>inset</td>
+                            <td> inset left border होती है | ये border color पर प्रभाव डालता है | ये outset के विरुद्ध होता है  | </td>
+                        </tr>
+                        <tr>
+                            <td>outset</td>
+                            <td>outset left border होती है | ये border color पर प्रभाव डालता है | ये inset के विरुद्ध होता है| </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                    <li>
+                    <b>border-left-width:-</b>border-left-width property से element के left border पर width को set किया जाता है |
+
+                    border-left-width के लिए border style को define करना जरुरी होता है |
+                    
+                    
+                      <h2>syntax</h2>
+                      <p>border-left-width: medium/thin/thick/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>medium</td>
+                              <td>Default. medium left border होती है   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>thin  </td>
+                              <td>  thin left border होती है |</td>
+                          </tr>
+                          <tr>
+                            <td>thick </td>
+                            <td>thick left border होती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>length</td>
+                            <td>  left border width को measurement units में दिया जाता है | </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-radius:-</b>
+                    border-radius property से element के चारों corners को define किया जाता है |<br>
+
+border-radius के लिए border style को define करना जरुरी होता है |<br>
+
+border-radius property पर चार values दी जा सकती है |<br>
+
+border-top-left-radius <br>
+border-top-right-radius <br>
+border-bottom-right-radius <br>
+border-bottom-left-radius <br>
+                      <h2>syntax</h2>
+                      <p>border-radius: 1-4 length/% / 1-4 length/%/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                        <tr>
+                            <td>length</td>
+                            <td>Default 0. border corners को measurement units में दिया जाता है   | </td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>border corners को percentage(%) में दिया जाता है |   </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-right:-</b>border-right property से element पर right border की सभी properties की values को set किया जाता है |
+
+                      <h2>syntax</h2>
+                      <p>border-right:border-width/ border-style/ border-color/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>border-width</td>
+                              <td>   Default medium. border-right की width; measurement units में दी जाती है |</td>
+                          </tr>
+                          <tr>
+                              <td>border-style  </td>
+                              <td>Required. Default none. border-right की style दी जाती है  |</td>
+                          </tr>
+                          <tr>
+                            <td>border-color </td>
+                            <td>Default value element पर दी हुई color attribute की value होती है | border-right को color दिया जाता है|  </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-right-color:-</b>border-right-color property से element के right border पर color को set किया जाता है |
+
+                    border-right-color के लिए border style को define करना जरुरी होता है |
+                    
+                      <h2>syntax</h2>
+                      <p>border-right-color: color/transparent/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>color</td>
+                              <td> Default color ये color attribute पर दिया हुआ color होता है | color ये color name, hex color code, rgb color code या hsl color code हो सकता है </td>
+                          </tr>
+                          <tr>
+                              <td>transparent </td>
+                              <td> transparent; border color दिया जाता है  </td>
+                          </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-right-style:-</b>border-right-style property से element के right border पर style को set किया जाता है 
+
+                      <h2>syntax</h2>
+                      <p>border-right-style: none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td> Default. right border style नहीं होती है |  </td>
+                          </tr>
+                          <tr>
+                              <td>hidden  </td>
+                              <td>  none value जैसे होता है | table element के लिए इस्तेमाल किया जाता है लेकिन जहा पर conflicting borders होती है वहा पर इस्तेमाल किया जाता है  |</td>
+                          </tr>
+                          <tr>
+                            <td>dotted </td>
+                            <td> dotted right border दी जाती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>dashed</td>
+                            <td> dashes right border दी जाती है| </td>
+                        </tr>
+                        <tr>
+                            <td>solid</td>
+                            <td>solid lining right border दी जाती है   | </td>
+                        </tr>
+                        <tr>
+                            <td>double</td>
+                            <td>  दो solid lines में right border दी जाती है| </td>
+                        </tr>
+                        <tr>
+                            <td>groove</td>
+                            <td>  grooved right border होती है | ये border color पर प्रभाव डालता है | ये ridge के विरुद्ध होता है| </td>
+                        </tr>
+                        <tr>
+                            <td>ridge</td>
+                            <td>  ridged right border होती है | ये border color पर प्रभाव डालता है | ये groove के विरुद्ध होता है | </td>
+                        </tr>
+                        <tr>
+                            <td>inset</td>
+                            <td>inset right border होती है | ये border color पर प्रभाव डालता है | ये outset के विरुद्ध होता है  | </td>
+                        </tr>
+                        <tr>
+                            <td>outset</td>
+                            <td>outset right border होती है | ये border color पर प्रभाव डालता है | ये inset के विरुद्ध होता है | | </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                    <li>
+                    <b>border-right-width:-</b>border-right-width property से element के right border पर width को set किया जाता है |
+
+                    border-right-width के लिए border style को define करना जरुरी होता है |
+                    
+                    
+                      <h2>syntax</h2>
+                      <p>border-right-width: medium/thin/thick/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>medium</td>
+                              <td>Default. medium right border होती है   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>thin  </td>
+                              <td>  thin right border होती है |</td>
+                          </tr>
+                          <tr>
+                            <td>thick </td>
+                            <td>thick right border होती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>length</td>
+                            <td> right border width को measurement units में दिया जाता है | </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                    <li>
+                    <b>border-spacing:-</b>border-spacing property का इस्तेमाल table cells के borders के बीच में horizontal और vertical space देने के लिए किया जाता है |
+                      <h2>syntax</h2>
+                      <p>border-spacing: length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                        <tr>
+                            <td>length</td>
+                            <td> यहा पर measurement unit में value दी जाती है |<br>
+                                अगर single value दी जाती है तो cells borders के बीच में horizontal और vertical space दी जाती है |<br>
+                                अगर दो values दी जाती है तो पहली value; horizontal space के लिए होती है और दूसरी value ये vertical space के लिए होती है || </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+
+                    <li>
+                    <b>border-style:-</b>CSS border-style property से element के top, right, bottom और left border के लिए border-style दी जाती है |<br>border-style related Properties <br>
+                    border-top-style <br>
+                    border-right-style <br>
+                    border-bottom-style <br>
+                    border-left-style <br> <br>
+                    
+                    अगर border-style property पर single value दी जाती है तो ये top, right, bottom और left border के लिए होती है | <br>
+                    अगर border-style property पर दो values दी जाती है तो पहली value ये top और bottom के लिए होती है और दूसरी value ये right और left border के लिए होती है | <br>
+                    अगर border-style property पर तीन values दी जाती है तो पहली value; top के लिए, दूसरी value right और left के लिए और तीसरी value bottom के लिए होती है | <br>
+                    अगर border-style property पर चार values दी जाती है तो पहली value; top के लिए, दूसरी value right के लिए, तीसरी value bottom के लिए और चौथी value ये left के लिए होती है |
+                      <h2>syntax</h2>
+                      <p>border-style: none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                            <td>none</td>
+                            <td> Default.  border style नहीं होती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>hidden  </td>
+                            <td>  none value जैसे होता है | table element के लिए इस्तेमाल किया जाता है लेकिन जहा पर conflicting borders होती है वहा पर इस्तेमाल किया जाता है  |</td>
+                        </tr>
+                        <tr>
+                          <td>dotted </td>
+                          <td> dotted  border दी जाती है |  </td>
+                      </tr>
+                      <tr>
+                          <td>dashed</td>
+                          <td> dashes  border दी जाती है| </td>
+                      </tr>
+                      <tr>
+                          <td>solid</td>
+                          <td>solid lining  border दी जाती है   | </td>
+                      </tr>
+                      <tr>
+                          <td>double</td>
+                          <td>  दो solid lines में  border दी जाती है| </td>
+                      </tr>
+                      <tr>
+                          <td>groove</td>
+                          <td>  grooved  border होती है | ये border color पर प्रभाव डालता है | ये ridge के विरुद्ध होता है| </td>
+                      </tr>
+                      <tr>
+                          <td>ridge</td>
+                          <td>  ridged  border होती है | ये border color पर प्रभाव डालता है | ये groove के विरुद्ध होता है | </td>
+                      </tr>
+                      <tr>
+                          <td>inset</td>
+                          <td>inset  border होती है | ये border color पर प्रभाव डालता है | ये outset के विरुद्ध होता है  | </td>
+                      </tr>
+                      <tr>
+                          <td>outset</td>
+                          <td>outset  border होती है | ये border color पर प्रभाव डालता है | ये inset के विरुद्ध होता है | | </td>
+                      </tr>
+                        <tr>
+                            <td>initial</td>
+                            <td>Default value; set की जाती है | </td>
+                        </tr>
+                        <tr>
+                            <td>inherit </td>
+                            <td>parent element की value को set किया जाता है | </td>
+                        </tr>
+                      </table>
+                  </li>
+
+
+                  <li>
+                    <b>border-top:-</b>border-top property से element पर top border की सभी properties की values को set किया जाता है |
+
+                      <h2>syntax</h2>
+                      <p>border-top:border-width/ border-style/ border-color/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>border-width</td>
+                              <td>  Default medium. border-top की width; measurement units में दी जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>border-style  </td>
+                              <td>Required. Default none. border-top की style दी जाती है | |</td>
+                          </tr>
+                          <tr>
+                            <td>border-color </td>
+                            <td>Default value element पर दी हुई color attribute की value होती है | border-top को color दिया जाता है|  </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-top-color:-</b>border-top-color property से element के top border पर color को set किया जाता है |
+
+                    border-top-color के लिए border style को define करना जरुरी होता है |
+                    
+                    
+                    
+                      <h2>syntax</h2>
+                      <p>border-top-color: color/transparent/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>color</td>
+                              <td> Default color ये color attribute पर दिया हुआ color होता है | color ये color name, hex color code, rgb color code या hsl color code हो सकता है | </td>
+                          </tr>
+                          <tr>
+                              <td>transparent </td>
+                              <td> transparent; border color दिया जाता है  </td>
+                          </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-top-left-radius:-</b>border-top-left-radius property से element के top-left corner पर radius को set किया जाता है |
+
+                    border-top-left-radius के लिए border style को define करना जरुरी होता है |
+                    
+                    
+                      <h2>syntax</h2>
+                      <p>border- top-left-radius:  length/% / [ length/%]/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                        <tr>
+                            <td>length</td>
+                            <td>top-left corner के shaped को define करता है। Default value  0 है    </td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>  top-left corner के shaped को % में define करता है  </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-top-right-radius:-</b>border-top-right-radius property से element के top-right corner पर radius को set किया जाता है |
+
+                    border-top-right-radius के लिए border style को define करना जरुरी होता है |
+                      <h2>syntax</h2>
+                      <p>border-top-right-radius:  length/% [ength/%]/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                        <tr>
+                            <td>length</td>
+                            <td>   top-right corner के shaped को define करता है। Default value  0 है| </td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>   top-right corner के shaped को % में define करता है</td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-top-style:-</b>border-top-style property से element के top border पर style को set किया जाता है |
+
+                      <h2>syntax</h2>
+                      <p>border-top-style: none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td>Default. top border style नहीं होती है   </td>
+                          </tr>
+                          <tr>
+                              <td>hidden  </td>
+                              <td> none value जैसे होता है | table element के लिए इस्तेमाल किया जाता है लेकिन जहा पर conflicting borders होती है वहा पर इस्तेमाल किया जाता है  |</td>
+                          </tr>
+                          <tr>
+                            <td>dotted </td>
+                            <td>dotted top border दी जाती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>dashed</td>
+                            <td> dashes top border दी जाती है| </td>
+                        </tr>
+                        <tr>
+                            <td>solid</td>
+                            <td>solid lining top border दी जाती है   | </td>
+                        </tr>
+                        <tr>
+                            <td>double</td>
+                            <td>दो solid lines में top border दी जाती है  | </td>
+                        </tr>
+                        <tr>
+                            <td>groove</td>
+                            <td> grooved top border होती है | ये border color पर प्रभाव डालता है | ये ridge के विरुद्ध होता है | </td>
+                        </tr>
+                        <tr>
+                            <td>ridge</td>
+                            <td> ridged top border होती है | ये border color पर प्रभाव डालता है | ये groove के विरुद्ध होता है | </td>
+                        </tr>
+                        <tr>
+                            <td>inset</td>
+                            <td> inset top border होती है | ये border color पर प्रभाव डालता है | ये outset के विरुद्ध होता है | </td>
+                        </tr>
+                        <tr>
+                            <td>outset</td>
+                            <td> inset top border होती है | ये border color पर प्रभाव डालता है | ये outset के विरुद्ध होता है| </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                    <li>
+                    <b>border-top-width:-</b>border-top-width property से element के top border पर width को set किया जाता है |
+
+                    border-top-width के लिए border style को define करना जरुरी होता है |
+                      <h2>syntax</h2>
+                      <p>border-top-width: medium/thin/thick/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>medium</td>
+                              <td>Default. medium top border होती है   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>thin  </td>
+                              <td>  thin top border होती है |</td>
+                          </tr>
+                          <tr>
+                            <td>thick </td>
+                            <td>thick top border होती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>length</td>
+                            <td> top border width को measurement units में दिया जाता है | </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>border-width:-</b>
+
+                      <h2>syntax</h2>
+                      <p>border-width: medium/thin/thick/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>medium</td>
+                              <td>Default. medium bottom border होती है   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>thin  </td>
+                              <td>  thin bottom border होती है |</td>
+                          </tr>
+                          <tr>
+                            <td>thick </td>
+                            <td>thick bottom border होती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>length</td>
+                            <td> bottom border width को measurement units में दिया जाता है | </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                    <li>
+                    <b>bottom:-</b>
+
+                      <h2>syntax</h2>
+                      <p>bottom: auto/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td> </td>
+                          </tr>
+  
+                        <tr>
+                            <td>length</td>
+                            <td> | </td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>% </td>
+                            <td> |  </td>
+                        </tr>
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b> box-decoration-break:-</b>
+
+                      <h2>syntax</h2>
+                      <p> box-decoration-break: slice/clone/initial/inherit/unset;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>slice</td>
+                              <td>Default. medium bottom border होती है   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>clone  </td>
+                              <td>  thin bottom border होती है |</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                    <li>
+                    <b>box-reflect:-</b>
+
+                      <h2>syntax</h2>
+                      <p>box-reflect: none/below/above/left/right/position offset gradient/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td>  </td>
+                          </tr>
+  
+                          <tr>
+                              <td>below  </td>
+                              <td>  </td>
+                          </tr>
+                          <tr>
+                            <td>above </td>
+                            <td> |  </td>
+                        </tr>
+                        <tr>
+                            <td>left</td>
+                            <td>  | </td>
+                        </tr>
+                        <tr>
+                            <td>right</td>
+                            <td>  | </td>
+                        </tr>
+                           <tr>
+                            <td>position offset</td>
+                            <td>  | </td>
+                        </tr> 
+                          <tr>
+                            <td>position offset gradient</td>
+                            <td>  | </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                    <li>
+                    <b>box-shadow:-</b>
+
+                      <h2>syntax</h2>
+                      <p>box-shadow: none|h-offset v-offset blur spread color /inset/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>h-offset  </td>
+                              <td>   |</td>
+                          </tr>
+                          <tr>
+                            <td>v-offset </td>
+                            <td> |  </td>
+                        </tr>
+                        <tr>
+                            <td>blur</td>
+                            <td>| </td>
+                        </tr>
+                        <tr>
+                            <td>spread</td>
+                            <td>| </td>
+                        </tr>
+                        <tr>
+                            <td>color</td>
+                            <td>| </td>
+                        </tr>
+                        <tr>
+                            <td>inset</td>
+                            <td>| </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>box-sizing:-</b>
+                      <h2>syntax</h2>
+                      <p>box-sizing:content-box/border-box/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>contant-box</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>border-box  </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                    <li>
+                    <b> break-after :-</b>
+
+                      <h2>syntax</h2>
+                      <p>break-after : auto|all|always|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>all  </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>always </td>
+                            <td> |  </td>
+                        </tr>
+                        <tr>
+                            <td>avoid</td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>avoid-column</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>avoid-page</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>avoid-region</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>column</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>left</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>page</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>recto</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>region</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>right</td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>verso</td>
+                            <td>  </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+
+                  <li>
+                    <b> break-before :-</b>
+
+                      <h2>syntax</h2>
+                      <p>break-before : auto|all|always|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>all  </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>always </td>
+                            <td> |  </td>
+                        </tr>
+                        <tr>
+                            <td>avoid</td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>avoid-column</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>avoid-page</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>avoid-region</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>column</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>left</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>page</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>recto</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>region</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>right</td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>verso</td>
+                            <td>  </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b> break-inside :-</b>
+
+                      <h2>syntax</h2>
+                      <p>break-inside : auto|all|always|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>all  </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>always </td>
+                            <td> |  </td>
+                        </tr>
+                        <tr>
+                            <td>avoid</td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>avoid-column</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>avoid-page</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>avoid-region</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>column</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>left</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>page</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>recto</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>region</td>
+                            <td>  </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>right</td>
+                            <td>  </td>
+                        </tr>
+                        <tr>
+                            <td>verso</td>
+                            <td>  </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+
+                  <li>
+                    <b>caption-side:-</b>
+                      <h2>syntax</h2>
+                      <p>caption-side:top/bottom/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>top</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>bottom  </td>
+                              <td> |</td>
+                          </tr>
+                           <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li> 
+                  
+                  
+                  <li>
+                    <b> caret-color :-</b>
+                      <h2>syntax</h2>
+                      <p> caret-color : auto/color/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>Default. medium bottom border होती है   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>color  </td>
+                              <td>  thin bottom border होती है |</td>
+                          </tr>
+                         
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b> @charset:-</b>
+                      <h2>syntax</h2>
+                      <p> @charset:  charset;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td> charset</td>
+                              <td>   </td>
+                          </tr>
+
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>clear:-</b>
+                      <h2>syntax</h2>
+                      <p>clear: none/left/right/both/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>left  </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>right </td>
+                            <td>|  </td>
+                        </tr>
+                        <tr>
+                            <td>both</td>
+                            <td>  | </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>clip:-</b>
+
+                      <h2>syntax</h2>
+                      <p>clip: auto/shape/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>shape  </td>
+                              <td>   |</td>
+                          </tr>
+                         <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                    <li>
+                    <b>clip-path:-</b>
+
+                      <h2>syntax</h2>
+                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>clip-source</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>basic-shape </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>margin-box </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>border-box</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>padding-box</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>fill-box</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>stroke-box</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>view-box</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td> </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+            </ul>
+
+
+        </div>
+        <div class="btn">
+            <button >
+                <a href="idx.html">Html Tags
+                 
+               </a></button>
+               <button>
+                
+                    <a href="index.html"> Css Property</a>
+               </a></button>
+               <button>
+                
+                <a href="index.html"> javascript </a>
+           </a></button>
+           <div class="credit"> created by <span> <strong><i> miss.Pratigya jain</i> </strong></span> | Copyright © 2022 all rights reserved </div>
+        </div>
+    </div>
+</body>
+
+</html>
