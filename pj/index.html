@@ -1977,17 +1977,6 @@ Background Related CSS Properties <br><br>
                       </table>
                   </li>
 
-
-
-
-
-
-
-
-
-
-
-
                   <li>
                     <b>border-left:-</b>border-left property से element पर left border की सभी properties की values को set किया जाता है 
 
@@ -2739,6 +2728,18 @@ border-bottom-left-radius <br>
 
                   <li>
                     <b>border-width:-</b>
+CSS border-width property से element के top, right, bottom और left border के लिए border-width दी जाती है |<br>
+
+border-width related Properties <br>
+border-top-width <br>
+border-right-width <br>
+border-bottom-width <br>
+border-left-width <br> <br>
+
+अगर border-width property पर single value दी जाती है तो ये top, right, bottom और left border के लिए होती है |<br>
+अगर border-width property पर दो values दी जाती है तो पहली value ये top और bottom के लिए होती है और दूसरी value ये right और left border के लिए होती है |<br>
+अगर border-width property पर तीन values दी जाती है तो पहली value; top के लिए, दूसरी value right और left के लिए और तीसरी value bottom के लिए होती है |<br>
+अगर border-width property पर चार values दी जाती है तो पहली value; top के लिए, दूसरी value right के लिए, तीसरी value bottom के लिए और चौथी value ये left के लिए होती है |<br>
 
                       <h2>syntax</h2>
                       <p>border-width: medium/thin/thick/length/initial/inherit;</p>
@@ -2751,20 +2752,20 @@ border-bottom-left-radius <br>
                           </tr>
                           <tr>
                               <td>medium</td>
-                              <td>Default. medium bottom border होती है   </td>
+                              <td>Default. medium  border होती है   </td>
                           </tr>
   
                           <tr>
                               <td>thin  </td>
-                              <td>  thin bottom border होती है |</td>
+                              <td>  thin  border होती है |</td>
                           </tr>
                           <tr>
                             <td>thick </td>
-                            <td>thick bottom border होती है |  </td>
+                            <td>thick  border होती है |  </td>
                         </tr>
                         <tr>
                             <td>length</td>
-                            <td> bottom border width को measurement units में दिया जाता है | </td>
+                            <td> border width को measurement units में दिया जाता है | </td>
                         </tr>
                         
                        
@@ -2781,7 +2782,19 @@ border-bottom-left-radius <br>
                   </li>
 
                     <li>
-                    <b>bottom:-</b>
+                    <b>bottom:-</b>bottom property का इस्तेमाल position property के साथ करना अनिवार्य होता है |<br><br>
+
+                    बिना parent element के bottom property और absolute position होती है तो browser window के हिसाब से element को bottom property पर दिए हुए length तक bottom से धकेला जाता है |<br><br>
+                    
+                    static/without position parent element के साथ child element में bottom property और absolute position होती है तो browser window के हिसाब से element को bottom property पर दिए हुए length तक bottom से धकेला जाता है |<br><br>
+                    
+                    static/without position parent element के साथ child element में bottom property और relative position होती है तो parent element के हिसाब से element को bottom property पर दिए हुए length तक bottom से धकेला जाता है |<br><br>
+                    
+                    relative parent element के साथ child element में bottom property और absolute position होती है तो parent element के हिसाब से element को bottom property पर दिए हुए length तक bottom से धकेला जाता है |<br><br>
+                    
+                    Note : static position हो तो bottom property का effect नहीं दिखेगा | अगर position; absolute, relative या fixed हो तो bottom property का effect दिखेगा |<br><br>
+                    
+                    Note : position अगर absolute, relative या fixed होती है तो दूसरे element के position पर कोई फर्क नहीं पड़ता है |<br><br>
 
                       <h2>syntax</h2>
                       <p>bottom: auto/length/initial/inherit;</p>
@@ -2794,18 +2807,18 @@ border-bottom-left-radius <br>
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td> </td>
+                              <td>	browser द्वारा bottom को दिया जाता है </td>
                           </tr>
   
                         <tr>
                             <td>length</td>
-                            <td> | </td>
+                            <td> bottom को measurement unit में दिया जाता है | negative value भी हो सकती है| </td>
                         </tr>
 
                         
                         <tr>
                             <td>% </td>
-                            <td> |  </td>
+                            <td>bottom को percentage(%) में दिया जाता है | negative value भी हो सकती है|  </td>
                         </tr>
                        
                           <tr>
@@ -2819,6 +2832,24 @@ border-bottom-left-radius <br>
   
                       </table>
                   </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                   <li>
                     <b> box-decoration-break:-</b>

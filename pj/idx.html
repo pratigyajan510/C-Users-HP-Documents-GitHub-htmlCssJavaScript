@@ -162,7 +162,7 @@
             </li> 
             <li>
                 <b>< acronym> :-</b> HTML 4 मे एक acronym define  करने के  लिए  use   किया  जाता था
-                लेकन अब HTML5 मे नही है। इसके बदले <abbr> का use  करते  है ।
+                लेकन अब HTML5 मे नही है। इसके बदले < abbr> का use  करते  है ।
             </li>  
             <li>
                 <b>
@@ -174,83 +174,104 @@
             <li>
                 <b>
                     < applet> :-
-                </b>
+                </b>यह Embedded applet को define करता है, जो अभी HTML5 
+                नही है। इसके जगह < object> या < embed> का use करते है । 
             </li>
             <li>
-                <b>< article> :-</b>
+                <b>< area> :-</b>image  map के अंदर area को  define  करता है।
             </li>
             <li>
-                <b>< aside> :-</b>
+                <b>< article> :-</b>< article> element का इस्तेमाल articles का वर्णन करने के लिए किया जाता है | इस element का इस्तेमाल दुसरे sites के मुकाबले unique और independant होता है |
+            </li>
+            <li>
+                <b>< aside> :-</b>< aside> element का इस्तेमाल content से कुछ अलग देने के लिए किया जाता है | < aside> element को website के sidebar के लिए भी इस्तेमाल किया जाता है |
             </li>
 
               <li>
-                <b>< audio> :-</b>
+                <b>< audio> :-</b>< audio> element का इस्तेमाल HTML Document पर audio file को add करने के लिए किया जाता है |<br>
+
+                    < audio> element के इस्तेमाल से आप HTML Document पर < source> element की मदद से audio file को embed करके उस audio को सुन भी सकते है |
             </li>
 
               <li>
-                <b>< b> :-</b>
+                <b>< b> :-</b>यह bold text को define करता है।
             </li>
             <li>
-                <b>< base> :-</b>
+                <b>< base> :-</b>HTML web page मे सभी relative URLs को base URL/target specifie
+                करता है
+            </li>
+
+          
+            <li>
+                <b>< basefont> :-</b>सभी text का default color, font, और size, को  specifie करता था अब यह
+                HTML5 मे नही है। इसके जगह CSS Use होता है
             </li>
 
             <li>
-                <b>< area> :-</b>
+                <b>< bdi> :-</b>यह text के एक  part को अलग करता है जिसे  इसके बाहर अन्य  text से अलग
+                direction  मे formating किया  जा सकता है
             </li>
             <li>
-                <b>< basefont> :-</b>
-            </li>
-
-            <li>
-                <b>< bdi> :-</b>
+                <b>< bdo> :-</b>इसका पूरा नाम Bi-Directional Override हैऔर यह text direction को
+                Overrides करता है।
             </li>
             <li>
-                <b>< bdo> :-</b>
+                <b>< big> :-</b>यह big  text को define  करता है। जो अब HTML5 से हटा दिया  गया है।
+                इसके जगह CSS का उपयोग करे।
             </li>
             <li>
-                <b>< big> :-</b>
-            </li>
-            <li>
-                <b>< blockquote> :-</b>
+                <b>< blockquote> :-</b>एक section को define  करता है जो  किसी अन्य  source से quoted किया 
+                जाता है। और एक lone quoted  को specifie  करता ह
             </li>
 
             <li>
-                <b>< body> :-</b>
+                <b>< body> :-</b>HTML document  के body को define  करता है। यह web page  का main part 
+                होता है।
             </li>
             <li>
-                <b>< br> :-</b>
+                <b>< br> :-</b>single एक line break को define  करता है।
             </li>
             <li>
-                <b>< button> :-</b>
+                <b>< button> :-</b>Webpage  मे click करने clickable button को define करता है।
             </li>
 
             <li>
-                <b>< canvas> :-</b>
+                <b>< canvas> :-</b>< canvas> element का इस्तेमाल HTML graphics draw करने के लिए किया जाता है | < canvas> element ये javascript का इस्तेमाल करके graphics को draw करता है |
             </li>
             <li>
-                <b>< caption> :-</b>
+                <b>< caption> :-</b>इस element का use table title define करने  के लिए किया जाता है । 
             </li>
             <li>
-                <b>< center> :-</b>
+                <b>< center> :-</b>Text को center align मे define करने के  लिए use किया जाता था। पर अब
+                यह टैग को HTML5 से हटा   दिया   है। इसके जगह CSS का उपयोग करे।
             </li>
             <li>
-                <b>< cite> :-</b>
+                <b>< cite> :-</b>एक creative work  (जैसे एक  book, एक poem, etc) के title को define
+                करता है।
             </li>
             <li>
-                <b>< code> :-</b>
+                <b>< code> :-</b>HTML document मे, Computer programming code को  define करता
+                है
             </li>
             <li>
-                <b>< col> :-</b>
+                <b>< col> :-</b>यह HTML table मे, हर एक column को <colgroup> element को  define
+                    करता है।
             </li>
             <li>
-                <b>< colgroup> :-</b>
+                <b>< colgroup> :-</b>HTML table मे, एक या other columns के group को define करता है।
             </li>
             <li>
-                <b>< data> :-</b>
+                <b>< data> :-</b><data> element का इस्तेमाल content का machine-readable translation; value attribute द्वारा देने के लिए किया जाता है |<br>
+
+                    अगर दिया हुआ content ये date या time से संबंधित हो तो < time> element को देना अनिवार्य होता है | <br>
+                    
+                    machine-readable translation ये computer द्वारा सामान्य तरीके से processed हो जाते है | machine-readable ये human-readable के विरुद्ध होता है | <br>
             </li>
 
               <li>
-                <b>< datalist> :-</b>
+                <b>< datalist> :-</b>< datalist> ये element < input> element से बाँध दिया जाता है | इस element द्वारा आप <option> element द्वारा list को define कर सकते है और User द्वारा input भी दिया जा सकता है |
+
+
             </li>
               <li>
                 <b>< dd> :-</b>
@@ -259,14 +280,20 @@
                 <b>< del> :-</b>
             </li>
             <li>
-                <b>< details> :-</b>
+                <b>< details> :-</b>< details> इस element से user < details> element पर दिए हुए content को open या close कर सकता है |<br>
+
+                    अगर आप 'open' attribute नहीं देते हो तो वो content default; invisible ही होता है और अगर आप 'open' attribute देते हो तो वो content visible होता है |
+                    
+                    
             </li>
             <li>
                 <b>< dfn> :-</b>
             </li>
 
             <li>
-                <b>< dialog> :-</b>
+                <b>< dialog> :-</b>< dialog> का इस्तेमाल dialog box, popup और window को define करने के लिए किया जाता है |
+
+
             </li>
             <li>
                 <b>< dir> :-</b>
