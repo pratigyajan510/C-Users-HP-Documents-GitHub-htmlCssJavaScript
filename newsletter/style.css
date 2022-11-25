@@ -4,48 +4,111 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background:  #FFF0E6 ;
+}    
+    
  .head
 {
     background: white;
-    width: 50px; 
+    width: 80px; 
     height: 20px;       
     margin-left: 7%;    
     /* margin-bottom: 15%; */
 
-} 
+}
+
  .contain{
     width: 100%;
     height: 150px;
-    background: rgb(78, 78, 245);
+    background: #5E17EB;
+    margin-bottom: 10%;
     color: white;
      /* text-align: center;  */
 } 
 .contain h1{
     text-align: center;
-    font-weight: 800;
-    font-size: large;
+    font-weight: 900;
+    font-size:x-large;
     /* padding-top: 2%; */
 } 
-.cont {
-    margin: 5% 0 0 10%;
+.front{
+  width: 500;
+  height: 1000%;
   
-    /* list-style-type: number; */
-    /* margin-left: 5%; */
 }
-.cont ul li{
-    color: red;
-    list-style-type: number;
-    font-weight: 800;
-    margin-bottom: 30px;
-    display: flex;
-  flex-direction: row;
+.cont {
+    margin: 0 0 10% 15%;      
+     
+  
 }
+
+.cont   b{
+    color: #db5d16;
+    font-size: x-large;
+}
+
 .img{
-    height: 20%;
+    height: 100%;
+    width: 80%;
+    margin-left: 5%;                
+    
+
+
+}
+.imga{
+    height: 100%;
+    width: 80%;
+    /* margin-left:                */
+    
+
+
+}
+.cont td{
+    width: 50%;
+}
+.main {
+    margin: 0 0 10% 15%;        
+    
+  
+}
+
+.main   b{
+    color: #db5d16;
+    font-size: x-large;
+    margin-bottom: 40px;
+    /* margin-right:40% ;    */
+ 
+
+}
+.main p{
+margin-right: 10%;
+}
+
+.main td{
     width: 40%;
-    /* text-align: right; */
-    margin-left: 50%;
+
+}
+.footer{
+    background:#5E17EB ;
+    height: 100%;
     /* margin-bottom: 30%; */
-
-
+}
+.logo{
+    height: 50%;
+    width: 100px;
+}
+.locala{
+    background: #5E17EB ;
+    width: 30px; 
+    height: 80px;       
+    /* margin-left: 90%;   */
+    /* margin-bottom: 40%;     */
+}
+.local{
+    background: #5E17EB ;
+    width: 30px; 
+    height: 80px;       
+    margin-left: 100%;  
+    /* margin-bottom: 40%;     */
 }
