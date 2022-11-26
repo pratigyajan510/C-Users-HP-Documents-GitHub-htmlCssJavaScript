@@ -2853,7 +2853,7 @@ border-left-width <br> <br>
 
 
                   <li>
-                    <b> box-decoration-break:-</b>
+                    <b> box-decoration-break:-</b>box-decoration-break specifie करता है कि element के box के fragmented    होने पर किसी element की background, padding, border, border-image, box-shadow, margin और clip-path कैसे लागू होते हैं।
 
                       <h2>syntax</h2>
                       <p> box-decoration-break: slice/clone/initial/inherit/unset;</p>
@@ -2866,12 +2866,13 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>slice</td>
-                              <td>   </td>
+                              <td>default। box की decoration पूरी तरह से element पर लागू होती है और element के fragements के edges पर टूट जाती है   </td>
                           </tr>
   
                           <tr>
                               <td>clone  </td>
-                              <td> |</td>
+                              <td> 
+                                box की decoration element के each fragement पर लागू होती है जैसे कि fragement अलग-अलग element थे। border element के each fragement के four edges को लपेटते हैं, और each fragement  के लिए background पूरी तरह से फिर से खींची जाती है|</td>
                           </tr>
                         
                           <tr>
@@ -6837,7 +6838,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>clip-path:-</b>
+                    <b>list-style-position:-</b>
 
                       <h2>syntax</h2>
                       <p>list-style-position: inside|outside/initial/inherit;</p>
@@ -6849,43 +6850,164 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>inside</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>outside </td>
+                              <td> |</td>
+                          </tr>
+                
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>list-style-type:-</b>
+
+                      <h2>syntax</h2>
+                      <p>list-style-type: value;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>disc</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>armenian </td>
                               <td> |</td>
                           </tr>
                           <tr>
-                            <td>margin-box </td>
+                            <td>circle </td>
                             <td> |  </td>
                         </tr>
                       
                         <tr>
-                            <td>border-box</td>
+                            <td>cjk-ideographic</td>
                             <td> </td>
                         </tr>
                         <tr>
-                            <td>padding-box</td>
+                            <td>decimal</td>
                             <td> </td>
                         </tr>
                         <tr>
-                            <td>fill-box</td>
+                            <td>decimal-leading-zero</td>
                             <td> </td>
                         </tr>
                         <tr>
-                            <td>stroke-box</td>
+                            <td>georgian</td>
                             <td> </td>
                         </tr>
                         <tr>
-                            <td>view-box</td>
+                            <td>hebrew</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>hiragana</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>hiragana-iroha</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>lower-alpha</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>lower-greek</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>lower-latin</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>lower-roman</td>
                             <td> </td>
                         </tr>
                         <tr>
                             <td>none</td>
                             <td> </td>
                         </tr>
+                        <tr>
+                            <td>square</td>
+                            <td> </td>
+                        </tr>
+
+                        <tr>
+                            <td>upper-alpha</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>upper-greek</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>upper-latin</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>upper-roman</td>
+                            <td> </td>
+                        </tr>
+                       
+
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>margin:-</b>
+
+                      <h2>syntax</h2>
+                      <p>margin: length|auto/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                            <td>% </td>
+                            <td> |  </td>
+                        </tr>
+  
+                          <tr>
+                              <td>auto</td>
+                              <td> |</td>
+                          </tr>
+                         
+                      
                         
                        
                           <tr>
@@ -6900,10 +7022,10 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>clip-path:-</b>
+                    <b>margin-bottom:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>margin-bottom: length|auto/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -6912,43 +7034,20 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>length</td>
                               <td>   </td>
                           </tr>
-  
                           <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
+                            <td>% </td>
                             <td> |  </td>
                         </tr>
+  
+                          <tr>
+                              <td>auto</td>
+                              <td> |</td>
+                          </tr>
+                         
                       
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
                         
                        
                           <tr>
@@ -6963,10 +7062,10 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>clip-path:-</b>
+                    <b>margin-left:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>margin-left: length|auto/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -6975,43 +7074,20 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>length</td>
                               <td>   </td>
                           </tr>
-  
                           <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
+                            <td>% </td>
                             <td> |  </td>
                         </tr>
+  
+                          <tr>
+                              <td>auto</td>
+                              <td> |</td>
+                          </tr>
+                         
                       
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
                         
                        
                           <tr>
@@ -7026,10 +7102,10 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>clip-path:-</b>
+                    <b>margin-right:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>margin-right: length|auto/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7038,43 +7114,20 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>length</td>
                               <td>   </td>
                           </tr>
-  
                           <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
+                            <td>% </td>
                             <td> |  </td>
                         </tr>
+  
+                          <tr>
+                              <td>auto</td>
+                              <td> |</td>
+                          </tr>
+                         
                       
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
                         
                        
                           <tr>
@@ -7089,10 +7142,10 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>clip-path:-</b>
+                    <b>margin-top-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>margin-top: length|auto/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7101,27 +7154,144 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                            <td>% </td>
+                            <td> |  </td>
+                        </tr>
+  
+                          <tr>
+                              <td>auto</td>
+                              <td> |</td>
+                          </tr>
+                         
+                      
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  
+                  <li>
+                    <b>mask-image:-</b>
+
+                      <h2>syntax</h2>
+                      <p>mask-image: none|image|url/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>image </td>
                               <td> |</td>
                           </tr>
+                          <tr>
+                            <td>URL </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>mask-mode:-</b>
+
+                      <h2>syntax</h2>
+                      <p>mask-mode: match-source|luminance|alpha/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>match-source</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>luminance </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>alpha </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>mask-origin:-</b>
+
+                      <h2>syntax</h2>
+                      <p>mask-origin: border-box|content-box|padding-box|margin-box|fill-box|stroke-box|view-box/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>border-box</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>content-box </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>padding-box</td>
+                            <td> </td>
+                        </tr>
                           <tr>
                             <td>margin-box </td>
                             <td> |  </td>
                         </tr>
                       
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
+                      
+                     
                         <tr>
                             <td>fill-box</td>
                             <td> </td>
@@ -7134,11 +7304,650 @@ border-left-width <br> <br>
                             <td>view-box</td>
                             <td> </td>
                         </tr>
+                       
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  
+                  <li>
+                    <b>mask-position:-</b>
+
+                      <h2>syntax</h2>
+                      <p>mask-position: value;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>left top <br>
+                                left center<br>
+                                left bottom<br>
+                                right top<br>
+                                right center<br>
+                                right bottom<br>
+                                center top<br>
+                                center center<br>
+                                center bottom</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>x% y% </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>xpos ypos</td>
+                            <td> |  </td>
+                        </tr>
+                      
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>mask-repeat:-</b>
+
+                      <h2>syntax</h2>
+                      <p>mask-repeat: repeat|repeat-x|repeat-y|space|round|no-repeat/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>repeat</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>repeat-x </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>repeat-y </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>space</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>round</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>no-repeat</td>
+                            <td> </td>
+                        </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>mask-image:-</b>
+
+                      <h2>syntax</h2>
+                      <p>mask-image: auto|size|contain|cover/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>size </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>contain </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>cover</td>
+                            <td> </td>
+                        </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>max-height:-</b>
+
+                      <h2>syntax</h2>
+                      <p>max-height: none|length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td> |  </td>
+                        </tr>
+                      
+                     
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>max-width:-</b>
+
+                      <h2>syntax</h2>
+                      <p>max-width: none|length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>@media:-</b>
+
+                      <h2>syntax</h2>
+                      <p>@media not|only mediatype and (mediafeature and|or|not mediafeature) {
+                        CSS-Code;
+                      }</p>
+  
+                     
+                  </li>
+
+                  <li>
+                    <b>min-height:-</b>
+
+                      <h2>syntax</h2>
+                      <p>min-height: length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>% </td>
+                              <td> |</td>
+                          </tr>
+                         
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>min-width:-</b>
+
+                      <h2>syntax</h2>
+                      <p>min-width: length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>%</td>
+                              <td> |</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>mix-blend-mode:-</b>
+
+                      <h2>syntax</h2>
+                      <p>mix-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|difference|exclusion|hue|saturation|color|luminosity;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>normal</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>multiply </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>screen </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>overlay</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>darken</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>lighten</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>color-dodge</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>color-burn</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>difference</td>
+                            <td> </td>
+                        </tr>
+                        
+                       
+                          <tr>
+                              <td>exclusion</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>hue </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+                          <tr>
+                            <td>    saturation</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>color</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>luminosity</td>
+                            <td></td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>object-fit:-</b>
+
+                      <h2>syntax</h2>
+                      <p>object-fit: fill|contain|cover|scale-down/none/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>fill</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>contain </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>cover </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>scale-down</td>
+                            <td> </td>
+                        </tr>
+                      
                         <tr>
                             <td>none</td>
                             <td> </td>
                         </tr>
                         
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+
+                  <li>
+                    <b>object-position:-</b>
+
+                      <h2>syntax</h2>
+                      <p>object-position: position/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>position</td>
+                              <td>   </td>
+                          </tr>
+  
+                          
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>opacity:-</b>
+
+                      <h2>syntax</h2>
+                      <p>opacity: number/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>number</td>
+                              <td>   </td>
+                          </tr>
+  
+                      
+                <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>order:-</b>
+
+                      <h2>syntax</h2>
+                      <p>order:number/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>number</td>
+                              <td>   </td>
+                          </tr>
+  <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>orphans:-</b>
+
+                      <h2>syntax</h2>
+                      <p>orphans: integer/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>integer</td>
+                              <td>   </td>
+                          </tr>
+  
+                         
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>outline:-</b>
+
+                      <h2>syntax</h2>
+                      <p>outline: outline-width outline-style outline-color/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>outline-width</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>outline-style</td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>outline-color</td>
+                            <td> |  </td>
+                        </tr>
+                      
+                      
+                    
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>outline-color:-</b>
+
+                      <h2>syntax</h2>
+                      <p>outline-color: invert|color/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>invert</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>color </td>
+                              <td> |</td>
+                          </tr>
+                          
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>outline-offset:-</b>
+
+                      <h2>syntax</h2>
+                      <p>outline-offset:length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+  
                        
                           <tr>
                               <td>initial</td>
@@ -7152,10 +7961,10 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>clip-path:-</b>
+                    <b>outline-style:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>outline-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7164,44 +7973,621 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>none</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>hidden </td>
                               <td> |</td>
                           </tr>
                           <tr>
-                            <td>margin-box </td>
+                            <td>dotted </td>
                             <td> |  </td>
                         </tr>
                       
                         <tr>
-                            <td>border-box</td>
+                            <td>dashed</td>
                             <td> </td>
                         </tr>
                         <tr>
-                            <td>padding-box</td>
+                            <td>solid</td>
                             <td> </td>
                         </tr>
                         <tr>
-                            <td>fill-box</td>
+                            <td>double</td>
                             <td> </td>
                         </tr>
                         <tr>
-                            <td>stroke-box</td>
+                            <td>groove</td>
                             <td> </td>
                         </tr>
                         <tr>
-                            <td>view-box</td>
+                            <td>ridge</td>
                             <td> </td>
                         </tr>
                         <tr>
-                            <td>none</td>
+                            <td>inside</td>
                             <td> </td>
+                        </tr>
+                        <tr>
+                            <td>outside</td>
+                            <td></td>
                         </tr>
                         
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>outline-width:-</b>
+
+                      <h2>syntax</h2>
+                      <p>outline-width:medium/thin/thick/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>medium</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>thin</td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>thick </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>length</td>
+                            <td> </td>
+                        </tr>
+                         <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>overflow:-</b>
+
+                      <h2>syntax</h2>
+                      <p>overflow: visible|hidden|clip|scroll|auto/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>visible</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>hidden </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>clip </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>scroll</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>auto</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>overflow-wrap:-</b>
+
+                      <h2>syntax</h2>
+                      <p>overflow-wrap: normal|anywhere|break-word/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>normal</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>anywhere </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>break-word </td>
+                            <td> |  </td>
+                        </tr>
+ <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>overflow-x:-</b>
+
+                      <h2>syntax</h2>
+                      <p>overflow-x: visible|hidden|scroll|auto/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>visible</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>hidden </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>scroll </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>auto</td>
+                            <td> </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>overflow-y:-</b>
+
+                      <h2>syntax</h2>
+                      <p>overflow-y: visible|hidden|scroll|auto/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>visible</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>hidden </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>scroll </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>auto</td>
+                            <td> </td>
+                        </tr>
+ 
+                          <tr>
+                              <td>initial</td>
+                              <td>Defaul value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>padding:-</b>
+
+                      <h2>syntax</h2>
+                      <p>padding: length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>padding-bottom:-</b>
+
+                      <h2>syntax</h2>
+                      <p>padding: length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>padding-left:-</b>
+
+                      <h2>syntax</h2>
+                      <p>padding-left: length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>padding-right:-</b>
+
+                      <h2>syntax</h2>
+                      <p>padding-right: length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>padding-top:-</b>
+
+                      <h2>syntax</h2>
+                      <p>padding-top: length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>page-break-after:-</b>
+
+                      <h2>syntax</h2>
+                      <p>page-break-after: auto|always|avoid|left|right/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>always </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>avoid</td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>left</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>right</td>
+                            <td> </td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>page-break-before:-</b>
+
+                      <h2>syntax</h2>
+                      <p>page-break-before: auto|always|avoid|left|right/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>always </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>avoid </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>left</td>
+                            <td> </td>
+                        </tr>
+                        <tr>
+                            <td>right</td>
+                            <td> </td>
+                        </tr>
+                      
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>page-break-inside:-</b>
+
+                      <h2>syntax</h2>
+                      <p>page-break-inside: auto|avoid/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>avoid </td>
+                              <td> |</td>
+                          </tr>
+                          
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>paint-order:-</b>
+
+                      <h2>syntax</h2>
+                      <p>paint-order: normal|one value|two values|three values/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>normal</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>one value </td>
+                              <td> |</td>
+                          </tr>
+                          <tr>
+                            <td>two values </td>
+                            <td> |  </td>
+                        </tr>
+                      
+                        <tr>
+                            <td>three values</td>
+                            <td> </td>
+                        </tr>
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+  <li>
+                    <b>perspective:-</b>
+
+                      <h2>syntax</h2>
+                      <p>perspective: length|none/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>length</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>none </td>
+                              <td> |</td>
+                          </tr>
+                     
                        
                           <tr>
                               <td>initial</td>
@@ -7215,10 +8601,10 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>clip-path:-</b>
+                    <b>perspective-origin:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>perspective-origin: x-axis y-axis/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7227,44 +8613,15 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>x-axis</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>y-axis</td>
                               <td> |</td>
                           </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
+                     
                        
                           <tr>
                               <td>initial</td>
@@ -7278,10 +8635,10 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>clip-path:-</b>
+                    <b>pointer-events:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>pointer-events: auto|none/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7290,44 +8647,62 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>auto</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>none </td>
+                              <td> |</td>
+                          </tr>
+                     
+                       
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  
+                  <li>
+                    <b>position:-</b>
+
+                      <h2>syntax</h2>
+                      <p>position: static|absolute|fixed|relative|sticky/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>static</td>
+                              <td>   </td>
+                          </tr>
+  
+                          <tr>
+                              <td>absolute </td>
                               <td> |</td>
                           </tr>
                           <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
+                            <td>fixed</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>relative</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>sticky</td>
+                            <td></td>
+                          </tr>
+                     
                        
                           <tr>
                               <td>initial</td>
@@ -7341,10 +8716,10 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>clip-path:-</b>
+                    <b>quotes:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>quotes: none/string/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7353,45 +8728,14 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>none</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>string </td>
                               <td> |</td>
                           </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
                           <tr>
                               <td>initial</td>
                               <td>Default value; set की जाती है | </td>
@@ -7404,10 +8748,10 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>clip-path:-</b>
+                    <b>resize:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>resize: none/both/horizontal/vertical/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7416,43 +8760,22 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>none</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>both </td>
                               <td> |</td>
                           </tr>
                           <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
+                            <td>horizontal</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>vertical</td>
+                            <td></td>
+                          </tr>
                         
                        
                           <tr>
@@ -7466,11 +8789,12 @@ border-left-width <br> <br>
   
                       </table>
                   </li>
+                  
                   <li>
-                    <b>clip-path:-</b>
+                    <b>right:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>right: auto/length/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7479,45 +8803,18 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>auto</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>length </td>
                               <td> |</td>
                           </tr>
                           <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
+                            <td>%</td>
+                            <td></td>
+                          </tr>
                           <tr>
                               <td>initial</td>
                               <td>Default value; set की जाती है | </td>
@@ -7529,11 +8826,12 @@ border-left-width <br> <br>
   
                       </table>
                   </li>
+                  
                   <li>
-                    <b>clip-path:-</b>
+                    <b>rotaed:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>roated: axis /angle/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7542,45 +8840,18 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>axis</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>angle </td>
                               <td> |</td>
                           </tr>
                           <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
+                            <td>vector  angle</td>
+                            <td></td>
+                          </tr>
                           <tr>
                               <td>initial</td>
                               <td>Default value; set की जाती है | </td>
@@ -7592,11 +8863,12 @@ border-left-width <br> <br>
   
                       </table>
                   </li>
+                  
                   <li>
-                    <b>clip-path:-</b>
+                    <b>row-gap:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>row-gap: length/normal/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7605,45 +8877,14 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>length</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>normal </td>
                               <td> |</td>
                           </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
                           <tr>
                               <td>initial</td>
                               <td>Default value; set की जाती है | </td>
@@ -7655,11 +8896,12 @@ border-left-width <br> <br>
   
                       </table>
                   </li>
+                  
                   <li>
-                    <b>clip-path:-</b>
+                    <b>scale:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>scale: x-axis y-axis z-axis/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7668,44 +8910,16 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>x-axis</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>y-axis </td>
                               <td> |</td>
                           </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
                         
+                     
                        
                           <tr>
                               <td>initial</td>
@@ -7718,11 +8932,12 @@ border-left-width <br> <br>
   
                       </table>
                   </li>
+                  
                   <li>
-                    <b>clip-path:-</b>
+                    <b>scroll-behavior:-</b>
 
                       <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
+                      <p>scroll-behavior: auto/smooth/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7731,44 +8946,16 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
+                              <td>auto</td>
                               <td>   </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
+                              <td>smooth </td>
                               <td> |</td>
                           </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
                         
+                     
                        
                           <tr>
                               <td>initial</td>
@@ -7781,1204 +8968,6 @@ border-left-width <br> <br>
   
                       </table>
                   </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-                  <li>
-                    <b>clip-path:-</b>
-
-                      <h2>syntax</h2>
-                      <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
-  
-                      <h2>property value</h2>
-                      <table id="customers">
-                          <tr>
-                              <th>Value</th>
-                              <th>description</th>
-                          </tr>
-                          <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
-                      </table>
-                  </li>
-
             </ul>
 
 
