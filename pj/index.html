@@ -34,7 +34,7 @@
         <div class="content">
 
             <ul>
-                <div>
+          
                 <!-- <li>
                     <b>accent-color :- </b> accent-color property user-interface control जैसे accent color को specifies
                     करती है |
@@ -2832,8 +2832,8 @@ border-left-width <br> <br>
                           </tr>
   
                       </table>
-                  </li> -->
-                </div>
+                  </li>
+          
 
 
 
@@ -2889,6 +2889,9 @@ border-left-width <br> <br>
 
                     <li>
                     <b>box-reflect:-</b>
+                    किसी element का reflection बनाने के लिए box-reflect property का use किया जाता है।
+                    
+                    box-reflect property की value हो सकता है:   below, above,left, right
 
                       <h2>syntax</h2>
                       <p>box-reflect: none/below/above/left/right/position offset gradient/initial/inherit;</p>
@@ -2901,32 +2904,38 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>  </td>
+                              <td>default value। कोई reflection नहीं दिखता। </td>
                           </tr>
   
                           <tr>
                               <td>below  </td>
-                              <td>  </td>
+                              <td>element के below एक reflection बनाता है।  </td>
                           </tr>
                           <tr>
                             <td>above </td>
-                            <td> |  </td>
+                            <td> element के above एक reflection बनाता है|  </td>
                         </tr>
                         <tr>
                             <td>left</td>
-                            <td>  | </td>
+                            <td>element के left एक reflection बनाता है  | </td>
                         </tr>
                         <tr>
                             <td>right</td>
-                            <td>  | </td>
+                            <td>  element के right एक reflection बनाता है| </td>
                         </tr>
                            <tr>
                             <td>position offset</td>
-                            <td>  | </td>
+                            <td> Two value syntax: <br>
+                                - position element के below, above ,left ,right, reflection set करती है।<br>
+                                - offset reflection की distance निर्धारित करता है। distance px, pt, cm, etc में set है। default value 0 है  </td>
                         </tr> 
                           <tr>
                             <td>position offset gradient</td>
-                            <td>  | </td>
+                            <td> Two value syntax:  <br>
+                                - position element के below, above ,left ,right, reflection set करती है।<br>
+                                - offset reflection की distance निर्धारित करता है। distance px, pt, cm, etc में set है। default value 0 है <br>
+                                transition reflection के लिए एक gradient set करता है,i.e एक fading होती effect।
+                            </td>
                         </tr>
                         
                        
@@ -2943,7 +2952,7 @@ border-left-width <br> <br>
                   </li>
 
                     <li>
-                    <b>box-shadow:-</b>
+                    <b>box-shadow:-</b>box-shadow property का इस्तेमाल box-model को vertical और horizontal box shadow दी जाती है |
 
                       <h2>syntax</h2>
                       <p>box-shadow: none|h-offset v-offset blur spread color /inset/initial/inherit;</p>
@@ -2956,28 +2965,28 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>  Default. कोई box shadow नहीं दी जाती है | </td>
                           </tr>
   
                           <tr>
                               <td>h-offset  </td>
-                              <td>   |</td>
+                              <td>इस Value को Horizontal Shadow कहा जाता हैं. इसके द्वारा Box के Left और Right Side में Shadow को Declare किया जाता हैं. Positive Value से Shadow Right Side में Show होती हैं. और Negative Value से Shadow Left Side में Show होती हैं.   |</td>
                           </tr>
                           <tr>
                             <td>v-offset </td>
-                            <td> |  </td>
+                            <td> इस Value को Vertical Shadow कहा जाता हैं. इसके द्वारा Box के Top और Bottom Side में Shadow Effect को Set किया जाता हैं. Positive Value से Shadow Bottom Side में दिखाई देती हैं. और Negative Value से Top Side में Show होगी. |  </td>
                         </tr>
                         <tr>
                             <td>blur</td>
-                            <td>| </td>
+                            <td>इस Value से Shadow को साफपन या धुँधलापन तय किया जाता हैं. Positive Value से Shadow में धुँधलापन बढता जाएगा और Negative Value (घटाना) से Shadow साफ होती जाती हैं.| </td>
                         </tr>
                         <tr>
                             <td>spread</td>
-                            <td>| </td>
+                            <td>Spread मतलब आप Shadow Box से कितनी दूर तक देखना चाहते हैं. इसे समझने के लिए Width भी कह सकते हैं. Positive Value से Shadow Spread होती हैं और Negative Value से Shadow का फैलाव कम होता हैं.| </td>
                         </tr>
                         <tr>
                             <td>color</td>
-                            <td>| </td>
+                            <td> इस Value से Shadow Color को Define किया जाता हैं. इसकी Define Value Text Color होती हैं. जिसे आप अपनी पसंदानुसार Set कर सकते हैं.| </td>
                         </tr>
                         <tr>
                             <td>inset</td>
@@ -2995,10 +3004,10 @@ border-left-width <br> <br>
                           </tr>
   
                       </table>
-                  </li>
+                  </li> 
 
                   <li>
-                    <b>box-sizing:-</b>
+                    <b>box-sizing:-</b>Box Sizing CSS Property का उपयोग Default CSS Box Model को बदलने के लिए किया जाता है. जैसे Browser पर Browser द्वारा Element की Height और Width को परिवर्तन करने के लिए उपयोग किया जाता है.
                       <h2>syntax</h2>
                       <p>box-sizing:content-box/border-box/initial/inherit;</p>
   
@@ -3009,13 +3018,14 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>contant-box</td>
-                              <td>   </td>
+                              <td>content-box</td>
+                              <td> 	
+                                इसमे Width और Height Properties और न्यूनतम अधिकतम Properties मे केवल Content शामिल होते है Border, Padding, और Margin शामिल नहीं होते है .  </td>
                           </tr>
   
                           <tr>
                               <td>border-box  </td>
-                              <td>|</td>
+                              <td>इसमे Width और Height Properties और न्यूनतम अधिकतम Properties मे Content, Padding और Border शामिल होते है लेकिन Margin नहीं होते है.|</td>
                           </tr>
                           <tr>
                               <td>initial</td>
@@ -3029,8 +3039,12 @@ border-left-width <br> <br>
                       </table>
                   </li>
 
-                    <li>
-                    <b> break-after :-</b>
+                    <li> 
+                    <b> break-after :-</b>break-after property specific करती है कि specific element  के बाद page-break,column break या region break होना चाहिए या नहीं।
+
+                    break-after property CSS2 page-break-after property का extends करती है।
+                    
+                    break-after का use करके, आप browser को उस element के बाद के page, column, या area को तोड़ने के लिए कह सकते हैं, जिस पर break-after property लागू होता है, या eleemnt को break होने और दो page में फैले होने से बचा सकते हैं।
 
                       <h2>syntax</h2>
                       <p>break-after : auto|all|always|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso/initial/inherit;</p>
@@ -3043,68 +3057,72 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td> default| element के afterबाद automatically age/column/region break   </td>
                           </tr>
   
                           <tr>
                               <td>all  </td>
-                              <td> |</td>
+                              <td>principal box के ठीक after हमेशा एक page-break डालें |</td>
                           </tr>
                           <tr>
                             <td>always </td>
-                            <td> |  </td>
+                            <td>element
+                                के ठीक after हमेशा एक page-break डालें  |  </td>
                         </tr>
                         <tr>
                             <td>avoid</td>
-                            <td>  </td>
+                            <td> element के after  page/column/region break से बचें</td>
                         </tr>
                         <tr>
                             <td>avoid-column</td>
-                            <td>  </td>
+                            <td> element के after column break से बचें  </td>
                         </tr>
                         
                         <tr>
                             <td>avoid-page</td>
-                            <td>  </td>
+                            <td> element के after  page  break से बचें  </td>
                         </tr>
                         
                         <tr>
                             <td>avoid-region</td>
-                            <td>  </td>
+                            <td>  element के after  region break से बचें </td>
                         </tr>
                         
                         <tr>
                             <td>column</td>
-                            <td>  </td>
+                            <td>element
+                                के ठीक after हमेशा एक column-break डालें   </td>
                         </tr>
                         
                         <tr>
                             <td>left</td>
-                            <td>  </td>
+                            <td>element के after एक या दो page break  insert करें ताकि अगले page  को left page  के रूप में  formatted किया जा सके</td>
                         </tr>
                         
                         <tr>
                             <td>page</td>
-                            <td>  </td>
+                            <td>element
+                                के ठीक after हमेशा एक page-break डालें   </td>
                         </tr>
                         
                         <tr>
                             <td>recto</td>
-                            <td>  </td>
+                            <td>principal box के after एक या दो page break  insert करें ताकि अगले page  को recto page  के रूप में  formatted किया जा सके </td>
                         </tr>
                         
                         <tr>
                             <td>region</td>
-                            <td>  </td>
+                            <td> element
+                                के ठीक after हमेशा एक region-break डालें  </td>
                         </tr>
                         
                         <tr>
                             <td>right</td>
-                            <td>  </td>
+                            <td>element के after एक या दो page break  insert करें ताकि अगले page  को right page  के रूप में  formatted किया जा सके  </td>
                         </tr>
                         <tr>
                             <td>verso</td>
-                            <td>  </td>
+                            <td>principal box के after एक या दो page break  insert करें ताकि अगले page  को verso page  के रूप में  formatted किया जा सके   </td>
                         </tr>
                           <tr>
                               <td>initial</td>
@@ -3120,7 +3138,11 @@ border-left-width <br> <br>
 
 
                   <li>
-                    <b> break-before :-</b>
+                    <b> break-before :-</b>break-before property specific करती है कि specific element  के बाद page-break,column break या region break होना चाहिए या नहीं।
+
+                    break-before property CSS2 page-break-before property का extends करती है।
+                    
+                    break-before का use करके, आप browser को उस element के बाद के page, column, या area को तोड़ने के लिए कह सकते हैं, जिस पर break-before property लागू होता है, या eleemnt को break होने और दो page में फैले होने से बचा सकते हैं।
 
                       <h2>syntax</h2>
                       <p>break-before : auto|all|always|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso/initial/inherit;</p>
@@ -3132,70 +3154,74 @@ border-left-width <br> <br>
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>auto</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>all  </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>always </td>
-                            <td> |  </td>
+                            <td>auto</td>
+                            <td> default| element के before automatically age/column/region break   </td>
+                        </tr>
+
+                        <tr>
+                            <td>all  </td>
+                            <td>principal box के ठीक before हमेशा एक page-break डालें |</td>
                         </tr>
                         <tr>
-                            <td>avoid</td>
-                            <td>  </td>
-                        </tr>
-                        <tr>
-                            <td>avoid-column</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>avoid-page</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>avoid-region</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>column</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>left</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>page</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>recto</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>region</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>right</td>
-                            <td>  </td>
-                        </tr>
-                        <tr>
-                            <td>verso</td>
-                            <td>  </td>
-                        </tr>
+                          <td>always </td>
+                          <td>element
+                              के ठीक before हमेशा एक page-break डालें  |  </td>
+                      </tr>
+                      <tr>
+                          <td>avoid</td>
+                          <td> element के before  page/column/region break से बचें</td>
+                      </tr>
+                      <tr>
+                          <td>avoid-column</td>
+                          <td> element के before column break से बचें  </td>
+                      </tr>
+                      
+                      <tr>
+                          <td>avoid-page</td>
+                          <td> element के before  page  break से बचें  </td>
+                      </tr>
+                      
+                      <tr>
+                          <td>avoid-region</td>
+                          <td>  element के before  region break से बचें </td>
+                      </tr>
+                      
+                      <tr>
+                          <td>column</td>
+                          <td>element
+                              के ठीक before हमेशा एक column-break डालें   </td>
+                      </tr>
+                      
+                      <tr>
+                          <td>left</td>
+                          <td>element के before एक या दो page break  insert करें ताकि अगले page  को left page  के रूप में  formatted किया जा सके</td>
+                      </tr>
+                      
+                      <tr>
+                          <td>page</td>
+                          <td>element
+                              के ठीक before हमेशा एक page-break डालें   </td>
+                      </tr>
+                      
+                      <tr>
+                          <td>recto</td>
+                          <td>principal box के before एक या दो page break  insert करें ताकि अगले page  को recto page  के रूप में  formatted किया जा सके </td>
+                      </tr>
+                      
+                      <tr>
+                          <td>region</td>
+                          <td> element
+                              के ठीक before हमेशा एक region-break डालें  </td>
+                      </tr>
+                      
+                      <tr>
+                          <td>right</td>
+                          <td>element के before एक या दो page break  insert करें ताकि अगले page  को right page  के रूप में  formatted किया जा सके  </td>
+                      </tr>
+                      <tr>
+                          <td>verso</td>
+                          <td>principal box के before एक या दो page break  insert करें ताकि अगले page  को verso page  के रूप में  formatted किया जा सके   </td>
+                      </tr>
                           <tr>
                               <td>initial</td>
                               <td>Default value; set की जाती है | </td>
@@ -3209,7 +3235,10 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b> break-inside :-</b>
+                    <b> break-inside :-</b>break-before property specific करती है कि specific element  के बाद page-break,column break या region break होना चाहिए या नहीं।
+
+                    break-before property CSS2 page-break-before property का extends करती है।
+                    break inside के साथ, आप browser को images, code snippets, tables, and listst के inside break  से बचने के लिए कह सकते हैं।
 
                       <h2>syntax</h2>
                       <p>break-inside : auto|all|always|avoid|avoid-column|avoid-page|avoid-region|column|left|page|recto|region|right|verso/initial/inherit;</p>
@@ -3222,69 +3251,30 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>default| element के inside automatically age/column/region break     </td>
                           </tr>
   
-                          <tr>
-                              <td>all  </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>always </td>
-                            <td> |  </td>
-                        </tr>
+                          
                         <tr>
                             <td>avoid</td>
-                            <td>  </td>
+                            <td>  element के inside  page/column/region break से बचें </td>
                         </tr>
                         <tr>
                             <td>avoid-column</td>
-                            <td>  </td>
+                            <td>   element के inside column break से बचें  </td>
                         </tr>
                         
                         <tr>
                             <td>avoid-page</td>
-                            <td>  </td>
+                            <td>  element के inside  page  break से बचें </td>
                         </tr>
                         
                         <tr>
                             <td>avoid-region</td>
-                            <td>  </td>
+                            <td>  element के inside  region break से बचें </td>
                         </tr>
                         
-                        <tr>
-                            <td>column</td>
-                            <td>  </td>
-                        </tr>
                         
-                        <tr>
-                            <td>left</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>page</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>recto</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>region</td>
-                            <td>  </td>
-                        </tr>
-                        
-                        <tr>
-                            <td>right</td>
-                            <td>  </td>
-                        </tr>
-                        <tr>
-                            <td>verso</td>
-                            <td>  </td>
-                        </tr>
                           <tr>
                               <td>initial</td>
                               <td>Default value; set की जाती है | </td>
@@ -3298,8 +3288,8 @@ border-left-width <br> <br>
                   </li>
 
 
-                  <li>
-                    <b>caption-side:-</b>
+                   <li>
+                    <b>caption-side:-</b>इस property के द्वारा आप table का caption (शीर्षक) कँहा show होगा ये define कर सकते है। लेकिन ये property केवल तब ही काम करती है जब आप table के अंदर < caption> tag यूज़ करते है। < caption> tag table का शीर्षक define करने के लिए यूज़ किया जाता है। इस property की आप 2 values define कर सकते है। पहली value top होती है जिससे caption table के top पर show होता है। दूसरी value आप bottom दे सकते है इससे caption bottom में show होता है |
                       <h2>syntax</h2>
                       <p>caption-side:top/bottom/initial/inherit;</p>
   
@@ -3311,12 +3301,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>top</td>
-                              <td>   </td>
+                              <td>Default. table के top पर caption होता है |   </td>
                           </tr>
   
                           <tr>
                               <td>bottom  </td>
-                              <td> |</td>
+                              <td>table के bottom पर caption होता है | |</td>
                           </tr>
                            <tr>
                               <td>initial</td>
@@ -3328,11 +3318,11 @@ border-left-width <br> <br>
                           </tr>
   
                       </table>
-                  </li> 
+                  </li>  
                   
                   
                   <li>
-                    <b> caret-color :-</b>
+                    <b> caret-color :-</b>caret-color property input, textarea, या  editable किसी भी element में cursor(caret) का color specifie करती है।
                       <h2>syntax</h2>
                       <p> caret-color : auto/color/initial/inherit;</p>
   
@@ -3344,12 +3334,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>Default. medium bottom border होती है   </td>
+                              <td>Default। browser caret  के लिए current color  का use  करता है   </td>
                           </tr>
   
                           <tr>
                               <td>color  </td>
-                              <td>  thin bottom border होती है |</td>
+                              <td>  caret  के लिए use  करने के लिए color specifie करता है। सभी legal color values  का use किया जा सकता है(rgb, hex, named-color, etc). </td>
                           </tr>
                          
                        
@@ -3366,7 +3356,11 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b> @charset:-</b>
+                    <b> @charset:-</b>इस @ Rule द्वारा Style Sheet में Character Encoding को Declare किया जाता हैं. @charset Rule किसी भी Style Sheet का पहला CSS Rule होता हैं. एक Style Sheet में केवल एक ही @charset Rule Declare किया जा सकता हैं. <br>
+
+                    यदि किसी style Sheet में एक से ज्यादा @charset Rule Declare किए गए है तो पहला Rule Apply होता हैं <br>
+                    
+                 
                       <h2>syntax</h2>
                       <p> @charset:  charset;</p>
   
@@ -3378,14 +3372,14 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td> charset</td>
-                              <td>   </td>
+                              <td>use  करने के लिए characters encoding specifie करता है   </td>
                           </tr>
 
                       </table>
                   </li>
 
                   <li>
-                    <b>clear:-</b>
+                    <b>clear:-</b>clear property का इस्तेमाल element को left या right पर float करने के लिए किया जाता है |
                       <h2>syntax</h2>
                       <p>clear: none/left/right/both/initial/inherit;</p>
   
@@ -3397,20 +3391,20 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>  Default. Element left और right; float किया जा सकता है | </td>
                           </tr>
   
                           <tr>
                               <td>left  </td>
-                              <td> |</td>
+                              <td>Element; left पर float नहीं किया जाता है | |</td>
                           </tr>
                           <tr>
                             <td>right </td>
-                            <td>|  </td>
+                            <td>Element; right पर float नहीं किया जाता है ||  </td>
                         </tr>
                         <tr>
                             <td>both</td>
-                            <td>  | </td>
+                            <td> Left और Right पर element को float नहीं किया जाता है | | </td>
                         </tr>
                         
                        
@@ -3427,7 +3421,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>clip:-</b>
+                    <b>clip:-</b>clip property आपको पूरी तरह से positioned element को clip करने के लिए एक rectangle specifie करने देता है। rectangle  को four  coordinates के रूप में specifie किया गया है, सभी clip किए जाने वाले element के top right corner से।
 
                       <h2>syntax</h2>
                       <p>clip: auto/shape/initial/inherit;</p>
@@ -3440,12 +3434,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>  कोई clipping  नहीं लगाई जाएगी। यह default है </td>
                           </tr>
   
                           <tr>
                               <td>shape  </td>
-                              <td>   |</td>
+                              <td> एक element को clip करता है। केवल valid value  है: rectangle (top,right,bottom,left)  |</td>
                           </tr>
                          <tr>
                               <td>initial</td>
@@ -3460,7 +3454,7 @@ border-left-width <br> <br>
                   </li>
 
                     <li>
-                    <b>clip-path:-</b>
+                    <b>clip-path:-</b>clip-path property आपको किसी element को basic shape या SVG source पर clip करने देता है।
 
                       <h2>syntax</h2>
                       <p>clip-path: clip-source/basic-shape/margin-box/border-box/padding-box/content-box/fill-box/stroke-box/view-box/none/initial/inherit;</p>
@@ -3473,41 +3467,45 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>clip-source</td>
-                              <td>   </td>
+                              <td> SVG < clipPath> element के लिए URL define करता है  </td>
                           </tr>
   
                           <tr>
                               <td>basic-shape </td>
-                              <td> |</td>
+                              <td>किसी element को basic shape में clip करता है:  circle, ellipse, polygon or inset|</td>
                           </tr>
                           <tr>
                             <td>margin-box </td>
-                            <td> |  </td>
+                            <td> reference box के रूप में margin box का use करता है|  </td>
                         </tr>
                       
                         <tr>
                             <td>border-box</td>
-                            <td> </td>
+                            <td>reference box के रूप में border box का use करता है </td>
                         </tr>
                         <tr>
                             <td>padding-box</td>
-                            <td> </td>
+                            <td>padding box को reference box के रूप में use करता है</td>
+                        </tr>
+                        <tr>
+                            <td>content-box</td>
+                            <td>content box को reference box के रूप में use करता है</td>
                         </tr>
                         <tr>
                             <td>fill-box</td>
-                            <td> </td>
+                            <td> object bounding box को reference box के रूप में use करता है</td>
                         </tr>
                         <tr>
                             <td>stroke-box</td>
-                            <td> </td>
+                            <td>stroke bounding box को reference box के रूप में use करता है </td>
                         </tr>
                         <tr>
                             <td>view-box</td>
-                            <td> </td>
+                            <td>reference box के रूप में SVG viewport का use करता है </td>
                         </tr>
                         <tr>
                             <td>none</td>
-                            <td> </td>
+                            <td>यह default है। कोई clip नहीं की जाती है </td>
                         </tr>
                         
                        
@@ -3523,8 +3521,8 @@ border-left-width <br> <br>
                       </table>
                   </li>
 
-                  <li>
-                    <b>color:-</b>
+                   <li>
+                    <b>color:-</b>color Property ये text पर color set करने के लिए इस्तेमाल किया जाता है 
 
                       <h2>syntax</h2>
                       <p>color: clip-color/initial/inherit;</p>
@@ -3537,7 +3535,7 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>color</td>
-                              <td>   </td>
+                              <td>  यहाँ पर color name, hex color code, rgb color code या hsl color code दिया जाता है | </td>
                           </tr>
   
                          
@@ -3553,10 +3551,10 @@ border-left-width <br> <br>
                           </tr>
   
                       </table>
-                  </li>
+                  </li> 
 
                   <li>
- <b>column-count:-</b>
+ <b>column-count:-</b>column-count property का इस्तेमाल element के content को कितने columns में बाँटना है वो number दिया जाता है |
 
                       <h2>syntax</h2>
                       <p>column-count: number/auto/initial/inherit;</p>
@@ -3569,12 +3567,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>number</td>
-                              <td>   </td>
+                              <td>   element के content को कितने हिस्से में बाँटना है वो number यहाँ पर दिया जाता है |</td>
                           </tr>
   
                           <tr>
                               <td>auto </td>
-                              <td> |</td>
+                              <td>Default. column-width के अनुसार element के content को बाँटा जाता है | |</td>
                           </tr>
                           
                           <tr>
@@ -3587,11 +3585,11 @@ border-left-width <br> <br>
                           </tr>
   
                       </table>
-                  </li>
+                  </li> 
 
 
                   <li>
-                    <b>column-fill:-</b>
+                    <b>column-fill:-</b>column-fill property का इस्तेमाल element के content को collumns पर किस तरह से fill करना है वो दिया जाता है |
 
                       <h2>syntax</h2>
                       <p>column-fill: balance/auto/initial/inherit;</p>
@@ -3604,12 +3602,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>balance</td>
-                              <td>   </td>
+                              <td>Default. content को columns पर एक समान बाँटा जाता है | इसका height property से कोई संबंध नहीं होता है |  </td>
                           </tr>
   
                           <tr>
                               <td>auto</td>
-                              <td> |</td>
+                              <td>content को columns पर एक समान बाँटा जाता है | इसका height property से संबंध होता है | height के अनुसार content को adjust किया जाता है  |</td>
                           </tr>
                         
                           <tr>
@@ -3622,9 +3620,9 @@ border-left-width <br> <br>
                           </tr>
   
                       </table>
-                  </li>
+                  </li> 
                   <li>
-                    <b>column-gap:-</b>
+                    <b>column-gap:-</b>column-gap property का इस्तेमाल columns के बीच में कितनी gap चाहिए वो measurement units में दिया जाता है |
 
                       <h2>syntax</h2>
                       <p>column-gap: length/normal/initial/inherit;</p>
@@ -3637,12 +3635,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td> measurement-units के अनुसार columns के gap में length दी जाती है |  </td>
                           </tr>
   
                           <tr>
                               <td>normal</td>
-                              <td> |</td>
+                              <td>Default. columns के बीच में normal length दी जाती है | |</td>
                           </tr>
                      
                           
@@ -3661,7 +3659,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>column-rule:-</b>
+                    <b>column-rule:-</b>column-rule property का इस्तेमाल columns के बीच में rule(लकीर) देने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>column-rule: column-rule-width column-rule-style column-rule-color/initial/inherit;</p>
@@ -3674,16 +3672,16 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td> column-rule-width</td>
-                              <td>   </td>
+                              <td>  Default medium. columns के बीच के rule की width दी जाती है | </td>
                           </tr>
   
                           <tr>
                               <td>column-rule-style </td>
-                              <td> |</td>
+                              <td> Default none. columns के बीच के rule की style दी जाती है ||</td>
                           </tr>
                           <tr>
                             <td>column-rule-color </td>
-                            <td> |  </td>
+                            <td>Default element का color होता है | columns के बीच के rule का color दिया जाता है | |  </td>
                         </tr>
                       
                       
@@ -3702,7 +3700,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>column-rule-color:-</b>
+                    <b>column-rule-color:-</b>column-rule-color property का इस्तेमाल columns के बीच के rule(लकीर) के लिए color देने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>column-rule-color: color/initial/inherit;</p>
@@ -3718,7 +3716,7 @@ border-left-width <br> <br>
          
                         <tr>
                             <td>color</td>
-                            <td> </td>
+                            <td>Default; element का color होता है | columns के बीच के rule के लिए color दिया जाता है </td>
                         </tr>
                         
                        
@@ -3735,7 +3733,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>column-rule-style :-</b>
+                    <b>column-rule-style :-</b>column-rule-style property का इस्तेमाल columns के बीच के rule(लकीर) के लिए style देने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>column-rule-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset/initial/inherit;</p>
@@ -3748,45 +3746,45 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>   Default. rule style नहीं होती है</td>
                           </tr>
   
                           <tr>
                               <td>hidden</td>
-                              <td> |</td>
+                              <td>hidden rule होता है  |</td>
                           </tr>
                           <tr>
                             <td>dotted </td>
-                            <td> |  </td>
+                            <td> dotted rule दिया जाता है |  </td>
                         </tr>
                       
                         <tr>
                             <td>dashed</td>
-                            <td> </td>
+                            <td> dashes rule दिया जाता है</td>
                         </tr>
                         <tr>
                             <td>solid</td>
-                            <td> </td>
+                            <td> solid lining rule दिया जाता है </td>
                         </tr>
                         <tr>
                             <td>double</td>
-                            <td> </td>
+                            <td>दो solid lines में rule दिया जाता है  </td>
                         </tr>
                         <tr>
                             <td>groove</td>
-                            <td> </td>
+                            <td> grooved rule होता है | ये rule; color पर प्रभाव डालता है | ये ridge के विरुद्ध होता है</td>
                         </tr>
                         <tr>
                             <td>ridge</td>
-                            <td> </td>
+                            <td>ridged rule होता है | ये rule; color पर प्रभाव डालता है | ये groove के विरुद्ध होता है | </td>
                         </tr>
                         <tr>
                             <td>inset</td>
-                            <td> </td>
+                            <td> inset rule होता है | ये rule; color पर प्रभाव डालता है | ये outset के विरुद्ध होता है |</td>
                         </tr>
                         <tr>
                             <td>outset</td>
-                            <td></td>
+                            <td>outset rule होता है | ये rule; color पर प्रभाव डालता है | ये inset के विरुद्ध होता है |</td>
                         </tr>
                        
                           <tr>
@@ -3802,7 +3800,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>column-rule-width:-</b>
+                    <b>column-rule-width:-</b>column-rule-width property का इस्तेमाल columns के बीच के rule(लकीर) के लिए width देने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>column-rule-width: medium/thin/thick/length/initial/inherit;</p>
@@ -3815,21 +3813,21 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>medium</td>
-                              <td>   </td>
+                              <td>   Default. medium border होती है |</td>
                           </tr>
   
                           <tr>
                               <td>thin </td>
-                              <td> |</td>
+                              <td>thin border होती है | |</td>
                           </tr>
                           <tr>
                             <td>thick </td>
-                            <td> |  </td>
+                            <td>thick border होती है | |  </td>
                         </tr>
                       
                         <tr>
                             <td>length</td>
-                            <td> </td>
+                            <td> border width को measurement units में दिया जाता है |</td>
                         </tr>
                         
                         
@@ -3846,7 +3844,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>column-span:-</b>
+                    <b>column-span:-</b>column-span property का इस्तेमाल all value के साथ element को सभी columns पर फैलाने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>column-span: none/all/initial/inherit;</p>
@@ -3861,11 +3859,11 @@ border-left-width <br> <br>
                           
                         <tr>
                             <td>none</td>
-                            <td> </td>
+                            <td>Default. element को सिर्फ single column पर फैलाया जाता है | </td>
                         </tr>
                         <tr>
                             <td>all</td>
-                            <td></td>
+                            <td>element को सभी columns पर फैलाया जाता है |</td>
                         </tr>
                         
                        
@@ -3881,7 +3879,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>column-width:-</b>
+                    <b>column-width:-</b>column-width property का इस्तेमाल हर column को कम से कम width देने के लिए किया जाता है | ये property screen के width के अनुसार adjust हो जाती है इसका मतलब ये flexible होती है |
 
                       <h2>syntax</h2>
                       <p>column-width: auto/length/initial/inherit;</p>
@@ -3894,12 +3892,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>browser द्वारा column की width को दिया जाता है |  </td>
                           </tr>
   
                           <tr>
                               <td>length </td>
-                              <td> |</td>
+                              <td> हर column के लिए कम से कम width measurement units में दी जाती है |</td>
                           </tr>
                         
                        
@@ -3916,7 +3914,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>columns:-</b>
+                    <b>columns:-</b>columns property पर column-width और column-count property को set किया जाता है |
 
                       <h2>syntax</h2>
                       <p>columns: auto/column-width column-count/initial/inherit;</p>
@@ -3929,16 +3927,16 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>Default. column-width और column-count की value 'auto' होती है   </td>
                           </tr>
   
                           <tr>
                               <td>column-width </td>
-                              <td> |</td>
+                              <td> हर column के लिए कम से कम width दी जाती है |</td>
                           </tr>
                           <tr>
                             <td>column-count </td>
-                            <td> |  </td>
+                            <td>ज्यादा से ज्यादा columns की संख्या को दिया जाता है |  </td>
                         </tr>
                       
                       
@@ -3956,7 +3954,7 @@ border-left-width <br> <br>
                   </li>
 
                     <li>
-                    <b>content:-</b>
+                    <b>content:-</b>content property डालने के लिए generated content का use ::before और :: after element के बाद किया जाता है।
 
                       <h2>syntax</h2>
                       <p>content: normal/none/counter/attr/string/open-quote/close-quote/no-open-quote/no-close-quote/url/initial/inherit;</p>
@@ -3969,43 +3967,43 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td>default।content set  करता है, यदि specifie,normal करने के लिए, जो default "कोई नहीं" है (जो कुछ भी नहीं है) </td>
                           </tr>
                           <tr>
                               <td>none </td>
-                              <td> |</td>
+                              <td>specific होने पर content को zero पर set करता है |</td>
                           </tr>
                           <tr>
                             <td>counter</td>
-                            <td> |  </td>
+                            <td>content को counter के रूप में set करता है |  </td>
                         </tr>    
                         <tr>
                             <td>attr</td>
-                            <td> </td>
+                            <td>content को selector की attribute के रूप में set करता है </td>
                         </tr>
                         <tr>
                             <td>string</td>
-                            <td> </td>
+                            <td>content को आपके द्वारा specific text पर set करता है</td>
                         </tr>
                         <tr>
                             <td>open-quote</td>
-                            <td> </td>
+                            <td>content को एक opening quotes के रूप में Set करता है </td>
                         </tr>
                         <tr>
                             <td>close-quote</td>
-                            <td> </td>
+                            <td>content को closing quotes के रूप में set करता है </td>
                         </tr>
                         <tr>
                             <td>no-open-quote</td>
-                            <td> </td>
+                            <td>specific होने पर content से opening quote हटा देता है </td>
                         </tr>
                         <tr>
                             <td>no-close-quote</td>
-                            <td> </td>
+                            <td>specific होने पर content से closing quote हटा देता है</td>
                         </tr>
                         <tr>
                             <td>url</td>
-                            <td></td>
+                            <td>content को किसी प्रकार का media(image, sound, video,etc) के रूप में set करता है।</td>
                         </tr>
                        
                           <tr>
@@ -4019,8 +4017,10 @@ border-left-width <br> <br>
   
                       </table>
                   </li>
-                  <li>
-                    <b>counter-increment:-</b>
+                   <li>
+                    <b>counter-increment:-</b>counter-increment property एक या अधिक CSS counters के value को increase या decrease करता  है। <br>
+
+                    counter-increment property का इस्तेमाल आमतौर पर counter-reset property और counter property के साथ किया जाता है।
 
                       <h2>syntax</h2>
                       <p>counter-increment: none/id/initial/inherit;</p>
@@ -4033,12 +4033,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td> default। कोई भी counter नहीं बढ़ाया जाएगा  </td>
                           </tr>
   
                           <tr>
                               <td>id</td>
-                              <td> |</td>
+                              <td> id define  करती है कि किस counter को increment करते  है। number set   करती है कि  selector की प्रत्येक occurrence  पर counter कितना incremenet। default increment 1 है। negative values की permision है। यदि id counter  को initialized करता है जिसे counter-reset द्वारा start नहीं किया गया है, तो default initial  value  0 है|</td>
                           </tr>
                           
                         
@@ -4053,10 +4053,12 @@ border-left-width <br> <br>
                           </tr>
   
                       </table>
-                  </li>
+                  </li> 
 
                   <li>
-                    <b> counter-reset:-</b>
+                    <b> counter-reset:-</b>counter-reset property एक या अधिक css counter बनाती या reset करती है।
+
+                    counter-reset property आमतौर पर  counter-increment property और coutent property के साथ used की जाती है।
 
                       <h2>syntax</h2>
                       <p> counter-reset: none/name number/initial/inherit;</p>
@@ -4069,12 +4071,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>default। कोई counter-reset नहीं किया जाएगा  </td>
                           </tr>
   
                           <tr>
                               <td>id number</td>
-                              <td> |</td>
+                              <td>id define करती है कि किस counter को reset करना है।number वह value set करती है जिस पर  selector की प्रत्येक घटना पर counter को reset किया जाता है।default number 0 है |</td>
                           </tr>
                         
                           <tr>
@@ -4089,7 +4091,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>cursor:-</b>
+                    <b>cursor:-</b>Cursor की मदद से user को पता चल जाता है की जिस element पर cursor ले जाया गया है वह किस प्रकार behave करेगा। उदाहरण के लिए hand cursor से user को पता चल जाता है की text एक link है जिसे click करने पर नया page खुलेगा।
 
                       <h2>syntax</h2>
                       <p>cursor: value/initial/inherit;</p>
@@ -4102,153 +4104,153 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>alias</td>
-                              <td>   </td>
+                              <td>  यह value alias (shortcut) cursor show करती है। Alias cursor बताता है की element का shortcut create किया जा सकता है  </td>
                           </tr>
   
                           <tr>
                               <td>all-scroll</td>
-                              <td> |</td>
+                              <td> यह value all scroll cursor show करती है। All scroll cursor से user को पता चलता है की सभी sides में scroll किया जा सकता है|</td>
                           </tr>
                           <tr>
                             <td>auto</td>
-                            <td> |  </td>
+                            <td>  इस value से browser automatically निर्धारित करता है की कौनसा cursor किस element के लिए show करना है।|  </td>
                         </tr>
                       
                         <tr>
                             <td>cell</td>
-                            <td> </td>
+                            <td>यह value cell (column) cursor show करती है। Cell cursor से user को पता चलता है की किसी column को select किया जा सकता है। </td>
                         </tr>
                         <tr>
                             <td>col-resize</td>
-                            <td> </td>
+                            <td>  यह value column resize cursor show करती है। इस cursor से user को पता चलता है की column को resize किया जा सकता है।</td>
                         </tr>
                         <tr>
                             <td>context-menu</td>
-                            <td> </td>
+                            <td> इस value से एक context menu cursor show होता है जो यह बताता है की context menu available है। इस value को उन elements के लिए use किया जाना चाहिए जिनके लिए context menu define की गयी हो।</td>
                         </tr>
                         <tr>
                             <td>copy</td>
-                            <td> </td>
+                            <td> यह value copy cursor show करती है। Copy cursor से user को पता चलता है की element को copy किया जा सकता है </td>
                         </tr>
                         <tr>
                             <td>crosshair</td>
-                            <td> </td>
+                            <td>यह value एक crosshair cursor show करती है </td>
                         </tr>
                         <tr>
                             <td>default</td>
-                            <td> </td>
+                            <td> इस value से सभी elements के साथ उन से सम्बंधित default cursors use किये जाते है</td>
                         </tr>
                         <tr>
                             <td>e-resize</td>
-                            <td></td>
+                            <td> यह value east resize cursor show करती है। इस cursor से user को पता चलता है की किसी element को east में resize किया जा सकता है</td>
                         </tr>
                         <tr>
                             <td>ew-resize</td>
-                            <td></td>
+                            <td>यह value east west resize cursor show करती है। इस cursor से user को पता चलता है की element को east west में move किया जा सकता है</td>
                         </tr>
                         <tr>
                             <td>grab</td>
-                            <td></td>
+                            <td>यह value grab cursor show करती है। Grab cursor से user को पता चलता है की element को grab किया जा सकता है</td>
                         </tr>
                         <tr>
                             <td>grabbing</td>
-                            <td></td>
+                            <td>यह value grabbing cursor show करती है। Grabbing cursor से user को पता चलता है की element को grab किया जा रहा है</td>
                         </tr>
                         <tr>
                             <td>help</td>
-                            <td></td>
+                            <td>यह value help cursor show करती है। Help cursor से user को पता चलता है की किसी element से सम्बंधित help available है</td>
                         </tr>
                         <tr>
                             <td>move</td>
-                            <td></td>
+                            <td>यह value move cursor show करती है। Move cursor से user को पता चलता है की element को move किया जा सकता है</td>
                          </tr>
                          <tr>
                             <td>n-resize</td>
-                            <td></td>
+                            <td>यह value north resize cursor show करती है। इस cursor से user को पता चलता है की किसी element को north में resize किया जा सकता है</td>
                          </tr>
                          <tr>
                             <td>ne-resize</td>
-<td></td>
+<td>यह value north east resize cursor show करती है। इस cursor से user को पता चल जाता है की element को north east में move किया जा सकता है</td>
                          </tr>
                        <tr>
                         <td>nesw-resize</td>
-                        <td></td>
+                        <td>एक bidirectional  आकार बदलने वाले corner को indicate करता है</td>
                        </tr>
                        <tr>
                         <td>ns-resize</td>
-                        <td></td>
+                        <td>यह value north south resize cursor show करती है। इस cursor से user को पता चलता है की element को north और south में move किया जा सकता है</td>
                        </tr>
                        <tr>
                         <td>nw-resize</td>
-                        <td></td>
+                        <td>यह value north west resize cursor show करती है। इस cursor से user को पता चल जाता है की element को north west में resize किया जा सकता है</td>
                        </tr>
                        <tr>
                         <td>nwse-resize</td>
-                        <td></td>
+                        <td>एक bidirectional  आकार बदलने वाले corner को indicate करता है</td>
                        </tr>
                        <tr>
                         <td>no-drop</td>
-                        <td></td>
+                        <td>यह value no drop cursor show करती है। इस cursor से पता चलता है की current location पर element को drop नहीं किया जा सकता है</td>
                        </tr>
                        <tr>
                         <td>none</td>
-                        <td></td>
+                        <td>इस value से किसी भी प्रकार का cursor नहीं show होता है</td>
                        </tr>
                        <tr>
                         <td>not-allowed</td>
-                        <td></td>
+                        <td>यह value not allowed cursor show करती है। Not allowed cursor से user को पता चलता है की element के साथ कोई action नहीं लिया जा सकता है।</td>
                        </tr>
                        <tr>
                         <td>pointer</td>
-                        <td></td>
+                        <td> यह value hand cursor show करती है। Hand cursor mostly links के लिए show किया जाता है</td>
                        </tr>
                        <tr>
                         <td>progress</td>
-                        <td></td>
+                        <td>- यह value एक progress indicator cursor show करती है। Progress indicator cursor यह बताता है की process progress में है। जैसे की किसी element का load होना आदि</td>
                        </tr>
                        <tr>
                         <td>row-resize</td>
-                        <td></td>
+                        <td>यह value row resize cursor show करती है। इस cursor से user को पता चल जाता है की row को resize किया जा सकता है</td>
                        </tr>
                        <tr>
                         <td>s-resize</td>
-                        <td>  </td>
+                        <td> यह value south resize cursor show करती है। इस cursor से user को पता चलता है की किसी element को south में resize किया जा सकता है </td>
                        </tr>
                        <tr>
                         <td>se-resize</td>
-                        <td></td>
+                        <td> यह value south east resize cursor show करती है। इस cursor से user को पता चलता है की element को south east में move किया जा सकता है।</td>
                        </tr>
                        <tr>
                             <td>sw-resize</td>
-                            <td></td>
+                            <td>यह value south west resize cursor show करती है। इस cursor से user को पता चलता है की element को south west में move किया जा सकता है</td>
                     </tr>
                     <tr>
                         <td>text</td>
-                        <td></td>
+                        <td>यह value text cursor show करती है। Text cursor indicate करता है की text को select किया जा सकता है।</td>
                     </tr>
                     <tr>
                         <td>URL</td>
-                        <td></td>
+                        <td>custom cursor के लिए comma से अलग की गई URL की list</td>
                     </tr>
                     <tr>
                         <td>vertical-text</td>
-                        <td></td>
+                        <td>यह value vertical text selector cursor show करती है। इस text cursor से user को पता चलता है की vertical text को select किया जा सकता है</td>
                     </tr>
                     <tr>
                         <td>w-resize</td>
-                        <td></td>
+                        <td> यह value west resize cursor show करती है। इस cursor से user को पता चलता है की किसी element को west में resize किया जा सकता है</td>
                     </tr>
                     <tr>
                         <td>wait</td>
-                        <td></td>
+                        <td>यह value wait cursor show करती है। Wait cursor बताता है की user को wait करना चाहिए</td>
                     </tr>
                     <tr>
                         <td>zoom-in</td>
-                        <td></td>
+                        <td>यह value zoom in cursor show करती है। Zoom in cursor से user को पता चलता है की element में zoom in किया जा सकता है</td>
                     </tr>
                     <tr>
                         <td>zoom-out</td>
-                        <td></td>
+                        <td>यह value zoom out cursor show करती है। Zoom out cursor से user को पता चलता है की element में zoom out किया जा सकता है।</td>
                     </tr>
                  
                           <tr>
@@ -4264,7 +4266,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>direction:-</b>
+                    <b>direction:-</b>direction Property ये दिए जानेवाली text की direction को set करता है 
 
                       <h2>syntax</h2>
                       <p>direction: ltr/rtl/initial/inherit;</p>
@@ -4277,12 +4279,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>itr</td>
-                              <td>   </td>
+                              <td>  Default. direction ये left to right set किया जाता है </td>
                           </tr>
   
                           <tr>
                               <td>rtl </td>
-                              <td> |</td>
+                              <td>direction ये right to left होता है |</td>
                           </tr>
                         
                           <tr>
@@ -4298,7 +4300,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>display:-</b>
+                    <b>display:-</b>display property का इस्तेमाल Element को किस प्रकार से display करना है वो value द्वारा दिया जाता है |
 
                       <h2>syntax</h2>
                       <p>display: value;</p>
@@ -4311,90 +4313,91 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>inline</td>
-                              <td>   </td>
+                              <td>  Element को inline element का स्वरूप दिया जाता है | For Example, < span>, < a>< /a> </td>
                           </tr>
   
                           <tr>
                               <td>block </td>
-                              <td> |</td>
+                              <td>Element को block element का स्वरूप दिया जाता है | For Example, < p>, < h1></> |</td>
                           </tr>
                           <tr>
                             <td>contents</td>
-                            <td> |  </td>
+                            <td>container को गायब कर देता है, element के child element  को DOM में next level  तक ले जाता है |  </td>
                         </tr>
                       
                         <tr>
                             <td>flex</td>
-                            <td> </td>
+                            <td> Element को block element की तरह स्वरूप देता है | Flex Box के लिए इसका इस्तेमाल किया जाता है </td>
                         </tr>
                         <tr>
                             <td>grid</td>
-                            <td> </td>
+                            <td> एक element को block level grid container  के रूप में display करता है</td>
                         </tr>
                         <tr>
                             <td>inline-block</td>
-                            <td> </td>
+                            <td>Element को block element box का स्वरूप देता है | हर element पर दिया जाता है तो element के ऊपर और निचे space create हो जाती है | </td>
                         </tr>
                         <tr>
                             <td>inline-flex</td>
-                            <td> </td>
+                            <td>Element को inline element की तरह स्वरूप देता है | Flex Box के लिए इसका इस्तेमाल किया जाता है | </td>
                         </tr>
                         <tr>
                             <td>inline-grid</td>
-                            <td> </td>
+                            <td> एक element को inline-level grid  के रूप में dispaly करता है</td>
                         </tr>
                         <tr>
                             <td>inline-table</td>
-                            <td> </td>
+                            <td>Element को inline element की तरह स्वरूप देता है | < table> के लिए इस्तेमाल किया जाता है | </td>
                         </tr>
                         
                        <tr>
                         <td>list-item</td>
-                        <td></td>
+                        <td>Element list item(< li>) का स्वरूप दिया जाता है |</td>
                        </tr>
                        <tr>
                         <td>run-in</td>
-                        <td></td>
+                        <td>context के depending  पर element  को या तो block या inline के रूप में dispaly करता है</td>
                        </tr>
                        <tr>
                         <td>table</td>
-                        <td></td>
+                        <td>< table> element की तरह स्वरूप देता है |</td>
                        </tr>
                        <tr>
                         <td>table-caption</td>
-                        <td></td>
+                        <td>< caption> element का स्वरूप दिया जाता है |</td>
                        </tr>
                        <tr>
                         <td>table-column-group</td>
-                        <td></td>
+                        <td>< colgroup> element का स्वरूप दिया जाता है</td>
                        </tr>
                        <tr>
                         <td>table-header-group</td>
-                        <td></td>
+                        <td>< thead> element का स्वरूप दिया जाता है |</td>
                        </tr>
                        <tr>
                         <td>table-footer-group</td>
-                        <td></td>
+                        <td>< tfoot> element का स्वरूप दिया जाता है </td>
                        </tr>
                        <tr>
                         <td>table-row-group</td>
-                        <td></td>
+                        <td>< tbody> element का स्वरूप दिया जाता है </td>
                        </tr>
                        <tr>
                         <td>table-cell</td>
-                        <td></td>
+                        <td>< td> element का स्वरूप दिया जाता है </>
                        </tr>
                        <tr>
                         <td>table-column</td>
-                        <td></td>
+                        <td>< col> element का स्वरूप दिया जाता है |</td>
                        </tr>
                        <tr>
                         <td>table-row</td>
-                        <td></td>
+                        <td>< tr> element का स्वरूप दिया जाता है</td>
                        </tr>
                        <tr>
                         <td>none</td>
-                        <td></td>
+                        <td>Element को display नहीं जाता है | for Example, < sscript>, < sstyle>
+                        </td>
                        </tr>
                           <tr>
                               <td>initial</td>
@@ -4410,6 +4413,9 @@ border-left-width <br> <br>
 
                   <li>
                     <b>empty-cell:-</b>
+empty-cells property का इस्तेमाल table के empty-cells को show या hide करने के लिए किया जाता है |
+
+
 
                       <h2>syntax</h2>
                       <p>empty-cells: show/hide/initial/inherit;</p>
@@ -4422,12 +4428,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>show</td>
-                              <td>   </td>
+                              <td> Default. empty cells पर set की हुई border और background; show होती है  </td>
                           </tr>
   
                           <tr>
                               <td>hide </td>
-                              <td> |</td>
+                              <td> empty cells पर < th>, < td> या < tr> पर set की हुई border और background; hide होती है |</td>
                           </tr>
                           
                           <tr>
@@ -4443,7 +4449,10 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>filter:-</b>
+                    <b>filter:-</b>filter property का इस्तेमाल element पर photoshop filters की तरह graphical effects का वर्णन करने के लिए किया जाता है | <br>
+
+
+filter property द्वारा element के image, background color और borders को blur, color shifting करने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>filter: none /blur() /brightness() /contrast() /drop-shadow() /grayscale() /hue-rotate() /invert() /opacity() /saturate()/sepia() /url()/initial/inherit;</p>
@@ -4456,53 +4465,53 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>  को graphical effect नहीं होता है | </td>
                           </tr>
   
                           <tr>
                               <td>blur(px)</td>
-                              <td> |</td>
+                              <td>image, text या background color को blur किया जाता है | 0px value देने पर कोई effect नहीं दिखेगा, जैसे जैसे value बढाई जाती है वैसे वैसे blurriness की क्षमता भी बढ़ जाती है | |</td>
                           </tr>
                           <tr>
                             <td>brightness(%) </td>
-                            <td> |  </td>
+                            <td>image या background color पर number 1 या 100% ये normal होती है | 0 या 0% पर पूरा black content होता है | |  </td>
                         </tr>
                       
                         <tr>
                             <td>contrast()</td>
-                            <td> </td>
+                            <td> image या background color पर number 1 या 100% ये normal होती है | 0 या 0% पर पूरा grey content होता है </td>
                         </tr>
                         <tr>
                             <td>drop-shadow</td>
-                            <td> </td>
+                            <td>image या background color पर horizontal shadow, vertical shadow और color दिया जाता है  </td>
                         </tr>
                         <tr>
                             <td>grayscale</td>
-                            <td> </td>
+                            <td>image को 1 या 100% पर black and white किया जाता है | 0 या 0% पर original image; display होती है | </td>
                         </tr>
                         <tr>
                             <td>hue-rotate</td>
-                            <td> </td>
+                            <td>image; 0 degree या 360 degree पर original image display होती है  </td>
                         </tr>
                         <tr>
                             <td>invert</td>
-                            <td> </td>
+                            <td>image ,text या background color को invert किया जाता है | 0 या 0% पर original content होता है और 1 या 100% पर content को invert किया जाता है | </td>
                         </tr>
                         <tr>
                             <td>opacity</td>
-                            <td> </td>
+                            <td>image ,text या background color के transparency की क्षमता को बढाया या घटाया जाता है </td>
                         </tr>
                         <tr>
                             <td>saturate</td>
-                            <td></td>
+                            <td>image या background color को saturate किया जाता है | 0 या 0% पर content; greyscale 1 या 100% जैसी display होती है | 1 या 100% पर original content display होता है</td>
                         </tr>
                         <tr>
                             <td>sepia</td>
-                            <td></td>
+                            <td>image या background color को saturate किया जाता है | 0 या 0% पर content; greyscale 1 या 100% जैसी display होती है | 1 या 100% पर original content display होता है</td>
                         </tr>
                         <tr>
                             <td>URL</td>
-                            <td></td>
+                            <td>url() function पर SVG Filter का वर्णन करनेवाले xml file के location को दिया जाता है</td>
                         </tr>
                        
                           <tr>
@@ -4518,7 +4527,11 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>flex:-</b>
+                    <b>flex:-</b>flex property का इस्तेमाल Flex container के child element को length ये number(flex-grow, flex-shrink) में या measurement unit(flex-basis) से दी जाती है | <br>
+
+                    flex property पर flex-grow, flex-shrink और flex-basis इन properties के values का इस्तेमाल किया जाता है |
+                    
+                    
 
                       <h2>syntax</h2>
                       <p>flex: flex-grow flex-shrink flex -basis/auto/none/initial/inherit;</p>
@@ -4531,25 +4544,25 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>flex-grow</td>
-                              <td>   </td>
+                              <td>  	flex container के child element को कितना grow करना है उस length को number के अनुसार दिया जाता है </td>
                           </tr>
   
                           <tr>
                               <td>flex-shrink </td>
-                              <td> |</td>
+                              <td>Optional. flex container के child element को कितना shrink करना है उस length को number के अनुसार दिया जाता है |</td>
                           </tr>
                           <tr>
                             <td>flex-basis </td>
-                            <td> |  </td>
+                            <td> Optional. flex container के child element की length को measurement units के अनुसार दिया जाता है|  </td>
                         </tr>
                       
                         <tr>
                             <td>auto</td>
-                            <td> </td>
+                            <td>Flex container के बचे हुए space के अनुसार child element को adjust किया जाता है | ये 1 1 auto के बराबर होता है | </td>
                         </tr>
                         <tr>
                             <td>none</td>
-                            <td> </td>
+                            <td>Default. कोई length नहीं दी जाती है | ये 0 0 auto के बराबर होता है | </td>
                         </tr>
                         
                        
@@ -4566,7 +4579,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>flex-basis:-</b>
+                    <b>flex-basis:-</b>flex-basis property का इस्तेमाल Flex container के child element को length; measurement units में देने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>flex-basis: number/auto/initial/inherit;</p>
@@ -4579,12 +4592,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>number</td>
-                              <td>   </td>
+                              <td> Flex Container के child element की length को measurement unit में दिया जाता है |  </td>
                           </tr>
   
                           <tr>
                               <td>auto</td>
-                              <td> |</td>
+                              <td> Default. अगर कोई length नहीं दी जाती है तो उसके content के अनुसार length होती है ||</td>
                           </tr>
                                                     <tr>
                               <td>initial</td>
@@ -4598,7 +4611,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>flex-direction:-</b>
+                    <b>flex-direction:-</b>flex-direction property का इस्तेमाल Flex container के child element को direction देने के लिए किया जाता है 
 
                       <h2>syntax</h2>
                       <p>flex-direction: row/row-reverse/column/column-reverse/initial/inherit;</p>
@@ -4611,21 +4624,21 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>row</td>
-                              <td>   </td>
+                              <td>Default. Flex container के child elements को row(horizontally) में display करता है |   </td>
                           </tr>
   
                           <tr>
                               <td>row-reverse </td>
-                              <td> |</td>
+                              <td> Default. Flex container के child elements को row(horizontally) में display करता है ||</td>
                           </tr>
                           <tr>
                             <td>column </td>
-                            <td> |  </td>
+                            <td> Flex container के child elements को column(vertically) में display करता है |  </td>
                         </tr>
                       
                         <tr>
                             <td>column-reverse</td>
-                            <td> </td>
+                            <td> Flex container के child elements को उलटी दिशा से column(vertically) में display करता है</td>
                         </tr>
                           <tr>
                               <td>initial</td>
@@ -4639,7 +4652,11 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>flex-flow:-</b>
+                    <b>flex-flow:-</b>flex-flow property का इस्तेमाल Flex Container के child elements के लिए flex-direction और flex-wrap property की values दी जाती है |<br>
+
+flex-direction property से flex container के child elements के लिए direction दी जाती है |<br>
+
+flex-wrap property से flex container के child elements को wrap करना है या नहीं करना है ये दिया जाता है |
 
                       <h2>syntax</h2>
                       <p>flex-flow: flex-direction flex-wrap/initial/inherit;</p>
@@ -4652,12 +4669,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>flex-direction</td>
-                              <td>   </td>
+                              <td> Default value row | flex container के child elements के लिए direction दी जाती है |  </td>
                           </tr>
   
                           <tr>
                               <td>flex-wrap </td>
-                              <td> |</td>
+                              <td>Default value nowrap | flex container के child elements को wrap करना है या नहीं करना है ये दिया जाता है  |</td>
                           </tr>
                           <tr>
                               <td>initial</td>
@@ -4672,7 +4689,7 @@ border-left-width <br> <br>
                   </li>
                  
                   <li>
-                    <b>flex-shrink:-</b>
+                    <b>flex-shrink:-</b>flex-shrink property का इस्तेमाल Flex container के child element को length; number में shrink करने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>flex-shrink: number/initial/inherit;</p>
@@ -4685,7 +4702,11 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>number</td>
-                              <td>   </td>
+                              <td> Flex Container के child element की length को number में दिया जाता है |  </td>
+                          </tr>
+                          <tr>
+                            <td>auto</td>
+                            <td>Default. अगर कोई length नहीं दी जाती है तो उसके content के अनुसार length होती है |</td>
                           </tr>
                             <tr>
                               <td>initial</td>
@@ -4700,7 +4721,7 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>flex-wrap:-</b>
+                    <b>flex-wrap:-</b>flex-wrap property का इस्तेमाल Flex container के child element को wrap करना है या नहीं करना है वो देने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>flex-wrap: nowrap/wrap/wrap-reverse/initial/inherit;</p>
@@ -4713,16 +4734,16 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>nowrap</td>
-                              <td>   </td>
+                              <td> Flex Container के child elements को wrap नहीं किया जाता है |  </td>
                           </tr>
   
                           <tr>
                               <td>wrap </td>
-                              <td> |</td>
+                              <td>Flex Container के child elements को wrap किया जाता है  |</td>
                           </tr>
                           <tr>
                             <td>wrap-reverse </td>
-                            <td> |  </td>
+                            <td> Flex Container के child elements को wrap करके reverse किया जाता है |  </td>
                         </tr>
                       <tr>
                               <td>initial</td>
@@ -4736,7 +4757,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>float:-</b>
+                    <b>float:-</b>float property का इस्तेमाल element को left या right पर float करने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>float: none/left/right/initial/inherit;</p>
@@ -4749,16 +4770,16 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>Default. Element left या right पर float नहीं होता है |   </td>
                           </tr>
   
                           <tr>
                               <td>left </td>
-                              <td> |</td>
+                              <td>Element; left पर float किया जाता है  |</td>
                           </tr>
                           <tr>
                             <td>right </td>
-                            <td> |  </td>
+                            <td> Element; right पर float किया जाता है|  </td>
                         </tr>
                        
                           <tr>
@@ -4773,7 +4794,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>font:-</b>
+                    <b>font:-</b>font Property पर font related सभी properties के values का और कुछ specific keywords का इस्तेमाल किया जाता है
 
                       <h2>syntax</h2>
                       <p>font: font-style font-variant font-weight font-size/line-height font-family/caption/icon/menu/message-box/small-caption/status-bar/initial/inherit;</p>
@@ -4786,45 +4807,53 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>font-style</td>
-                              <td>   </td>
+                              <td>   Default normal. font style दी जाती है |</td>
                           </tr>
   
                           <tr>
                               <td>font-variant </td>
-                              <td> |</td>
+                              <td> Default normal. font variant दिया जाता है |</td>
                           </tr>
                           <tr>
                             <td>font-size/line-height </td>
-                            <td> |  </td>
+                            <td>Required. Default normal. font size दी जाती है |  </td>
+                        </tr>
+                        <tr>
+                            <td>line-height </td>
+                            <td>Default normal. lines के लिए ऊपर और निचे height दी जाती है | |  </td>
+                        </tr>
+                          <tr>
+                            <td>font-weight</td>
+                            <td>Default normal. font weight दिया जाता है |  </td>
                         </tr>
                       
                         <tr>
                             <td>font-family</td>
-                            <td> </td>
+                            <td> Required. Font दिया जाता है </td>
                         </tr>
                         <tr>
                             <td>caption</td>
-                            <td> </td>
+                            <td> इस font को captioned controls द्वारा इस्तेमाल किया जाता है</td>
                         </tr>
                         <tr>
                             <td>icon</td>
-                            <td> </td>
+                            <td> इस font को icon labels द्वारा इस्तेमाल किया जाता है </td>
                         </tr>
                         <tr>
                             <td>menu</td>
-                            <td> </td>
+                            <td>इस font को dropdown menus द्वारा इस्तेमाल किया जाता है </td>
                         </tr>
                         <tr>
                             <td>message-box</td>
-                            <td> </td>
+                            <td>इस font को dialog boxes द्वारा इस्तेमाल किया जाता है </td>
                         </tr>
                         <tr>
                             <td>small-caption</td>
-                            <td> </td>
+                            <td> small caption font दिया जाता है </td>
                         </tr>
                         <tr>
                             <td>status-bar</td>
-                            <td></td>
+                            <td>इस font को status bar द्वारा इस्तेमाल किया जाता है |</td>
                         </tr>
                        
                           <tr>
@@ -4840,7 +4869,11 @@ border-left-width <br> <br>
                   </li>
 
                   <li>
-                    <b>@font-face:-</b>
+                    <b>@font-face:-</b>@font-face rule का इस्तेमाल custom fonts के text को web pages पर display करने के लिए किया जाता है | <br>
+
+ये rule अपने fonts को display करने की अनुमति देता है | Online Font URL दिये जाने पर सबसे पहले font को download किया जाता है और बाद में style sheet के अनुसार उसे text के माध्यम से display किया जाता है | <br>
+
+इस rule को छोडके, हमारा computer हमे कुछ fonts provide करता है | जो हम Web page पर by default इस्तेमाल कर सकते है |
 
                       <h2>syntax</h2>
                       <p>@font-face{
@@ -4857,13 +4890,13 @@ border-left-width <br> <br>
                           <tr>
                               <td>font-family</td>
                               <td>name   </td>
-                              <td></td>
+                              <td>User Defined font name दिया जाता है |</td>
                           </tr>
   
                           <tr>
                               <td>src </td>
                               <td>URL</td>
-                              <td> |</td>
+                              <td>font का url url() function के अन्दर दिया जाता है | दिए हुए url से सबसे पहले font को download किया जाता है  |</td>
                           </tr>
                           <tr>
                             <td>font-stretch </td>
@@ -4876,7 +4909,7 @@ border-left-width <br> <br>
                                 semi-expanded,
                                 extra-expanded,
                                 ultra-expanded</td>
-                            <td> |  </td>
+                            <td> Optional. किस प्रकार से font को strech करना है वो keyword दिया जाता है | 'normal' ये default value होती है |  </td>
                         </tr>
                       
                         <tr>
@@ -4884,7 +4917,7 @@ border-left-width <br> <br>
                             <td>normal,
                                 italic,
                                 oblique</td>
-                            <td> </td>
+                            <td> Optional. किस प्रकार से font को style देनी है वो keyword दिया जाता है | 'normal' ये default value होती है</td>
                         </tr>
                         <tr>
                             <td>font-weight</td>
@@ -4899,40 +4932,24 @@ border-left-width <br> <br>
                                 700,
                                 800,
                                 900</td>
-                            <td> </td>
+                            <td>Optional. font का boldness दिया जाता है | 'normal' ये default value होती है | </td>
                         </tr>
                         <tr>
                             <td>unicode-range</td>
                             <td>unicode-range</td>
-                            <td> </td>
+                            <td>Optional. font से unicode code point की range को इस्तेमाल किया जाता है </td>
                         </tr>
                         <tr>
                             <td>stroke-box</td>
                             <td> </td>
                         </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
                        
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
+                         
   
                       </table>
                   </li>
                   <li>
-                    <b>font-family:-</b>
+                    <b>font-family:-</b>font-family Property से element पर font family और generic name set किया जाता है |
 
                       <h2>syntax</h2>
                       <p>font-family: family-name|generic-family/initial/inherit;</p>
@@ -4945,9 +4962,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>family-name|generic-family</td>
-                              <td>   </td>
+                              <td> अगर ये दिया जाता है तो generic name; optional होता है | for example, "Times New Roman",Arial,Cambria,Courier  </td>
                           </tr>
-  
+   <tr>
+                              <td>generic-family</td>
+                              <td> अगर ये दिया जाता है तो family name; optional होता है | for example, serif,sans-serif,monospace,cursive</td>
+                          </tr>
                           <tr>
                               <td>initial</td>
                               <td>Default value; set की जाती है | </td>
@@ -4960,7 +4980,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>font-feature-settings:-</b>
+                    <b>font-feature-settings:-</b> font-feature-settings property opentype font में advanced typographic features पर control की permision देता है।
 
                       <h2>syntax</h2>
                       <p>font-feature-settings:normal/feature-value;</p>
@@ -4973,12 +4993,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td> default।text को layout करने के लिए default setting का use करें </td>
                           </tr>
   
                           <tr>
                               <td>feature-value </td>
-                              <td> |</td>
+                              <td>format: string [1|0|on|off] हमेशा 4 ASCII characters की एक string |</td>
                           </tr>
                       
                           <tr>
@@ -4993,7 +5013,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>font-kerning:-</b>
+                    <b>font-kerning:-</b>font-kerning property font  में stored kerning information  के use को control करता है।
 
                       <h2>syntax</h2>
                       <p>font-kerning: auto|normal|none;</p>
@@ -5006,17 +5026,17 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td> default। browser determines करता है कि font-kerning applied किया जाना चाहिए या नहीं  </td>
                           </tr>
   
                           <tr>
                               <td>normal </td>
-                              <td> |</td>
+                              <td>specifies करता है कि font kerning applied किया गया है |</td>
                           </tr>
                          
                         <tr>
                             <td>none</td>
-                            <td> </td>
+                            <td>specifies करता है कि font kerning applied नहीं    किया गया है  </td>
                         </tr>
                         
   
@@ -5024,7 +5044,7 @@ border-left-width <br> <br>
                   </li>
                     <li>
 
-                    <b>font-size:-</b>
+                    <b>font-size:-</b>font-size Property से element पर font family और generic name set किया जाता है |
 
                       <h2>syntax</h2>
                       <p>font-size:medium/xx-small/x-small/small/large/x-large/xx-large/smaller/larger/length/initial/inherit;</p>
@@ -5037,49 +5057,49 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>medium</td>
-                              <td>   </td>
+                              <td>   Default. medium font size होती है</td>
                           </tr>
   
                           <tr>
                               <td>xx-small </td>
-                              <td> |</td>
+                              <td> font की size double extra small होती है|</td>
                           </tr>
                           <tr>
                             <td>x-small </td>
-                            <td> |  </td>
+                            <td> font की size extra small होती है |  </td>
                         </tr>
                       
                         <tr>
                             <td>small</td>
-                            <td> </td>
+                            <td>font की size small होती है </td>
                         </tr>
                         <tr>
                             <td>large</td>
-                            <td> </td>
+                            <td>Parent Element से large font size होती है | अगर parent element नहीं होता है तो medium value से large होती है | </td>
                         </tr>
                         <tr>
                             <td>x-large</td>
-                            <td> </td>
+                            <td> 	font की size extra large होती है </td>
                         </tr>
                         <tr>
                             <td>xx-large</td>
-                            <td> </td>
+                            <td> font की size double extra large होती है</td>
                         </tr>
                         <tr>
                             <td>smaller</td>
-                            <td> </td>
+                            <td> Parent Element से small font size होती है | अगर parent element नहीं होता है तो medium value से small होती है</td>
                         </tr>
                         <tr>
-                            <td>large</td>
-                            <td> </td>
+                            <td>larger</td>
+                            <td> Parent Element से large font size होती है | अगर parent element नहीं होता है तो medium value से large होती है</td>
                         </tr>
                         <tr>
                             <td>length</td>
-                            <td></td>
+                            <td>font size measurement units द्वारा दी जाती है </td>
                         </tr>
                         <tr>
                             <td>%</td>
-                            <td></td>
+                            <td>Parent Element क मुताबिक font की size percentage(%) में दी जाती है | </td>
                         </tr>
                         
                        
@@ -5095,7 +5115,13 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>font-size-adjust:-</b>
+                    <b>font-size-adjust:-</b>font-size-adjust property आपको font size का better control  देता है जब first selected font use  नहीं होता है।
+
+                    जब कोई font use  नहीं होता है, तो browser दूसरे specified  font  का use  करता है। इससे font size में big change  हो सकता है। इसे रोकने के लिए,font-size-adjust property का use करें।
+                    
+                    सभी font में एक "aspect value " होता है जो कि lowercase letter "x" और uppercase letter "X" के बीच का size-defference  होता है।
+                    
+                    जब browser पहले choice font  के लिए "aspect value " जानता है, तो browser  दूसरी पसंद font  के साथ पाठ display  करते time use   किए जाने वाले font-size का पता लगा सकता है।
 
                       <h2>syntax</h2>
                       <p>font-size-adjust:number/none/initial/inherit;</p>
@@ -5108,13 +5134,13 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>number</td>
-                              <td>   </td>
+                              <td>use  करने के लिए aspect value  को define करता है  </td>
                           </tr>
   
                          
                         <tr>
                             <td>none</td>
-                            <td> </td>
+                            <td> default। कोई font size  adjustment नहीं</td>
                         </tr>
                         
                        
@@ -5130,7 +5156,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>font-stretch:-</b>
+                    <b>font-stretch:-</b>font-stretch property आपको पाठ को narrower (condensed) or wider (expanded) बनाने की permision देता है।
 
                       <h2>syntax</h2>
                       <p>font-stretch: ultra-condensed|extra-condensed|condensed|semi-condensed|normal|semi-expanded|expanded|extra-expanded|ultra-expanded/initial/inherit;</p>
@@ -5143,41 +5169,41 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>ultra-condensed</td>
-                              <td>   </td>
+                              <td>text को जितना हो सके उतना narrow बनाता है   </td>
                           </tr>
   
                           <tr>
                               <td>extra-condensed</td>
-                              <td> |</td>
+                              <td> text को narrow से condensed बनाता है, लेकिन ultra-condensed जितना narrow नहीं|</td>
                           </tr>
                           <tr>
                             <td>condensed</td>
-                            <td> |  </td>
+                            <td>text को semi-condensed की तुलना में narrow बनाता है, लेकिन extra-condensed जितना narrow नहीं|  </td>
                         </tr>
                       
                         <tr>
                             <td>semi-condensed</td>
-                            <td> </td>
+                            <td>text को normal से narrower बनाता है, लेकिन उतना narrow  नहीं जितना condensed करता है</td>
                         </tr>
                         <tr>
                             <td>normal</td>
-                            <td> </td>
+                            <td>default। कोई font stretching  नहीं</td>
                         </tr>
                         <tr>
                             <td>semi-expanded</td>
-                            <td> </td>
+                            <td>text को normal से wide बनाता है, लेकिन उतना wider नहीं जितना फैलाया गया है </td>
                         </tr>
                         <tr>
                             <td>expanded</td>
-                            <td> </td>
+                            <td>text को semi-expanded से अधिक wider बनाता है, लेकिन extra-expanded  जितना wide नहीं बनाता है </td>
                         </tr>
                         <tr>
                             <td>extra-expanded</td>
-                            <td> </td>
+                            <td>text   को expanded से अधिक wide बनाता है, लेकिन ultra-expanded जितना wide नहीं </td>
                         </tr>
                         <tr>
                             <td>ultra-expanded</td>
-                            <td> </td>
+                            <td>text को जितना हो सके उतना wider बनाता है </td>
                         </tr>
                         
                        
@@ -5193,7 +5219,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>font-style:-</b>
+                    <b>font-style:-</b>font-style Property से font के लिए style दी जाती है |
 
                       <h2>syntax</h2>
                       <p>font-style: normal/italic/oblique/initial/inherit;</p>
@@ -5206,16 +5232,16 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td>Default. normal font style को display किया जाता है |   </td>
                           </tr>
   
                           <tr>
                               <td>italic </td>
-                              <td> |</td>
+                              <td>italic font style को display किया जाता है |</td>
                           </tr>
                           <tr>
                             <td>oblique </td>
-                            <td> |  </td>
+                            <td> oblique font style को display किया जाता है |  </td>
                         </tr>
                       
                       
@@ -5232,7 +5258,11 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>font-variant:-</b>
+                    <b>font-variant:-</b>ont-variant Property से text को small caps में convert किया जाता है |
+
+font-variant ये uppercase characters पर operation नहीं करता है |
+
+font-variant ये सिर्फ lowercase characters पर operation करता है और ये lowercase को small capital में convert करता है |
 
                       <h2>syntax</h2>
                       <p>font-variant: normal/small-caps/initial/inherit;</p>
@@ -5245,12 +5275,12 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td> Default. normal font को display किया जाता है |  </td>
                           </tr>
   
                           <tr>
                               <td>small-caps</td>
-                              <td> |</td>
+                              <td>lowercase characters को small capital characters में convert किया जाता है और uppercase characters को normal characters की तरह display किया जाता है |</td>
                           </tr>
                           
                           <tr>
@@ -5265,7 +5295,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>font-variant-caps:-</b>
+                    <b>font-variant-caps:-</b>font-variant-caps property big letters  के लिए alternate glyphs के use को control करती है।
 
                       <h2>syntax</h2>
                       <p>font-variant-caps: normal/small-caps/all-small-caps/petite-caps/all-petite-caps/unicase/titling-caps/initial/inherit;</p>
@@ -5278,33 +5308,33 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td>alternate glyphs के use  को deactivates करता है   </td>
                           </tr>
   
                           <tr>
                               <td>small-caps</td>
-                              <td> |</td>
+                              <td>small capitals  को dispaly करता है |</td>
                           </tr>
                           <tr>
                             <td>all-small-caps </td>
-                            <td> |  </td>
+                            <td>upercase और lowercase letters दोनों के लिए small capital  को dispaly करता है |  </td>
                         </tr>
                       
                         <tr>
                             <td>petite-caps</td>
-                            <td> </td>
+                            <td> petite capital को dispaly करता है</td>
                         </tr>
                         <tr>
                             <td>all-petite-caps</td>
-                            <td> </td>
+                            <td>upercase और lowercase letters  दोनों के लिए petite capital को dispalay करता है</td>
                         </tr>
                         <tr>
                             <td>unicase</td>
-                            <td> </td>
+                            <td>upercase letter  के लिए normal lowercase letter के साथ small capital का mix dispaly  करता है </td>
                         </tr>
                         <tr>
                             <td>titling-caps</td>
-                            <td> </td>
+                            <td>titling वाली capital display करता है</td>
                         </tr>
                       
                           <tr>
@@ -5319,7 +5349,7 @@ border-left-width <br> <br>
                       </table>
                   </li>
                   <li>
-                    <b>font-weight:-</b>
+                    <b>font-weight:-</b>font-weight Property से font के weight को change किया जाता है |
 
                       <h2>syntax</h2>
                       <p>font-weight: normal/bold/bolder/lighter/number/initial/inherit;</p>
@@ -5332,25 +5362,25 @@ border-left-width <br> <br>
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td>   Default. normal font को display किया जाता है |</td>
                           </tr>
   
                           <tr>
                               <td>bold </td>
-                              <td> |</td>
+                              <td>bold font को display किया जाता है  |</td>
                           </tr>
                           <tr>
                             <td>bolder </td>
-                            <td> |  </td>
+                            <td> bolder font को display किया जाता है|  </td>
                         </tr>
                       
                         <tr>
                             <td>lighter</td>
-                            <td> </td>
+                            <td>	lighter font को display किया जाता है  </td>
                         </tr>
                         <tr>
                             <td>100,200,300,400,500,600,7000,800,900</td>
-                            <td> </td>
+                            <td>number में font के weight को दिया जाता है  </td>
                         </tr>
                         
                        
@@ -5364,7 +5394,7 @@ border-left-width <br> <br>
                           </tr>
   
                       </table>
-                  </li>
+                  </li>-->
                   <li>
                     <b>gap:-</b>
 
