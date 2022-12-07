@@ -13,7 +13,7 @@
     <div class="header">
        
 
-       
+                           
         <div class="heding">
             <h1>Css Properties</h1>
         </div>
@@ -35,7 +35,7 @@
 
             <ul>
           
-                <!-- <li>
+            <!--     <li>
                     <b>accent-color :- </b> accent-color property user-interface control जैसे accent color को specifies
                     करती है |
                     जैसे :-< input type="checkbox"> ,< input type="radio">,< input type="range"> and < progress>
@@ -5394,9 +5394,10 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
   
                       </table>
-                  </li>-->
+                  </li>
                   <li>
-                    <b>gap:-</b>
+                    <b>gap:-</b>gap row और column के बीच के अंतर के size को gap define करती है । यह following property के लिए एक shorthand है. <br>
+row-gap <br>column-gap
 
                       <h2>syntax</h2>
                       <p>gap: row-gap/column-gap;</p>
@@ -5409,12 +5410,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>row-gap</td>
-                              <td>   </td>
+                              <td>grid layout में  rows के बीच के अंतर का size set  करता है </td>
                           </tr>
   
                           <tr>
                               <td>column-gap </td>
-                              <td> |</td>
+                              <td> grid layout में  column के बीच के अंतर का size set  करता है|</td>
                           </tr>
                           <tr>
                               <td>initial</td>
@@ -5426,7 +5427,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
   
                       </table>
-                  </li>
+                  </li>-->
 
                   <li>
                     <b>grid:-</b>
@@ -6108,8 +6109,8 @@ font-variant ये सिर्फ lowercase characters पर operation कर
   
                       </table>
                   </li>
-                  <li>
-                    <b>hanging-punctuation:-</b>
+                  <!-- <li>
+                    <b>hanging-propriety:-</b>hanging-punctuation property specifies करता है कि text की पूरी lines के starting में या ending में line box के बाहर full stop लगाया जा सकता है या नहीं।
 
                       <h2>syntax</h2>
                       <p>hanging-punctuation: none|first|last|allow-end|force-end/initial/inherit;</p>
@@ -6122,25 +6123,25 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>text की पूरी line के starting में या end में line box के बाहर कोई full stop नहीं लगाया जा सकता है </td>
                           </tr>
   
                           <tr>
                               <td>first </td>
-                              <td> |</td>
+                              <td>full stop first line के starting edges  के बाहर लटक सकता है|</td>
                           </tr>
                           <tr>
                             <td>last </td>
-                            <td> |  </td>
+                            <td> full stop last line के ending edges  के बाहर लटक सकता है||  </td>
                         </tr>
                       
                         <tr>
                             <td>allow-end</td>
-                            <td> </td>
+                            <td>full stop सभी lines के end edges के बाहर लटक सकता है यदि full stop punctuation से पहले otherwise fit नहीं होता है</td>
                         </tr>
                         <tr>
                             <td>force-end</td>
-                            <td> </td>
+                            <td>full stop सभी lines के end edges के बाहर लटक सकता है। यदि इस lines पर justified able है, तो यह full stop  को लटकने के लिए bound करेगा </td>
                         </tr>
                         
                        
@@ -6156,7 +6157,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>height:-</b>
+                    <b>height:-</b>height property से element पर fixed height को set किया जाता है |
 
                       <h2>syntax</h2>
                       <p>height: auto|length/initial/inherit;</p>
@@ -6169,16 +6170,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td> Default. browser द्वारा height को दिया जाता है |  </td>
                           </tr>
   
                           <tr>
                               <td>length</td>
-                              <td> |</td>
+                              <td>height को measurement unit में दिया जाता है  |</td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td> |  </td>
+                            <td> height को percentage(%) में दिया जाता है |  </td>
                         </tr>
                       
                       
@@ -6194,7 +6195,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>hyphens:-</b>
+                    <b>hyphens:-</b>hyphens property define करता है कि text की एक line के भीतर अधिक soft wrap  opportunity बनाने के लिए hyphenation  की permision है या नहीं।
 
                       <h2>syntax</h2>
                       <p>hyphens: none|manual|auto|/initial/inherit;</p>
@@ -6207,16 +6208,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td> words hyphenated नहीं हैं  </td>
                           </tr>
   
                           <tr>
                               <td>manual </td>
-                              <td> |</td>
+                              <td> default। word only &hyphen; या & shy; (यदि need हो तो)|</td>
                           </tr>
                           <tr>
                             <td>auto </td>
-                            <td> |  </td>
+                            <td>words  को hyphen किया जाता है जहाँ algorithm decide कर रहा है (यदि need हो)|  </td>
                         </tr>
                      
                           <tr>
@@ -6229,9 +6230,9 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
   
                       </table>
-                  </li>
+                  </li> 
                   <li>
-                    <b>image-rendering:-</b>
+                    <b>image-rendering:-</b>image-rendering property  image scaling के लिए use किए जाने वाले algorithm के type को specific करता है।
 
                       <h2>syntax</h2>
                       <p>image-rendering: auto|smooth|high-quality|crisp-edges|pixelated/initial/inherit;</p>
@@ -6244,25 +6245,25 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td> browser को scroll algorithm  चुनने दें। यह default है </td>
                           </tr>
   
                           <tr>
                               <td>smooth </td>
-                              <td></td>
+                              <td>एक algorithm का use करें जो image में colors को smooth बनाता है</td>
                           </tr>
                           <tr>
                             <td>high-quality</td>
-                            <td> |  </td>
+                            <td> smooth के समान, लेकिन higher quality वाले scrolling के लिए preferences के साथ </td>
                         </tr>
                       
                         <tr>
                             <td>crisp-edges</td>
-                            <td> </td>
+                            <td>एक algorithm का use करें जो image में  contrast और edges को preserve करेगा </td>
                         </tr>
                         <tr>
                             <td>pixelated</td>
-                            <td> </td>
+                            <td> यदि image को बढ़ाया जाता है, तो nearest-neighbor algorithm का use किया जाता है, इसलिए image बड़े pixels से बनी हुई दिखाई देगी। यदि image को छोटा किया जाता है, तो यह auto जैसा ही होगा</td>
                         </tr>
                         
                           <tr>
@@ -6276,8 +6277,10 @@ font-variant ये सिर्फ lowercase characters पर operation कर
   
                       </table>
                   </li>
-                  <li>
-                    <b>@import:-</b>
+                <li>
+                    <b>@import:-</b>@import Rule का इस्तेमाल एक Style Sheet में किसी दूसरी Style Sheet से Rules को Import यानि Download करने के लिए किया जाता हैं. इस प्रकार आप एक ही Style Sheet में कई Style Sheets Rules को Import कर सकते हैं. <br>
+
+                    @import Rule को इस प्रकार Declare किया जाता हैं.
 
                       <h2>syntax</h2>
                       <p>@import url|string list-of-mediaqueries;</p>
@@ -6290,16 +6293,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>URL/string</td>
-                              <td>   </td>
+                              <td> यहाँ उस Style Sheet का File Path लिखा जाता हैं, जिस Style Sheet को Import करना हैं.  </td>
                           </tr>
   
                           <tr>
                               <td> list-of-mediaqueries</td>
-                              <td> |</td>
+                              <td>यहाँ Media Type और Media Conditions को लिखा जाता हैं. जैसे इस Style Sheet को Print Media के लिए Import किया जा रहा हैं तो यहाँ “print” लिखा जाएगा |</td>
                           </tr>
                          
                       </table>
-                  </li>
+                  </li> -->
                   <li>
                     <b>inset:-</b>
 
@@ -6563,8 +6566,8 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </table>
                       </li>
 
-                      <li>
-                    <b>isolation :-</b>
+                          <!--<li>
+                    <b>isolation :-</b>isolation property define करता है कि क्या element को एक new stacking content बनानी चाहिए।
 
                       <h2>syntax</h2>
                       <p>isolation : auto/isolation/initial/inherit;</p>
@@ -6577,12 +6580,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td> default। एक  new stacking context तभी बनाया जाता है जब element पर लागू property में से किसी एक को इसकी require होती है  </td>
                           </tr>
   
                           <tr>
                               <td>isolation</td>
-                              <td> |</td>
+                              <td>एक new stacking context  बनाया जाना चाहिए |</td>
                           </tr>
                          
                           <tr>
@@ -6597,8 +6600,8 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
 
-                  <li>
-                    <b>justify-content:-</b>
+               <li>
+                    <b>justify-content:-</b>justify-content property का इस्तेमाल Flex container के child elements को horizontally(main-axis) पर align करने के लिए इस्तेमाल किया जाता है | इसके लिए horizontally space होना जरुरी होता है |
 
                       <h2>syntax</h2>
                       <p>justify-content: flex-start|flex-end|center|space-between|space-around|space-evenly/initial/inherit;</p>
@@ -6611,29 +6614,29 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>flex-start</td>
-                              <td>   </td>
+                              <td> Default. Flex container के start पर align किया जाता है |  </td>
                           </tr>
   
                           <tr>
                               <td>flex-end </td>
-                              <td> |</td>
+                              <td>Flex container के end(horizontally) पर align किया जाता है  |</td>
                           </tr>
                           <tr>
                             <td>center</td>
-                            <td> |  </td>
+                            <td> 	Flex container के center(horizontally) पर align किया जाता है ||  </td>
                         </tr>
                       
                         <tr>
                             <td>space-between</td>
-                            <td> </td>
+                            <td> Flex container के child elements के top छोडके सभी बाजुओं पर equal space दिया जाता है </td>
                         </tr>
                         <tr>
                             <td>space-around</td>
-                            <td> </td>
+                            <td>Flex container के child elements के बीच में equal space दिया जाता है </td>
                         </tr>
                         <tr>
                             <td>space-evenly</td>
-                            <td> </td>
+                            <td>items के चारों ओर  equal space होगा</td>
                         </tr>
                       
                           <tr>
@@ -6646,10 +6649,18 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
   
                       </table>
-                  </li>
+                  </li> 
 
                     <li>
-                    <b>@keyframe:-</b>
+                    <b>@keyframe:-</b>@keyframes rule का इस्तेमाल animation property के लिए किया जाता है | <br>
+
+                    @keyframes की मदद से CSS की एक style को दूसरी css style में animation mode में change किया जाता है | आप animation के समय में एक से ज्यादा बार भी CSS Styles को change कर सकते है | <br>
+                    
+                    CSS Style को percentages या keyword के हिसाब से change किया जाता है | <br>
+                    
+                    0% पर animation की शुरुआत होती है और 100% पर animation ख़त्म होता है | keywords में 0% ये 'from' के बराबर होता है और 100% ये 'to' के बराबर होता है | <br>
+                    
+                    लेकिन ज्यादातर इस्तेमाल percentages(%) का किया जाता है | <br>
 
                       <h2>syntax</h2>
                       <p>@keyframes animationname {keyframes-selector {css-styles;}}</p>
@@ -6661,13 +6672,17 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                               <th>description</th>
                           </tr>
                           <tr>
+                            <td>animationname</td>
+                            <td>animation property पर देने के लिए यहाँ पर animation name दिया जाता है </td>
+                          </tr>
+                          <tr>
                               <td>keyframe-selector</td>
-                              <td>   </td>
+                              <td>percentages या keyword में selector दिया जाता है | 0% ये 'from' के बराबर होता है और 100% ये 'to' keyword के बराबर होता है   </td>
                           </tr>
   
                           <tr>
                               <td>css-styles</td>
-                              <td> |</td>
+                              <td>CSS की regular properties का इस्तेमाल किया जाता है |</td>
                           </tr>
                          
                           <tr>
@@ -6683,7 +6698,19 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>left:-</b>
+                    <b>left:-</b>left property का इस्तेमाल position property के साथ करना अनिवार्य होता है |<br>
+
+                    बिना parent element के left property और absolute position होती है तो browser window के हिसाब से element को left property पर दिए हुए length तक left से धकेला जाता है | <br>
+                    
+                    static/without position parent element के साथ child element में left property और absolute position होती है तो browser window के हिसाब से element को left property पर दिए हुए length तक left से धकेला जाता है | <br>
+                    
+                    static/without position parent element के साथ child element में left property और relative position होती है तो parent element के हिसाब से element को left property पर दिए हुए length तक left से धकेला जाता है | <br>
+                    
+                    relative parent element के साथ child element में left property और absolute position होती है तो parent element के हिसाब से element को left property पर दिए हुए length तक left से धकेला जाता है | <br>
+                    
+                   <b> Note</b> : static position हो तो left property का effect नहीं दिखेगा | अगर position; absolute, relative या fixed हो तो left property का effect दिखेगा | <br>
+                    
+                <b>Note </b>: position अगर absolute, relative या fixed होती है तो दूसरे element के position पर कोई फर्क नहीं पड़ता है | <br>
 
                       <h2>syntax</h2>
                       <p>left: auto|length|initial|inherit;</p>
@@ -6696,16 +6723,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>  browser द्वारा left को दिया जाता है </td>
                           </tr>
   
                           <tr>
                               <td>length</td>
-                              <td> |</td>
+                              <td>left को measurement unit में दिया जाता है | negative value भी हो सकती है |</td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td> |  </td>
+                            <td>left को percentage(%) में दिया जाता है | negative value भी हो सकती है |  </td>
                         </tr>
                       
                    
@@ -6722,7 +6749,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>letter-spacing:-</b>
+                    <b>letter-spacing:-</b>letter-spacing Property से दो characters के बीच की space को increase या decrease की जाती है |
 
                       <h2>syntax</h2>
                       <p>letter-spacing: normal|length/initial/inherit;</p>
@@ -6735,12 +6762,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td>Default. यहाँ पर normal space होता है   </td>
                           </tr>
   
                           <tr>
                               <td>length </td>
-                              <td> |</td>
+                              <td>	यहाँ पर measurement unit के साथ value दी जाती है | यहाँ पर negative value भी हो सकती है | For Example, -1px,-5pt |</td>
                           </tr>
                          
                           <tr>
@@ -6756,7 +6783,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>line-height:-</b>
+                    <b>line-height:-</b>line-height Property से lines को height दी जाती है |
 
                       <h2>syntax</h2>
                       <p>line-height: normal|number|length/initial/inherit;</p>
@@ -6769,18 +6796,21 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td>Default. normal line height होती है    </td>
                           </tr>
   
                           <tr>
                               <td>number </td>
-                              <td> |</td>
+                              <td>	normal line-height को दिए गए number से multiply करके display किया जाता है  |</td>
                           </tr>
                           <tr>
                             <td>length</td>
-                            <td> |  </td>
+                            <td>line height को measurement unit में दिया जाता है |  </td>
                         </tr>
-                      
+                      <tr>
+                        <td>%</td>
+                        <td>line height को percentage(%) में दिया जाता है</td>
+                      </tr>
                
                           <tr>
                               <td>initial</td>
@@ -6795,7 +6825,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>list-style:-</b>
+                    <b>list-style:-</b>llist-style property का इस्तेमाल css lists की सभी properties को इस्तेमाल करने के लिए किया जाता है | जैसे कि, list-style-type, list-style-position और list-style-image.
 
                       <h2>syntax</h2>
                       <p>list-style: list-style-type list-style-position list-style-image/initial/inherit;</p>
@@ -6808,16 +6838,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>list-style-type</td>
-                              <td>   </td>
+                              <td>  item markers के लिए type दिया जाता है  </td>
                           </tr>
   
                           <tr>
                               <td>list-style-position </td>
-                              <td> |</td>
+                              <td> item markers के लिए position दी जाती है|</td>
                           </tr>
                           <tr>
                             <td>list-style-image </td>
-                            <td> |  </td>
+                            <td>item markers की जगह पर image को set करने के लिए इस्तेमाल किया जाता है |  </td>
                         </tr>
                       
                        
@@ -6834,7 +6864,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>list-style-image:-</b>
+                    <b>list-style-image:-</b>list-style-image property का इस्तेमाल css lists की item-markers की जगह पर image को set किया जाता है
 
                       <h2>syntax</h2>
                       <p>list-style-image: none|url/initial/inherit;</p>
@@ -6847,12 +6877,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td> Default. कोई image display नहीं की जाती है | list type के अनुसार item marker को set किया जाता है  </td>
                           </tr>
   
                           <tr>
                               <td>URL </td>
-                              <td> |</td>
+                              <td>url() function में double quotes("") या single quotes('') में item marker(image) path दिया जाता है |</td>
                           </tr>
                          
                           <tr>
@@ -6868,7 +6898,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>list-style-position:-</b>
+                    <b>list-style-position:-</b>list-style-position property का इस्तेमाल css lists को inside या outside पर position दी जाती है |
 
                       <h2>syntax</h2>
                       <p>list-style-position: inside|outside/initial/inherit;</p>
@@ -6881,12 +6911,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>inside</td>
-                              <td>   </td>
+                              <td>  list text के साथ item markers left से कुछ जगह right पर धकेला जाता है  </td>
                           </tr>
   
                           <tr>
                               <td>outside </td>
-                              <td> |</td>
+                              <td> Default. list text के साथ item markers left पर धकेला जाता है |</td>
                           </tr>
                 
                           <tr>
@@ -6902,7 +6932,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>list-style-type:-</b>
+                    <b>list-style-type:-</b>list-style-type property का इस्तेमाल css lists की item-markers को define करने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>list-style-type: value;</p>
@@ -6915,86 +6945,86 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>disc</td>
-                              <td>   </td>
+                              <td>  empty circle item marker होता है  </td>
                           </tr>
   
                           <tr>
                               <td>armenian </td>
-                              <td> |</td>
+                              <td> armenian number में item marker होता है|</td>
                           </tr>
                           <tr>
                             <td>circle </td>
-                            <td> |  </td>
+                            <td> filled circle item marker होता है |  </td>
                         </tr>
                       
                         <tr>
                             <td>cjk-ideographic</td>
-                            <td> </td>
+                            <td> ideographic number में item marker होता है |</td>
                         </tr>
                         <tr>
                             <td>decimal</td>
-                            <td> </td>
+                            <td>decimal number में item marker होता है </td>
                         </tr>
                         <tr>
                             <td>decimal-leading-zero</td>
-                            <td> </td>
+                            <td>शुरुआती 0 से decimal number में item marker होता है | </td>
                         </tr>
                         <tr>
                             <td>georgian</td>
-                            <td> </td>
+                            <td> georgian number में item marker होता है |</td>
                         </tr>
                         <tr>
                             <td>hebrew</td>
-                            <td> </td>
+                            <td> hebrew number में item marker होता है |</td>
                         </tr>
                         <tr>
                             <td>hiragana</td>
-                            <td> </td>
+                            <td>hiragana number में item marker होता है | </td>
                         </tr>
                         <tr>
                             <td>hiragana-iroha</td>
-                            <td> </td>
+                            <td>hiragana iroha number में item marker होता है | </td>
                         </tr>
                         <tr>
                             <td>lower-alpha</td>
-                            <td> </td>
+                            <td>lowercase alphabet में item marker होता है | </td>
                         </tr>
                         <tr>
                             <td>lower-greek</td>
-                            <td> </td>
+                            <td>lower greek में item marker होता है | </td>
                         </tr>
                         <tr>
                             <td>lower-latin</td>
-                            <td> </td>
+                            <td> lower latin में item marker होता है </td>
                         </tr>
                         <tr>
                             <td>lower-roman</td>
-                            <td> </td>
+                            <td>lower roman में item marker होता है </td>
                         </tr>
                         <tr>
                             <td>none</td>
-                            <td> </td>
+                            <td>list marker नहीं होता है | </td>
                         </tr>
                         <tr>
                             <td>square</td>
-                            <td> </td>
+                            <td> filled square item marker होता है</td>
                         </tr>
 
                         <tr>
                             <td>upper-alpha</td>
-                            <td> </td>
+                            <td>uppercase alphabet में item marker होता है </td>
                         </tr>
                         <tr>
                             <td>upper-greek</td>
-                            <td> </td>
+                            <td> upper greek में item marker होता है</td>
                         </tr>
                         <tr>
                             <td>upper-latin</td>
-                            <td> </td>
+                            <td>upper latin में item marker होता है </td>
                         </tr>
                         <tr>
                             <td>upper-roman</td>
-                            <td> </td>
+                            <td>upper latin में item marker होता है</td>
                         </tr>
                        
 
@@ -7012,7 +7042,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>margin:-</b>
+                    <b>margin:-</b>margin Property से element के चारों ओर margins दी जाती है | इस property पर margin-top, margin-right, margin-bottom और margin-left इन properties का इस्तेमाल किया जाता है | <br>
+
+                    अगर margin property पर single value दी जाती है तो ये top, right, bottom और left margin के लिए होती है | <br>
+                    अगर margin property पर दो values दी जाती है तो पहली value ये top और bottom के लिए होती है और दूसरी value ये right और left margin के लिए होती है | <br>
+                    अगर margin property पर तीन values दी जाती है तो पहली value; top के लिए, दूसरी value right और left के लिए और तीसरी value bottom के लिए होती है | <br>
+                    अगर margin property पर चार values दी जाती है तो पहली value; top के लिए, दूसरी value right के लिए, तीसरी value bottom के लिए और चौथी value ये left के लिए होती है | <br>
 
                       <h2>syntax</h2>
                       <p>margin: length|auto/initial/inherit;</p>
@@ -7025,16 +7060,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td>  margins को measurement unit में दिया जाता है | </td>
                           </tr>
                           <tr>
                             <td>% </td>
-                            <td> |  </td>
+                            <td> margins को percentage(%) में दिया जाता है |  </td>
                         </tr>
   
                           <tr>
                               <td>auto</td>
-                              <td> |</td>
+                              <td>browser द्वारा margins को दिया जाता है |</td>
                           </tr>
                          
                       
@@ -7052,7 +7087,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>margin-bottom:-</b>
+                    <b>margin-bottom:-</b>margin-bottom Property से element पर bottom margin दी जाती है |
 
                       <h2>syntax</h2>
                       <p>margin-bottom: length|auto/initial/inherit;</p>
@@ -7065,16 +7100,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td>   margin को measurement unit में दिया जाता है</td>
                           </tr>
                           <tr>
                             <td>% </td>
-                            <td> |  </td>
+                            <td>margin को percentage(%) में दिया जाता है |  </td>
                         </tr>
   
                           <tr>
                               <td>auto</td>
-                              <td> |</td>
+                              <td>browser द्वारा margins को दिया जाता है  |</td>
                           </tr>
                          
                       
@@ -7092,7 +7127,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>margin-left:-</b>
+                    <b>margin-left:-</b>margin-left Property से element पर left margin दी जाती है
 
                       <h2>syntax</h2>
                       <p>margin-left: length|auto/initial/inherit;</p>
@@ -7105,16 +7140,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td>margin को measurement unit में दिया जाता है   </td>
                           </tr>
                           <tr>
                             <td>% </td>
-                            <td> |  </td>
+                            <td>margin को percentage(%) में दिया जाता है |  </td>
                         </tr>
   
                           <tr>
                               <td>auto</td>
-                              <td> |</td>
+                              <td>browser द्वारा margins को दिया जाता है | |</td>
                           </tr>
                          
                       
@@ -7132,7 +7167,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>margin-right:-</b>
+                    <b>margin-right:-</b>margin-right Property से element पर right margin दी जाती है |
 
                       <h2>syntax</h2>
                       <p>margin-right: length|auto/initial/inherit;</p>
@@ -7145,16 +7180,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td> 	margin को measurement unit में दिया जाता है  </td>
                           </tr>
                           <tr>
                             <td>% </td>
-                            <td> |  </td>
+                            <td> margin को percentage(%) में दिया जाता है |  </td>
                         </tr>
   
                           <tr>
                               <td>auto</td>
-                              <td> |</td>
+                              <td> browser द्वारा margins को दिया जाता है |</td>
                           </tr>
                          
                       
@@ -7172,7 +7207,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>margin-top-</b>
+                    <b>margin-top-</b>margin-top Property से element पर top margin दी जाती है |
 
                       <h2>syntax</h2>
                       <p>margin-top: length|auto/initial/inherit;</p>
@@ -7185,16 +7220,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td> margin को measurement unit में दिया जाता है  </td>
                           </tr>
                           <tr>
                             <td>% </td>
-                            <td> |  </td>
+                            <td>margin को percentage(%) में दिया जाता है |  </td>
                         </tr>
   
                           <tr>
                               <td>auto</td>
-                              <td> |</td>
+                              <td> browser द्वारा margins को दिया जाता है |</td>
                           </tr>
                          
                       
@@ -7213,7 +7248,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
                   
                   <li>
-                    <b>mask-image:-</b>
+                    <b>mask-image:-</b>mask-image property एक image को एक element के लिए mask layerके रूप में use करने के लिए specifie करती है।
 
                       <h2>syntax</h2>
                       <p>mask-image: none|image|url/initial/inherit;</p>
@@ -7226,16 +7261,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td> यह default है </td>
                           </tr>
   
                           <tr>
                               <td>image </td>
-                              <td> |</td>
+                              <td> mask layer के रूप में use करने के लिए एक image|</td>
                           </tr>
                           <tr>
                             <td>URL </td>
-                            <td> |  </td>
+                            <td> एक image या SVG < mask> element के लिए एक url reference|  </td>
                         </tr>
                       
                        
@@ -7252,7 +7287,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>mask-mode:-</b>
+                    <b>mask-mode:-</b>mask-mode property specifies  करता है कि क्या mask layer  की image को luminance mask या luminance mask के रूप में माना जाना चाहिए।
 
                       <h2>syntax</h2>
                       <p>mask-mode: match-source|luminance|alpha/initial/inherit;</p>
@@ -7265,16 +7300,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>match-source</td>
-                              <td>   </td>
+                              <td>  यदि mask-image property एक image (image url  या gradiant) है, तो mask-mode को alpha पर set करें। यदि mask-image property एक SVG < mask> element है, तो < mask> element के mask-type की property का use करें। यह default है।  </td>
                           </tr>
   
                           <tr>
                               <td>luminance </td>
-                              <td> |</td>
+                              <td>mask-image के luminance values का mask value  के रूप में use करें |</td>
                           </tr>
                           <tr>
                             <td>alpha </td>
-                            <td> |  </td>
+                            <td> mask-image के alpha values का mask value  के रूप में use करें |  </td>
                         </tr>
                       
                        
@@ -7291,7 +7326,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>mask-origin:-</b>
+                    <b>mask-origin:-</b>mask-origin property mask layer image की origin position (mask position area) को specific करती है।
 
                       <h2>syntax</h2>
                       <p>mask-origin: border-box|content-box|padding-box|margin-box|fill-box|stroke-box|view-box/initial/inherit;</p>
@@ -7304,35 +7339,35 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>border-box</td>
-                              <td>   </td>
+                              <td>relative border-box के position है। यह default है   </td>
                           </tr>
   
                           <tr>
                               <td>content-box </td>
-                              <td> |</td>
+                              <td> relative content-box के position है|</td>
                           </tr>
                           <tr>
                             <td>padding-box</td>
-                            <td> </td>
+                            <td>relative padding-box के position है </td>
                         </tr>
                           <tr>
                             <td>margin-box </td>
-                            <td> |  </td>
+                            <td> relative margin-box के position है|  </td>
                         </tr>
                       
                       
                      
                         <tr>
                             <td>fill-box</td>
-                            <td> </td>
+                            <td> relative object-bounding box के position है</td>
                         </tr>
                         <tr>
                             <td>stroke-box</td>
-                            <td> </td>
+                            <td> relative stroke-bounding box के position है</td>
                         </tr>
                         <tr>
                             <td>view-box</td>
-                            <td> </td>
+                            <td>reference box के रूप में nearest SVG  viewport का use करें</td>
                         </tr>
                        
                         
@@ -7350,7 +7385,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
                   
                   <li>
-                    <b>mask-position:-</b>
+                    <b>mask-position:-</b>mask-position property mask image (relative position area के mask) की starting position set करती है।
 
                       <h2>syntax</h2>
                       <p>mask-position: value;</p>
@@ -7371,16 +7406,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                                 center top<br>
                                 center center<br>
                                 center bottom</td>
-                              <td>   </td>
+                              <td>   यदि आप केवल एक keyword specific करते हैं, तो other value "center" होगा</td>
                           </tr>
   
                           <tr>
                               <td>x% y% </td>
-                              <td> |</td>
+                              <td>first value horizontal position है और second value vertical. है।  top left corner 0% 0% है।  right bottom corner100% 100% है। यदि आप केवल one value specifie करते हैं, तो second value 50% होगा। default value  है: 0% 0% |</td>
                           </tr>
                           <tr>
                             <td>xpos ypos</td>
-                            <td> |  </td>
+                            <td> first value horizontal position है और second value vertical. है।  top left corner 0 0 है। units pixels (0px 0px) या कोई other CSS unites हो सकती हैं। यदि आप केवल एक value specifie  करते हैं, तो second value  50% होगा। आप % और position को मिला सकते हैं|  </td>
                         </tr>
                       
                        
@@ -7397,7 +7432,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>mask-repeat:-</b>
+                    <b>mask-repeat:-</b>mask-repeat property sets करती है कि क्या/कैसे mask image को repeated जाएगा।
 
                       <h2>syntax</h2>
                       <p>mask-repeat: repeat|repeat-x|repeat-y|space|round|no-repeat/initial/inherit;</p>
@@ -7410,29 +7445,29 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>repeat</td>
-                              <td>   </td>
+                              <td> mask image vertically  और  horizontally से repeated जाती है। यदि यह fit नहीं होता है तो last image को clip कर दिया जाएगा। यह default है </td>
                           </tr>
   
                           <tr>
                               <td>repeat-x </td>
-                              <td> |</td>
+                              <td>mask image only horizontally रूप से repeated जाती है|</td>
                           </tr>
                           <tr>
                             <td>repeat-y </td>
-                            <td> |  </td>
+                            <td> mask image only vertically रूप से repeated जाती है|  </td>
                         </tr>
                       
                         <tr>
                             <td>space</td>
-                            <td> </td>
+                            <td>mask की image बिना cliping के यथा possible repeated जाती है। first और last image  को element के दोनों ओर pin किया जाता है और image के बीच whitespace समान रूप से वितरित किया जाता है</td>
                         </tr>
                         <tr>
                             <td>round</td>
-                            <td> </td>
+                            <td> space को भरने के लिए mask image को repeated और squished या फैलाया जाता है (gaps नहीं)</td>
                         </tr>
                         <tr>
                             <td>no-repeat</td>
-                            <td> </td>
+                            <td>mask image repeated  नहीं जाती है। image केवल एक बार दिखाई जाएगी </td>
                         </tr>
                         
                           <tr>
@@ -7447,10 +7482,10 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>mask-image:-</b>
+                    <b>mask-size:-</b>mask-size property mask layer image के size को specific करती है।
 
                       <h2>syntax</h2>
-                      <p>mask-image: auto|size|contain|cover/initial/inherit;</p>
+                      <p>mask-size: auto|size|contain|cover/initial/inherit;</p>
   
                       <h2>property value</h2>
                       <table id="customers">
@@ -7460,21 +7495,21 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>  यह default है </td>
                           </tr>
   
                           <tr>
                               <td>size </td>
-                              <td> |</td>
+                              <td>px, em, etc में या % में mask image का size specifies करता है</td>
                           </tr>
                           <tr>
                             <td>contain </td>
-                            <td> |  </td>
+                            <td> mask image  को इस तरह से scales कि इसकी width और height दोनों container  के inside fit  हो जाएं|  </td>
                         </tr>
                       
                         <tr>
                             <td>cover</td>
-                            <td> </td>
+                            <td>mask image  को इस तरह से scales कि इसकी width और height दोनों container  के cover  हो जाएं </td>
                         </tr>
                         
                           <tr>
@@ -7489,7 +7524,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>max-height:-</b>
+                    <b>max-height:-</b>max-height property से element पर maximum height को set किया जाता है 
 
                       <h2>syntax</h2>
                       <p>max-height: none|length/initial/inherit;</p>
@@ -7502,16 +7537,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td> Default. maximum height दी जाती है   </td>
                           </tr>
   
                           <tr>
                               <td>length </td>
-                              <td> |</td>
+                              <td> maximum width को measurement unit में दिया जाता है |</td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td> |  </td>
+                            <td> maximum width को percentage(%) में दिया जाता है |  </td>
                         </tr>
                       
                      
@@ -7528,7 +7563,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>max-width:-</b>
+                    <b>max-width:-</b>max-width property से element पर maximum width को set किया जाता है
 
                       <h2>syntax</h2>
                       <p>max-width: none|length/initial/inherit;</p>
@@ -7541,16 +7576,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>	Default. maximum width दी जाती है |   </td>
                           </tr>
   
                           <tr>
                               <td>length </td>
-                              <td> |</td>
+                              <td>maximum width को measurement unit में दिया जाता है  |</td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td> |  </td>
+                            <td>maximum width को percentage(%) में दिया जाता है |  </td>
                         </tr>
                       
                         
@@ -7568,7 +7603,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>@media:-</b>
+                    <b>@media:-</b>@media rule का इस्तेमाल अलग-अलग media types या devices के लिए अलग-अलग css styles का इस्तेमाल करने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>@media not|only mediatype and (mediafeature and|or|not mediafeature) {
@@ -7579,7 +7614,9 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>min-height:-</b>
+                    <b>min-height:-</b>min-height property से element पर minimum height को set किया जाता है | <br>
+
+                    min-height property की value अगर height property की value से बड़ी होती है तो height property की value को ignore किया जाता है |
 
                       <h2>syntax</h2>
                       <p>min-height: length/initial/inherit;</p>
@@ -7592,12 +7629,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td> Default 0. minimum height को measurement unit में दिया जाता है |  </td>
                           </tr>
   
                           <tr>
                               <td>% </td>
-                              <td> |</td>
+                              <td> Default 0. minimum height को measurement unit में दिया जाता है ||</td>
                           </tr>
                          
                           <tr>
@@ -7612,7 +7649,9 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>min-width:-</b>
+                    <b>min-width:-</b>min-width property से element पर minimum width को set किया जाता है | <br>
+
+                    min-width property की value अगर width property की value से बड़ी होती है तो width property की value को ignore किया जाता है |
 
                       <h2>syntax</h2>
                       <p>min-width: length/initial/inherit;</p>
@@ -7625,12 +7664,14 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td> min-width property से element पर minimum width को set किया जाता है |
+
+                                min-width property की value अगर width property की value से बड़ी होती है तो width property की value को ignore किया जाता है |  </td>
                           </tr>
   
                           <tr>
                               <td>%</td>
-                              <td> |</td>
+                              <td> minimum width को percentage(%) में दिया जाता है |</td>
                           </tr>
                         
                           <tr>
@@ -7643,7 +7684,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
   
                       </table>
-                  </li>
+                  </li> -->
 
                   <li>
                     <b>mix-blend-mode:-</b>
@@ -7721,8 +7762,8 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
 
-                  <li>
-                    <b>object-fit:-</b>
+                  <!-- <li>
+                    <b>object-fit:-</b>जब कोई Image इसके Container Size से छोटी या बडी होती हैं तो वह Container में Fit होने पर अपनी Quality ख़ो देती हैं. क्योंकि छोटी Image फैल जाती हैं और बडी Image सिकुड जाती हैं.
 
                       <h2>syntax</h2>
                       <p>object-fit: fill|contain|cover|scale-down/none/initial/inherit;</p>
@@ -7735,26 +7776,26 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>fill</td>
-                              <td>   </td>
+                              <td>  यह Default Value होती हैं. इस Value से Container Size को Image या Video से पूरा Cover किया जाता हैं. चाहे इसके लिए Elements को फैलाना पडे या सिकोडना पडे. </td>
                           </tr>
   
                           <tr>
                               <td>contain </td>
-                              <td> |</td>
+                              <td>इस Value द्वारा Container में Elements को Fit करने के लिए Elements का Size छोटा या बडा तो किया जाता हैं. मगर यह करते समय Aspect Ratio को भी Preserve किया जाता हैं. |</td>
                           </tr>
                           <tr>
                             <td>cover </td>
-                            <td> |  </td>
+                            <td>इस Value द्वारा भी Aspect Ratio को Preserve करते हुए Elements को Fit किया जाता हैं. यदि Aspect Ratio में कमी रहती है तो Elements को Clip भी किया जा सकता हैं. |  </td>
                         </tr>
                       
                         <tr>
                             <td>scale-down</td>
-                            <td> </td>
+                            <td> इस Value से Elements को छोटा कर दिया जाता है</td>
                         </tr>
                       
                         <tr>
                             <td>none</td>
-                            <td> </td>
+                            <td>इस Value के द्वारा किसी भी प्रकार से Elements को Resize नही किया जाता हैं. </td>
                         </tr>
                         
                        
@@ -7772,7 +7813,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
 
 
                   <li>
-                    <b>object-position:-</b>
+                    <b>object-position:-</b>object position property का use object fit के साथ यह specific करने के लिए किया जाता है कि < img> या < video> को अपने "own content box" के अंदर x/y coordinates के साथ कैसे रखा जाना चाहिए।
 
                       <h2>syntax</h2>
                       <p>object-position: position/initial/inherit;</p>
@@ -7785,7 +7826,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>position</td>
-                              <td>   </td>
+                              <td> इसके content box  के अंदर image  या video की position specific करता है। first value  x-axis को control करता है और second value  y-axis को control  करता है। एक string (left, center or right),या एक number (in px or %) हो सकती है। Negative values की permision है  </td>
                           </tr>
   
                           
@@ -7801,8 +7842,8 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
 
-                  <li>
-                    <b>opacity:-</b>
+                   <li>
+                    <b>opacity:-</b>opacity property का इस्तेमाल किसी भी image, text या background-color की transparency को बढ़ाने या घटाने के लिए किया जाता है |
 
                       <h2>syntax</h2>
                       <p>opacity: number/initial/inherit;</p>
@@ -7815,7 +7856,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>number</td>
-                              <td>   </td>
+                              <td> Default 1.0. यहाँ पर 0.0 से लेकर 1.0 तक कोई भी floating-point number दिया जाता है |  </td>
                           </tr>
   
                       
@@ -7829,10 +7870,10 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
   
                       </table>
-                  </li>
+                  </li> 
 
                   <li>
-                    <b>order:-</b>
+                    <b>order:-</b>order property एक ही container के अंदर बाकी flexible items के relative एक flexible items के order को specific करती है।
 
                       <h2>syntax</h2>
                       <p>order:number/initial/inherit;</p>
@@ -7845,7 +7886,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>number</td>
-                              <td>   </td>
+                              <td>default value 0.  flexible item के लिए order specific करता है   </td>
                           </tr>
   <tr>
                               <td>initial</td>
@@ -7859,7 +7900,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>orphans:-</b>
+                    <b>orphans:-</b>orphans property lines की minimum number specifies करती है जिसे किसी page या column के bottom छोड़ा जाना चाहिए।
 
                       <h2>syntax</h2>
                       <p>orphans: integer/initial/inherit;</p>
@@ -7872,7 +7913,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>integer</td>
-                              <td>   </td>
+                              <td>   किसी page या column के bottom जाने वाली lines की minimum number specifies करता है। negative value   की permision नहीं है</td>
                           </tr>
   
                          
@@ -7889,7 +7930,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>outline:-</b>
+                    <b>outline:-</b>outline property से element पर outline की सभी properties की values को set किया जाता है |
 
                       <h2>syntax</h2>
                       <p>outline: outline-width outline-style outline-color/initial/inherit;</p>
@@ -7902,16 +7943,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>outline-width</td>
-                              <td>   </td>
+                              <td>   Default medium. outline की width; measurement units में दी जाती है</td>
                           </tr>
   
                           <tr>
                               <td>outline-style</td>
-                              <td> |</td>
+                              <td>Required. Default none. outline की style दी जाती है  |</td>
                           </tr>
                           <tr>
                             <td>outline-color</td>
-                            <td> |  </td>
+                            <td> Default value element पर दी हुई color attribute की value होती है | outline को color दिया जाता है |  </td>
                         </tr>
                       
                       
@@ -7929,7 +7970,9 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>outline-color:-</b>
+                    <b>outline-color:-</b>outline-color property से element के outline पर color को set किया जाता है | <br>
+
+                    outline-color के लिए outline style को define करना जरुरी होता है |
 
                       <h2>syntax</h2>
                       <p>outline-color: invert|color/initial/inherit;</p>
@@ -7941,13 +7984,13 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>invert</td>
-                              <td>   </td>
+                              <td>transparent</td>
+                              <td>  transparent; outline color दिया जाता है </td>
                           </tr>
   
                           <tr>
                               <td>color </td>
-                              <td> |</td>
+                              <td> Default color ये color attribute पर दिया हुआ color होता है | color ये color name, hex color code, rgb color code या hsl color code हो सकता है |</td>
                           </tr>
                           
                           <tr>
@@ -7962,7 +8005,11 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>outline-offset:-</b>
+                    <b>outline-offset:-</b>outline-offset property से element के borders से या कोनों और outline के बीच में measuremtn units द्वारा space दी जाती है | <br>
+
+                    outline-offset के लिए outline style को define करना जरुरी होता है | <br>
+                    
+                    outline-offset द्वारा दी हुई space ये transparent होती है | अगर parent element पर background color होता है तो वो background offset पर होती है |
 
                       <h2>syntax</h2>
                       <p>outline-offset:length/initial/inherit;</p>
@@ -7975,7 +8022,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td>  Default 0. यहाँ पर measurement units में length दी जाती है | </td>
                           </tr>
   
                        
@@ -7991,7 +8038,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>outline-style:-</b>
+                    <b>outline-style:-</b>इस Property द्वारा Outline की Style को Set किया जाता हैं. Style से हमारा मतलब हैं कि आप किस तरह की Outline लगाना चाहते हैं. CSS द्वारा निम्न Outline Style Provide की जाती हैं.
 
                       <h2>syntax</h2>
                       <p>outline-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset/initial/inherit;</p>
@@ -8004,45 +8051,45 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>   कोई Outline Set नही होती हैं </td>
                           </tr>
   
                           <tr>
                               <td>hidden </td>
-                              <td> |</td>
+                              <td> Outline Set हो जाती हैं लेकिन दिखाई नही देती हैं|</td>
                           </tr>
                           <tr>
                             <td>dotted </td>
-                            <td> |  </td>
+                            <td>इस Value से Dot यानि Full Stop के चिन्ह वाली Outline Set होती हैं. |  </td>
                         </tr>
                       
                         <tr>
                             <td>dashed</td>
-                            <td> </td>
+                            <td> इस Value से Minus के चिन्ह जैसी Outline Set होती हैं</td>
                         </tr>
                         <tr>
                             <td>solid</td>
-                            <td> </td>
+                            <td> इससे एक Normal लाईन में Outline Set होती हैं. </td>
                         </tr>
                         <tr>
                             <td>double</td>
-                            <td> </td>
+                            <td> इस Value से दो लाईन की Outline Set होती हैं</td>
                         </tr>
                         <tr>
                             <td>groove</td>
-                            <td> </td>
+                            <td> इस Value से Groove Style में Outline Set होती हैं. </td>
                         </tr>
                         <tr>
                             <td>ridge</td>
-                            <td> </td>
+                            <td> इस Value से Rigde Style में Outline Set होती हैं. </td>
                         </tr>
                         <tr>
-                            <td>inside</td>
-                            <td> </td>
+                            <td>inset</td>
+                            <td> इस Value से Inset Outline Set होती हैं.</td>
                         </tr>
                         <tr>
-                            <td>outside</td>
-                            <td></td>
+                            <td>outset</td>
+                            <td>इस Value से Outset Outline Set होती हैं</td>
                         </tr>
                         
                        
@@ -8059,7 +8106,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>outline-width:-</b>
+                    <b>outline-width:-</b>Outline की मोटाई को Set करने के लिए outline-width Property को Use किया जाता हैं. Outline Width को आप कई तरीकों से Declare कर सकते हैं.
 
                       <h2>syntax</h2>
                       <p>outline-width:medium/thin/thick/length/initial/inherit;</p>
@@ -8072,21 +8119,21 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>medium</td>
-                              <td>   </td>
+                              <td> इस Value से लगभग 3px के बराबर मोटाई की Outline Set होती हैं.  </td>
                           </tr>
   
                           <tr>
                               <td>thin</td>
-                              <td> |</td>
+                              <td>इस Value से लगभग 1px के बराबर मोटाई की Outline Set होती हैं. |</td>
                           </tr>
                           <tr>
                             <td>thick </td>
-                            <td> |  </td>
+                            <td> इस Value से लगभग 5px के बराबर मोटाई की Outline Set होती हैं.|  </td>
                         </tr>
                       
                         <tr>
                             <td>length</td>
-                            <td> </td>
+                            <td>outline width को measurement units में दिया जाता है | </td>
                         </tr>
                          <tr>
                               <td>initial</td>
@@ -8100,7 +8147,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>overflow:-</b>
+                    <b>overflow:-</b>overflow property का इस्तेमाल Container/Box के Content के scrollbar को control करने के लिए इस्तेमाल किया जाता है | Scrollbar को control करने के लिए अतिरिक्त content होना जरुरी होता है |
 
                       <h2>syntax</h2>
                       <p>overflow: visible|hidden|clip|scroll|auto/initial/inherit;</p>
@@ -8113,25 +8160,25 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>visible</td>
-                              <td>   </td>
+                              <td> Default. overflow content को clipped नहीं किया जाता है  </td>
                           </tr>
   
                           <tr>
                               <td>hidden </td>
-                              <td> |</td>
+                              <td> Overflow content को clipped किया जाता है | Overflow content ये hidden होता है ||</td>
                           </tr>
                           <tr>
                             <td>clip </td>
-                            <td> |  </td>
+                            <td>overflow clip किया गया है, और rest content invisible हो जाएगी। programmatic scrolling सहित scrolling को including करता है।|  </td>
                         </tr>
                       
                         <tr>
                             <td>scroll</td>
-                            <td> </td>
+                            <td>Overflow content को clipped किया जाता है | Overflow content नहीं होता है तो यहाँ पर scroll को add किया जाता है | </td>
                         </tr>
                         <tr>
                             <td>auto</td>
-                            <td> </td>
+                            <td> Overflow content को clipped किया जाता है | Overflow content होता है तो scrollbar को add किया जाता है |</td>
                         </tr>
                         <tr>
                               <td>initial</td>
@@ -8146,7 +8193,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>overflow-wrap:-</b>
+                    <b>overflow-wrap:-</b>overflow-wrap property specific करता है कि browser long words के साथ lines को break कर  सकता है या नहीं, यदि वे container को overflow करते हैं।
 
                       <h2>syntax</h2>
                       <p>overflow-wrap: normal|anywhere|break-word/initial/inherit;</p>
@@ -8159,16 +8206,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td>long words नहीं break होंगे , भले ही वे container को overflow कर दें। default </td>
                           </tr>
   
                           <tr>
                               <td>anywhere </td>
-                              <td> |</td>
+                              <td> यदि वे container को overflow करते हैं तो long words break हो  जाएंगे |</td>
                           </tr>
                           <tr>
                             <td>break-word </td>
-                            <td> |  </td>
+                            <td>यदि वे container को overflow करते हैं तो long words break हो  जाएंगे |  </td>
                         </tr>
  <tr>
                               <td>initial</td>
@@ -8183,7 +8230,9 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>overflow-x:-</b>
+                    <b>overflow-x:-</b>overflow-x property का इस्तेमाल Container/Box के मुख्यतः horizontally scroll Content को control करने के लिए इस्तेमाल किया जाता है | Scrollbar को control करने के लिए अतिरिक्त content होना जरुरी होता है | <br>
+
+                    ये vertically scroll Content को भी control करता है |
 
                       <h2>syntax</h2>
                       <p>overflow-x: visible|hidden|scroll|auto/initial/inherit;</p>
@@ -8196,21 +8245,21 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>visible</td>
-                              <td>   </td>
+                              <td> Default. overflow content को clipped नहीं किया जाता है  </td>
                           </tr>
   
                           <tr>
                               <td>hidden </td>
-                              <td> |</td>
+                              <td>Overflow content को clipped किया जाता है | Overflow content ये hidden होता है  |</td>
                           </tr>
                           <tr>
                             <td>scroll </td>
-                            <td> |  </td>
+                            <td> 	Overflow content को clipped किया जाता है | Overflow content नहीं होता है तो यहाँ पर scroll को add किया जाता है|  </td>
                         </tr>
                       
                         <tr>
                             <td>auto</td>
-                            <td> </td>
+                            <td>Overflow content को clipped किया जाता है | Overflow content होता है तो scrollbar को add किया जाता है  </td>
                         </tr>
                           <tr>
                               <td>initial</td>
@@ -8222,10 +8271,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
   
                       </table>
-                  </li>
+                  </li> 
 
                   <li>
-                    <b>overflow-y:-</b>
+                    <b>overflow-y:-</b>overflow-y property का इस्तेमाल Container/Box के मुख्यतः vertically scroll Content को control करने के लिए इस्तेमाल किया जाता है | Scrollbar को control करने के लिए अतिरिक्त content होना जरुरी होता है | <br>
+
+                    ये horizontally scroll Content को भी control करता है |
 
                       <h2>syntax</h2>
                       <p>overflow-y: visible|hidden|scroll|auto/initial/inherit;</p>
@@ -8238,21 +8289,21 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>visible</td>
-                              <td>   </td>
+                              <td>  Default. overflow content को clipped नहीं किया जाता है </td>
                           </tr>
   
                           <tr>
                               <td>hidden </td>
-                              <td> |</td>
+                              <td> Overflow content को clipped किया जाता है | Overflow content ये hidden होता है |</td>
                           </tr>
                           <tr>
                             <td>scroll </td>
-                            <td> |  </td>
+                            <td> Overflow content को clipped किया जाता है | Overflow content नहीं होता है तो यहाँ पर scroll को add किया जाता है|  </td>
                         </tr>
                       
                         <tr>
                             <td>auto</td>
-                            <td> </td>
+                            <td> Overflow content को clipped किया जाता है | Overflow content होता है तो scrollbar को add किया जाता है</td>
                         </tr>
  
                           <tr>
@@ -8267,7 +8318,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>padding:-</b>
+                    <b>padding:-</b>padding Property से element के चारों ओर paddings दी जाती है | इस property पर padding-top, padding-right, padding-bottom और padding-left इन properties का इस्तेमाल किया जाता है | <br>
+
+                    अगर padding property पर single value दी जाती है तो ये top, right, bottom और left padding के लिए होती है |
+                    अगर padding property पर दो values दी जाती है तो पहली value ये top और bottom के लिए होती है और दूसरी value ये right और left padding के लिए होती है | <br>
+                    अगर padding property पर तीन values दी जाती है तो पहली value; top के लिए, दूसरी value right और left के लिए और तीसरी value bottom के लिए होती है | <br>
+                    अगर padding property पर चार values दी जाती है तो पहली value; top के लिए, दूसरी value right के लिए, तीसरी value bottom के लिए और चौथी value ये left के लिए होती है | 
 
                       <h2>syntax</h2>
                       <p>padding: length/initial/inherit;</p>
@@ -8280,11 +8336,11 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td>paddings को measurement unit में दिया जाता है |   </td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td></td>
+                            <td>paddings को percentage(%) में दिया जाता है </td>
                           </tr>
   
                           <tr>
@@ -8299,7 +8355,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>padding-bottom:-</b>
+                    <b>padding-bottom:-</b>padding-bottom Property से element पर bottom padding दी जाती है |
 
                       <h2>syntax</h2>
                       <p>padding: length/initial/inherit;</p>
@@ -8312,11 +8368,15 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td>padding को measurement unit में दिया जाता है |   </td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td></td>
+                            <td>padding को percentage(%) में दिया जाता है </td>
+                          </tr>
+                          <tr>
+                            <td>auto</td>
+                            <td>browser द्वारा paddings को दिया जाता है |</td>
                           </tr>
   
                           <tr>
@@ -8331,7 +8391,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>padding-left:-</b>
+                    <b>padding-left:-</b>padding-left Property से element पर left padding दी जाती है |
 
                       <h2>syntax</h2>
                       <p>padding-left: length/initial/inherit;</p>
@@ -8344,13 +8404,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td> padding को measurement unit में दिया जाता है |  </td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td></td>
+                            <td>padding को percentage(%) में दिया जाता है |</td>
                           </tr>
-  
+  <tr>
+    <td>auto</td>
+    <td>browser द्वारा paddings को दिया जाता है |</td>
+  </tr>
                           <tr>
                               <td>initial</td>
                               <td>Default value; set की जाती है | </td>
@@ -8363,7 +8426,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>padding-right:-</b>
+                    <b>padding-right:-</b>padding-right Property से element पर right padding दी जाती है |
 
                       <h2>syntax</h2>
                       <p>padding-right: length/initial/inherit;</p>
@@ -8375,12 +8438,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                               <th>description</th>
                           </tr>
                           <tr>
+                            <td>auto</td>
+                            <td>browser द्वारा paddings को दिया जाता है |</td>
+                          </tr>
+                          <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td>  padding को measurement unit में दिया जाता है | </td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td></td>
+                            <td>	padding को percentage(%) में दिया जाता है |    </td>
                           </tr>
   
                           <tr>
@@ -8396,7 +8463,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>padding-top:-</b>
+                    <b>padding-top:-</b>padding-top Property से element पर top padding दी जाती है |
 
                       <h2>syntax</h2>
                       <p>padding-top: length/initial/inherit;</p>
@@ -8407,13 +8474,17 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                               <th>Value</th>
                               <th>description</th>
                           </tr>
-                          <tr>
+                          <tr>           
                               <td>length</td>
-                              <td>   </td>
+                              <td>padding को measurement unit में दिया जाता है |   </td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td></td>
+                            <td>padding को percentage(%) में दिया जाता है |</td>
+                          </tr>
+                          <tr>
+                            <td>auto</td>
+                            <td>browser द्वारा paddings को दिया जाता है |</td>
                           </tr>
   
                           <tr>
@@ -8429,7 +8500,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>page-break-after:-</b>
+                    <b>page-break-after:-</b>page-break-after property specific element के बाद page-break adds है।
 
                       <h2>syntax</h2>
                       <p>page-break-after: auto|always|avoid|left|right/initial/inherit;</p>
@@ -8442,25 +8513,25 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td> Default. Automatic page-break  </td>
                           </tr>
   
                           <tr>
                               <td>always </td>
-                              <td> |</td>
+                              <td>element के बाद हमेशा page-break डालें|</td>
                           </tr>
                           <tr>
                             <td>avoid</td>
-                            <td> |  </td>
+                            <td> element के बाद page-break से बचें (यदि possible हो तो)|  </td>
                         </tr>
                       
                         <tr>
                             <td>left</td>
-                            <td> </td>
+                            <td>element के बाद page-break insert करें ताकि अगले page को left page के रूप में formatted किया जा सके </td>
                         </tr>
                         <tr>
                             <td>right</td>
-                            <td> </td>
+                            <td>element के बाद page-break insert करें ताकि अगले page को right page के रूप में formatted किया जा सके </td>
                         </tr>
                           <tr>
                               <td>initial</td>
@@ -8475,7 +8546,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
 
                   <li>
-                    <b>page-break-before:-</b>
+                    <b>page-break-before:-</b>page-break-before property specifie element से पहले एक page-break जोड़ता है।
 
                       <h2>syntax</h2>
                       <p>page-break-before: auto|always|avoid|left|right/initial/inherit;</p>
@@ -8487,28 +8558,27 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>auto</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>always </td>
-                              <td> |</td>
-                          </tr>
-                          <tr>
-                            <td>avoid </td>
-                            <td> |  </td>
+                            <td>auto</td>
+                            <td> Default. Automatic page-break  </td>
                         </tr>
-                      
+
                         <tr>
-                            <td>left</td>
-                            <td> </td>
+                            <td>always </td>
+                            <td>element के before हमेशा page-break डालें|</td>
                         </tr>
                         <tr>
-                            <td>right</td>
-                            <td> </td>
-                        </tr>
-                      
+                          <td>avoid</td>
+                          <td> element के before page-break से बचें (यदि possible हो तो)|  </td>
+                      </tr>
+                    
+                      <tr>
+                          <td>left</td>
+                          <td>element के before page-break insert करें ताकि अगले page को left page के रूप में formatted किया जा सके </td>
+                      </tr>
+                      <tr>
+                          <td>right</td>
+                          <td>element के before page-break insert करें ताकि अगले page को right page के रूप में formatted किया जा सके </td>
+                      </tr>
                           <tr>
                               <td>initial</td>
                               <td>Default value; set की जाती है | </td>
@@ -8521,7 +8591,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>page-break-inside:-</b>
+                    <b>page-break-inside:-</b>page-break-inside property set करती है कि specific element  के अंदर page-break से बचा जाना चाहिए या नहीं।
 
                       <h2>syntax</h2>
                       <p>page-break-inside: auto|avoid/initial/inherit;</p>
@@ -8534,12 +8604,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td> Default. Automatic page-break   </td>
                           </tr>
   
                           <tr>
                               <td>avoid </td>
-                              <td> |</td>
+                              <td>  element के before page-break से बचें (यदि possible हो तो)|</td>
                           </tr>
                           
                           <tr>
@@ -8567,21 +8637,21 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td>default value। paint-order fill, stroke, markers. है।   </td>
                           </tr>
   
                           <tr>
                               <td>one value </td>
-                              <td> |</td>
+                              <td>paint दिए गए value के साथ शुरू होगी, फिर remaining  painting को default order  में जारी रखें। यदि only "stroke" दिया जाता है, तो अगली painting activities  भर जाती है, फिर marker|</td>
                           </tr>
                           <tr>
                             <td>two values </td>
-                            <td> |  </td>
+                            <td>paint दिए गए value के साथ शुरू होगी, फिर remaining  painting को default order  में जारी रखें। यदि "stroke marker" दिए गए हैं, तो अगली painting activity  भर जाएगी। |  </td>
                         </tr>
                       
                         <tr>
                             <td>three values</td>
-                            <td> </td>
+                            <td>painting दिए गए values के according की जाएगी।</td>
                         </tr>
                        
                           <tr>
@@ -8596,9 +8666,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
 
-  <li>
-                    <b>perspective:-</b>
+   <li>
+                    <b>perspective:-</b>perspective property का इस्तेमाल Element को 3D view देने के लिए किया जाता है |<br>
 
+                    perspective property; z-index और view के बीच में दूरी बनाये रखता है | इसका मतलब इससे 3D Element बनाया जा सकता है | 
+                    
+                  
                       <h2>syntax</h2>
                       <p>perspective: length|none/initial/inherit;</p>
   
@@ -8610,12 +8683,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td> perspective की depth को measurement units में दिया जाता है   </td>
                           </tr>
   
                           <tr>
                               <td>none </td>
-                              <td> |</td>
+                              <td>Default. perspective transform को apply नहीं किया जाता है  |</td>
                           </tr>
                      
                        
@@ -8630,8 +8703,10 @@ font-variant ये सिर्फ lowercase characters पर operation कर
   
                       </table>
                   </li>
-                  <li>
-                    <b>perspective-origin:-</b>
+                       <li>
+                    <b>perspective-origin:-</b>perspective-origin property का इस्तेमाल perspective property के लिए origin(मूल) define करने के लिए किया जाता है | <br>
+
+                    3D Element को x और y axis के आधार पर कहा पे स्थित करना है वो perspective-origin द्वारा दिया जाता है |
 
                       <h2>syntax</h2>
                       <p>perspective-origin: x-axis y-axis/initial/inherit;</p>
@@ -8644,12 +8719,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>x-axis</td>
-                              <td>   </td>
+                              <td> Default 50%(center). x-axis के अनुसार position को तय किया जाता है |  </td>
                           </tr>
   
                           <tr>
                               <td>y-axis</td>
-                              <td> |</td>
+                              <td> Default 50%(center). y-axis के अनुसार position को तय किया जाता है ||</td>
                           </tr>
                      
                        
@@ -8665,7 +8740,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   <li>
-                    <b>pointer-events:-</b>
+                    <b>pointer-events:-</b>pointer-events property define करता है कि कोई element pointer-events  पर react करता है या नहीं।
 
                       <h2>syntax</h2>
                       <p>pointer-events: auto|none/initial/inherit;</p>
@@ -8678,12 +8753,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>element pointer-events पर react करता है, जैसे: hover और click करें। यह default है   </td>
                           </tr>
   
                           <tr>
                               <td>none </td>
-                              <td> |</td>
+                              <td> element pointer-events पर react  नहीं करता है|</td>
                           </tr>
                      
                        
@@ -8699,8 +8774,8 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   
-                  <li>
-                    <b>position:-</b>
+                 <li>
+                    <b>position:-</b>position property से element की position को define किया जाता है | ये property element के top, right, bottom, left और z-index properties द्वारा element की position निर्धारित करते है |
 
                       <h2>syntax</h2>
                       <p>position: static|absolute|fixed|relative|sticky/initial/inherit;</p>
@@ -8713,24 +8788,24 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>static</td>
-                              <td>   </td>
+                              <td>Default. ये normal flow होता है | अगर इसके साथ top, right, bottom, left या z-index दिया जाता है तो इसपर कोई फर्क नहीं पड़ता है |   </td>
                           </tr>
   
                           <tr>
                               <td>absolute </td>
-                              <td> |</td>
+                              <td> Normal page flow को element से remove किया जाता है | ये अपने करीबी relative parent element के अनुसार position लेता है | अगर कोई relative parent element नहीं होता है तो browser window के अनुसार position लेता है | element की position को बदलने के लिए top, right, bottom, left या z-index का इस्तेमाल किया जा सकता है |</td>
                           </tr>
                           <tr>
                             <td>fixed</td>
-                            <td></td>
+                            <td>absolute के जैसे होता है | screen के viewport के अनुसार position होती है | Page scroll करने पर भी इसकी position बदली नहीं जा सकती है |</td>
                           </tr>
                           <tr>
                             <td>relative</td>
-                            <td></td>
+                            <td>page के normal flow के अनुसार position होती है | element की position बदलने के लिए top, right, bottom, left या z-index का इस्तेमाल किया जाता है | ये बिना किसी दूसरे elements की position बदले अपनी position को बदल सकता है |</td>
                           </tr>
                           <tr>
                             <td>sticky</td>
-                            <td></td>
+                            <td>user के scroll करने के अनुसार position होती है | ये position relative या fixed हो सकती है | इसके साथ ज्यादातर 'top' property का इस्तेमाल किया जाता है |</td>
                           </tr>
                      
                        
@@ -8745,8 +8820,8 @@ font-variant ये सिर्फ lowercase characters पर operation कर
   
                       </table>
                   </li>
-                  <li>
-                    <b>quotes:-</b>
+            <li>
+                    <b>quotes:-</b>quotes property quotation के लिए quotation marks के type को set करता है।
 
                       <h2>syntax</h2>
                       <p>quotes: none/string/initial/inherit;</p>
@@ -8759,12 +8834,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td> specific करता है कि "content" property के "open-quote" और "close-quote" value किसी भी quotation mark का produce नहीं करेंगे  </td>
                           </tr>
   
                           <tr>
                               <td>string </td>
-                              <td> |</td>
+                              <td>specific करता है कि कौन से quotation mark का use करना है। पहले दो value quotation embedding  के पहले level को specifie करते हैं, अगले दो value quotation embedding के अगले level को specific करते हैं, etc |</td>
                           </tr>
                           <tr>
                               <td>initial</td>
@@ -8777,8 +8852,10 @@ font-variant ये सिर्फ lowercase characters पर operation कर
   
                       </table>
                   </li>
-                  <li>
-                    <b>resize:-</b>
+                     <li>
+                    <b>resize:-</b>size बदलने की property define करती है कि क्या (और कैसे) एक element user  द्वारा size दलने योग्य है।
+
+                    <b>Note</b>: size बदलने की property inline element या उन element को block करने के लिए applied नहीं होती है जहां overflow  =  "visible"। इसलिए , सुनिश्चित करें कि overflow "scroll", "auto", या "hidden"पर set है।
 
                       <h2>syntax</h2>
                       <p>resize: none/both/horizontal/vertical/initial/inherit;</p>
@@ -8791,20 +8868,20 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>default value। user element का size नहीं बदल सकता</td>
                           </tr>
   
                           <tr>
                               <td>both </td>
-                              <td> |</td>
+                              <td>user element की height और width दोनों का size बदल सकता है |</td>
                           </tr>
                           <tr>
                             <td>horizontal</td>
-                            <td></td>
+                            <td>user element की  width  का size बदल सकता है</td>
                           </tr>
                           <tr>
                             <td>vertical</td>
-                            <td></td>
+                            <td>user element की  height  का size बदल सकता है</td>
                           </tr>
                         
                        
@@ -8820,8 +8897,20 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   
-                  <li>
-                    <b>right:-</b>
+                <li>
+                    <b>right:-</b>right property का इस्तेमाल position property के साथ करना अनिवार्य होता है | <br>
+
+                    बिना parent element के right property और absolute position होती है तो browser window के हिसाब से element को right property पर दिए हुए length तक right से धकेला जाता है | <br>
+                    
+                    static/without position parent element के साथ child element में right property और absolute position होती है तो browser window के हिसाब से element को right property पर दिए हुए length तक right से धकेला जाता है | <br>
+                    
+                    static/without position parent element के साथ child element में right property और relative position होती है तो parent element के हिसाब से element को right property पर दिए हुए length तक right से धकेला जाता है | <br>
+                    
+                    relative parent element के साथ child element में right property और absolute position होती है तो parent element के हिसाब से element को right property पर दिए हुए length तक right से धकेला जाता है |
+<br>                    
+                   <b> Note </b> : static position हो तो right property का effect नहीं दिखेगा | अगर position; absolute, relative या fixed हो तो right property का effect दिखेगा | <br>
+                    
+                <b>  Note </b> : position अगर absolute, relative या fixed होती है तो दूसरे element के position पर कोई फर्क नहीं पड़ता है |
 
                       <h2>syntax</h2>
                       <p>right: auto/length/initial/inherit;</p>
@@ -8834,16 +8923,16 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>  browser द्वारा right को दिया जाता है | </td>
                           </tr>
   
                           <tr>
                               <td>length </td>
-                              <td> |</td>
+                              <td>	right को measurement unit में दिया जाता है | negative value भी हो सकती है |</td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td></td>
+                            <td>right को percentage(%) में दिया जाता है | negative value भी हो सकती है |</td>
                           </tr>
                           <tr>
                               <td>initial</td>
@@ -8871,16 +8960,18 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>axis</td>
-                              <td>   </td>
+                              <td> Optional। यदि set नहीं है, तो z-axis default है। element को चारों ओर rotaed के लिए axis को define करता है। possible value:  <br>
+                            x , y , z</td>
                           </tr>
   
                           <tr>
                               <td>angle </td>
-                              <td> |</td>
+                              <td>define करता है कि element  कितना rotated किया  जाता है। possible unit : <br>
+                            deg , rad , turn</td>
                           </tr>
                           <tr>
                             <td>vector  angle</td>
-                            <td></td>
+                            <td>element के चारों ओर rotated जाने के लिए तीन digits एक vector को define करती हैं। vectors के लिए number  x-, y- और z- coordinates हैं। कितना rotated है इसका last value angle  है। Possible value:</td>
                           </tr>
                           <tr>
                               <td>initial</td>
@@ -8894,8 +8985,10 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                       </table>
                   </li>
                   
-                  <li>
-                    <b>row-gap:-</b>
+                    <li>
+                    <b>row-gap:-</b>row-gap property grid rows के बीच के difference को specific करता है।
+
+                    row-gap property को पहले grid-row-gap के रूप में जाना जाता था।
 
                       <h2>syntax</h2>
                       <p>row-gap: length/normal/initial/inherit;</p>
@@ -8908,12 +9001,12 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td> एक specific length या % जो row के बीच का अंतर set करेगा  </td>
                           </tr>
   
                           <tr>
                               <td>normal </td>
-                              <td> |</td>
+                              <td>default value । rows के बीच एक normal अंतर specific करता है|</td>
                           </tr>
                           <tr>
                               <td>initial</td>
@@ -8928,7 +9021,15 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                   </li>
                   
                   <li>
-                    <b>scale:-</b>
+             <b>scale:-</b>scale property आपको element के size को बदलने की permision देता है। <br>
+
+                    scale property किसी element को x- और y-direction में कितना scale किया गया है, इसके लिए values को define करता है। आप यह भी define कर सकते हैं कि z-direction में कितना element scale  किया गया है।<br>
+                    
+                    scale value  एक value, दो value या तीन value  के रूप में दिए जा सकते हैं।
+                    
+                    यदि एक value  दिया गया है, तो elelment को x- और y-direction दोनों में same amount में बढ़ाया जाता है।
+                    यदि दो value दिए गए हैं, तो element को अलग-अलग x- और y-directiom में बढ़ाया जाता है।
+                    यदि तीन value दिए गए हैं, तो eleemnt को अलग-अलग x-, y- और z-direction में scale किया जाता है।
 
                       <h2>syntax</h2>
                       <p>scale: x-axis y-axis z-axis/initial/inherit;</p>
@@ -8941,14 +9042,20 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>x-axis</td>
-                              <td>   </td>
+                              <td>x-axis पर scale factor को definw करता है। possible value: <br>
+                            number <br>% </td>
                           </tr>
   
                           <tr>
                               <td>y-axis </td>
-                              <td> |</td>
+                              <td>y-axis पर scale factor को definw करता है। possible value: <br>
+                                number <br>% </td>
                           </tr>
-                        
+                        <tr>
+                            <td>z-axis</td>
+                            <td>z-axis पर scale factor को definw करता है। possible value: <br>
+                                number <br>%</td>
+                        </tr>
                      
                        
                           <tr>
@@ -8962,9 +9069,9 @@ font-variant ये सिर्फ lowercase characters पर operation कर
   
                       </table>
                   </li>
-                  
+                 
                   <li>
-                    <b>scroll-behavior:-</b>
+                    <b>scroll-behavior:-</b>scroll-behavior property specifie करता है कि जब user scroll  करने scrollable box के भीतर किसी link पर click करता है, तो  straight jump के  instead scroll position को सुचारू रूप से animated करना है या नहीं।
 
                       <h2>syntax</h2>
                       <p>scroll-behavior: auto/smooth/initial/inherit;</p>
@@ -8977,16 +9084,14 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>scrolling box के भीतर element के बीच एक  straight jump "scroll effect" की permision देता है। यह default है </td>
                           </tr>
   
                           <tr>
                               <td>smooth </td>
-                              <td> |</td>
+                              <td>scrolling box के भीतर element के बीच एक  smooth animated"scroll effect" की permision देता है |</td>
                           </tr>
                         
-                     
-                       
                           <tr>
                               <td>initial</td>
                               <td>Default value; set की जाती है | </td>
@@ -8997,7 +9102,7 @@ font-variant ये सिर्फ lowercase characters पर operation कर
                           </tr>
   
                       </table>
-                  </li>
+                  </li> -->
             </ul>
 
 
