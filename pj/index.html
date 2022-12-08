@@ -5430,8 +5430,16 @@ row-gap <br>column-gap
                   </li>-->
 
                   <li>
-                    <b>grid:-</b>
-
+                    <b>grid:-</b>grid property के लिए एक shorthand property है: 
+                    <ol>
+<li>
+                    grid-template-rows</li>
+                <li>   grid-template-columns</li>
+                <li> grid-template-areas</li>
+                <li>   grid-auto-rows</li>
+                <li>grid-auto-columns</li>
+                <li> grid-auto-flow</li>
+                </ol>
                       <h2>syntax</h2>
                       <p>grid: none|grid-template-rows / grid-template-columns|grid-template-areas|grid-template-rows / [grid-auto-flow] grid-auto-columns|[grid-auto-flow] grid-auto-rows / grid-template-columns/initial/inherit;</p>
   
@@ -5443,33 +5451,33 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td> default value। column या rows का कोई specific size  नहीं  </td>
                           </tr>
   
                           <tr>
                               <td>grid-template-rows/grid-template-columns </td>
-                              <td> |</td>
+                              <td> column और rows के size (s) को specific करता है|</td>
                           </tr>
                           <tr>
                             <td>grid-template-areas </td>
-                            <td> |  </td>
+                            <td>named items का  use करके grid layout specific  करता है |  </td>
                         </tr>
                       
                         <tr>
                             <td>grid-template-rows/ grid-auto-columns</td>
-                            <td> </td>
+                            <td>rows के size (height) और column के auto size  को specific करता है </td>
                         </tr>
                         <tr>
                             <td>grid-auto-rows /grid-template-columns</td>
-                            <td> </td>
+                            <td>rows के auto size  को specific करता है, और grid-template-columns property set  करता है </td>
                         </tr>
                         <tr>
                             <td>grid-template-rows/ grid-auto-flow grid-auto-columns</td>
-                            <td> </td>
+                            <td>rows के size (height)  को specific करता है, और auto-placed किए गए item और column के auto size को कैसे रखा जाए </td>
                         </tr>
                         <tr>
                             <td>grid-auto-flow grid-auto-rows/ grid-template-columns</td>
-                            <td> </td>
+                            <td> specific करता है कि auto-placed किए गए  items और rows का  auto size कैसे रखा जाए, और grid-template-columns property set  करता है</td>
                         </tr>
                         
                        
@@ -5485,8 +5493,15 @@ row-gap <br>column-gap
                       </table>
                   </li>
                   <li>
-                    <b>grid-area:-</b>
-
+                    <b>grid-area:-</b>grid area property grid layout में ग्grid items के  size और location को specific करती है, और following property  के लिए एक shorthand property है:
+<ol>
+    <li>grid-row-start </li>
+<li>  grid-column-start </li>
+<li>  grid-row-end </li>
+<li>  grid-column-end
+        </li>
+</ol>
+grid area property का use grid item  को name देने के लिए भी किया जा सकता है। named grid item को grid container  की grid-template-areas property द्वारा referenced किया जा सकता है। 
                       <h2>syntax</h2>
                       <p>grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end | itemname;</p>
   
@@ -5498,57 +5513,33 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>grid-row-start</td>
-                              <td>   </td>
+                              <td>item display करना  start करने के लिए किस rows पर specific करता है।</td>
                           </tr>
   
                           <tr>
                               <td>grid-column-start </td>
-                              <td> |</td>
+                              <td>item display करना  start करने के लिए किस column पर specific करता है|</td>
                           </tr>
                           <tr>
                             <td>grid-row-end</td>
-                            <td> |  </td>
+                            <td> specific करता है कि किस  rows-line पर item display  करना बंद करना है, या कितनी rows को फैलाना है। </td>
                         </tr>
                       
                         <tr>
                             <td>grid-column-end</td>
-                            <td> </td>
+                            <td> specific करता है कि किस  column-line पर item display  करना बंद करना है, या कितनी column को फैलाना है।</td>
                         </tr>
                         <tr>
                             <td>itemname</td>
-                            <td> </td>
+                            <td>grid item के लिए एक name specific करता है </td>
                         </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
-                        </tr>
-                        
-                       
-                          <tr>
-                              <td>initial</td>
-                              <td>Default value; set की जाती है | </td>
-                          </tr>
-                          <tr>
-                              <td>inherit </td>
-                              <td>parent element की value को set किया जाता है | </td>
-                          </tr>
-  
+                     
                       </table>
                   </li>
                   <li>
-                    <b>grid-auto-columns:-</b>
+                    <b>grid-auto-columns:-</b>grid-auto-columns property grid container में  column के लिए size set  करता है।
+
+                    यह property only उन column को affects करता है जिनका size determined नहीं है।
 
                       <h2>syntax</h2>
                       <p>grid-auto-columns: auto|max-content|min-content|length;</p>
@@ -5561,29 +5552,31 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>default value। column का size container के size से  determined होता है   </td>
                           </tr>
-  
+                          <tr>
+                              <td>fit-content()</td>
+                         </tr>
                           <tr>
                               <td>max-content </td>
-                              <td> |</td>
+                              <td>column में largest item के depending पर each column का size set करता है|</td>
                           </tr>
                           <tr>
                             <td>min-content </td>
-                            <td> |  </td>
+                            <td>column में smallest  item के depending पर each column का size set करता है |  </td>
                         </tr>
                       
                         <tr>
                             <td>minmax(min.max)</td>
-                            <td> </td>
+                            <td>range से अधिक या उसके equal और maximum से कम या उसके equal size  range set करता है </td>
                         </tr>
                         <tr>
                             <td>length</td>
-                            <td> </td>
+                            <td>legal length value   का  use करके column का size set करता है।</td>
                         </tr>
                         <tr>
                             <td>%</td>
-                            <td> </td>
+                            <td>persent value   का  use करके column का size set करता है </td>
                         </tr>
                           <tr>
                               <td>initial</td>
@@ -5597,7 +5590,7 @@ row-gap <br>column-gap
                       </table>
                   </li>
                   <li>
-                    <b>grid-auto-flow:-</b>
+                    <b>grid-auto-flow:-</b>grid-auto-flow  property control  करता है कि grid में auto-placed किए गए items कैसे डाले जाते हैं।
 
                       <h2>syntax</h2>
                       <p>grid-auto-flow: row|column|dense|row dense|column dense;</p>
@@ -5610,25 +5603,25 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>row</td>
-                              <td>   </td>
+                              <td>default value । each row को  filling items रखता है   </td>
                           </tr>
   
                           <tr>
                               <td>column </td>
-                              <td> |</td>
+                              <td>each column को  filling items रखता है  |</td>
                           </tr>
                           <tr>
                             <td>dense </td>
-                            <td> |  </td>
+                            <td> grid में किसी भी holes को भरने के लिए items रखें|  </td>
                         </tr>
                       
                         <tr>
                             <td>row dense</td>
-                            <td> </td>
+                            <td>each row को  filling items, और grid में किसी भी hole को भरें </td>
                         </tr>
                         <tr>
                             <td>column dense</td>
-                            <td> </td>
+                            <td> each column को  filling items  रखें, और grid में किसी भी hole को भरें</td>
                         </tr>
 
                        
@@ -5645,7 +5638,7 @@ row-gap <br>column-gap
                   </li>
 
                   <li>
-                    <b>grid-auto-rows:-</b>
+                    <b>grid-auto-rows:-</b>grid-auto-rows grid container  में rows  के लिए size determined  करती हैं।
 
                       <h2>syntax</h2>
                       <p>grid-auto-rows: auto|max-content|min-content|length;</p>
@@ -5658,21 +5651,21 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td> default value। rows का size row में largest item के size से determined होता है </td>
                           </tr>
   
                           <tr>
                               <td>max-content </td>
-                              <td> |</td>
+                              <td>row में largest item पर depend करने के लिए each row का size set करता है|</td>
                           </tr>
                           <tr>
                             <td>min-content </td>
-                            <td> |  </td>
+                            <td> row में largest item पर depend करने के लिए each row का size set करता है|  </td>
                         </tr>
                       
                         <tr>
                             <td>length</td>
-                            <td> </td>
+                            <td>legal length value का use करके rows का size set  करता है </td>
                         </tr>
                          
                         
@@ -5680,7 +5673,11 @@ row-gap <br>column-gap
                       </table>
                   </li>
                   <li>
-                    <b>grid-column:-</b>
+                    <b>grid-column:-</b>grid column property grid layout  में grid item का size और location specific  करती है, और following property  के लिए एक shorthand property है:
+                    <ol>
+                        <li>grid-column-start</li>
+                        <li>grid-column-end</li>
+                    </ol>
 
                       <h2>syntax</h2>
                       <p>grid-column: grid-column-start / grid-column-end;</p>
@@ -5693,21 +5690,18 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>grid-column-start</td>
-                              <td>   </td>
+                              <td> specific करता है कि किस column पर item display  करना start करता  है।  </td>
                           </tr>
   
                           <tr>
                               <td>grid-column-end</td>
-                              <td> |</td>
+                              <td>specific करता है कि किस column-line पर item display  करना बंद करता  है, या कितने column फैलाना है|</td>
                           </tr>
                          
-                       
-                      
-  
                       </table>
                   </li>
                   <li>
-                    <b>grid-column-end:-</b>
+                    <b>grid-column-end:-</b>grid-column-end  property define  करती है कि कोई item कितने column तक फैला होगा, या किस column-line पर item finsh होगा 
 
                       <h2>syntax</h2>
                       <p>grid-column-end: auto|span n|column-line;</p>
@@ -5719,42 +5713,18 @@ row-gap <br>column-gap
                               <th>description</th>
                           </tr>
                           <tr>
-                              <td>clip-source</td>
-                              <td>   </td>
+                              <td>auto</td>
+                              <td>  default value। item एक column तक फैला होगा </td>
                           </tr>
   
                           <tr>
-                              <td>basic-shape </td>
-                              <td> |</td>
+                              <td>span n </td>
+                              <td>item को discribe करने वाले  column की number specific  करता है |</td>
                           </tr>
-                          <tr>
-                            <td>margin-box </td>
-                            <td> |  </td>
-                        </tr>
-                      
+                        
                         <tr>
-                            <td>border-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>padding-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>fill-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>stroke-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>view-box</td>
-                            <td> </td>
-                        </tr>
-                        <tr>
-                            <td>none</td>
-                            <td> </td>
+                            <td>column-line</td>
+                            <td>specific करता है कि किस column पर item का display को  end  करना है </td>
                         </tr>
                         
                        
@@ -5770,7 +5740,7 @@ row-gap <br>column-gap
                       </table>
                   </li>
                     <li>
-                    <b>grid-column-gap:-</b>
+                    <b>grid-column-gap:-</b>grid-column-gap property grid layout में  column के बीच के difference के size को define करता है।
 
                       <h2>syntax</h2>
                       <p>grid-column-gap: length;</p>
@@ -5783,7 +5753,7 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td> length का कोई legal value, जैसे px या %. 0 default value है </td>
                           </tr>
   
              
@@ -5793,7 +5763,7 @@ row-gap <br>column-gap
                       </table>
                   </li>
                   <li>
-                    <b>grid-column-start:-</b>
+                    <b>grid-column-start:-</b>grid-column-start property define करता है कि item किस column-line पर शुरू होगा।
 
                       <h2>syntax</h2>
                       <p>grid-column-start: auto|span n|column-line;</p>
@@ -5806,16 +5776,17 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>default value। item flow  के बाद रखा जाएगा   </td>
                           </tr>
   
                           <tr>
                               <td>span n </td>
-                              <td> |</td>
+                              <td>item का span करने वाले column की number specific  करता है |</td>
                           </tr>
                           <tr>
                             <td>column-line </td>
-                            <td> |  </td>
+                            <td>किस column पर specific करता है
+                                item का dispaly start  करें |  </td>
                         </tr>
                       
                     
@@ -6302,9 +6273,9 @@ row-gap <br>column-gap
                           </tr>
                          
                       </table>
-                  </li> -->
+                  </li> 
                   <li>
-                    <b>inset:-</b>
+                    <b>inset:-</b>inset property element और parent element के बीच की distance निर्धारित करता है।
 
                       <h2>syntax</h2>
                       <p>inset: auto/value/initial/inherit;</p>
@@ -6317,16 +6288,16 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td> default। element की default inset distance   </td>
                           </tr>
   
                           <tr>
                               <td>length</td>
-                              <td> |</td>
+                              <td> pixels, pt, cm, etc में inset define  करता है। negative value  की permision है|</td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td> |  </td>
+                            <td> corresponding axis पर  parent element के size के relative percent में distance specific  करता है।|  </td>
                         </tr>
                       
                           <tr>
@@ -6341,7 +6312,7 @@ row-gap <br>column-gap
                       </table>
                   </li>
                   <li>
-                    <b>inset-block:-</b>
+                    <b>inset-block:-</b>inset-block property block direction में element और parent element के बीच की direction determined करती है।
 
                       <h2>syntax</h2>
                       <p>inset-block: auto/value/initial/inherit;</p>
@@ -6354,16 +6325,16 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td> default। element की default inset-block distance   </td>
                           </tr>
   
                           <tr>
                               <td>length</td>
-                              <td> |</td>
+                              <td>  pixels, pt, cm, etc में distance define  करता है। negative value  की permision है|</td>
                           </tr>
                           <tr>
                             <td>%</td>
-                            <td> |  </td>
+                            <td>corresponding axis पर  parent element के size के relative percent में distance specific  करता है |  </td>
                         </tr>
                       
                           <tr>
@@ -6379,7 +6350,7 @@ row-gap <br>column-gap
                   </li>
                   
                     <li>
-                        <b>inset-block-end:-</b>
+                        <b>inset-block-end:-</b>inset-block-end property element के end और block direction में parent element के बीच की direction determined करती है।
     
                           <h2>syntax</h2>
                           <p>inset-block-end: auto/value/initial/inherit;</p>
@@ -6391,19 +6362,18 @@ row-gap <br>column-gap
                                   <th>description</th>
                               </tr>
                               <tr>
-                                  <td>auto</td>
-                                  <td>   </td>
-                              </tr>
-      
-                              <tr>
-                                  <td>length</td>
-                                  <td> |</td>
-                              </tr>
-                              <tr>
-                                <td>%</td>
-                                <td> |  </td>
+                                <td>auto</td>
+                                <td> default। element की default inset distance   </td>
                             </tr>
-                          
+    
+                            <tr>
+                                <td>length</td>
+                                <td>  pixels, pt, cm, etc में distance define  करता है। negative value  की permision है|</td>
+                            </tr>
+                            <tr>
+                              <td>%</td>
+                              <td>corresponding axis पर  parent element के size के relative percent में distance specific  करता है |  </td>
+                          </tr>
                               <tr>
                                   <td>initial</td>
                                   <td>Default value; set की जाती है | </td>
@@ -6416,7 +6386,7 @@ row-gap <br>column-gap
                           </table>
                       </li>
                       <li>
-                        <b>inset-block-start:-</b>
+                        <b>inset-block-start:-</b>inset-block-start property element के start और block direction में parent element के बीच की direction determined करती है
     
                           <h2>syntax</h2>
                           <p>inset-block-start: auto/value/initial/inherit;</p>
@@ -6428,19 +6398,18 @@ row-gap <br>column-gap
                                   <th>description</th>
                               </tr>
                               <tr>
-                                  <td>auto</td>
-                                  <td>   </td>
-                              </tr>
-      
-                              <tr>
-                                  <td>length</td>
-                                  <td> |</td>
-                              </tr>
-                              <tr>
-                                <td>%</td>
-                                <td> |  </td>
+                                <td>auto</td>
+                                <td> default। element की default inset distance   </td>
                             </tr>
-                          
+    
+                            <tr>
+                                <td>length</td>
+                                <td>  pixels, pt, cm, etc में distance define  करता है। negative value  की permision है|</td>
+                            </tr>
+                            <tr>
+                              <td>%</td>
+                              <td>corresponding axis पर  parent element के size के relative percent में distance specific  करता है |  </td>
+                          </tr>
                               <tr>
                                   <td>initial</td>
                                   <td>Default value; set की जाती है | </td>
@@ -6454,7 +6423,7 @@ row-gap <br>column-gap
                       </li>
 
                       <li>
-                        <b>inset-inline:-</b>
+                        <b>inset-inline:-</b>inset-inline property block direction में element और parent element के बीच की direction determined करती है
     
                           <h2>syntax</h2>
                           <p>inset-inline: auto/value/initial/inherit;</p>
@@ -6466,19 +6435,18 @@ row-gap <br>column-gap
                                   <th>description</th>
                               </tr>
                               <tr>
-                                  <td>auto</td>
-                                  <td>   </td>
-                              </tr>
-      
-                              <tr>
-                                  <td>length</td>
-                                  <td> |</td>
-                              </tr>
-                              <tr>
-                                <td>%</td>
-                                <td> |  </td>
+                                <td>auto</td>
+                                <td> default। element की default inset-inline distance   </td>
                             </tr>
-                          
+    
+                            <tr>
+                                <td>length</td>
+                                <td>  pixels, pt, cm, etc में distance define  करता है। negative value  की permision है|</td>
+                            </tr>
+                            <tr>
+                              <td>%</td>
+                              <td>corresponding axis पर  parent element के size के relative percent में distance specific  करता है |  </td>
+                          </tr>
                               <tr>
                                   <td>initial</td>
                                   <td>Default value; set की जाती है | </td>
@@ -6491,7 +6459,7 @@ row-gap <br>column-gap
                           </table>
                       </li>
                       <li>
-                        <b>inset-inline-end:-</b>
+                        <b>inset-inline-end:-</b>inset-inline-end property element के end और block direction में parent element के बीच की direction determined करती है।
     
                           <h2>syntax</h2>
                           <p>inset-inline-end: auto/value/initial/inherit;</p>
@@ -6503,18 +6471,18 @@ row-gap <br>column-gap
                                   <th>description</th>
                               </tr>
                               <tr>
-                                  <td>auto</td>
-                                  <td>   </td>
-                              </tr>
-      
-                              <tr>
-                                  <td>length</td>
-                                  <td> |</td>
-                              </tr>
-                              <tr>
-                                <td>%</td>
-                                <td> |  </td>
+                                <td>auto</td>
+                                <td> default। element की default inset distance   </td>
                             </tr>
+    
+                            <tr>
+                                <td>length</td>
+                                <td>  pixels, pt, cm, etc में distance define  करता है। negative value  की permision है|</td>
+                            </tr>
+                            <tr>
+                              <td>%</td>
+                              <td>corresponding axis पर  parent element के size के relative percent में distance specific  करता है |  </td>
+                          </tr>
                           
                               <tr>
                                   <td>initial</td>
@@ -6529,7 +6497,7 @@ row-gap <br>column-gap
                       </li>
 
                       <li>
-                        <b>inset-inline-start:-</b>
+                        <b>inset-inline-start:-</b>inset-inline-start property element के start और block direction में parent element के बीच की direction determined करती है
     
                           <h2>syntax</h2>
                           <p>inset-inline-start: auto/value/initial/inherit;</p>
@@ -6541,18 +6509,18 @@ row-gap <br>column-gap
                                   <th>description</th>
                               </tr>
                               <tr>
-                                  <td>auto</td>
-                                  <td>   </td>
-                              </tr>
-      
-                              <tr>
-                                  <td>length</td>
-                                  <td> |</td>
-                              </tr>
-                              <tr>
-                                <td>%</td>
-                                <td> |  </td>
+                                <td>auto</td>
+                                <td> default। element की default inset distance   </td>
                             </tr>
+    
+                            <tr>
+                                <td>length</td>
+                                <td>  pixels, pt, cm, etc में distance define  करता है। negative value  की permision है|</td>
+                            </tr>
+                            <tr>
+                              <td>%</td>
+                              <td>corresponding axis पर  parent element के size के relative percent में distance specific  करता है |  </td>
+                          </tr>
                           
                               <tr>
                                   <td>initial</td>
@@ -6566,7 +6534,7 @@ row-gap <br>column-gap
                           </table>
                       </li>
 
-                          <!--<li>
+                      <li>
                     <b>isolation :-</b>isolation property define करता है कि क्या element को एक new stacking content बनानी चाहिए।
 
                       <h2>syntax</h2>
@@ -7684,10 +7652,10 @@ row-gap <br>column-gap
                           </tr>
   
                       </table>
-                  </li> -->
+                  </li> 
 
                   <li>
-                    <b>mix-blend-mode:-</b>
+                    <b>mix-blend-mode:-</b>mix-blend-mode property specifie करती है कि किसी element की content को उसकी direct parent background के साथ कैसे blend  होना चाहिए।
 
                       <h2>syntax</h2>
                       <p>mix-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|color-burn|difference|exclusion|hue|saturation|color|luminosity;</p>
@@ -7700,69 +7668,70 @@ row-gap <br>column-gap
                           </tr>
                           <tr>
                               <td>normal</td>
-                              <td>   </td>
+                              <td> यह default है। blending mode को normal पर set करता है  </td>
                           </tr>
   
                           <tr>
                               <td>multiply </td>
-                              <td> |</td>
+                              <td>  blending mode को multiply पर set करता है  </td>
+                            
                           </tr>
                           <tr>
                             <td>screen </td>
-                            <td> |  </td>
+                            <td> blending mode को screen पर set करता है|  </td>
                         </tr>
                       
                         <tr>
                             <td>overlay</td>
-                            <td> </td>
+                            <td>blending mode को overlay पर set करता है </td>
                         </tr>
                         <tr>
                             <td>darken</td>
-                            <td> </td>
+                            <td> blending mode को darken पर set करता है</td>
                         </tr>
                         <tr>
                             <td>lighten</td>
-                            <td> </td>
+                            <td> blending mode को lighten पर set करता है</td>
                         </tr>
                         <tr>
                             <td>color-dodge</td>
-                            <td> </td>
+                            <td> blending mode को color-dodge पर set करता है</td>
                         </tr>
                         <tr>
                             <td>color-burn</td>
-                            <td> </td>
+                            <td> blending mode को color-burn पर set करता है</td>
                         </tr>
                         <tr>
                             <td>difference</td>
-                            <td> </td>
+                            <td>blending mode को difference पर set करता है </td>
                         </tr>
                         
                        
                           <tr>
                               <td>exclusion</td>
-                              <td>Default value; set की जाती है | </td>
+                              <td>blending mode को exclusion पर set करता है </td>
                           </tr>
                           <tr>
                               <td>hue </td>
-                              <td>parent element की value को set किया जाता है | </td>
+                              <td>blending mode को hue पर set करता है| </td>
                           </tr>
                           <tr>
                             <td>    saturation</td>
-                            <td></td>
+                            <td>blending mode को saturation पर set करता है</td>
                           </tr>
                           <tr>
                             <td>color</td>
-                            <td></td>
+                            <td>blending mode को color पर set करता है</td>
                           </tr>
                           <tr>
                             <td>luminosity</td>
-                            <td></td>
+                            <td>blending mode को luminosity पर set करता है</td>
                           </tr>
   
                       </table>
                   </li>
 
-                  <!-- <li>
+                  <li>
                     <b>object-fit:-</b>जब कोई Image इसके Container Size से छोटी या बडी होती हैं तो वह Container में Fit होने पर अपनी Quality ख़ो देती हैं. क्योंकि छोटी Image फैल जाती हैं और बडी Image सिकुड जाती हैं.
 
                       <h2>syntax</h2>
