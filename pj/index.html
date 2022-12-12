@@ -36,6 +36,7 @@
             <ul>
           
             <!--     <li>
+
                     <b>accent-color :- </b> accent-color property user-interface control जैसे accent color को specifies
                     करती है |
                     जैसे :-< input type="checkbox"> ,< input type="radio">,< input type="range"> and < progress>
@@ -5427,7 +5428,7 @@ row-gap <br>column-gap
                           </tr>
   
                       </table>
-                  </li>-->
+                  </li>
 
                   <li>
                     <b>grid:-</b>grid property के लिए एक shorthand property है: 
@@ -5793,7 +5794,10 @@ grid area property का use grid item  को name देने के लि�
                       </table>
                   </li>
                   <li>
-                    <b>grid-gap:-</b>
+                    <b>grid-gap:-</b>grid-gap property grid layout  में rows और column के बीच के difference के size को define करता है, और following property  के लिए एक shorthand property है: <br>
+                    <ol> <li> grid-column-gap</li>
+                        <li>grid-row-gap</li> 
+                    </ol>
 
                       <h2>syntax</h2>
                       <p>grid-gap: grid-row-gap grid-column-gap;</p>
@@ -5806,21 +5810,28 @@ grid area property का use grid item  को name देने के लि�
                           </tr>
                           <tr>
                               <td>grid-row-gap</td>
-                              <td>   </td>
+                              <td> grid layout में rows के बीच के difference का size set  करता है। 0 default value  है  </td>
                           </tr>
   
                           <tr>
                               <td>grid-column-gap</td>
-                              <td> |</td>
+                              <td> grid layout में column     के बीच के difference का size set  करता है। 0 default value  है |</td>
                           </tr>
                          
   
                       </table>
                   </li>
                   <li>
-                    <b>grid-row:-</b>
+                    <b>grid-row:-</b>grid-row property एक grid item  के size और grid layout  में location को specific करती है, और following property के लिए एक shorthand property है :-
+                    <ol>
+                        <li>grid-row-start</li>
+                        <li>
+                            grid-row-end
+                        </li>
+                    </ol>
 
                       <h2>syntax</h2>
+           
                       <p>grid-row: grid-row-start / grid-row-end;</p>
   
                       <h2>property value</h2>
@@ -5831,12 +5842,12 @@ grid area property का use grid item  को name देने के लि�
                           </tr>
                           <tr>
                               <td>grid-row-start</td>
-                              <td>   </td>
+                              <td>  specific करता है कि किस row पर item display करना stop करना है </td>
                           </tr>
   
                           <tr>
                               <td>grid-row-end</td>
-                              <td> |</td>
+                              <td>specific करता है कि किस row-line पर item display करना stop करना है, या कितनी rows को फैलाना है। </td>
                           </tr>
                           
                           <tr>
@@ -5851,7 +5862,7 @@ grid area property का use grid item  को name देने के लि�
                       </table>
                   </li>
                   <li>
-                    <b>grid-row-end :-</b>
+                    <b>grid-row-end :-</b>grid-row-end property define करता है कि कोई item कितनी rows में फैला होगा, या किस row-line पर item end  होगा 
 
                       <h2>syntax</h2>
                       <p>grid-row-end: auto|row-line|span n;</p>
@@ -5864,16 +5875,16 @@ grid area property का use grid item  को name देने के लि�
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>default value । item एक row में फैला होगा।   </td>
                           </tr>
   
                           <tr>
                               <td>row-line </td>
-                              <td> |</td>
+                              <td>item के display को end करने के लिए किस row पर specific करता है |</td>
                           </tr>
                           <tr>
                             <td>span </td>
-                            <td> |  </td>
+                            <td>उन rows की number specifies  करता है जो item फैलेगी|  </td>
                         </tr>
                       
                     
@@ -5881,7 +5892,7 @@ grid area property का use grid item  को name देने के लि�
                       </table>
                   </li>
                   <li>
-                    <b>grid-row-gap :-</b>
+                    <b>grid-row-gap :-</b>grid-row-gap property grid layout  में rows के बीच के difference के size को define करता है।
 
                       <h2>syntax</h2>
                       <p>grid-row-gap :length</p>
@@ -5894,7 +5905,7 @@ grid area property का use grid item  को name देने के लि�
                           </tr>
                           <tr>
                               <td>length</td>
-                              <td>   </td>
+                              <td>length का कोई legal value , जैसे px या %. 0 default value  है   </td>
                           </tr>
   
      
@@ -5902,7 +5913,7 @@ grid area property का use grid item  को name देने के लि�
                       </table>
                   </li>
                   <li>
-                    <b>grid-row-start:-</b>
+                    <b>grid-row-start:-</b>grid-row-start property define करता है कि किस row-line  पर item start  होगा।
 
                       <h2>syntax</h2>
                       <p>grid-row-start: auto|row-line;</p>
@@ -5915,18 +5926,23 @@ grid area property का use grid item  को name देने के लि�
                           </tr>
                           <tr>
                               <td>auto</td>
-                              <td>   </td>
+                              <td>default value। flow का पालन करते हुए item रखा जाएगा।   </td>
                           </tr>
   
                           <tr>
                               <td>row-line </td>
-                              <td> |</td>
+                              <td>item का display start  करने के लिए किस row पर specific करता है |</td>
                           </tr>
                        
                       </table>
                   </li>
                     <li>
-                    <b>grid-template:-</b>
+                    <b>grid-template:-</b>grid-template property following property  के लिए एक shorthand property  है:-
+                    <ol>
+                        <li>grid-template-areas</li>
+                        <li>grid-template-columns</li>
+                        <li>grid-template-rows</li>
+                    </ol>
 
                       <h2>syntax</h2>
                       <p>grid-template: none|grid-template-rows / grid-template-columns|grid-template-areas/initial/inherit;</p>
@@ -5939,16 +5955,16 @@ grid area property का use grid item  को name देने के लि�
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                    <td>default value। column या rows का कोई specific size नहीं   </td>
                           </tr>
   
                           <tr>
                               <td>grid-template-rows/ grid-template-columns </td>
-                              <td> |</td>
+                              <td>column और rows के size (s) को specific करता है |</td>
                           </tr>
                           <tr>
                             <td>grid-template-areas</td>
-                            <td> |  </td>
+                            <td>named item का use करके grid layout specific  करता है|  </td>
                         </tr>
                       
                        
@@ -5964,7 +5980,11 @@ grid area property का use grid item  को name देने के लि�
                       </table>
                   </li>
                     <li>
-                    <b>grid-template-areas:-</b>
+                    <b>grid-template-areas:-</b>grid-template-areas property grid layout के भीतर के area को specific करता है। <br>
+
+                    आप grid-area property का use करके grid item को name दे सकते हैं, और फिर grid-template-areas  property में name का संदर्भ दे सकते हैं। <br>
+                    
+                    each area को apostrophes द्वारा define किया गया है। बिना name वाले grid  item को refer करने के लिए period sign का use करें।
 
                       <h2>syntax</h2>
                       <p>grid-template-areas: none|itemnames;</p>
@@ -5977,19 +5997,21 @@ grid area property का use grid item  को name देने के लि�
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>default value। कोई name grid area नहीं   </td>
                           </tr>
   
                           <tr>
                               <td>itemname </td>
-                              <td> |</td>
+                              <td>एक sequence जो specific करता है कि each column  और rows को कैसे display होना चाहिए |</td>
                           </tr>
                          
                        
                       </table>
                   </li>
                   <li>
-                    <b>grid-template-columns:-</b>
+                    <b>grid-template-columns:-</b>grid-template-columns property grid layout में column की number (और width) specific करता है। <br>
+
+                value एक location से अलग की गई list है, जहां each value representive column के size को specific करता है।
 
                       <h2>syntax</h2>
                       <p>grid-template-columns: none|auto|max-content|min-content|length/initial/inherit;</p>
@@ -6002,25 +6024,25 @@ grid area property का use grid item  को name देने के लि�
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
+                              <td>default value । need पड़ने पर column बनाए जाते हैं   </td>
                           </tr>
   
                           <tr>
                               <td>auto </td>
-                              <td> |</td>
+                              <td>column का size container  के size और column में  items की content के size से determined होता है |</td>
                           </tr>
                           <tr>
                             <td>max-content </td>
-                            <td> |  </td>
+                            <td> column में largest item  पर depend करने के लिए each  column का size set  करता है|  </td>
                         </tr>
                       
                         <tr>
                             <td>min-content</td>
-                            <td> </td>
+                            <td> column में smallest item  पर depend करने के लिए each  column का size set  करता है| </td>
                         </tr>
                         <tr>
                             <td>length</td>
-                            <td> </td>
+                            <td> legal length value   का use करके column का size set करता है।</td>
                         </tr>
                        
                           <tr>
@@ -6035,7 +6057,9 @@ grid area property का use grid item  को name देने के लि�
                       </table>
                   </li>
                   <li>
-                    <b>grid-template-rows:-</b>
+                    <b>grid-template-rows:-</b>grid-template-row property grid layout में row की number (और height) specific करता है। <br>
+
+                    value एक location से अलग की गई list है, जहां each value representive row के size को specific करता है।
 
                       <h2>syntax</h2>
                       <p>grid-template-rows: none|auto|max-content|min-content|length/initial/inherit;</p>
@@ -6048,26 +6072,25 @@ grid area property का use grid item  को name देने के लि�
                           </tr>
                           <tr>
                               <td>none</td>
-                              <td>   </td>
-                          </tr>
-  
-                          <tr>
-                              <td>auto </td>
-                              <td> |</td>
+                              <td>कोई size set नहीं है   need पड़ने पर column बनाए जाते हैं    </td>
                           </tr>
                           <tr>
-                            <td>max-content </td>
-                            <td> |  </td>
-                        </tr>
-                      
-                        <tr>
-                            <td>min-content</td>
-                            <td> </td>
+                            <td>auto </td>
+                            <td>row का size container  के size और row में  items की content के size से determined होता है |</td>
                         </tr>
                         <tr>
-                            <td>length</td>
-                            <td> </td>
-                        </tr>
+                          <td>max-content </td>
+                          <td> rows में largest item  पर depend करने के लिए each  row का size set  करता है|  </td>
+                      </tr>
+                    
+                      <tr>
+                          <td>min-content</td>
+                          <td>row में smallest item  पर depend करने के लिए each rows का size set  करता है| </td>
+                      </tr>
+                      <tr>
+                          <td>length</td>
+                          <td> legal length value   का use करके row का size set करता है।</td>
+                      </tr>
                         
                           <tr>
                               <td>initial</td>
@@ -6080,8 +6103,8 @@ grid area property का use grid item  को name देने के लि�
   
                       </table>
                   </li>
-                  <!-- <li>
-                    <b>hanging-propriety:-</b>hanging-punctuation property specifies करता है कि text की पूरी lines के starting में या ending में line box के बाहर full stop लगाया जा सकता है या नहीं।
+                 <li>
+                    <b>hanging-punctuation:-</b>hanging-punctuation property specifies करता है कि text की पूरी lines के starting में या ending में line box के बाहर full stop लगाया जा सकता है या नहीं।
 
                       <h2>syntax</h2>
                       <p>hanging-punctuation: none|first|last|allow-end|force-end/initial/inherit;</p>
@@ -9072,6 +9095,2472 @@ grid area property का use grid item  को name देने के लि�
   
                       </table>
                   </li> -->
+                  <li>
+                    <b>scroll-margin :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-margin-block :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin-block : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-margin-block-end :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin-block-end : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>scroll-margin-block-start :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin-block-start : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                                    <li>
+                    <b>scroll-margin-bottom :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin-bottom : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>scroll-margin-inline :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin-inline : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>scroll-margin-inline-end :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin-inline-end : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>scroll-margin-inline-start :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin-inline-start : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-margin-left :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin-left : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-margin-right :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin-right : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>scroll-margin-top :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin-top : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-padding:-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-padding : auto/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                 
+                  <li>
+                    <b>scroll-padding-block-end :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-padding-block-end : auto/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-padding-block-start :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-padding-block-start : auto/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-padding-bottom :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-padding-block : auto/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-padding-inline :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-padding-inline : auto/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-padding-inline-end :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-padding-iinline-end : auto/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-padding-inline-start:-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-padding-inline-start : auto/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-padding-left :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-padding-left : auto/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-padding-right :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-padding-right : auto/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>scroll-padding-top :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-padding-top: 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-snap-align :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-snap-align :none|start|end|center|block inline/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>start</td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>end</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>center</td>
+                            <td></td>
+                          </tr>
+                        <tr>
+                            <td>block inline</td>
+                            <td></td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-snap-stop :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-snap-stop :normal|always/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>normal</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>always </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>scroll-snap-type :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-snap-type :none|x|y|block|inline|both|mandatory|proximity/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>x </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>y</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>block</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>inline</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>both</td>
+                            <td></td>
+                          </tr>
+                        <tr>
+                            <td>mandatory</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>proximity</td>
+                            <td></td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>tab-size :-</b>
+
+                      <h2>syntax</h2>
+                      <p>tab-size : number/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>number</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>table-layout :-</b>
+
+                      <h2>syntax</h2>
+                      <p>table-layout: auto|fixed/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>fixed </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>text-align :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-align: left/right/center/justify/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>left</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>right</td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>center</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>justify</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>text-align-last :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-align-last: auto|left|right|center|justify|start|end/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>0</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>                  <li>
+                    <b>scroll-margin :-</b>
+
+                      <h2>syntax</h2>
+                      <p>scroll-margin : 0/value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                            <td>left</td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td>right</td>
+                            <td>|</td>
+                        </tr>
+                        <tr>
+                          <td>center</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>justify</td>
+                          <td></td>
+                        </tr>
+                      
+                          <tr>
+                              <td>start</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>end</td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>text-decoration:-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-decoration :text-decoration-line text-decoration-color text-decoration-style text-decoration-thickness/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>text-decoration-line</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>text-decoration-color </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>text-decoration-style</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>text-decoration-thickness</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>text-decoration-color :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-decoration-color : color/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                         
+  
+                          <tr>
+                              <td>color </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>text-decoration-line :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-decoration-line : none|underline|overline|line-through/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>underline </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>overline</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>line-through</td>
+                            <td></td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>text-decoration-style :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-decoration-style : solid|double|dotted|dashed|wavy/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>solid</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>double </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>dotted</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>dashed</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>wavy</td>
+                            <td>    </td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>text-decoration-thickness :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-decoration-thickness: auto|from-font|length/percentage/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                            <td>from-font</td>
+                            <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length/percentage </td>
+                              <td>|</td>
+                          </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b> text-indent :-</b>
+
+                      <h2>syntax</h2>
+                      <p> text-indent: length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                      
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                          <tr>
+                            <td>%</td>
+                            <td></td>
+                        </tr>
+                        
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>text-justify :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-justify: auto|inter-word|inter-character|none/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>inter-word </td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>inter-character</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td></td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>text-orientation :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-orientation: mixed|upright|sideways|sideways-right|use-glyph-orientation/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>mixed</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>upright</td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>sideways</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>sideways-right</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>use-glyph-orientation</td>
+                            <td></td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>text-overflow :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-overflow: clip|ellipsis|string/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>clip</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>ellipsis </td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>string</td>
+                            <td></td>
+                        </tr>
+                    
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>text-shadow :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-shadow: h-shadow v-shadow blur-radius color/none/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>h-shadow</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>v-shadow </td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>blur-radius</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>color</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>none</td>
+                            <td></td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>text-justify :-</b>
+
+                      <h2>syntax</h2>
+                      <p>text-transform: none|capitalize|uppercase|lowercase/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>capitalize </td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>uppercase</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>lowercase</td>
+                            <td></td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>top:-</b>
+
+                      <h2>syntax</h2>
+                      <p>top: auto/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>%</td>
+                            <td></td>
+                        </tr>
+                      
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>transform :-</b>
+
+                      <h2>syntax</h2>
+                      <p>transform: none|transform-functions/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>matrix(n,n,n,n,n,n,n) </td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>matrix3d <br>(n,n,n,n,,n,n,,n,n,,n,,n,n,n,n,n,n,n)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>translate(x,y)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>translate3d(x,y,z)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>translateX(x)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>translateY(y)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>translateZ(z)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>scale(x,y)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>scale3d(x,y,z)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>scaleX(x)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>scaleY(y)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>scaleZ(z)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>rotate(angle)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>rotate3d(x,y,z,angle)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>rotateX(angle)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>rotateY(angle)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>rotateZ(angle)</td>
+                            <td></td>
+                        </tr>
+                        <tr> 
+                            <td> skew(x-angle,y-angle)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>skewX(angle)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>skewY(angle)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>perspective</td>
+                            <td></td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>transform-origin :-</b>
+
+                      <h2>syntax</h2>
+                      <p>transform-origin: x-axis y-axis z-axis/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>x-axis</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>y-axis </td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>z-axis</td>
+                            <td></td>
+                        </tr>
+                           
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>transform-style :-</b>
+
+                      <h2>syntax</h2>
+                      <p>transform-style: flat|preserve-3d/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>flat</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>preserve-3d</td>
+                              <td>|</td>
+                          </tr>
+                     
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>transition :-</b>
+
+                      <h2>syntax</h2>
+                      <p>transition: property duration timing-function delay/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>transition-property</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>transition-duration</td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>transition-timimg-function</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>transition-delay</td>
+                            <td></td>
+                        </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>transition-delay :-</b>
+
+                      <h2>syntax</h2>
+                      <p>transition-delay: time/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>time</td>
+                              <td></td>
+                          </tr>
+  
+                          
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>transition-duration :-</b>
+
+                      <h2>syntax</h2>
+                      <p>transition-duration: time/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>time</td>
+                              <td></td>
+                          </tr>
+  
+                         
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>transition-property :-</b>
+
+                      <h2>syntax</h2>
+                      <p>transition-property: none/all/property/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>none</td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                            <td>all</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>property</td>
+                            <td></td>
+                          </tr>
+  
+                         
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>transition-timing-function :-</b>
+
+                      <h2>syntax</h2>
+                      <p>transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>ease</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>linear </td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>ease-in</td>
+                            <td></td>
+                        </tr>
+                           <tr>
+                            <td>ease-out</td>
+                            <td></td>
+                           </tr>
+                           <tr>
+                            <td>ease-in-out</td>
+                            <td></td>
+                           </tr>
+                           <tr>
+                            <td>step-start</td>
+                            <td></td>
+                           </tr>
+                           <tr>
+                            <td>step-end</td>
+                            <td></td>
+                           </tr>
+                           <tr>
+                            <td>steps(int,start/end)</td>
+                            <td></td>
+                           </tr>
+                           <tr>
+                            <td>cubic-bezier(n,n,n,n)</td>
+                            <td></td>
+                           </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>translate :-</b>
+
+                      <h2>syntax</h2>
+                      <p>translate: x-axis y-axis z-axis/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>x-axis</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>y-axis </td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>z-axis</td>
+                            <td></td>
+                        </tr>
+                           
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>unicode-bidi :-</b>
+
+                      <h2>syntax</h2>
+                      <p>unicode-bidi: normal|embed|bidi-override/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>normal</td>
+                              <td></td>
+                          </tr>
+  
+                          <tr>
+                              <td>embed </td>
+                              <td>|</td>
+                          </tr>
+                        <tr>
+                            <td>bidi-override</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>isolate</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>isolate-override</td>
+                        </tr>
+                           <tr>
+                            <td>plaintext</td>
+                           </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <!--  <li>
+                    <b>user-select :-</b> user-select property का इस्तेमाल user selection को control करने के लिए किया जाता है |
+
+                      <h2>syntax</h2>
+                      <p>user-select: auto|none|text|all/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>Browser के हिसाब से uesr text को select करता है |</td>
+                          </tr>
+  
+                          <tr>
+                              <td>none </td>
+                              <td>text को select नहीं किया जा सकता है |</td>
+                          </tr>
+                        <tr>
+                            <td>text</td>
+                            <td>text को select किया जा सकता है</td>
+                        </tr>
+                        <tr>
+                            <td>all</td>
+                            <td></td>
+                        </tr>
+                           
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+         <li>
+                    <b>vertical-align :-</b>vertical-align property का इस्तेमाल table cells के लिए और elements के vertical alignment दी जाती है |
+
+                      <h2>syntax</h2>
+                      <p>vertical-align: baseline|length|sub|super|top|text-top|middle|bottom|text-bottom/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>baseline</td>
+                              <td>Default. Parent element के baseline के साथ element की baseline पर align किया जाता है |</td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>दिए गए measurement unit के हिसाब से element के baseline को align किया जाता है | negative value दी जा सकती है |</td>
+                          </tr>
+
+                        <tr>
+                            <td>%</td>
+                            <td>दिए गए percentage के हिसाब से element के baseline को align किया जाता है | percentage के साथ दिए हुए 'line-height' property से कुछ भिन्नता आ सकती है | negative value दी जा सकती है </td>
+                        </tr>
+
+                        <tr>
+                            <td>sub</td>
+                            <td>अपने parent element के subscript baseline के साथ element के baseline पर align किया जाता है </td>
+                        </tr>
+
+                        <tr>
+                            <td>super</td>
+                            <td>अपने parent element के superscript baseline के साथ element के baseline पर align किया जाता है</td>
+                        </tr>
+
+                        <tr>
+                            <td>top</td>
+                            <td>अपने line के हिसाब से top पर align किया जाता है</td>
+                        </tr>
+
+                        <tr>
+                            <td>text-top</td>
+                            <td>अपने parent element के font के साथ element को top पर align किया जाता है</td>
+                        </tr>
+
+                        <tr>
+                            <td>middle</td>
+                            <td>अपने line के हिसाब से middle पर align किया जाता है</td>
+                        </tr>
+
+                        <tr>
+ <td>bottom</td>
+                            <td>अपने line के हिसाब से bottom पर align किया जाता है </td>
+                        </tr>
+                           
+                        <tr>
+                            <td>text-bottom</td>
+                            <td>अपने parent element के font के साथ element को bottom पर align किया जाता है </td>
+                        </tr>
+
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>visibility :-</b>visibility property का इस्तेमाल Element को visible या hidden करने के लिए किया जाता है |
+
+                      <h2>syntax</h2>
+                      <p>visibility: visible|hidden|collapse/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>visible</td>
+                              <td>Default. Element visible होता है |</td>
+                          </tr>
+  
+                          <tr>
+                              <td>hidden</td>
+                              <td>Element display होता है लेकिन hidden होता है|</td>
+                          </tr>
+                        <tr>
+                            <td>collapse</td>
+                            <td>table element के लिए होता है </td>
+                        </tr>
+                           
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>white-space :-</b>white-space Property से element पर दिए content के white-spaces पर operation किया जाता है |
+
+                      <h2>syntax</h2>
+                      <p>white-space: normal|nowrap|pre|pre-line|pre-wrap/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>normal</td>
+                              <td>Default. whitespaces के sequence को single white space में collapse किया जाता है | ये text क wrap करने की क्षमता रखता है |</td>
+                          </tr>
+  
+                          <tr>
+                              <td>nowrap </td>
+                              <td>whitespaces के sequence को single white space में collapse किया जाता है | text को wrap नहीं किया जाता है | text को wrap करने के लिए < br>(break line) का इस्तेमाल करे |</td>
+                          </tr>
+                        <tr>
+                            <td>pre</td>
+                            <td>	 < pre> element जैसे होता है | whitespaces को preserve किया जाता है | सिर्फ < br> से line को break किया जाता है | text को wrap नहीं किया जाता है |</td>
+                        </tr>
+                           
+                        <tr>
+                            <td>pre-line</td>
+                            <td>whitespaces के sequence को single white space में collapse किया जाता है | line break करने के लिए < br> का इस्तेमाल किया जाता है | text को wrap किया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>pre-wrap</td>
+                            <td>	Whitespace को preserve किया जाता है | line break करने के लिए < br> का इस्तेमाल किया जाता है | text को wrap किया जाता है |</td>
+                        </tr>
+
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                  <li>
+                    <b>widows:-</b>widows rows की न्minimum number specific करती है जिसे किसी page या coloum के top पर छोड़ा जाना चाहिए।
+
+                      <h2>syntax</h2>
+                      <p>widows: integer/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>integer</td>
+                              <td>किसी Page या column के top पर छोड़ी जाने वाली rows की minimum number specific करता है। negative values की permision नहीं है</td>
+                          </tr>
+  
+                           
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+               <li>
+                    <b>width :-</b>width property से element पर fixed width को set किया जाता है |
+
+                      <h2>syntax</h2>
+                      <p>width: auto|value/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>auto</td>
+                              <td>Default. browser द्वारा width को दिया जाता है |</td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>	width को measurement unit में दिया जाता है |</td>
+                          </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>width को percentage(%) में दिया जाता है </td>
+                        </tr>
+                           
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                <li>
+                    <b>word-break:-</b>word-break property का इस्तेमाल Chinese, Korean और Japanese language को छोडके सभी languages के lines को value के हिसाब से break करने के लिए किया जाता है |
+
+                      <h2>syntax</h2>
+                      <p>word-break: normal|break-all|keep-all|break-word/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>normal</td>
+                              <td>	Default. normal तरीके से line को break किया जाता है |</td>
+                          </tr>
+  
+                          <tr>
+                              <td>break-all </td>
+                              <td>word को break करने की क्षमता रखता है |</td>
+                          </tr>
+                        <tr>
+                            <td>keep-all</td>
+                            <td>Same as normal. word को break करने की क्षमता नहीं रखता है </td>
+                        </tr>
+                           <tr>
+                            <td>break-word</td>
+                            <td>prevent को रोकने के लिए, arbitrary points पर word को break किया  जा सकता है</td>
+                           </tr>
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                    <li>
+                    <b>word-spacing :-</b>word-spacing Property से element के हर word के बीच के whitespace को increase या decrease किया जाता है |
+
+                      <h2>syntax</h2>
+                      <p>word-spacing: normal/length/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>normal</td>
+                              <td>Default. यहाँ पर font के अनुसार whitespace(word-space) होता है |</td>
+                          </tr>
+  
+                          <tr>
+                              <td>length </td>
+                              <td>words के बीच में space देने के लिए measurement unit का इस्तेमाल किया जाता है |</td>
+                          </tr>
+                        
+                           
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+                 <li>
+                    <b>word-wrap :-</b>word-wrap property का इस्तेमाल Chinese, Korean और Japanese language को छोडके सभी languages के lines को value के हिसाब से break करने के लिए किया जाता है |
+
+
+
+                      <h2>syntax</h2>
+                      <p>word-wrap: normal|break-word/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>normal</td>
+                              <td>Default. normal तरीके से line को break किया जाता है |</td>
+                          </tr>
+  
+                          <tr>
+                              <td>break-word </td>
+                              <td>जरुरत पर word को break करने की क्षमता रखता है |</td>
+                          </tr>
+                        
+                           
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <li>
+                    <b>writing-mode :-</b>writing-mode property specifie करता है कि text की lines horizontally  या vertically रूप से रखी गई हैं या नहीं।
+
+                      <h2>syntax</h2>
+                      <p>writing-mode: horizontal-tb|vertical-rl|vertical-lr/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+                          <tr>
+                              <td>horizontal-tb</td>
+                              <td>content को horizontally रूप से left से right,top से bottom तक vertically रूप से flow होने दें</td>
+                          </tr>
+  
+                          <tr>
+                              <td>vertical-rl</td>
+                              <td>content को vertically रूप से top से bottom,right से left तक horizontally रूप से flow होने दें|</td>
+                          </tr>
+                        <tr>
+                            <td>vertical-lr</td>
+                            <td>content को vertically रूप से top से bottom,left से right तक horizontally रूप से flow होने दें</td>
+                        </tr>
+                           
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li>
+
+                  <!-- <li>
+                    <b>z-index :-</b>z-index property का इस्तेमाल elements का वर्णन Custom stacking order में करने के लिए किया जाता है | <br>
+
+                    z-index ये position property के हिसाब से by default elements को stacking order में represent करता है | <br>
+                    
+                    z-index ये z-axis की तरह ही होता है | जैसे कि, निचे image में दिया हुआ है | इसकी value positive, negative या 0 भी हो सकती है | <br>
+                    
+                    अगर आपको z-axis के बारे में जरा भी पता नहीं हो तो आप निचे दी हुई image में z-index line को ध्यान से देखे | <br>
+                    
+                    अगर elements पर कोई z-index नहीं होती है तो by default उसकी value 0 होती है |<br>
+                    <b>Note :</b> static position हो तो z-index property का effect नहीं दिखेगा | अगर position; absolute, relative या fixed हो तो z-index property का effect दिखेगा | <br>
+
+                   <b> Note :</b> position अगर absolute, relative या fixed होती है तो दूसरे element के position पर कोई फर्क नहीं पड़ता है |
+
+                      <h2>syntax</h2>
+                      <p>z-index: auto|number/initial/inherit;</p>
+  
+                      <h2>property value</h2>
+                      <table id="customers">
+                          <tr>
+                              <th>Value</th>
+                              <th>description</th>
+                          </tr>
+
+                          <tr>
+                              <td>auto</td>
+                              <td>Default. ये default होता है |</td>
+                          </tr>
+  
+                          <tr>
+                              <td>number </td>
+                              <td>custom stack order के लिए number दिया जाता है | यहाँ पर negative number भी दिया जा सकता है|</td>
+                          </tr>
+                        
+                           
+                          <tr>
+                              <td>initial</td>
+                              <td>Default value; set की जाती है | </td>
+                          </tr>
+
+                          <tr>
+                              <td>inherit </td>
+                              <td>parent element की value को set किया जाता है | </td>
+                          </tr>
+  
+                      </table>
+                  </li> -->
+                 
+
             </ul>
 
 
