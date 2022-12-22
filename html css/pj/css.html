@@ -1,0 +1,2612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="st.css">
+    <title>Html</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="heding">
+            <h1>HTML Tags </h1>
+
+        </div>
+        <div class="btn">
+        <button >
+            <a href="idx.html">Html Tags
+             
+           </a></button>
+           <button >
+            
+                <a href="index.html"> Css Property</a>
+           </a></button>
+           <button>
+            
+            <a href=""> javascript </a>
+       </a></button>
+    </div>
+        <div class="content">
+            <ul>
+                <li>
+                    <b>
+                        < !-- --> :-
+                    </b> comment tag का use source code में comment डालने के लिए किया जाता है। comment browser में
+                    display नहीं होती हैं।
+                </li>
+                <li>
+                    <b>
+                        < !DOCTYPE> :-
+                    </b>
+                    All HTML document
+                    <!DOCTYPE> declaration के साथ start होने चाहिए। <br>
+                    declaration एक HTML tag नहीं है। यह browser के लिए एक "information" है कि किस document type को
+                    expect की जाए।
+                </li>
+                <li>
+                    <b>
+                        < a> :-
+                    </b>
+
+                    < a> tag एक hyperlink को define करता है, जिसका use one page से another page पर link करने के लिए किया
+                        जाता है।<br>
+                        < a> element की most important attribute href विशेषता है, जो link's के destination को indicates
+                            करती है।
+
+                            <h2>Attributes</h2>
+                            <table id="customers">
+                                <tr>
+                                    <th>attribute</th>
+                                    <th>Value</th>
+                                    <th>description</th>
+                                </tr>
+                                <tr>
+                                    <td>download</td>
+                                    <td>filename</td>
+                                    <td>specifie करता है कि जब कोई user hyperlink पर click करता है तो target download हो जाएगा</td>
+                                </tr>
+                                <tr>
+                                    <td>href</td>
+                                    <td>URL</td>
+                                    <td>link जिस page पर जाता है उसका URL specifie करता है</td>
+                                </tr>
+                                <tr>
+                                    <td>hreflang</td>
+                                    <td> language_code</td>
+                                    <td>link किए गए document की language specifie करता है</td>
+                                </tr>
+                              
+            
+                                <tr>
+                                    <td>media</td>
+                                    <td>media_query</td>
+                                    <td>specifie करता है कि link किए गए document को किस media/device के लिए optimized किया गया है</td>
+                                </tr>
+            
+                                <tr>
+                                    <td>ping</td>
+                                    <td>list_of_URLs</td>
+                                    <td>URL की एक space-separated list specifie करता है, जब link का followed किया जाता है, तो body ping के साथ post request browser द्वारा (background में) भेजे जाएंगे। आमतौर पर tracking के लिए use  किया जाता है।</td>
+                                </tr>
+            
+            
+                                <tr>
+                                    <td>referrerpolicy</td>
+            
+                                    <td>
+                                        <ol>
+                                            <li>no-referrer</li>
+                                            <li>no-referrer-when-downgrade</li>
+                                            <li> origin </li>
+                                            <li> origin-when-cross-origin </li>
+                                            <li> same-origin </li>
+                                            <li> strict-origin-when-cross-origin </li>
+                                            <li> unsafe-url</li>
+                                        </ol>
+                                    </td>
+                                   
+                                    <td>specifie करता है कि link के साथ कौन सी referrer infromation भेजनी है</td>
+                                </tr>
+                                <tr>
+                                    <td>rel</td>
+                                    <td>
+                                        <ol>
+                                            <li> alternate </li>
+                                            <li> author </li>
+                                            <li> bookmark</li>
+                                            <li> external</li>
+                                            <li> help</li>
+                                            <li> license</li>
+                                            <li> next</li>
+                                            <li> nofollow</li>
+                                            <li>noreferrer</li>
+                                            <li>noopener</li>
+                                            <li> prev</li>
+                                            <li> search</li>
+                                            <li>tag</li>
+                                        </ol>
+                                    </td>
+                                    <td>current document और link किए गए document के बीच relation specifie  करता है</td>
+                                </tr>
+            
+                                <tr>
+                                    <td>target</td>
+                                    <td>
+                                        <ol>
+                                            <li> _blank</li>
+                                            <li> _parent</li>
+                                            <li> _self</li>
+                                            <li> _top</li>
+                                        </ol>
+                                    </td>
+                                    <td>specifie करता है कि link किए गए document को कहाँ  open  है</td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                        media_type
+                                    </td>
+                                    <td>link किए गए document के type को media से type किया जाता है</td>
+                                </tr>
+                            </table> 
+             
+
+               
+            </li>
+            <li>
+                <b>
+                    < abbr> :-
+                </b>
+                
+< abbr> tag एक abbreviation या acronym को define करता है,like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+
+            </li> 
+            <li>
+                <b>< acronym> :-</b> HTML 4 मे एक acronym define  करने के  लिए  use   किया  जाता था
+                लेकन अब HTML5 मे नही है। इसके बदले < abbr> का use  करते  है ।
+            </li>  
+            <li>
+                <b>
+                    < address> :-
+                </b>contact information specifie करता है। address की information बताता है। <br>
+                contact information एक email address, URL, physical address, phone number, social media handle, etc. हो सकती है. <br>
+                < address> element में text  आमतौर पर italic में Presented होता है, और browser हमेशा < address> element के पहले और बाद में एक  line break add कर  देगा।
+            </li>
+            <li>
+                <b>
+                    < applet> :-
+                </b>यह Embedded applet को define करता है, जो अभी HTML5 
+                नही है। इसके जगह < object> या < embed> का use करते है । 
+            </li>
+            <li>
+                <b>< area> :-</b>image  map के अंदर area को  define  करता है।
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                        <th>Value</th>
+                        <th>description</th>
+                    </tr>
+                    <tr>
+                        <td>alt</td>
+                        <td>text</td>
+                        <td>area के लिए एक alternate text specifie करता है। required  है अगर href attribute present  है</td>
+                    </tr>
+                    <tr>
+                        <td>coords</td>
+                        <td>coordinates</td>
+                        <td>area  के coordinates specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>download</td>
+                        <td> filename</td>
+                        <td>specifie करता है कि जब कोई user hyperlink पर click करता है तो target download हो जाएगा</td>
+                    </tr>
+                    <tr>
+                        <td>href</td>
+                        <td>URL</td>
+                        <td>link जिस page पर जाता है उसका URL specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>hreflang</td>
+                        <td> language_code</td>
+                        <td>link किए गए document की language specifie करता है</td>
+                    </tr>
+
+                    <tr>
+                        <td>media</td>
+                        <td>media_query</td>
+                        <td>specifie करता है कि link किए गए document को किस media/device के लिए optimized किया गया है</td>
+                    </tr>
+
+                   
+
+
+                    <tr>
+                        <td>referrerpolicy</td>
+
+                        <td>
+                            <ol>
+                                <li>no-referrer</li>
+                                <li>no-referrer-when-downgrade</li>
+                                <li> origin </li>
+                                <li> origin-when-cross-origin </li>
+                                <li> same-origin </li>
+                                <li> strict-origin-when-cross-origin </li>
+                                <li> unsafe-url</li>
+                            </ol>
+                        </td>
+                        <td> specifie करता है कि link के साथ कौन सी referrer infromation भेजनी है</td>
+                    </tr>
+                    <tr>
+                        <td>rel</td>
+                        <td>
+                            <ol>
+                                <li> alternate </li>
+                                <li> author </li>
+                                <li> bookmark</li>
+                                <li> external</li>
+                                <li> help</li>
+                                <li> license</li>
+                                <li> next</li>
+                                <li> nofollow</li>
+                                <li>noreferrer</li>
+                                <li>noopener</li>
+                                <li> prev</li>
+                                <li> search</li>
+                                <li>tag</li>
+                            </ol>
+                        </td>
+                        <td>current document और link किए गए document के बीच relation specifie  करता है</td>
+                    </tr>
+                    <tr>
+                        <td>shape</td>
+                        <td>
+                            <ol>
+                                <li> default</li>
+                                <li> rect</li>
+                                <li> circle</li>
+                                <li> poly</li>
+                            </ol>
+                        </td>
+                        <td>area के shaped specifie करता है</td>
+                    </tr>
+
+                    <tr>
+                        <td>target</td>
+                        <td>
+                            <ol>
+                                <li> _blank</li>
+                                <li> _parent</li>
+                                <li> _self</li>
+                                <li> _top</li>
+                            </ol>
+                        </td>
+                        <td>specifie करता है कि link किए गए document को कहाँ  open  है</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>
+                            media_type
+                        </td>
+                        <td>link किए गए document के type को media से type किया जाता है</td>
+                    </tr>
+                </table> 
+            </li>
+            <li>
+                <b>< article> :-</b>< article> element का इस्तेमाल articles का वर्णन करने के लिए किया जाता है | इस element का इस्तेमाल दुसरे sites के मुकाबले unique और independant होता है |
+            </li>
+          
+            <li>
+                <b>< aside> :-</b>< aside> element का इस्तेमाल content से कुछ अलग देने के लिए किया जाता है | < aside> element को website के sidebar के लिए भी इस्तेमाल किया जाता है |
+            </li>
+
+              <li>
+                <b>< audio> :-</b>< audio> element का इस्तेमाल HTML Document पर audio file को add करने के लिए किया जाता है |<br>
+
+                    < audio> element के इस्तेमाल से आप HTML Document पर < source> element की मदद से audio file को embed करके उस audio को सुन भी सकते है |
+
+                    <h2>Attributes</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>attribute</th>
+                            <th>Value</th>
+                            <th>description</th>
+                        </tr>
+                        <tr>
+                            <td>autoplay</td>
+                            <td>autoplay</td>
+                            <td>< audio> element load होने पर दी हुई audio file play हो जाती है |</td>
+                        </tr>
+                        <tr>
+                            <td>controls</td>
+                            <td>controls</td>
+                            <td>audio file के लिए controls(play,pause,seek,volume)दिए जाते है |</td>
+                        </tr>
+                        <tr>
+                            <td>loop</td>
+                            <td>loop</td>
+                            <td>audio file बार-बार play होती है |</td>
+                        </tr>
+                        <tr>
+                            <td>muted</td>
+                            <td>muted</td>
+                            <td>audio file को mute किया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>preload</td>
+                            <td>auto <br>metadata <br> none</td>
+                            <td>audio को preload करना चाहिए या नहीं ये यहाँ पर दिया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>src</td>
+                            <td>audio file path</td>
+                            <td>audio file को embed करने के लिए इस्तेमाल किया जाता है |</td>
+                        </tr>
+                        </table>
+            </li>
+
+              <li>
+                <b>< b> :-</b>यह bold text को define करता है।
+            </li>
+            <li>
+                <b>< base> :-</b>HTML web page मे सभी relative URLs को base URL/target specifie
+                करता है
+
+                <h2>Attributes</h2>
+                            <table id="customers">
+                                <tr>
+                                    <th>attribute</th>
+                                    <th>Value</th>
+                                    <th>description</th>
+                                </tr>
+                               
+                                <tr>
+                                    <td>href</td>
+                                    <td>URL</td>
+                                    <td>link जिस  page पर जाता है उसका URL specifie करता है</td>
+                                </tr>
+                                <tr>
+                                    <td>target</td>
+                                    <td>
+                                        <ol>
+                                            <li> _blank</li>
+                                            <li> _parent</li>
+                                            <li> _self</li>
+                                            <li> _top</li>
+                                        </ol>
+                                    </td>
+                                    <td>page में सभी hyperlink और forms के लिए default target specifie करता है</td>
+                                </tr>
+                                </table>
+            </li>
+
+          
+            <li>
+                <b>< basefont> :-</b>सभी text का default color, font, और size, को  specifie करता था अब यह
+                HTML5 मे नही है। इसके जगह CSS Use होता है
+            </li>
+
+            <li>
+                <b>< bdi> :-</b>यह text के एक  part को अलग करता है जिसे  इसके बाहर अन्य  text से अलग
+                direction  मे formating किया  जा सकता है
+            </li>
+            <li>
+                <b>< bdo> :-</b>इसका पूरा नाम Bi-Directional Override हैऔर यह text direction को
+                Overrides करता है।
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                        <th>Value</th>
+                        <th>description</th>
+                    </tr>
+                    <tr>
+                        <td>dir</td>
+                        <td>ltr <br>rtl</td>
+                        <td>required। < bdo> element के अंदर text की text direction specifie  करता है</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< big> :-</b>यह big  text को define  करता है। जो अब HTML5 से हटा दिया  गया है।
+                इसके जगह CSS का उपयोग करे।
+            </li>
+            <li> 
+                <b> < block> </b> Block tag जब दिया जाता है तब उस tag के ऊपर line break की जाती है और निचे भी link break की जाती है | block tags ये newline पर शुरू होते है |
+            </li>
+            <li>
+                <b>< blockquote> :-</b>एक section को define  करता है जो  किसी अन्य  source से quoted किया 
+                जाता है। और एक lone quoted  को specifie  करता है
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                        <th>Value</th>
+                        <th>description</th>
+                    </tr>
+                    <tr>
+                        <td>cite</td>
+                        <td>url</td>
+                        <td>quotation के source को specifie करता है</td>
+                    </tr>
+                    </table>
+            </li>
+
+            <li>
+                <b>< body> :-</b>HTML document  के body को define  करता है। यह web page  का main part 
+                होता है।
+            </li>
+            <li>
+                <b>< br> :-</b>single एक line break को define  करता है।
+            </li>
+            <li>
+                <b>< button> :-</b>Webpage  मे click करने clickable button को define करता है।
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                        <th>Value</th>
+                        <th>description</th>
+                    </tr>
+                    <tr>
+                        <td>autofocus</td>
+                        <td>autofocus</td>
+                        <td>specifie करता है कि page load होने पर एक button automatically रूप से focus हो जाना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>disabled</td>
+                        <td>disabled</td>
+                        <td>specifie करता है कि एक button disabled होना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>form</td>
+                        <td>form-_id</td>
+                        <td>specifie करता है कि button किस रूप का है</td>
+                    </tr>
+                  
+
+                    <tr>
+                        <td>formaction</td>
+                        <td>url</td>
+                        <td>specifie करता है कि form submit  किए जाने पर form data कहाँ भेजा जाए। only type = "submit" के लिए</td>
+                    </tr>
+
+                    <tr>
+                        <td>formenctype</td>
+                        <td>application/x-www-form-urlencoded
+                            multipart/form-data
+                            text/plain</td>
+                        <td>specifie करता है कि server पर send से पहले form data को कैसे encoded किया जाना चाहिए। only type = "submit" के लिए</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>formmethod</td>
+
+                        <td>
+                            get
+                            post
+                        </td>
+                       
+                        <td>specifie करता है कि form-data कैसे भेजा जाए (कौन सी HTTP method का use करना है)। only type  = "submit" के लिए</td>
+                    </tr>
+                    <tr>
+                        <td>formnovalidate</td>
+                        <td>
+                            formnovalidate
+                        </td>
+                        <td>specifie करता है कि form-data को submit करने पर validation नहीं किया जाना चाहिए। only type = "submit" के लिए</td>
+                    </tr>
+
+                    <tr>
+                        <td>formtarget</td>
+                        <td>
+                            <ol>
+                                <li> _blank</li>
+                                <li> _parent</li>
+                                <li> _self</li>
+                                <li> _top</li>
+                               <li> formtarget</li>
+                            </ol>
+                        </td>
+                        <td>specifie करता है कि form submit करने के बाद response कहाँ display करनी है। only type = "submit" के लिए</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>name</td>
+                        <td>button के लिए एक name specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>
+                            button <br>reset <br> submit <br>
+                        </td>
+                        <td>button के type को specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>value</td>
+                        <td>text</td>
+                        <td>button के लिए initial value specifie करता है</td>
+                    </tr>
+                </table> 
+            </li>
+
+            <li>
+                <b>< canvas> :-</b>< canvas> element का इस्तेमाल HTML graphics draw करने के लिए किया जाता है | < canvas> element ये javascript का इस्तेमाल करके graphics को draw करता है |
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                        <th>Value</th>
+                        <th>description</th>
+                    </tr> 
+                    <tr>
+                        <td>height</td>
+                        <td>pixels</td>
+                        <td>default height 300px. यहाँ पर width; pixels में दी जाती है |</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>pixels</td>
+                        <td>default height 150px. यहाँ पर height; pixels में दी जाती है |</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< caption> :-</b>इस element का use table title define करने  के लिए किया जाता है । 
+            </li>
+            <li>
+                <b>< center> :-</b>Text को center align मे define करने के  लिए use किया जाता था। पर अब
+                यह टैग को HTML5 से हटा   दिया   है। इसके जगह CSS का उपयोग करे।
+            </li>
+            <li>
+                <b>< cite> :-</b>एक creative work  (जैसे एक  book, एक poem, etc) के title को define
+                करता है।
+            </li>
+            <li>
+                <b>< code> :-</b>HTML document मे, Computer programming code को  define करता
+                है
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    
+                        <th>description</th>
+                    </tr> 
+                    <tr>
+                        <td>< samp></td>
+                        <td>computer program से sample output को define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< kbd></td>
+                        <td>Keyboard input define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< var></td>
+                        <td> variable define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< pre></td>
+                        <td> preformatted text define करता है</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< col> :-</b>यह HTML table मे, हर एक column को <colgroup> element को  define
+                    करता है।
+
+                    <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr> 
+                    <tr>
+                        <td>span</td>
+                        <td>number</td>
+                        <td>उन column की number specifie  करता है जिन्हें < col> element को फैलाना चाहिए</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< colgroup> :-</b>HTML table मे, एक या other columns के group को define करता है।
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr> 
+                    <tr>
+                        <td>span</td>
+                        <td>number</td>
+                        <td>specifie करता है कि column group में कितने coloum होने चाहिए</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< data> :-</b><data> element का इस्तेमाल content का machine-readable translation; value attribute द्वारा देने के लिए किया जाता है |<br>
+
+                    अगर दिया हुआ content ये date या time से संबंधित हो तो < time> element को देना अनिवार्य होता है | <br>
+                    
+                    machine-readable translation ये computer द्वारा सामान्य तरीके से processed हो जाते है | machine-readable ये human-readable के विरुद्ध होता है | <br>
+
+                    <h2>Attributes</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>attribute</th>
+                        <th>values</th>
+                            <th>description</th>
+                        </tr> 
+                        <tr>
+                            <td>value</td>
+                            <td>machine-readable translation</td>
+                            <td>element के content का machine-readable translation दिया जाता है |</td>
+                        </tr>
+                        </table>
+            </li>
+
+              <li>
+                <b>< datalist> :-</b>< datalist> ये element < input> element से बाँध दिया जाता है | इस element द्वारा आप <option> element द्वारा list को define कर सकते है और User द्वारा input भी दिया जा सकता है |
+ 
+            </li>
+              <li>
+                <b>< dd> :-</b>Description list term के description/value को define करता है।
+            </li>
+              <li>
+                <b>< del> :-</b>HTML document से हटाए गए text को define  करता है
+
+                h2>Attributes</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>attribute</th>
+                        <th>values</th>
+                            <th>description</th>
+                        </tr> 
+                        <tr>
+                            <td>cite</td>
+                            <td>URL</td>
+                            <td>किसी document के लिए एक URL specifie करता है जो text को deleted/changed जाने का reason बताता है|</td>
+                        </tr>
+                        <tr>
+                            <td>datetime</td>
+                            <td>YYYY-MM-DDThh:mm:ssTZD</td>
+                            <td>text deleted/changed जाने की date और time specifie करता है</td>
+                        </tr>
+                        </table> 
+            </li>
+            <li>
+                <b>< details> :-</b>< details> इस element से user < details> element पर दिए हुए content को open या close कर सकता है |<br>
+
+                    अगर आप 'open' attribute नहीं देते हो तो वो content default; invisible ही होता है और अगर आप 'open' attribute देते हो तो वो content visible होता है |
+                    
+                    h2>Attributes</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>attribute</th>
+                        <th>values</th>
+                            <th>description</th>
+                        </tr> 
+                        <tr>
+                            <td>open</td>
+                            <td>open</td>
+                            <td>इस attribute को देने पर < details> element पर दिया हुआ content open या show होता है |</td>
+                        </tr>
+                    
+                        </table> 
+                    
+            </li>
+            <li>
+                <b>< dfn> :-</b> Definition team को define करता है।
+            </li>
+
+            <li>
+                <b>< dialog> :-</b>< dialog> का इस्तेमाल dialog box, popup और window को define करने के लिए किया जाता है |
+
+                h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr> 
+                    <tr>
+                        <td>open</td>
+                        <td>open</td>
+                        <td>इस attribute को देने पर < dialog> element; visible होता है |</td>
+                    </tr>
+                
+                    </table> 
+            </li>
+            <li>
+                <b>< dir> :-</b>Directory list को define करता है, लेकिन  अभी यह HTML5 मे नही
+                है। इसका बदले < ul> tag  का use  करे।
+            </li>
+
+            <li>
+                <b>< div> :-</b>HTML page   की section को define  करता है।
+            </li>
+            <li>
+                <b>< dl> :-</b>Description list को define करता है।
+            </li>
+
+            <li>
+                <b>< dt> :-</b>यह भी Definition team को define करता है।
+            </li>
+            <li>
+                <b>< em> :-</b>Emphasize text format को define  करता है। और text को italic मे
+                display  करता है।
+            </li>
+            <li>
+                <b>< embed> :-</b>< embed> element ये non-HTML external application या interactive content को HTML Webpage पर embed करने के लिए इस्तेमाल किया जाता है |
+
+                    < embed> element को अलग से closing element नहीं होता है |
+                    
+
+                    h2>Attributes</h2>
+                    <table id="customers">
+                        <tr>
+                            <th>attribute</th>
+                        <th>values</th>
+                            <th>description</th>
+                        </tr> 
+                        <tr>
+                            <td>height</td>
+                            <td>pixels</td>
+                            <td>यहाँ पर height; pixels में दी जाती है |</td>
+                        </tr>
+                        <tr>
+                            <td>src</td>
+                            <td>URL</td>
+                            <td>यहाँ पर source path दिया जाता है</td>
+                        </tr>
+                        <tr>
+                            <td>type</td>
+                            <td>media_type</td>
+                            <td>यहाँ पर source file का media type दिया जाता है |</td>
+                        </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>pixels</td>
+                        <td>यहाँ पर width; pixels में दी जाती है |</td>
+                    </tr>
+                        </table> 
+                    
+                    
+            </li>
+            <li>
+                <b>< fieldset> :-</b>Form related element  के एक group  को define  करता है
+
+       
+                h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr> 
+                    <tr>
+                        <td>disabled</td>
+                        <td>disabled</td>
+                        <td>specifie करता है कि relative form element के group को disabled किया जाना चाहिए|</td>
+                    </tr>
+                    <tr>
+                        <td>form</td>
+                        <td>form</td>
+                        <td>specifie करता है कि fieldset किस  form से संबंधित है</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>text</td>
+                        <td>fieldset के लिए एक name specifie करता है|</td>
+                    </tr>
+               
+                    </table> 
+
+            </li>
+            <li>
+                <b>< figcaption> :-</b>< figcaption> इस element से < figure> element के लिए caption दिया जाता है |
+
+                    < figcaption> ये < figure> का पहला या आखिर का child element हो सकता है |
+                    
+                    
+            </li>
+
+            <li>
+                <b>< figure> :-</b>< figure> इस element का इस्तेमाल किसी आकृति, आकार, रूप, या रेखा-चित्र का वर्णन करने के लिए किया जाता है |
+
+                    < figure> में < figcaption> का इस्तेमाल figure के लिए caption देने के लिए किया जाता है |
+            </li>
+            <li>
+                <b>< font> :-</b>इसका use text की size, color etc को लिया किया जाता था अब यह
+                HTML5 मे नही है। CSS का use  करे।
+            </li>
+              <li>
+                <b>< footer> :-</b>< footer> इस element का इस्तेमाल HTML Document के footer का वर्णन करने के लिए किया जाता है |
+
+                    < footer> element पर coyright data, author information, current document से संबंधित links, contact information, subscription bar या address दिया जा सकता है |
+            </li>
+            <li>
+                <b>< form> :-</b>HTML document मे form section को define करता है। user input के
+                लिए ।
+
+                h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr> 
+                    <tr>
+                        <td>accept-charset</td>
+                        <td>character_set</td>
+                        <td>form submit  करने के लिए use  किए जाने वाले character encodding specifie करता है |</td>
+                    </tr>
+                    <tr>
+                        <td>action</td>
+                        <td>URL</td>
+                        <td>Form पर fill up हुए data को submit करने के बाद server-side scripting file का इस्तेमाल करके pass किया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>autocomplete</td>
+                        <td>on off</td>
+                        <td>specifie करता है कि किसी whether में autocomplete होना चाहिए या नहीं|</td>
+                    </tr>
+                <tr>
+                    <td>enctype</td>
+                    <td>application/x-www-form-urlencoded
+                        multipart/form-data
+                        text/plain</td>
+                    <td>	server पर data को send करने से पहले उसे data को encode करने की अनुमति दी जाती है | |</td>
+                </tr>
+                <tr>
+                    <td>method</td>
+                    <td>get post</td>
+                    <td>यहाँ पर HTTP Method दी जाती है | Data submission के वक्त इसका इस्तेमाल होता है |</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>text</td>
+                    <td>एक form का name specifie करता है</td>
+                </tr>
+                <tr>
+                    <td>novalidate</td>
+                    <td>novalidate</td>
+                    <td>specifie करता है कि submit किए जाने पर form को validated नहीं किया जाना चाहिए</td>
+                </tr>
+                <tr>
+                    <td>rel</td>
+                    <td>
+                        <ol>
+                            <li> alternate </li>
+                            <li> author </li>
+                            <li> bookmark</li>
+                            <li> external</li>
+                            <li> help</li>
+                            <li> license</li>
+                            <li> next</li>
+                            <li> nofollow</li>
+                            <li>noreferrer</li>
+                            <li>noopener</li>
+                            <li> prev</li>
+                            <li> search</li>
+                            <li>tag</li>
+                        </ol>
+                    </td>
+                    <td>link किए गए resource और current document के बीच realtion specifie करता है</td>
+                </tr>
+                <tr>
+                    <td>target</td>
+                    <td>
+                        <ol>
+                            <li> _blank</li>
+                            <li> _parent</li>
+                            <li> _self</li>
+                            <li> _top</li>
+                        </ol>
+                    </td>
+                    <td> यहाँ पर window को target किया जाता है | submit button को click करने पर इस target attribute के हिसाब से action attribute पर दिया हुआ url open होता है |</td>
+                </tr>
+              
+                    </table> 
+                
+            </li>
+            <li>
+                <b>< frame> :-</b>Document मे ये window frame define  करता है। यह अभी HTML5 मे
+                 नही है।
+            </li>
+            <li>
+                <b>< frameset> :-</b>यह HTML5 मे नही है। frames के set को define करता है।
+            </li>
+
+            <li>
+                <b>< h1>---< h6> :-</b>< hgroup> इस element का इस्तेमाल HTML Document के headings को define करने के लिए किया जाता है | < hgroup> element पर headers(h1-h6) का समूह हो सकता है | इन समूह में subheadings, alternative titles या taglines हो सकती है |
+
+
+            </li>
+            <li>
+                <b>< head> :-</b>HTML document के header part को define करता है। Metadata होते
+                है
+            </li>
+            <li>
+                <b>< header> :-</b>< header> इस element का इस्तेमाल संबंधित content और navigation bar(links) का वर्णन करने के लिए किया जाता है |
+
+                    < header> element में header(h1-h6), Web Logo या title और Search bar का इस्तेमाल किया जाता है |
+                    
+                    
+            </li>
+            <li>
+                <b>< hr> :-</b>paragraph timimg tag के बीच एक  thematic break का represent करता है।
+                आमतौर पर यह horizontal line खीचता है।
+            </li>
+
+            <li>
+                <b>< html> :-</b>Root tag। यह HTML markup language को define करता है।
+
+                h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>xmlns</td>
+                        <td>http://www.w3.org/1999/xhtml</td>
+                        <td>xmlns namespace attribute specifie करता है (यदि आपको XHTML के अनुरूप अपनी content  की आवश्यकता है)</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< i> :-</b>Italic text format को define  करता है।
+            </li>
+            <li>
+                <b>< iframe> :-</b>< iframe> tag में inline frames को create करने के लिए इस्तेमाल किया जाता है | इसकी मदद से current HTML Document पर दूसरा HTML Document; embed किया जाता है |
+
+                    < iframe> tag को HTML document के body के अन्दर दिया जाता है |
+
+              <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>allow</td>
+                        <td></td>
+                        <td>< iframe> के लिए एक feature policy specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>allowfullscreen</td>
+                        <td>true
+                            false</td>
+                        <td>अगर < iframe> requestFullscreen () method को call करके fullscreen mode को activate  कर सकता है तो इसे true पर set करें</td>
+                    </tr>
+
+                    <tr>
+                        <td>allowpaymentrequest</td>
+                        <td>true
+                            false</td>
+                        <td>अगर किसी cross origin < iframe> को payment request API को शुरू करने की permision दी जानी चाहिए, तो इसे true पर set करें</td>
+                    </tr>
+
+                    <tr>
+                        <td>height</td>
+                        <td>pixels</td>
+                        <td>< iframe> की height specifie करता है। default height 150 pixels है</td>
+                    </tr>
+
+                    <tr>
+                        <td>loading</td>
+                        <td>	eager
+                            lazy</td>
+                        <td>specifie करता है कि browser को तुरंत iframe load करना चाहिए या कुछ condition पूरी होने तक iframe load  करना स्थगित करना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>text</td>
+                        <td>एक < iframe> का name specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>referrerpolicy</td>
+                        <td>
+                            <ol>
+                                <li>	no-referrer</li>
+                                <li>no-referrer-when-downgrade</li>
+                                <li>origin</li>
+                                <li>origin-when-cross-origin</li>
+                                <li>same-origin</li>
+                                <li>strict-origin-when-cross-origin</li>
+                                <li>unsafe-url</li>
+                            </ol>
+                        </td>
+                        <td>specifie करता है कि iframe लाते time कौन सी referrer information भेजनी है</td>
+                    </tr>
+                    <tr>
+                        <td>sandbox</td>
+                        <td>
+                            <ol>
+                                <li>allow-forms</li>
+                                <li>  allow-pointer-lock</li>
+                                <li>   allow-popups</li>
+                                <li>  allow-same-origin</li>
+                                <li>  allow-scripts</li>
+                                <li>  allow-top-navigation</li>
+                            </ol>
+                        </td>
+                        <td>किसी < iframe> में content के लिए restriction के extra set को enables करता है</td>
+                    </tr>
+
+                    <tr>
+                        <td>src</td>
+                        <td>URL</td>
+                        <td>< iframe> में embed करने के लिए document का address specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>srcdoc</td>
+                        <td>HTML_code</td>
+                        <td>< iframe> में दिखाने के लिए page की HTML content specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>pixels</td>
+                        <td>< iframe> की width specifie करता है। default width 300 pixels है</td>
+                    </tr>
+                    </table>
+
+            </li>
+            <li>
+                <b>< img> :-</b>यह tag image को define करता है। इसका use web page image add के
+                लिए किया  जाता है
+
+                
+                h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>alt</td>
+                        <td>text</td>
+                        <td>एक image  के लिए एक alternative text specifies  करता है</td>
+                    </tr>
+                    <tr>
+                        <td>crossorigin</td>
+                        <td>anonymous
+                            use-credentials</td>
+                        <td>उन third-party side  की images  को allow  दें जो canvas  के साथ cross-origin access की permision देती हैं</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>pixels</td>
+                        <td>एक image की height specifie  करता है</td>
+                    </tr>
+                    <tr>
+                        <td>ismap</td>
+                        <td>ismap</td>
+                        <td>एक image को server-side image map  के रूप में specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>loading</td>
+                        <td>eager
+                            lazy</td>
+                        <td>specifie करता है कि browser  को image  को immediately load   करना चाहिए या कुछ condition  पूरी होने तक images को load  करना defer करना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>longdesc</td>
+                        <td>URL</td>
+                        <td>एक image  के description details  के लिए एक URL specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>referrerpolicy</td>
+                        <td>no-referrer <br>
+                            no-referrer-when-downgrade <br>
+                            origin <br>
+                            origin-when-cross-origin <br>
+                            unsafe-url</td>
+                        <td>specifie करता है कि image प्राप्त करते time कौन सी referrer information  का use  करना है</td>
+                    </tr>
+                    <tr>
+                        <td>sizes</td>
+                        <td>sizes</td>
+                        <td>different page layout के लिए image size specifie  करता है</td>
+                    </tr>
+                    <tr>
+                        <td>src</td>
+                        <td>URL</td>
+                        <td>image  के लिए path specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>srcset</td>
+                        <td>URL-list</td>
+                        <td>different situtaion  में use  करने के लिए image files की list specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>usemap</td>
+                        <td>#mapname</td>
+                        <td>एक image को client-side image image map  के रूप में specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>pixels</td>
+                        <td>एक image की width specifie करता है</td>
+                    </tr>
+                   
+                    </table>
+            </li>
+          
+            <li>
+                <b>< input> :-</b>यह input control को define करता है।
+                
+                h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>accept</td>
+                        <td>file_extension <br>
+                            audio/* <br>
+                            video/* <br>
+                            image/* <br>
+                            media_type</td>
+                        <td>file input dialog box से user किस प्रकार की file चुन सकता है, इसके लिए एक filter specifie करता है (only type = "file" के लिए)</td>
+                    </tr>
+                    <tr>
+                        <td>alt</td>
+                        <td>text</td>
+                        <td>images  के लिए एक alternate text  specifie करता है (only type = "image" के लिए)</td>
+                    </tr>
+                    <tr>
+                        <td>autocomplete</td>
+                        <td>on  off</td>
+                        <td>specifie करता है कि < input> element autocomplete enable होना चाहिए या नहीं</td>
+                    </tr>
+                    <tr>
+                        <td>autofocus</td>
+                        <td>autofocus</td>
+                        <td>इस attribute के साथ दिया हुआ < input> tag ये page को load होने पर ही user द्वारा input देने की अनुमति देता है |</td>
+                    </tr>
+                    <tr>
+                        <td>checked</td>
+                        <td>checked</td>
+                        <td>specifie करता है कि page load  होने पर एक < input> element pre-selected होना चाहिए (type = "checkbox" या type = "radio" के लिए)</td>
+                    </tr>
+                    <tr>
+                        <td>dirname</td>
+                        <td>inputname.dir</td>
+                        <td>specifie करता है कि text direction specifie  की जाएगी</td>
+                    </tr>
+                    <tr>
+                        <td>disabled</td>
+                        <td>disabled</td>
+                        <td>इस attribute से < input> tag को disable किया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>form</td>
+                        <td>form_id</td>
+                        <td>उस form  को specifie करता है जिससे < input> element belongs है</td>
+                    </tr>
+                    <tr>
+                        <td>formaction</td>
+                        <td>URL</td>
+                        <td>file का URL specifie करता है जो form submit   होने पर input  control को submitted करेगा (type = "submit करें" और type = "image" के लिए)</td>
+                    </tr>
+                    <tr>
+                        <td>formenctype</td>
+                        <td>application/x-www-form-urlencoded
+                            multipart/form-data
+                            text/plain</td>
+                        <td>specifie करता है कि form data को server पर submit करते time कैसे encode किया जाना चाहिए (type= "submit" और type = "image" के लिए)</td>
+                    </tr>
+                    <tr>
+                        <td>formmethod</td>
+                        <td>get
+                            post</td>
+                        <td>action URL पर data sent  के लिए HTTP method को define करता है (type = "submit" और type = "image")</td>
+                    </tr>
+                    <tr>
+                        <td>formnovalidate</td>
+                        <td>formnovalidate</td>
+                        <td>define  करता है कि submitted  किए जाने पर validated element  को मान्य नहीं किया जाना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>formtarget</td>
+                        <td>_blank <br>
+                            _self <br>
+                            _parent <br>
+                            _top <br>
+                            framename</td>
+                        <td>specifie करता है कि form submit  करने के बाद प्राप्त होने वाली response को कहाँ display करना है (type="submit" और type="image")</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>pixels</td>
+                        <td>एक < input> element की height specifie करता है (type = "image" के लिए)</td>
+                    </tr>
+                    <tr>
+                        <td>list</td>
+                        <td>datalist_id</td>
+                        <td>< datalist> element को refers करता है जिसमें < input>element के लिए pre-defined option होते हैं</td>
+                    </tr>
+                    <tr>
+                        <td>max</td>
+                        <td>number  date</td>
+                        <td>इस attribute पर maximum value को number में दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>maxlength</td>
+                        <td>number</td>
+                        <td>इस attribute पर maximum length को number में दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>min</td>
+                        <td>number date</td>
+                        <td>इस attribute पर minimum value को number में दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>minlength</td>
+                        <td>number</td>
+                        <td>इस attribute पर minimum length को number में दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>multiple</td>
+                        <td>multiple</td>
+                        <td>specifie करता है कि एक user< input> element में एक से more value  enter  कर सकता है</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>text</td>
+                        <td>ये attribute ख़ास server-side scripting(PHP, ASP) और Javascript के लिए होता है |</td>
+                    </tr>
+                    <tr>
+                        <td>pattern</td>
+                        <td>regexp</td>
+                        <td>	User द्वारा दिए जानेवाले value के लिए regular expression दिया जाता है | इसका इस्तेमाल validation के लिए किया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>placeholder</td>
+                        <td>text</td>
+                        <td>इस attribute से < input> और < textarea> element के लिए simple text hint दी जाती है |</td>
+                    </tr>
+                    <tr>
+                        <td>readonly</td>
+                        <td>readonly</td>
+                        <td>इस attribute के साथ दिया हुआ < input> tag सिर्फ read किया जा सकता है, लेकिन उसपर write नहीं किया जा सकता है |</td>
+                    </tr>
+                    <tr>
+                        <td>required</td>
+                        <td>required</td>
+                        <td>	< input> tag पर अगर इस attribute को दिया जाता है तो user द्वारा उसपर value देना अनिवार्य होता है |</td>
+                    </tr>
+                    <tr>
+                        <td>size</td>
+                        <td>number</td>
+                        <td>इस attribute पर < input> tag की size को number में दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>src</td>
+                        <td>URL</td>
+                        <td>submit button के रूप में use  करने के लिए image  का URL specifie करता है (only type  = "image") के लिए</td>
+                    </tr>
+                    <tr>
+                        <td>step</td>
+                        <td>number any</td>
+                        <td>input field में legal numbers के बीच interval specifie  करता है</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td> <ol>
+                            <li>button</li>
+                            <li>checkbox</li>
+                            <li> color</li>
+                            <li>  date</li>
+                            <li>  datetime-local</li>
+                            <li> email</li>
+                            <li> file</li>
+                            <li> hidden</li>
+                            <li> image</li>
+                            <li>month</li>
+                            <li>number</li>
+                            <li>password</li>
+                            <li>radio</li>
+                            <li>range</li>
+                            <li>reset</li>
+                            <li>search</li>
+                            <li> submit</li>
+                            <li>tel</li>
+                            <li>  text</li>
+                            <li> time</li>
+                            <li>   url</li>
+                            <li>    week</li>
+                        </ol></td>
+                        <td>यहाँ पर दी हुई value के हिसाब से user को दिया जाता है | ऊपर सभी प्रकार की values दी गयी है </td>
+                    </tr>
+                    <tr>
+                        <td>value</td>
+                        <td>text</td>
+                        <td>इस attribute से < input> tag पर default value set की जाती है |</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>pixels</td>
+                        <td>एक < input>element की width specifie करता है (only type = "image" के लिए)</td>
+                    </tr>
+
+
+                    </table>
+            </li>
+
+            <li>
+                <b>< ins> :-</b>web document मे change या inserted text को indicate करने के  लिए 
+                use किया  जाता है
+
+                h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr> 
+                    <tr>
+                        <td>cite</td>
+                        <td>URL</td>
+                        <td>किसी document के लिए एक URL specifie करता है जो text को inserted/changed जाने का reason बताता है|</td>
+                    </tr>
+                    <tr>
+                        <td>datetime</td>
+                        <td>YYYY-MM-DDThh:mm:ssTZD</td>
+                        <td>text inserted/changed जाने की date और time specifie करता है</td>
+                    </tr>
+                    </table> 
+            </li>
+            <li>
+                <b>< kbd> :-</b>Keyboard input को define  करता है
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    
+                        <th>description</th>
+                    </tr> 
+                    <tr>
+                        <td>< samp></td>
+                        <td>computer program से sample output को define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< code></td>
+                        <td>computer code का एक piece define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< var></td>
+                        <td> variable define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< pre></td>
+                        <td> preformatted text define करता है</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< label> :-</b>Form < input> element के लिए  label को define  करता है
+
+                
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>for</td>
+                        <td>	element_id</td>
+                        <td>उस form element की id specifies  करता है जिसके लिए label bound होना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>form</td>
+                        <td>form_id</td>
+                        <td>specifie करता है कि label किस रूप का है</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< legend> :-</b>यह < fieldset> element के लिए  एक caption define  करता है।
+            </li>
+            <li>
+                <b>< li> :-</b>list item  को define  करता है
+                
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>value</td>
+                        <td>number</td>
+                        <td>only < ol> lists के लिए। किसी list item का start value specifie  करता है। following list item उस number  से बढ़ेंगे</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< link> :-</b>HTML document और external stylesheets के बीच realtion  को
+                define  करता है
+
+                
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>crossorigin</td>
+                        <td>anonymous
+                            use-credentials</td>
+                        <td>specifie करता है कि element cross-origin handles को कैसे संभालता है</td>
+                    </tr>
+                    <tr>
+                        <td>href</td>
+                        <td>URL</td>
+                        <td>link  किए गए documnet  का location specifie  करता है</td>
+                    </tr>
+                    <tr>
+                        <td>hreflang</td>
+                        <td> language_code</td>
+                        <td>link किए गए document में text की language specifie करता है</td>
+                    </tr>
+                  
+
+                    <tr>
+                        <td>media</td>
+                        <td>media_query</td>
+                        <td>specifie करता है कि link किए गए document को किस media/device पर displayed किया जाएगा</td>
+                    </tr>
+                    <tr>
+                        <td>referrerpolicy</td>
+
+                        <td>
+                            <ol>
+                                <li>no-referrer</li>
+                                <li>no-referrer-when-downgrade</li>
+                                <li> origin </li>
+                                <li> origin-when-cross-origin </li>
+                                <li> same-origin </li>
+                                <li> strict-origin-when-cross-origin </li>
+                                <li> unsafe-url</li>
+                            </ol>
+                        </td>
+                       
+                        <td>specifie करता है कि resource  प्राप्त करते time  किस referrer का use  करना है</td>
+                    </tr>
+                    <tr>
+                        <td>rel</td>
+                        <td>
+                            <ol>
+                                <li> alternate </li>
+                                <li> author </li>
+                                <li> bookmark</li>
+                                <li> external</li>
+                                <li> help</li>
+                                <li> license</li>
+                                <li> next</li>
+                                <li> nofollow</li>
+                                <li>noreferrer</li>
+                                <li>noopener</li>
+                                <li> prev</li>
+                                <li> search</li>
+                                <li>tag</li>
+                            </ol>
+                        </td>
+                        <td>required। current document और link किए गए document के बीच relation specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>sizes</td>
+                        <td>HeightxWidth
+                            any</td>
+                        <td>link किए गए resource  का size specifies  करता है। only  rel="icon" के लिए</td>
+                    </tr>
+                    <tr>
+                        <td>title</td>
+                        <td></td>
+                        <td>preferred या alternate stylesheet को define करता है</td>
+                    </tr>
+<tr>
+    <td>type</td>
+    <td>media_type</td>
+    <td> linked किए गए document  के  media type  को specifie करता है</td>
+</tr>
+                    </table>
+            </li>
+            <li>
+                <b>< main> :-</b>< main> इस element का इस्तेमाल HTML Document के main content को define करने के लिए किया जाता है |<br>
+
+                    < main> element पर सिर्फ contents, paragraphs हो सकते है |  < main> element पर header information और footer information को नहीं दिया जा सकता है |
+            </li>
+            <li>
+                <b>< map> :-</b>Clickable image map को define करता है।
+                
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>name</td>
+                        <td>mapname</td>
+                        <td>required। image map  का name specifie  करता है</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <b>< mark> :-</b>< mark> इस element का इस्तेमाल content को highlight करने के लिए किया जाता है |
+            </li>
+            <li>
+                <b>< menu > :-</b>< menu> इस element का इस्तेमाल list menus, context menus और toolbars के लिए किया जाता है |<br>
+
+                    < menu> element सिर्फ mozilla firefox को support करता है |
+                    <table id="customers">
+                        <tr>
+                            <th>attribute</th>
+                        <th>values</th>
+                            <th>description</th>
+                        </tr>   <tr>
+                            <td>label</td>
+                            <td>label for menu</td>
+                            <td>	menu को label दिया जाता है |</td>
+                        </tr>
+                        <tr>
+                            <td>type</td>
+                            <td>list <br>context
+                            <br>toolbars </td>
+                            <td>यहाँ पर menu का प्रकार दिया जाता है|</td>
+                        </tr>
+
+                        </table>
+            </li> 
+            <li>
+                <b>< menuitem > :-</b>
+                < menuitem> इस element का इस्तेमाल list menus, context menus और toolbars के menuitems define करने के लिए किया जाता है |
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>label</td>
+                        <td>label for menu</td>
+                        <td>	menu को label दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>icon</td>
+                        <td>path of icon</td>
+                        <td>menu item के लिए icon दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>disabled</td>
+                        <td>disabled</td>
+                        <td>menu item को disable किया जाता है |</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< meta> :-</b>web document के metadata की बनावट को define करता ह
+
+                
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>charset</td>
+                        <td>	character_set</td>
+                        <td>HTML document के लिए character encoding specifie  करता है</td>
+                    </tr>
+                  <tr>
+                    <td>content</td>
+                    <td>text</td>
+                    <td>Http-equiv या name attribute से associated value  specifie करता है</td>
+                  </tr>
+                  <tr>
+                    <td>http-equiv</td>
+                    <td>content-security-policy <br>
+                        content-type <br>
+                        default-style <br>
+                        refresh</td>
+                        <td>content attribute की information/value के लिए HTTP header provide करता है</td>
+                  </tr>
+                  <tr>
+                    <td>name</td>
+                    <td>application-name <br>
+                        author <br>
+                        description <br>
+                        generator <br>
+                        keywords <br>
+                        viewport</td>
+                        <td>metadate  के लिए एक name specifie करता है</td>
+                  </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< meter> :-</b>< meter> ये element दी हुई scaler value की range(between min max value) या fractional value इन दोनों में से एक value का वर्णन करता है | इस element को guage भी कहा जाता है |<br>
+
+                    < meter> का उपयोग सिर्फ scaler measurement के लिए किया जा सकता है |
+
+                    
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>form</td>
+                        <td>form_id</td>
+                        <td>specifie करता है कि < meter> element किस रूप का है</td>
+                    </tr>
+                    <tr>
+                        <td>high</td>
+                        <td>number</td>
+                        <td>range की सबसे ज्यादा value मानी जाती है |</td>
+                    </tr>
+                    <tr>
+                        <td>low</td>
+                        <td>number</td>
+                        <td>range की सबसे कम value मानी जाती है |</td>
+                    </tr>
+                    <tr>
+                        <td>max</td>
+                        <td>number</td>
+                        <td>range की maximum value दी जाती है | Default '1'</td>
+                    </tr>
+                    <tr>
+                        <td>min</td>
+                        <td>number</td>
+                        <td>range की minimum value दी जाती है | Default '0'</td>
+                    </tr>
+                    <tr>
+                        <td>optimum</td>
+                        <td>number</td>
+                        <td>range से दी हुई guage की optimal value मानी जाती है |</td>
+                    </tr>
+                    <tr>
+                        <td>value</td>
+                        <td>number</td>
+                        <td>guage की current value को दिया जाता है | Default '0'</td>
+                    </tr>
+
+                    </table>
+            </li>  
+            <li>
+                <b>< nav> :-</b>< nav> element का इस्तेमाल navigation bar या navigation links को define करने के लिए किया जाता है 
+            </li> 
+            <li>
+                <b>< noframes> :-</b>जो frames का support नही करते है उन users के  िलए एक  alternative content
+                 को define करता है। यह HTML5 मे नही है
+            </li> 
+            <li>
+                <b>< noscript> :-</b>जो client-side scripts का support नही करते है उन
+                users के  िलए एक alternative content को define करता है।
+            </li> 
+            <li>
+                <b>< object> :-</b>External application को embed करने के  िलए use   िकया जाता है जैसे 
+                की videos, images, etc ।
+            
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>data</td>
+                        <td>URL</td>
+                        <td>object द्वारा use किए जाने वाले resource का URL specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>form</td>
+                        <td>form_id</td>
+                        <td>specifie करता है कि object किस रूप की है</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>pixels</td>
+                        <td>object की height specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>name</td>
+                        <td>object की name specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>media_type</td>
+                        <td>data attribute में specifie media type के data को specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>typemustmatch</td>
+                        <td>true/false</td>
+                        <td>specifie करता है कि type attribute  और resource की actual content displayed होने के लिए मेल खाना चाहिए या नहीं</td>
+                    </tr>
+                    <tr>
+                        <td>usemap</td>
+                        <td>#mapname</td>
+                        <td>object के साथ use  किए जाने वाले client-side image map  का name specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>pixels</td>
+                        <td>object की width specifie करता है</td>
+                    </tr>
+                    </table>
+            </li>
+             <li>
+                <b>< ol> :-</b>Ordered list को define करता है
+
+                
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>
+                    <tr>
+                        <td>reversed</td>
+                        <td>reversed</td>
+                        <td>specifie करता है कि list order reversed होना चाहिए (9,8,7...)</td>
+                    </tr>  
+                    <tr>
+                        <td>start</td>
+                        <td>name</td>
+                        <td>Ordered list का start value specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>1,A,a,I,i</td>
+                        <td>list में use करने के लिए marker के type को specifie करता है</td>
+                    </tr>
+                    </table>
+            </li>  
+            <li>
+                <b>< optgroup> :-</b>यह Drop-down list मे related option का group को define करता है
+
+                
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>
+                    <tr>
+                        <td>disabled</td>
+                        <td>disabled</td>
+                        <td>specifie करता है कि एक option-group को disabled किया जाना चाहिए</td>
+                    </tr> 
+                    <tr>
+                        <td>label</td>
+                        <td>text</td>
+                        <td>एक option-group के लिए एक label specifie करता है</td>
+                    </tr>
+                 </table>
+            </li> 
+            <li>
+                <b>< option> :-</b>Drop-down list मे option देने के  िलए use  िकया जाता है। < select>,
+                    < Optgroup> या < datalist> element इसको representive है।
+ 
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>disabled</td>
+                        <td>disabled</td>
+                        <td>specifie करता है कि एक option को disabled किया जाना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>label</td>
+                        <td>text</td>
+                        <td>एक option के लिए एक small label specifie  करता है</td>
+                    </tr>
+                    <tr>
+                        <td>selected</td>
+                        <td>selected</td>
+                        <td>specifie करता है कि page load होने पर एक option pre-selected होना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>value</td>
+                        <td>text</td>
+                        <td>server को sent जाने वाले value को specifie करता है</td>
+                    </tr>
+                    </table>
+            </li> 
+            <li>
+                <b>< output> :-</b>< output> element ये Javascript का इस्तेमाल करके user द्वारा किये जानेवाले calculation का वर्णन करता है |
+
+                
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>for</td>
+                        <td>element_id</td>
+                        <td>calculation के result और calculation में used element के बीच relation specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>form</td>
+                        <td>form_id</td>
+                        <td>specifie करता है कि output element  किस रूप का है</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>name</td>
+                        <td>output element  के लिए एक name specifie करता है</td>
+                    </tr>
+
+                    </table>
+
+            </li> 
+            <li>
+                <b>< p> :-</b>यह paragraph text को define करता है।
+            </li> 
+            <li>
+                <b>< param> :-</b>यह embedded < object> element का parameters को प्रदान  करता है।
+
+                
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>name</td>
+                        <td>name</td>
+                        <td>एक parameters का name specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>value</td>
+                        <td>value</td>
+                        <td>एक parameters का value specifie करता है</td>
+                    </tr>
+                    </table>
+            </li> 
+            <li>
+                <b>< picture> :-</b>एक या एक से अिधक image resource  को define करता हैऔर Responsive
+                web degining  मे इसका use   िकया जाता है
+            </li> 
+            <li>
+                <b>< pre> :-</b>Preformatted text को define करता है
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr> 
+                    <tr>
+                        <td>< code></td>
+                        <td>computer code  का एक piece define करता है</td>
+                    </tr> 
+                    <tr>
+                        <td>< samp></td>
+                        <td>computer program से sample output को define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< kbd></td>
+                        <td>Keyboard input define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< var></td>
+                        <td> variable define करता है</td>
+                    </tr>
+                
+                    </table>
+            </li>
+             <li>
+                <b>< progress> :-</b>< progress> element ये progress bar का वर्णन करता है |
+
+                    < progress> ये किसी task के progress को indicate या दर्शाता है |
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>max</td>
+                        <td>number</td>
+                        <td>task का maximum number दिया जाता है | default '1' होता है | अगर दिया जाता है तो 0 से बड़ी value होती है |</td>
+                    </tr>
+                    <tr>
+                        <td>value</td>
+                        <td>number</td>
+                        <td>task कितना पूरा हुआ है, ये दर्शाने के लिए value दी जाती है |
+                        </td>
+                    </tr>
+                    </table>
+            </li> 
+            <li>
+                <b>< q> :-</b>Short quotation के  िलए use  िकया जाता है
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>   
+                    <tr>
+                        <td>cite</td>
+                        <td>URL</td>
+                        <td>quote के source URL को specifie करता है</td>
+                    </tr>
+                    </table>
+            </li>
+             <li>
+                <b>< rp> :-</b>यह define करता है की browser  मे क्या   िदखाना है जो ruby  annotation  का
+                support  नही करते है
+            </li> 
+            <li>
+                <b>< rt> :-</b>ruby annotation के ruby text को  specifies  करता है
+            </li> 
+            <li>
+                <b>< ruby> :-</b>इसका उसे  ruby annotation के  िलए specifies   करता है।
+            </li>  
+            <li>
+                <b>< s> :-</b>Text को define करता है जो सही नही है। यानी की text को strike through
+                style मे ext display in strikethrough style. करता है
+            </li> 
+            <li>
+                <b>< samp> :-</b>
+                यह computer program के sample output को define करता है।
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>< kdb></td>
+                        <td> Keyboard input define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< code></td>
+                        <td>computer code का एक piece define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< var></td>
+                        <td> variable define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< pre></td>
+                        <td> preformatted text define करता है</td>
+                    </tr>
+                    </table>
+            </li>
+             <li>
+                <b>< script.> :-</b>
+                यह client-side script/JavaScript को define करता है।
+
+               <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>async</td>
+                        <td>async</td>
+                        <td>specifie करता है कि script page  को parse करने के parellel में download की जाती है, और जैसे ही यह use होती है (parsing complete  होने से पहले) available  की जाती है (केवल external script  के लिए)</td>
+                    </tr>
+                    <tr>
+                        <td>crossorigin</td>
+                        <td>anonymous/use-credentials</td>
+                        <td>request के mode को HTTP CORS request पर set करता है</td>
+                    </tr>
+                    <tr>
+                        <td>defer</td>
+                        <td>defer</td>
+                        <td>specifie करता है कि script को page को parse करने के parallel में download किया गया है, और page के parsing end  होने के बाद finished किया गया है (only external script के लिए)</td>
+                    </tr>
+                    <tr>
+                        <td>integrity</td>
+                        <td>filehash</td>
+                        <td>यह allows करने के लिए browser को प्राप्त script की check करने की permision देता है कि यदि source में manipulation किया गया है तो code कभी load नहीं होता है</td>
+                    </tr>
+                    <tr>
+                        <td>nomodule</td>
+                        <td>True/False</td>
+                        <td>specifie करता है कि ES2015 module का supported करने वाले browser  में script को executed नहीं किया जाना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>referrerpolicy</td>
+                        <td>
+                            <ol>
+                                <li>	no-referrer</li>
+                                <li> no-referrer-when-downgrade</li>
+                                <li>    origin</li>
+                                <li>  origin-when-cross-origin</li>
+                                <li>  same-origin</li>
+                                <li>  strict-origin</li>
+                                <li>  strict-origin-when-cross-origin</li>
+                                <li>   unsafe-url</li>
+                            </ol>
+                        </td>
+                        <td>specifie करता है कि script लाते time कौन सी referrer information भेजनी है</td>
+                    </tr>
+                    <tr>
+                        <td>src</td>
+                        <td>url</td>
+                        <td>external script file का URL specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>scripttype</td>
+                        <td>script के media type  को specifie करता है</td>
+                    </tr>
+
+                    </table>
+            </li>
+
+            <li>
+                <b>< section> :-</b>
+                < section> element का इस्तेमाल HTML Document के section का वर्णन करने के लिए किया जाता है | < section> element में header, footer, navigation links या कुछ अलग से sections हो सकते है |
+
+                    < section> और < div> element ये एक जैसे होते है, लेकिन < div> element का इस्तेमाल ज्यादातर block elements का group करने के लिए किया जाता है |
+
+            </li>
+            <li>
+                <b>< select> :-</b>यह drop-down list को define करता है।
+                
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>autofocus</td>
+                        <td>autofocus</td>
+                        <td>specifie करता है कि page load होने पर drop-down list को automatically रूप से focus प्राप्त करना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>disabled</td>
+                        <td>disabled</td>
+                        <td>specifie करता है कि drop-down list को disabled किया जाना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>form</td>
+                        <td>form_id</td>
+                        <td>define करता है कि drop-down list किस प्रकार की है</td>
+                    </tr>
+                    <tr>
+                        <td>multiple</td>
+                        <td>multiple</td>
+                        <td>specifie करता है कि एक साथ कई  option का चयन किया जा सकता है</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>name</td>
+                        <td>drop-down list के लिए एक name defien करता है</td>
+                    </tr>
+                    <tr>
+                        <td>required</td>
+                        <td>required</td>
+                        <td>specifie करता है कि submit करने से पहले user को एक value का चयन करना आवश्यक है</td>
+                    </tr>
+                    <tr>
+                        <td>size</td>
+                        <td>number</td>
+                        <td>drop-downlist में visible option की number को define करता है</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< small> :-</b>Smaller text को define करता है।
+
+            </li>
+            <li>
+                <b>< source> :-</b>
+                < source> element का इस्तेमाल < picture>, < audio> या < video> element पर multiple media resources को define करने के लिए दिया जाता है |
+
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>media</td>
+                        <td>media_query</td>
+                        <td>CSS media query(@media) का इस्तेमाल किया जाता है | इसका इस्तेमाल ज्यादातर < picture> element के लिए किया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>sizes</td>
+                        <td></td>
+                        <td>different page layout  के लिए image size specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>src</td>
+                        <td>URL</td>
+                        <td>< audio>, < video> या < picture> element के लिए source file दी जाती है |</td>
+                    </tr>
+                    <tr>
+                        <td>srcset</td>
+                        <td>URL</td>
+                        <td>< picture> element के लिए source path दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>MIME-type</td>
+                        <td>यहाँ पर media type दिया जाता है |</td>
+                    </tr>
+                    </table>
+            </li>
+
+            <li>
+                <b>< span> :-</b>यह HTML document मे section को define करता है।
+            </li>
+            <li>
+                <b>< strike> :-</b>यह Strikethrough text को define करता है। HTML5 मे नही है,
+                इसके बदले < del> या < s> tag का use  करे
+            </li>
+
+            <li>
+                <b>< strong> :-</b>HTML web page  मे, important text को define करता है
+            </li>
+
+               <li>
+                <b>< style.> :-</b>
+
+                HTML document मे style की जानकारी को पिरभािषत करता है। इसका
+                उपयोग वेब पेज मे, CSS style add करनेके िलए िकया जाता है
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>media</td>
+                        <td>media_query</td>
+                        <td>specifie करता है कि media resource किस media/device के लिए optimized है</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>text/css</td>
+                        <td>  style  tag के media type को specifie करता है </td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< sub> :-</b>Subscripted text को define करता है
+            </li>
+
+            <li>
+                <b>< summary> :-</b>< summary> इस element का इस्तेमाल < details> element के लिए summary या caption या heading देने के लिए किया जाता है |
+            </li>
+            <li>
+                <b>< sup> :-</b>Superscripted text को define करता है।
+            </li>
+
+            <li>
+                <b>< svg> :-</b>SVG graphics container को define करता है।
+            </li>
+
+               <li>
+                <b>< table> :-</b>HTML document मे table को define करता है।
+
+            </li>
+            <li>
+                <b>< tbody> :-</b>Table rows के body content को Groups करने के  िलए use  होता है।
+            </li>
+            <li>
+                <b>< td> :-</b>
+
+                Table data cell को define करता है।
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>colspan</td>
+                        <td>number</td>
+                        <td>specifie करता है कि एक cell को कितने column होने चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>headers</td>
+                        <td>header_id</td>
+                        <td>cell से related एक या more header cell specifies करता है</td>
+                    </tr>
+                    <tr>
+                        <td>rowspan</td>
+                        <td>number</td>
+                        <td>rows की numbering set करता है कि एक cell को span  करना चाहिए</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< template> :-</b>
+                इसका use कु छ content को page loading के समय छुपा के  िलए  िकया जाता है।
+            </li>
+            <li>
+                <b>< textarea> :-</b>
+
+                multiple line text input Create करने के  िलए use  होता है
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>autofocus</td>
+                        <td>autofocus</td>
+                        <td>specifie करता है कि page load  होने पर text area automatically  रूप से focus हो जाना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>cols</td>
+                        <td>number</td>
+                        <td>text area की visible width करता है</td>
+                    </tr>
+                    <tr>
+                        <td>dirname</td>
+                        <td>textareaname.dir</td>
+                        <td>specifie करता है कि text area  की text direction submit  की जाएगी</td>
+                    </tr>
+                    <tr>
+                        <td>disabled</td>
+                        <td>disabled</td>
+                        <td>specifie करता है कि एक text area  को  disabale  किया जाना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>form</td>
+                        <td>form_id</td>
+                        <td>specifie करता है कि text area किस रूप का है</td>
+                    </tr>
+                    <tr>
+                        <td>maxlength</td>
+                        <td>number</td>
+                        <td>text arae  में character allowed की maximum number specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>text</td>
+                        <td>text area  के लिए एक name specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>placeholder</td>
+                        <td>text</td>
+                        <td>एक short hint specifie करता है जो text area  के excepted value  का describe  करता है</td>
+                    </tr>
+                    <tr>
+                        <td>readonly</td>
+                        <td>readonly</td>
+                        <td>specifie करता है कि एक text area  read only के लिए होना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>required</td>
+                        <td>required</td>
+                        <td>specifie करता है कि एक text area required है/भरा जाना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>rows</td>
+                        <td>number</td>
+                        <td>text area में lines की visible number specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>wrap</td>
+                        <td>hard/soft</td>
+                        <td>specifie करता है कि form में submit किए जाने पर text area में text को कैसे wraped किया  जाना है</td>
+                    </tr>
+                   
+                    </table>
+            </li>
+            <li>
+                <b>< tfoot> :-</b>Table footer मे, table data  िजसमे summary है उसको जोड़ने के  िलए use 
+                िकया जाता है
+            </li>
+            <li>
+                <b>< th> :-</b>
+
+                यह HTML page मे, table का header cell देने के  िलए use होता है
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>abbr</td>
+                        <td>text</td>
+                        <td>header cell में content का abbreviated version specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>colspan</td>
+                        <td>number</td>
+                        <td>उन column की number specifie  करता है जिन्हें एक header cell को फैलाना चाहिए</td>
+                    </tr>
+
+                    <tr>
+                        <td>headers</td>
+                        <td>header_id</td>
+                        <td>cell से related एक या more header cell specifie करता है</td>
+                    </tr>
+                    <tr>
+                        <td>rowspan</td>
+                        <td>number</td>
+                        <td>उन lines की number specifies करता है जिन्हें header cell को फैलाना चाहिए</td>
+                    </tr>
+                    <tr>
+                        <td>scope</td>
+                        <td>col <br>colgroup <br> row <br>rowgroup</td>
+                        <td>specifie करता है कि header cell column, lines या column या lines के group के लिए हेडर है या नहीं</td>
+                    </tr>
+                  
+
+                    </table>
+            </li>
+            <li>
+                <b>< thead> :-</b>HTML document मे Table header जोड़ने के  िलए use  होता है।
+            </li>
+            <li>
+                <b>< time> :-</b>
+
+                < time> इस element का इस्तेमाल date या time; machine-readable format में define करने के लिए किया जाता है |
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>datetime</td>
+                        <td>datetime</td>
+                        <td>यहाँ पर date या time दिया जाता है | यहाँ पर date या time machine-readable format में दिया जाता है |</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< title> :-</b>यह HTML Document/web page के title को define करता है।
+            </li>
+            <li>
+                <b>< tr> :-</b>Table मे row line को  define करता है
+            </li>
+
+            <li>
+                <b>< track> :-</b>
+                < track> इस element का इस्तेमाल < audio> या< video> element के लिए text track दिया जाता है |
+
+                    < track> element पर दिए हुए media source पर subtitles, captions, chapters, metadata और description दिया जाता है |
+
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>default</td>
+                        <td>default</td>
+                        <td>specifie करता है कि track को enabled  किया जाना है यदि user की preferences indicate  नहीं करती हैं कि कोई अन्य track अधिक appropriate होगा</td>
+                    </tr>
+                    <tr>
+                        <td>kind</td>
+                        <td>caption <br>character <br>descriptions <br>metadata <br>subtitles</td>
+                        <td>text track का प्रकार दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>label</td>
+                        <td>text</td>
+                        <td>	text track के लिए title दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>src</td>
+                        <td>URL</td>
+                        <td>text track file का path दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>srclang</td>
+                        <td>language_code</td>
+                        <td>text track के language code को दिया जाता है |</td>
+                    </tr>
+                    </table>
+            </li>
+            <li>
+                <b>< tt> :-</b>यह teletype text को define करता है। और अब यह HTML5 मे  नही
+                है
+            </li>
+            <li>
+                <b>< u> :-</b>Underlined text को define करता है।
+            </li>
+
+            <li>
+                <b>< ul> :-</b>
+                यह unordered list को define करता है।
+            </li>
+
+            <li>
+                <b>< var> :-</b>
+
+                Variable को define करता है
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>< samp></td>
+                        <td>computer program से sample output को define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< code></td>
+                        <td>computer code का एक piece define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< kbd></td>
+                        <td> Keyboard input define करता है</td>
+                    </tr>
+                    <tr>
+                        <td>< pre></td>
+                        <td> preformatted text define करता है</td>
+                    </tr>
+                    </table>
+            </li>
+
+
+            <li>
+                <b>< video> :-</b>
+
+                < video> element का इस्तेमाल HTML Document पर video file को add करने के लिए किया जाता है |
+
+                    < video> element के इस्तेमाल से आप HTML Document पर < source> element की मदद से या < video> element से भी video को embed कर सकते है |
+                <h2>Attributes</h2>
+                <table id="customers">
+                    <tr>
+                        <th>attribute</th>
+                    <th>values</th>
+                        <th>description</th>
+                    </tr>  
+                    <tr>
+                        <td>autoplay</td>
+                        <td>autoplay</td>
+                        <td>< video> element load होने पर दी हुई video file play हो जाती है |</td>
+                    </tr>
+                    <tr>
+                        <td>controls</td>
+                        <td>controls</td>
+                        <td>video file के लिए controls(play,pause,seek,volume)दिए जाते है |</td>
+                    </tr>
+                    <tr>
+                        <td>height</td>
+                        <td>pixels</td>
+                        <td>video file को height; pixels में दी जाती है |</td>
+                    </tr>
+                    <tr>
+                        <td>loop</td>
+                        <td>loop</td>
+                        <td>video file बार-बार play होती है |</td>
+                    </tr>
+                    <tr>
+                        <td>muted</td>
+                        <td>muted</td>
+                        <td> video file को mute किया जाता है |   </td>
+                    </tr>
+                    <tr>
+<td>poster</td>
+<td>URL</td>
+<td>यहाँ पर video file के लिए poster को images के रूप में दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>preload</td>
+                        <td>auto <br>metadata <br> none</td>
+                        <td>video को preload करना चाहिए या नहीं ये यहाँ पर दिया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>src</td>
+                        <td>URL</td>
+                        <td>	video file को embed करने के लिए इस्तेमाल किया जाता है |</td>
+                    </tr>
+                    <tr>
+                        <td>width</td>
+                        <td>pixels</td>
+                        <td>video file को width; pixels में दी जाती है |</td>
+                    </tr>
+                    </table>
+            </li>
+
+              <li>
+                <b>< wbr> :-</b>
+                < wbr> इस element का इस्तेमाल line break opportunity के लिए किया जाता है |
+
+< wbr> इस element का इस्तेमाल अगर कोई लंबा word या बिना space के लंबे string को meaning के साथ break करने के लिए किया जाता है |
+            </li>
+
+
+
+
+
+
+            </ul>
+            
+        </div>
+        <div class="btn">
+        <button >
+            <a href="idx.html">Html Tags
+             
+           </a></button>
+           <button>
+            
+                <a href="index.html"> Css Property</a>
+           </a></button>
+           <button>
+            
+            <a href=""> javascript </a>
+       </a></button>
+       <div class="credit"> created by <span> <strong><i>Pratigya jain</i> </strong></span> | Copyright © 2022 all rights reserved </div>
+    </div>
+    </div>
+</body>
+
+</html>

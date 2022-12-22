@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="banner">
+        <img src="gradient-hair-salon-logo-template_23-2148859355.webp" alt="" class="logo">
+        <div class="banner-text">
+            <h1>Hair Salon</h1>
+            <p>If my hair looks good, I can deal with anything.</p>
+            <div class="banner-btn">
+                <a href="#"><span></span> Find</a>
+                <a href="#"><span></span> learn</a>
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#product">PRODUCT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+     <div id="menuBtn"> 
+        <img src="hamburger-menu-line-icon-free-vector.webp" id="menu">
+     </div> 
+    <script>
+        var menubtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        menubtn.onclick = function () {
+            if (sideNav.style.right == "-150px") {
+                sideNav.style.right = "0";
+            }
+            else {
+                sideNav.style.right = "-150px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
