@@ -1605,3 +1605,15 @@ input[type="text"] {
 .js .animate-box {
   opacity: 0;
  }
+.edu{
+  
+  margin-top: 15%;
+
+  text-align: center;
+  text-decoration: none;
+  
+}
+.edu ul li{
+  list-style-type: none;
+}
+
