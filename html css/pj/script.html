@@ -449,12 +449,172 @@ Object Data Types <br><br>
 <li>
     <b>While Loop:-</b>
     while Loop जब तक condition true होती है तब तक statements को बार-बार executes करता रहता है और जब condition false हो जाती तब execution stop हो जाता है |  
-    <img src="whileLoop.png" alt="">
+    <img src="Images\whileLoop.png" alt="">
 </li>
 <li>
     <b>Do_While Loop:-</b>do_while Loop जब तक condition true होती है तब तक statements को बार-बार executes करता रहता है और जब condition false हो जाती तब एक बार statement को execute करता है |
-    <img src="" alt="">
+    <img src="Images\DoWhileLoop.png" alt="">
 </li>
+<li>
+    <b>For Loop:-</b> For Loop में दिए हुए number तक statements repeat होते रहता है | <br><br>
+    <img src="Images\for.png" alt="">
+</li>
+<li>
+    <b>For In Loop:-</b>For..in Loop से Object की हर एक property को iterate किया जाता है | <br><br>
+   <h3>Variable:-</h3> यहाँ पर object की properties को iterate करने के लिए variable लिया जाता है |
+   <h3>Object:-</h3>यहाँ पर जिस Object की properties को iterate करना है उस object का नाम आता है |
+</li>
+<li>
+    <b>If Statement:-</b>
+    If Statement में जब condition 'true' होती है तब if statement execute होता है |अगर condition false होती है तो statement execute नहीं होता | <br><br>
+    <img src="Images\if.png" alt="">
+</li>
+<li>
+    <b>If Else Statement:-</b>if_else Statement में जब condition 'true' होती है तब if का statement execute होता है अगर condition 'false' होती है तो else का statement execute होता है |<br><br>
+    <img src="Images\IfElse.png" alt="">
+</li>
+<li>
+    <b>Else If Statement:-</b>else_if Statement में अगर if की Condition true होती है तो if का statement execute होता है | अगर if का condition false होता है तो वो अगले condition पर जाकर check करता है | अगर वो condition true होता है तो वो उसका statement execute करता है | अगर कोई भी condition true नहीं होती तो वो else का statement execute करता है | <br><br>
+    <img src="Images\ElseIf.png" alt="">
+</li>
+<li>
+    <b>Switch Case Statement:-</b>Switch case statement में expression होता है और उससे related कुछ cases होते है | जो case उस expression या declare किये हुए variable से match होती है तब वो execute होता है | अगर कोई भी case expression से match नहीं होती तो वो default का statement execute करता है | हर statement के बाद break लगाना पड़ता है, इसका मतलब वो उसके पहले का statement ही execute करेगा | अगर break नहीं लगाया जाता तो वो पहला और दूसरा ये दोनों statement को execute करेगा | default case के बाद break नहीं लगाते | <br><br>
+    <img src="Images\switch.png" alt="">
+</li>
+<li>
+    <b>Continue and Break Statement:-</b>Continue और Break Statements; Loops के लिए use किये जाते है | <br> <br>
+    <h3>Continue Statement</h3>Continue Statement का इस्तेमाल कुछ statements को skip करने के लिए use किया जाता है | <br><br>
+    <h3>Break Statement</h3>Break Statement में loops और switch case के execution का काम किसी condition पर stop कर देता है |
+</li>
+<li>
+    <b>Function:-</b>C Function ये statements का एक group होता है | Function को script में कहा पर भी लिखा जाता है | जहाँ पर Function की जरुरत होती है वहाँ पर Function call किया जाता है |<br><br>
+    Function को इस्तेमाल करने से पहले उसकी definition लिखी जाती है | Javascript में अगर Function को create करना हो तो 'function' keyword का इस्तेमाल किया जाता है |<br>
+    <br>
+    Function का एक specified नाम होता है | Function की starting में उसका name बाद में दो parethesis () और function के statements दो curly braces {} होते है |<br><br>
+    <h3>Function के advantages</h3>
+    <ol>
+        <li>Function में लिखा हुआ code बार-बार लिखना नहीं पड़ता |</li>
+        <li>Function Programmer का time और script की space बचाता है |</li>
+        <li>बड़े script को छोटे-छोटे function में divide किया जा सकता है |</li>
+        <li>अगर script में कहा पर error आ जाए तो उसे आसानी से निकाला जा सकता है |</li>
+        <li>जहाँ पर जरुरत हो वहाँ पर एक ही function को बार-बार call किया जा सकता है |</li>
+    </ol>
+    <h4>Syntax</h4>
+    function function_name(paramters_list){ <br>
+        statement(s); <br>
+    } <br><br>
+    यहाँ पर function को create करने के लिए 3 important होती है | <br><br>
+    <h3>function_name :-</h3>function को create करने के लिए 'function' keyword का इस्तेमाल किया जाता है | Function का नाम कोई Javascript का keyword नहीं हो सकता | Function का नाम statement से सम्बंधित हो तो अच्छा रहता है |<br><br>
+    <h3>paramters_list :-</h3>Function without parameter(s) के भी हो सकते है | चाहे तो function को parameter(s) भी pass किये जाते है |ये parameter(s) function_name के बाद parenthesis() के अन्दर लिखे जाते है | <br><br>
+    <h3>statement(s):-</h3> जो statements बार-बार इस्तेमाल होनेवाले है वो statements यहाँ पर लिखे जाते है |
+</li>
+<li><b> Function Parameters:-</b>Function में एक या एक से ज्यादा parameters होते है | <br><br>
+    <h4>function paramenters and arguments</h4>
+    Function Definition के वक्त जब pass किये जाते है उसे 'paramters' कहते है | <br><br>
+
+ <h5>For eg.</h5>
+function func(x, y){}   // x and y is paramters <br><br>
+Function के calling के वक्त जब values दी जाती है उसे arguments कहते है | <br><br>
+<h5>For eg.</h5>func(2, 3);  //x is 2 and y is 3, 2 and 3 are arguments <br>
+func(2);  x is 2 and y is 'undefined'<br><br>
+<h3>Default value</h3>जब function call के वक्त argument दिया नहीं जाता तो वो 'undefined' होता है, इसके लिए default values set की जाती है | <br><br>
+<h3>Accessing Arguments</h3>
+जब function के definition पर कोई parameter pass किये बिना arguments access किये जाते है | <br><br>
+
+जब function call पर arguments दिए जाते है तब arguments object का array इस्तेमाल किया जाता है |
+    </li>
+    <li>
+        <b>Function Return Statement:-</b>return statement function के लिए optional होता है | <br><br>
+
+        return Statement; function के आखिरी में होता है |<br><br>
+        
+        return Statement को 'return' keyword के साथ लिखा जाता है |<br><br>
+        
+        अगर return keyword के साथ कोई statement दिया नहीं जाता तो 'undefined' return होता है |<br><br>
+    </li>
+    <li>
+        <b>Anonymous Function
+:-        </b>
+Anonymous Function में function की definition; expression के अन्दर लिखी जाती है | <br><br>
+
+Anonymous Function में function का कोई नाम नहीं होता |<br><br>
+
+var Function = function(paramters_list){<br>
+	//function body;
+    <br> 
+} <br><br>
+<h3>Function Expression Hoisting:-</h3>Named Function कहा पर भी call किया जा सकता है | लेकिन Anonymous Function में जब Expression पर function की definition लिखी जाती है और function को definition से पहले call किया जाए तो Error occured होती है | <br><br>
+
+Javascript में function expression hoisted नहीं होता |
+    </li>
+    <li>
+        <b> Self Executing Function:-</b>Self Executing Function Anonymous होता है | ये function बिना called किये हुए automatically execute होता है | <br><br>
+        <h4>Syntax</h4>(function(){ function body; })();
+    </li>
+    <li><b>Nested Function:-</b>Nested Function में एक function के अन्दर function होता है | <br><br>
+
+        <!-- script में diameter से circle का area निकाला गया है |<br><br>
+        
+        circle function पर 'diameter' parameter pass किया गया है और इसके बाद inner function 'radius' लिया गया है | radius function को circle function के parameter 'diameter'/2 मतलब उसके radius को return किया गया है |<br><br>
+        
+        उसके बाद circle function को Math.PI की value और radius function से return की गयी value का square (Math.pow(radius(), 2)) multiply किया गया है |<br><br> -->
+    </li>
+    <li>
+        <b>Object:-</b>Javascript ये Language Object-Oriented Programming Langauge है | Javascript में भी C++, Java जैसे objects बनाये जाते है |
+    </li>
+    <li>
+        <b>Javascript Object:-</b>Javascript के Object में कुछ methods और कुछ properties होती है | <br><br>
+
+        अगर Objects के नजरिये से देखा जाए तो javascript का हर हिस्से को Object बनाया जा सकता है | लेकिन जब Object को बनाया जाता है तब 'new' keyword का इस्तेमाल किया जाता है |<br><br>
+        
+        जब Number, Boolean और String का इस्तेमाल किया जाता है तो, 'new' keyword का इस्तेमाल किया जाता है | लेकिन Array, Maths, Dates, Functions और Object तो पहले से ही objects है |<br><br>
+        Javascript में Objects तीन प्रकार से create किये जाते है |
+        <ol>
+            <li><h3>Using Object Literal</h3><br>
+                <h4>syntax</h4>var obj_name = {prop_name1:prop_val1,prop_name2:prop_val2,....,prop_name n:prope_val n}; <br><br>
+
+                यहाँ पर Object create करने के लिए Object Literal एक ही line पर लिया गया है | हर property और value की pair seperate lines पर ली जा सकता है |
+                <h5>For ex.</h5>var obj_name = { <br>
+                    prop_name1:prop_val1, <br>
+                    prop_name2:prop_val2,<br>
+                    ....,<br>
+                    prop_name n:prope_val n <br>
+                    };
+            </li>
+            <li><h3>Using new keyword</h3><br>
+                <h4>Syntax</h4>var obj_name = new Object(); <br><br>
+            </li>
+            <li><h3>Using Object Constructor</h3></li>Object Constructor में function और उनके paramters की जरुरत पड़ती है |<br><br>
+
+            this keyword; current object का संदर्भ देता है |<br><br>
+            
+            यहाँ पर this keyword से हर एक parameter की value current object assign की जाएगी |<br><br>
+            
+            Object Constructor के माध्यम से संक्षिप्त रूप में एक से ज्यादा Objects को create किया जाता है |<br><br>
+        </ol>
+    </li>
+    <li>
+        <b>Object Property:-</b>पिछले Object इस Topic में देखा कि Object Creation कैसे होता है और Example के माध्यम से Object की properties को access कैसे किया जाता है | लेकिन वहा पर object की properties को एक ही तरह से access किया गया है | ये topic ख़ास 'Object Properties' के लिए बनाया गया है | <br><br>
+
+        Javascript में 'Property' ये Object का महत्वपूर्ण हिस्सा है |<br><br>
+        
+        Objects की properties को add, delete या उनकी values को overwrite किया जा सकता है |
+    </li>
+    <li>
+        <b>Object Method:-</b>Javascript में Methods Object के लिए काम करते है | Methods Object में functions जैसे होते है | ये Methods Object पर Property में anonymous function बनाकर define किये जाते है |<br><br>
+        <h5>For ex.</h5> <br>
+        <h3>Accessing Method By Creating Object with 'new' Keyword</h3>
+        new keyword के साथ create किये हुए object के method को access किया जा सकता है |<br> <br>
+        <h3>Accessing Method By Creating Object with Object Literal</h3>
+        Object literal के साथ create किये object के साथ method को access नहीं किया जा सकता |<br><br>
+
+    </li>
+    <li>
+        <b>Object prototype:-</b>Prototype ये Object के लिए काफी profitable prove होता है | <br><br>
+
+        Object के लिए Prototype का use करने के लिए object constructor के साथ Objects create करने की जरुरत पड़ती है |<br><br>
+        <h4>syntax</h4>obj_constructor_name.prototype.method_name = function (){ method_body; }    
+    </li>
     </ul>
         </div>
 </body>
