@@ -4,9 +4,458 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script.css">
     <title>scrpit</title>
 </head>
 <body>
+    <div class="heding">
+        <h1>javascript</h1>
+    </div>
+    <div class="btn">
+        <button>
+            <a href="css.html">Html Tags
+
+            </a></button>
+        <button>
+
+            <a href="index.html"> Css Property</a>
+            </a></button>
+        <button>
+
+            <a href="script.html"> javascript </a>
+            </a></button>
+    </div>
+    <div class="content">
+        <ul>
+            <li>
+
+                <b>Introduction for Javascript :- </b> javascript ये Language एक client-side Language है जिसका इस्तेमाल HTML(HyperText Markup Language) के साथ किया जाता है | Javascript ये Language lighted Language है | <br> <br>
+
+                Javascript Language का invented 'Brendan Eich' ने 1995 में किया | ये langauge 'Java' Programming Language से प्रेरित है | Javascript का पहला नाम 'Marc Andreessen' ने 'Mocha' रखा था | 'Marc Andreessen' ये Netscape के Founder है और उसी year में उसका नाम 'Livescript' रखा गया और बाद में December 1995 ने Sun Microsystem द्वारा उसका नाम 'Javascript' रखा गया | <br> <br>
+                
+                Javascript Language का इस्तेमाल Web-Development के लिए HTML के साथ किया जाता है | HTML के बिना Javascript का इस्तेमाल नहीं किया जा सकता | Javascript का code एक normal web browser पर run किया जा सकता है | Javascript का code Run करने के लिए Web Browser का Javascript Enable करना पड़ता है | कुछ Browsers में Javascript पहले से ही enabled होता है | 
+              
+            </li>
+      
+        <li>
+            <b> Syntax:-</b>Javascript का code < scriptt> और < /scriptt> इन HTML tags के बीच में लिखा जाता है और ये दोनों tags tags के बीच में लिखे जाते है | लेकिन जरुरी नहीं है कि 'script tags' को 'head tags' के बीच में लिखे Javascript का code Web Page पर कहा पर implement किया जा सकता है | <br><br>
+
+            Javascript का code implement करने के लिए script tag में ordinarily 'type' नाम का एक ही attribute इस्तेमाल किया जाता है | यहाँ पर दिया हुआ content कौन से type का है वो दिया जाता है | <br><br>
+            <b>Source code:-</b> <br>< scriptt type="text/javascript"><br>
+                ///some javascript statements; <br>
+            < /scriptt> <br> <br>
+            Javascript के लिए सिर्फ < scriptt> का इस्तेमाल किया जाता है तब भी Javascript का code सामान्य तरीके से execute हो पाता है |
+            
+        </li>
+        <li>
+            <b>Javascript Hello World Program :-</b>Javascript में string को Browser पर display करने के लिए 'document.write' का इस्तेमाल किया जाता है |<br> <br>
+            <b>Source code:-</b> <br> 
+            < scriptt type="text/javascript"> <br>
+                document.write("Hello World!"); <br>
+            < /scriptt>
+        </li>
+        <li>
+            <b>HTML Tags in document.write:-</b>Javascript में document.write में as a string HTML Tags भी इस्तेमाल किये जाते है|
+        </li>
+        
+        <li>
+            <b>Not Required semi-colon on seperate lines:-</b>जब seperate lines पर variables और statements होते है तब semi-colon की जरुरत नहीं पडती |
+        </li>
+        <li>
+            <b>Use comma or semi-colon for inline variables and statements:-</b>जब inline variables और statements लिखे जाते है उन्हें seperate करने के लिए comma(,) या semi-colon(;) का इस्तेमाल किया जाता है |
+        </li>
+        
+        <li>
+            <b>External Javascript:-</b>HTML script में एक Javascript file को दुसरे HTML script में import किया जाता है | ये Javascript file .js इस extension से save की जाती है |<br> <br>
+
+            External Javascript से HTML page को गति प्रदान करता है | एक javascript file को multiple HTML pages में भी इस्तेमाल किये जाते है | <br><br>
+            
+            External Javascript के लिए < scriptt> पर 'src' नाम का attribut इस्तेमाल किया जाता है | <br> <br> जैसे कि,
+            
+            < scriptt type="text/javascript" src="external_js.js">< /script> <br>
+           
+                <b>Example for External Javascript:-</b>External Javascript में script tag की कोई जरुरत नहीं होती | अगर लगाया जाये तो भी कोई दिक्कत नहीं होती | external_js.js और Hello.html ये दोनों files एक ही path या location पर है | <br>
+
+                External Javascript में 'src' पर 'js' file का पूरा path भी दिया जाता है | <br>
+                
+                external_js.js
+            
+        </li>
+        <li>
+            <b>Comments:-</b>Javascript में Comment non-executable होता है | कुछ Javascript code में additional information, documentation के लिए Comment का इस्तेमाल किया जाता है | <br><br>
+
+            Javascript में comments की lines Browser में Javascript द्वारा ignore की जाती है | Javascript के code का execution भी comment से बंद किया जाता है | <br> <br>
+            
+            Javascript में दो प्रकार से Comments दी जाती है | <br> <br>
+            
+            Single Line Commentके लिए //(double slashes) का इस्तेमाल किया जाता है |<br> <br>
+            Multiline Comment के लिए /* -----*/ के बीच में comments लिखी जाती है |
+            
+            
+        </li>
+        <li>
+            <b>variables:-</b>Javascript Variables में information को एक जगह पर store किया जाता है | Variable पर कौन से भी data types की value store की जाती है |<br><br>
+            <b>Rules for Creating Variables</b> <br> <br>
+            Variables को declare करने के लिए 'var' keyword का use किया जाता है | <br>
+Variables के नाम की starting किसी भी letter(A-Z a-z) से, underscore(_) से या dollar($) sign से की जाती है | <br>
+Variables की starting Numeric से नहीं हो सकती | लेकिन Variable alphanumeric हो सकता है | For eg. A1 = 5 <br>
+Variables Javascript का कोई keyword नहीं हो सकता | <br>
+Variables case-sensitive होते है | 'A' और 'a' ये दोनों अलग-अलग variables है |<br> <br>
+<b>
+    Variables के दो प्रकार होते है |
     
+   </b>  <br>
+   Local Variables सिर्फ Function के अन्दर ही visible होते है | <br>
+   Global Variables Function के बाहर कहा भी access किये जाते है |    <br>
+
+
+        </li>
+        <li>
+            <b>Data Type:-</b>
+            Variables पर अलग-अलग values store करने के लिए data types का इस्तेमाल किया जाता है | Data Types में main two type  होते है | <br> <br>
+
+Primitive Data Types <br>
+Object Data Types <br><br>
+<b>Primitive Data Types</b>Primitive Data Types के चार प्रकार होते है |
+<ol>
+    <li>String:-String ये एक characters का sequence होता है | String को double("") या single('') quotes में लिखा जाता है |</li>
+    <li>Number:-Javascript में सिर्फ एक ही Number Data type होता है | Number पर integer values और floating-point values होती है |</li>
+    <li>Boolean:-Boolean 'true' और 'false' ये दो values होती है |</li>
+    <li>Undefined :-Variable जब declare या initialize नहीं किया जाता तो वो 'undefined' data type होता है |</li>
+</ol>
+<b>Object Data Types</b>
+<ol>
+    <li>Null:-Null मतलब variable पर कोई value नहीं होती | Null; Undefined के बराबर होता है</li>
+    <li>Array:-Array ये एक same data type का collection होता है | Array की values ([]) में दी जाती है | हर array की value comma(,) से seperate की जाती है |</li>
+    <li>Function:-function को create करने के लिए 'fuction' keyword का इस्तेमाल किया जाता है | Function ये Statements का एक block होता है |</li>
+    <li>Object:-Object में methods और कुछ properties होती है |</li>
+</ol>
+        </li>
+        <li>
+            <b>Arithmetic Operators:-</b>Operand पर Arithmetic operations करने के लिए Arithmetic Operators इस्तेमाल किये जाते है |
+            <table id="customers">
+                <tr>
+                    <th>Operators</th>
+                    <th>description</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>+</td>
+                    <td>Operands को add करने के लिए Addition Arithmetic Operator का इस्तेमाल किया जाता है |</td>
+                    <td>if a = 6, b = 3,<br>
+                        a + b = 9</td>
+                </tr>
+
+                <tr>
+                    <td>-</td>
+                    <td>Operands को subtract करने के लिए Subtraction Arithmetic Operator का इस्तेमाल किया जाता है |</td>
+                    <td>if a = 6, b = 3,<br>
+                        a - b = 3</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>Operands को multiply करने के लिए Multiplication Arithmetic Operator का इस्तेमाल किया जाता है |</td>
+                    <td>if a = 6, b = 3, <br>
+                        a * b = 18</td>
+                </tr>
+
+                <tr>
+                    <td>/</td>
+                    <td>Operands को divide करने के लिए Division Arithmetic Operator का इस्तेमाल किया जाता है |</td>
+                    <td>if a = 6, b = 3, <br>
+                        a / b = 2</td>
+                </tr>
+
+                <tr>
+                    <td>%</td>
+                    <td>दो Operands से remainder निकालने के लिए Modulus Arithmetic Operator का इस्तेमाल किया जाता है |</td>
+                    <td>if a = 6, b = 3, <br>
+                        a % b = 0</td>
+                </tr>
+<tr>
+    <td>++</td>
+    <td>Operand को एक से बढ़ाने के लिए Increment Arithmetic Operator का इस्तेमाल किया जाता है |</td>
+    <td>if a = 6, <br>
+        a++ = 6 <br>
+        ++a = 7</td>
+</tr>
+<tr>
+    <td>--</td>
+    <td>Operand को एक से घटने के लिए Decrement Arithmetic Operator का इस्तेमाल किया जाता है |</td>
+    <td>if a = 6, <br>
+        a-- = 6 <br>
+        --a = 5</td>
+</tr>
+            </table>
+        </li>
+        <li>
+            <b>Comparison Operators:-</b>Comparison Operators दो operands की condition boolean value में return करता है | 
+            <table id="customers">
+                <tr>
+                    <th>Operators</th>
+                    <th>description</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>==</td>
+                    <td>Equal to Comparison Operator; operands equal है या नहीं ये check करता है |</td>
+                    <td>if a = 6, b = "6"<br>
+                        return true</td>
+                </tr>
+
+                <tr>
+                    <td>===</td>
+                    <td>Identical Equal to Comparison Operator; operands के data types और उनकी values को check करता है |</td>
+                    <td>if a = 6, b = "6"<br>
+                        return false</td>
+                </tr>
+                <tr>
+                    <td><</td>
+                    <td>Less than Comparison Operator; ये left operand; right operand से छोटा है या नहीं ये check करता है |</td>
+                    <td>if a = 6, b = 5 <br>
+                        a < b <br>
+                        return false 
+                      </td>
+                </tr>
+
+                <tr>
+                    <td><=</td>
+                    <td>Less than or Equal to Comparison Operator; ये left operand; right operand से छोटा या बराबर है या नहीं ये check करता है ||</td>
+                    <td>if a = 6, b = 5 <br>
+                        a < = b <br> 
+                        return false</td>
+                </tr>
+
+                <tr>
+                    <td>></td>
+                    <td>Greater than Comparison Operator; ये left operand; right operand से बड़ा है या नहीं ये check करता है |</td>
+                    <td>	if a = 6, b = 5 <br>
+                        a > b <br>
+                        return true</td>
+                </tr>
+<tr>
+    <td>>=</td>
+    <td>Greater than or Equal to Comparison Operator; ये left operand; right operand से बड़ा या बराबर है या नहीं ये check करता है |</td>
+    <td>if a = 6, b = 5 <br>
+        a >= b <br>
+        return true</td>
+</tr>
+<tr>
+    <td>!=</td>
+    <td>Not Equal to Comparison Operator; operands equal है या नहीं ये check करता है |</td>
+    <td>	if a = 6, b = "6" <br>
+        a != b <br>
+        return false</td>
+</tr>
+<tr>
+    <td>!==</td>
+    <td>Identical Not Equal to Comparison Operator; operands का data types और उनकी values equal है या नहीं ये check करता है |</td>
+    <td>if a = 6, b = "6" <br>
+        a !== b <br>
+        return true</td>
+</tr>
+            </table>
+        </li>
+        <li>
+            <b>Assignment Operators:-</b> 
+            <table id="customers">
+                <tr>
+                    <th>Operators</th>
+                    <th>description</th>
+                    <th>Example</th>
+                    <th>Same as</th>
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>Assignment</td>
+                    <td> a = b </td>
+                    <td>a = b</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>Addition Assignment</td>
+                    <td> a += b</td>
+                    <td>a = a + b</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>Subtraction Assignment</td>
+                    <td> a -= b 
+                      </td>
+                      <td>a = a - b</td>
+                </tr>
+
+                <tr>
+                    <td>*=</td>
+                    <td>Multiplication Assignment</td>
+                    <td> a *= b </td>
+                    <td>a = a * b</td>
+                </tr>
+
+                <tr>
+                    <td>/=</td>
+                    <td>	Division Assignment</td>
+                    <td>	 a /= b </td>
+                    <td>a = a / b</td>
+                </tr>
+<tr>
+    <td>%=</td>
+    <td>Modulus Assignment</td>
+    <td> a %= b</td>
+    <td>a = a % b</td>
+</tr>
+<tr>
+    <td>&=</td>
+    <td>Bitwise AND Assignment</td>
+    <td> a &= b </td>
+    <td>a = a & b</td>
+</tr>
+<tr>
+    <td>|=</td>
+    <td>Bitwise OR Assignment </td>
+    <td>a |= b </td>
+    <td>a = a | b</td>
+</tr>
+<tr>
+    <td>^=</td>
+    <td>Bitwise Exclusive OR Assignment </td>
+    <td>a ^= b </td>
+    <td>a = a ^ b</td>
+</tr>
+<tr>
+    <td><<=</td>
+    <td>	Left Shift Assignment </td>
+    <td>a <<= b </td>
+    <td>a = a << b</td>
+</tr>
+<tr>
+    <td>>>=</td>
+    <td>	Right Shift Assignment </td>
+    <td>a >>= b </td>
+    <td>a = a >> b</td>
+</tr>
+     </table>
+        </li>
+        <li>
+            <b>Logical Operators:-</b> 
+            <table id="customers">
+                <tr>
+                    <th>Operators</th>
+                    <th>description</th>
+                   
+                </tr>
+                <tr>
+                    <td>&&</td>
+                    <td>जब दिए हुए सभी expression 'true' होते है तो ये 'true' return करता है | अगर हुए expressions से एक expression अगर false हुई तो ये false return करता है |</td>
+                    
+                </tr>
+                <tr>
+                    <td>||</td>
+                    <td>Expressions में से एक expression अगर 'true' होता है तो ये 'true' return करता है |</td>
+                    
+                </tr>
+                <tr>
+                    <td>!</td>
+                    <td>Logical NOT Operator जब expression false होता है तब 'true' return करता है और अगर expression true होता है तो 'false' return करता है |</td>
+                    
+                </tr>
+
+                    
+     </table>
+        </li>
+        <li>
+            <b>Bitwise Operators:-</b> Bitwise Operators; binary numbers पर काम करते है |
+            <table id="customers">
+                <tr>
+                    <th>Operators</th>
+                    <th>description</th>
+                    
+                </tr>
+                <tr>
+                    <td>&</td>
+                    <td>Bitwise AND</td>
+                   
+                </tr>
+                <tr>
+                    <td>|</td>
+                    <td>Bitwise OR</td>
+                    
+                </tr>
+                <tr>
+                    <td>=</td>
+                    <td>Bitwise  Exclusive OR(XOR)</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>~</td>
+                    <td>ये Operator सारे bit reverse करता है | <br>
+                        ये Operator 0 को 1 कर देता है और 1 को 0 कर देता है |Bitwise NOT</td>
+                    
+                </tr>
+
+                <tr>
+                    <td><<</td>
+                    <td>	Left Shift(<<) for e.g. a=20; /* 0001 0100 */ a << 2 में numeric value के binary value में हर binary number को 2 binary numbers left side से shift करता है | for e.g.a=20; /* 0001 0100 */ तो इसका 0101 0000 मतलब 80 हो जायेगा |</td>
+                   
+                </tr>
+<tr>
+    <td>>></td>
+    <td>Right Shift(>>) for e.g. a=20; /* 0001 0100 */ ये Left shift से बिलकुल उलट है | Right Shift a>> 2 में numeric value के binary value में हर binary number को 2 binary numbers right side से shift करता है | for e.g.a=20; /* 0001 0100 */ तो इसका 0000 0101 मतलब 5 हो जायेगा |</td>
+    
+</tr>
+<tr>
+    <td>>>></td>
+    <td>Bitwise Unsigned Right Shift(>>>) Operator; Signed Right Shift Operator जैसा ही होता है | ये सिर्फ positive value return करता है |</td>
+    
+</tr>
+
+     </table>
+        </li>
+        <li>
+            <b>Conditional(Ternary) Operator :-</b> <ol>
+                
+                <li>Conditional Operator में तीन Expressions होते है | </li>
+            <li>Conditional Operator को Ternary Operator भी कहते है |</li>
+        <li>Conditional Operator में अगर पहला expression true होता है, तो वो दूसरा expression output में print करता है |</li>
+    <li>अगर Conditional Operator में पहला expression false होता है, तो वो तीसरा expression output में print करता है |</li>
+</ol> 
+        </li>
+<li>
+    <b>Miscellaneous Operators</b><br><br>
+    <b>Types of Miscellaneous Operators</b>
+    <ol>
+        <li><h3>instance of Operator :-</h3>instanceof Operator का इस्तेमाल Object का instance check करने के लिए किया जाता है |</li>
+        <li><h3>delete Operator:-</h3>delete Operator से कुछ array, array के elements, object और object की properties को remove किया जाता है | 
+
+            <h4> Note : </h4> 'var' keyword के साथ पूरा array या object remove नहीं किया जा सकता | <br>
+            
+            अगर delete नहीं होता तो 'false' return होता है और delete होता है 'true' return होता है |</li>
+            <li><h3>new Operator:-</h3>
+                new Operator से Object का instance create किया जाता है |</li>
+                <li><h3> in Operator:-</h3>Object की property exist है या नहीं ये check करता है अगर होती है ये 'true' return करता है और नहीं होती तो 'false' return करता है |</li>
+                <li><h3>typeof Operator:-
+                </h3>typeof Operator; operand का 'type' string में return करता है | <br>
+
+                typeof Operator ये 'types' return करता है | <br>
+                
+                "number", "object", "function", "string", "boolean", "undefined"
+            </li>
+    </ol>
+</li>
+<li>
+    <b>Loop:-</b>Loop एक specified number तक Statements को execute करता है |
+</li>
+<li>
+    <b>While Loop:-</b>
+    while Loop जब तक condition true होती है तब तक statements को बार-बार executes करता रहता है और जब condition false हो जाती तब execution stop हो जाता है |  
+    <img src="whileLoop.png" alt="">
+</li>
+<li>
+    <b>Do_While Loop:-</b>do_while Loop जब तक condition true होती है तब तक statements को बार-बार executes करता रहता है और जब condition false हो जाती तब एक बार statement को execute करता है |
+    <img src="" alt="">
+</li>
+    </ul>
+        </div>
 </body>
 </html>
