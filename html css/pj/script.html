@@ -27,7 +27,8 @@
     </div>
     <div class="content">
         <ul>
-            <li>
+         <li>
+
 
                 <b>Introduction for Javascript :- </b> javascript ये Language एक client-side Language है जिसका इस्तेमाल HTML(HyperText Markup Language) के साथ किया जाता है | Javascript ये Language lighted Language है | <br> <br>
 
@@ -553,11 +554,11 @@ Javascript में function expression hoisted नहीं होता |
     </li>
     <li><b>Nested Function:-</b>Nested Function में एक function के अन्दर function होता है | <br><br>
 
-        <!-- script में diameter से circle का area निकाला गया है |<br><br>
+        script में diameter से circle का area निकाला गया है |<br><br>
         
         circle function पर 'diameter' parameter pass किया गया है और इसके बाद inner function 'radius' लिया गया है | radius function को circle function के parameter 'diameter'/2 मतलब उसके radius को return किया गया है |<br><br>
         
-        उसके बाद circle function को Math.PI की value और radius function से return की गयी value का square (Math.pow(radius(), 2)) multiply किया गया है |<br><br> -->
+        उसके बाद circle function को Math.PI की value और radius function से return की गयी value का square (Math.pow(radius(), 2)) multiply किया गया है |<br><br> 
     </li>
     <li>
         <b>Object:-</b>Javascript ये Language Object-Oriented Programming Langauge है | Javascript में भी C++, Java जैसे objects बनाये जाते है |
@@ -614,8 +615,846 @@ Javascript में function expression hoisted नहीं होता |
 
         Object के लिए Prototype का use करने के लिए object constructor के साथ Objects create करने की जरुरत पड़ती है |<br><br>
         <h4>syntax</h4>obj_constructor_name.prototype.method_name = function (){ method_body; }    
+    </li> 
+    <li>
+        <b>String:-</b>String ये Characters का sequence होता है | <br><br>
+
+        String को single या double quotes के अन्दर लिखा जाता है |<br><br>
+        
+        var str1 = 'Hello';<br>
+        var str2 = "World"; <br><br>
+
+        <h6>Empty String</h6>
+            var str3 = ""; <br><br>
+            Strings को दो प्रकार से create किये जाते है |<br><br>
+
+String Type <br>
+String Object Type <br><br>
+var str4 = "Hello World"; //String Type <br>
+var str5 = new String("Hello World"); //String Object Type <br><br>
+यदि double quoted string के अन्दर single quoted और single quoted string के अन्दर double quoted string हो तो वो access हो जाता है |<br><br>
+अगर single quoted string के अन्दर single quoted string और double quoted string के अन्दर double quoted strig को access करने के लिए पहले escape character (\) का इस्तेमाल करना पड़ता है |<br><br>
+ 
+अगर String में special characters को executes करना हो तो special characters से पहले escape character(\) का इस्तेमाल करना पड़ता है |<br><br>
+<table id="customers">
+    <tr>
+<th>String Methods</th>
+<th>Description</th>
+    </tr>
+    <tr>
+        <td>charAt()</td>
+        <td>दिए हुए index का character return करता है |</td>
+    </tr>
+    <tr>
+        <td>charCodeAt()</td>
+        <td>दिए हुए index के character की Unicode value में return करता है |</td>
+    </tr>
+    <tr>
+        <td>concat()</td>
+        <td>दो string या दो से ज्यादा string को जोड़ने के लिए इस्तेमाल किया जाता है </td>
+    </tr>
+
+    <tr>
+        <td>endsWith()</td>
+        <td>दिए हुए String या character से String का end हुआ है या नहीं हुआ है इससे boolean value को return करता है |</td>
+    </tr>
+    <tr>
+        <td>fromCharCode()</td>
+        <td>दिए हुए Unicode value से character को return करता है |</td>
+    </tr>
+
+     <tr>
+        <td>indexOf()</td>
+        <td>दिए हुए characters का first occurrence का index return किया जाता है |</td>
+    </tr>
+    <tr>
+        <td>lastIndexOf()</td>
+        <td>दिए हुए characters का last occurrence का index return किया जाता है |</td>
+    </tr>
+    <tr>
+        <td>localeCompare()</td>
+        <td>दो String को locale में compare किया जाता है | ये 0, 1 या -1 return करता है |</td>
+    </tr>
+    <tr>
+        <td>repeat()</td>
+        <td>	दिए हुए number तक String को repeat करके return किया जाता है |</td>
+    </tr>
+
+    <tr>
+        <td>replace()</td>
+        <td>	दिए हुए string से substring को regular expression से या नए string से replace किया जाता है |</td>
+    </tr>
+    <tr>
+        <td>search()</td>
+        <td>	दिए हुए regular expression या string को search करके उसका index return किया जाता है | अगर search नहीं होता तो -1 return होता है |</td>
+    </tr>
+
+     <tr>
+        <td>slice()</td>
+        <td>दिए हुए startindex से endindex तक नए String को return किया जाता है |</td>
+    </tr> <tr>
+        <td>split()</td>
+        <td>दिए हुए character से string को split करके array return किया जाता है |</td>
+    </tr>
+
+    <tr>
+        <td>startsWith()</td>
+        <td>String की शुरुआत दिए हुए character या substring से हुई है या नहीं हुई है ये boolean value में return किया जाता है |</td>
+    </tr>
+    <tr>
+        <td>substr()	</td>
+        <td>	String से दिए हुए index से उसके दिए हुए length तक substring को return किया जाता है |</td>
+    </tr>
+    <tr>
+        <td>substring()	</td>
+        <td>String से दिए हुए startindex से endindex तक substring को return किया जाता है |</td>
+    </tr>
+    <tr>
+        <td>toLowercase()	</td>
+        <td>दिए हुए String को lowercase में return किया जाता है |
+        </td>
+    </tr>
+    <tr>
+        <td>toString()	</td>
+        <td>दिए हुए string object को string में return किया जाता है |
+        </td>
+    </tr>
+    <tr>
+        <td>toUpperCase()	</td>
+        <td>दिए हुए String को uppercase में return किया जाता है |
+        </td>
+    </tr>
+    <tr>
+        <td>trim()	</td>
+        <td>String से शुरुआत और आखिर के spaces को trim किया जाता है |
+        </td>
+    </tr>
+
+</table>
     </li>
-    </ul>
+    <li>
+        <b>Array:-</b> Javascript के Array में एक से ज्यादा values को store की जाती है |<br><br>कई Programming languages में Array में same data types के elements होते है लेकिन Javascript के array में किसी भी type के हो सकते है|<br><br>
+        Array को create करने के लिए एक variable पर bracket पर multiple values दी जाती है |<br><br>Array के पहले element का index 0 होता है और आखिरी element array की length-1 होता है|<br><br>Array की length check करने के लिए array के length property का इस्तेमाल किया जाता है|<br><br>Javascript में Element को value; change की जा सकती है|
+    </li>
+    <li>
+        <b> Associative array:-</b>Array में index को विशिष्ट नाम देना ही Associative Array होता है | <br><br>
+
+        Associative Array में 'key' और 'value' की pair होती है |<br><br>Associative Array को curly braces({}) के अन्दर keys और values की pairs में लिखा जाता है |<br><br>new keyword के साथ भी associative array को cretae किया जाता है |<br><br>Object के attributes भी associative array की keys होती है |
+    </li>
+    <li>
+        <b>Array Method:-</b>
+        <table id="customers"> 
+            <tr>
+                <th>Array Methods</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>concat()</td>
+                <td>	दिए हुए एक या एक से ज्यादा arrays को जोड़ा जाता है |</td>
+            </tr>
+            <tr>
+                <td>copyWith()</td>
+                <td>array के elements दुसरे index पर copy किये जाते है |
+                </td>
+            </tr>
+            <tr>
+                <td>entries()	</td>
+                <td>method पर array की keys और उसकी values की pairs उपलब्ध होती है |
+                </td>
+            </tr>
+            <tr>
+                <td>every()	</td>
+                <td>दिए हुए function से हर एक array के element को check करके boolean value return करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>fill()	</td>
+                <td>दिए गए value से array के elememts को fill किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>filter()	</td>
+                <td>दिए हुए function के statement से related अगर कोई पहला index find होता है तो उसकी value return होती है |
+                </td>
+            </tr>
+            <tr>
+                <td>find()	</td>
+                <td>दिए हुए function के statement से related अगर कोई पहला index find होता है तो उसकी value return होती है |
+                </td>
+            </tr>
+            <tr>
+                <td>forEach()	</td>
+                <td>हर एक array element के लिए function execute किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>includes()	</td>
+                <td>array element है या नहीं ये boolea value में return करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>indexOf()	</td>
+                <td>array element का index return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>join()	</td>
+                <td>दिए हुए seperator से हर element को seperate किया जाता है
+                </td>
+            </tr>
+            <tr>
+                <td>keys()	</td>
+                <td>दिए हुए array के elements की keys दिखाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>lastIndexOf()	</td>
+                <td>दिए हुए element का last index return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>pop()</td>
+                <td>array के last element को array से remove करके return किया जाता है |
+                </td>
+            </tr>
+
+            <tr>
+                <td>push()	</td>
+                <td>end पर एक या एक से ज्यादा elements को जोड़ा जाता है और उसके बाद array की length return करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>reverse()	</td>
+                <td>दिए हुए array के elements को reverse किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>shift()	</td>
+                <td>array के शुरुआत के element को remove किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>slice()	</td>
+                <td>start और end index से नए array को return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>some()	</td>
+                <td>function के statement से related; boolean value को return करता है |
+                </td>
+            </tr>
+
+            <tr>
+                <td>sort()	</td>
+                <td>alphabet और numeric array को sort किया जाता है |
+                </td>
+            </tr>
+
+            <tr>
+                <td>splice()	</td>
+                <td>Array में elements add,remove किये जाते है |
+                </td>
+            </tr>
+            <tr>
+                <td>toSource()	</td>
+                <td>दिए हुए array का source code; return किया जाता है |
+                </td>
+            </tr>
+             <tr>
+                <td>toString()	</td>
+                <td>Array को String में convert किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>unshift()	</td>
+                <td>Array के शुरुआत में एक या एक से ज्यादा element(s) को add किया जाता है |
+                </td>
+            </tr>
+            
+
+
+        </table>
+    </li>
+    <li>
+        <b>Date and Time:-</b>सभी Programming Languages में Date और Time के लिए functions या methods होते है | Javascript में भी Date और Time के लिए methods होते है |<br><br>
+
+        Javascript में date को create करने के लिए Date object का इस्तेमाल किया जाता है |<br><br>
+        Date को चार प्रकार से लिखे जाते है |<br><br>
+        <h3>Type 1:</h3>new Date() <br><br>
+        यहाँ पर Date में कोई argument नहीं है, यहाँ पर date object current date और time दिखाता है | <br><br>
+        <h3>Type 2:</h3>new Date(milliseconds) <br><br>
+        milliseconds : यहाँ पर milliseconds दिए जाते है |<br><br>
+        
+        1 milliseconds 1 second का 1000(1/1000) वा हिस्सा होता है |<br><br>
+        
+        यहाँ पर January 1, 1970 00:00:00 UTC इस date से दिए हुए milliseconds को add करके new date दिखाई जाती है |<br><br>
+        <h3>Type 3:</h3>
+        new Date(dateString) <br><br>
+dateString : यहाँ पर dateString मतलब formatted date string दी जाती है |<br><br>
+<h3>Type 3:</h3>
+new Date(year,month,day,hour,minute,second,millisecond) <br><br>
+year : यहाँ पर year दिया जाता है | अगर 2 digit का year दिया जाता है तो वो 1900 से 1999 के बीच का होता है , इससे Y2K(Year 2000) की problem हो सकती है , इसीलिए Year 4 digit का ही दिया जाता है |<br><br>
+
+<h5>month :</h5>  यहाँ पर 0(January) से 11(December) के बीच की value दी जाती है |<br><br>
+
+<h5>day :</h5> यहाँ पर 1 से 28/29/30/31 के बीच की value दी जाती है | ये optional होता है |<br><br>
+
+<h5>hour :</h5> यहाँ पर 00 से 23 के बीच की value दी जाती है | ये optional होता है |<br><br>
+
+<h5>minute :</h5> यहाँ पर 00 से 59 के बीच की value दी जाती है | ये optional होता है |<br><br>
+
+<h5>second :</h5> यहाँ पर 00 से 59 के बीच की value दी जाती है | ये optional होता है |<br><br>
+
+<h5>millisecond : </h5> यहाँ पर 0 से 999 के बीच की value दी जाती है | 1000 milliseconds का 1 second होता है | ये optional होता है |<br><br>
+    </li>
+    
+    <li>
+        <b>Date Time Getter Methods:-</b>\
+        <table id="customers"> 
+            <tr>
+                <th>Date/Time Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>getDate()	</td>
+                <td>दिए हुए date या current date से 1 से 28/29/30/31 के बीच का month का day return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>getDAY()</td>
+                <td>दिए हुए date या current date से 0 से 6 के बीच का week का day return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>getFullYear()</td>
+                <td>दिए हुए date या current date से उसका 4 Digit का Full Year return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>getHours()	</td>
+                <td>दिए हुए date या current date से उसका hour 0 से 23 के बीच की value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>getMilliseconds()	</td>
+                <td>दिए हुए date या current date के second का milliseconds return किये जाते है |
+                </td>
+            </tr>
+            <tr>
+                <td>getMinutes()	</td>
+                <td>दिए हुए date या current date के minutes 0 से 59 के बीच की value return की जाती है |
+                </td>
+            </tr>
+
+            <tr>
+                <td>getMonth()	</td>
+                <td>दिए हुए date या current date के year का month 0 से 11 के बीच की value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>getseconds()	</td>
+                <td>दिए हुए date या current date के seconds 0 से 59 के बीच की value return की जाती है |
+                </td>
+            </tr>
+
+            <tr>
+                <td>getTime()	</td>
+                <td>January 1, 1970 00:00:00 UTC से दिए हुए date या current date तक milliseconds return किये जाते है |
+                </td>
+            </tr> 
+            <tr>
+                <td>getTimezoneOffset()	</td>
+                <td>current locale का time zone offset minutes में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>getUTCDate()	</td>
+                <td>दिए हुए date या current date से Universal Time के अनुसार date 0 से 28/29/30/31 के बीच की value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>getUTCDay()	</td>
+                <td>दिए हुए date या current date से Universal Time के अनुसार week का day 0 से 6 के बीच की value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>getUTCFullYear()	</td>
+                <td>दिए हुए date या current date से Universal Time के अनुसार 4Digit के year की value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>getUTCHours()	</td>
+                <td>दिए हुए date या current date से Universal Time के अनुसार hours 0 से 23 के बीच की value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>getUTCMilliseconds()</td>
+                <td>Universal Time के अनुसार second के milliseconds 0 से 999 के बीच की value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>getUTCMinutes()	</td>
+                <td>Universal Time के अनुसार Minutes 0 से 59 के बीच की value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>getUTCMonth()	</td>
+                <td>Universal Time के अनुसार Year के Month 0 से 11 के बीच की value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>getUTCSeconds()	</td>
+                <td>Universal Time के अनुसार Minute के Seconds 0 से 59 के बीच की value return की जाती है |
+                </td>
+            </tr>
+
+
+
+        </table>
+    </li>
+    <li>
+        <b>Date Time Setter Methods:-</b>\
+        <table id="customers"> 
+            <tr>
+                <th>Date/Time Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>setDate()	</td>
+                <td>month के day को set किया जाता है |
+
+                </td>
+            </tr>
+          
+            <tr>
+                <td>setFullYear()</td>
+                <td>year को set किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>setHours()	</td>
+                <td>Hours को set किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>setMilliseconds()	</td>
+                <td>milliseconds को set किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>setMinutes()	</td>
+                <td>Minutes को set किया जाता है |
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>setMonth()	</td>
+                <td>Month को set किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>setseconds()	</td>
+                <td>seconds को set किया जाता है |
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>setTime()	</td>
+                <td>January 1, 1970, 00:00:00 UTC से दिए हुए milliseconds को add करके एक नया date return होता है |
+
+                </td>
+            </tr> 
+           
+            <tr>
+                <td>setUTCDate()	</td>
+                <td>Universal Time के अनुसार month के day को set किया जाता है |
+
+                </td>
+            </tr>
+           
+            <tr>
+                <td>setUTCFullYear()	</td>
+                <td>Universal Time के अनुसार year को set किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>setUTCHours()	</td>
+                <td>Universal Time के अनुसार hours को set किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>setUTCMilliseconds()</td>
+                <td>Universal Time के अनुसार millisecond को set किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>setUTCMinutes()	</td>
+                <td>Universal Time के अनुसार year को minute किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>setUTCMonth()	</td>
+                <td>Universal Time के अनुसार month को set किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>setUTCSeconds()	</td>
+                <td>Universal Time के अनुसार seconds को set किया जाता है |
+
+                </td>
+            </tr>
+
+
+
+        </table>
+    </li>
+    <li>
+        <b>Date Time Converting Methods</b>
+        <table id="customers">
+<tr>
+    <th>Date/Time Methods</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>toDateString()</td>
+    <td>date को human readable format में convert किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>toISOString()	</td>
+    <td>ISO Format का इस्तेमाल करके Date को String में represent किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>toLocaleDateString()	</td>
+    <td>locale convention का इस्तेमाल करके date को human readable format में convert किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>toLocaleString()	</td>
+    <td>locale convention का इस्तेमाल करके date को string में convert किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>toLocaleTimeString()	</td>
+    <td>locale convention का इस्तेमाल करके time string में convert किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>toString()	</td>
+    
+    <td>date object को string में represent किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>toTimeString()	</td>
+    <td>date के time को string में convert किया जाता है |
+    </td>
+</tr>
+
+<tr>
+    <td>toUTCString()	</td>
+    <td>Universal Time के अनुसार date को string में convert किया जाता है |
+    </td>
+</tr>
+ 
+        </table>
+    </li>
+    <li>
+        <b> Date Time Miscellaneous Methods:-</b>
+        <table id="customers">
+            <tr>
+                <th>Date/Time Methods</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>now()	</td>
+                <td>January 1, 1970 00:00:00 UTC से अबतक के milliseconds return किये जाते है |
+                </td>
+            </tr>
+            <tr>
+                <td>parse()	</td>
+                <td>dateString को parse करके January 1, 1970 00:00:00 UTC और दिए हुए dateString के बीच का फर्क milliseconds में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>UTC()</td>
+                <td>Universal Time के अनुसार January 1, 1970 00:00:00 UTC और दिए हुए parameters के बीच का फर्क milliseconds में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>valueOf()</td>
+                <td>Date Object के primitive value को return किया जाता है |
+                </td>
+            </tr>
+           
+             
+                    </table>
+    </li>
+    <li>
+        <b>Math:-</b>Javascript में Math ये Object होता है | जिसमे properties और methods होते है |<br><br>
+
+        Javascript में Numeric values पर mathematical operations करने के लिए Javascript Math Object का इस्तेमाल किया जाता है |<br><br>
+        
+        Math Object के लिए constructor नहीं होता | Math ये बिना object create किये हुए properties और methods के जरिये numerical value पर mathematical operation किया जाता है |<br><br>
+        
+        <h5>For eg. </h5>
+        Math.min(10, 25, 45, 5); //return 5 <br><br>
+    </li>
+    <li>
+        <b>Math Properties:-</b>Javascript Math Properties <br><br>
+        E <br>
+        LN2 <br>
+        LN10<br>
+        LOG2E<br>
+        LOG10E<br>
+        PI<br>
+        SQRT1-2<br>
+        SQRT2<br>
+    </li>
+    <li>
+        <b>Math Methods</b>
+        <table id="customers">
+            <tr>
+                <th>Math Methods</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>abs()	</td>
+                <td>Number की absolute value return की जाती है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>acos()	</td>
+                <td>Number से arccosine की value radians में return की जाती है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>asin()</td>
+                <td>Number से arcsine की value radians में return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>atan()</td>
+                <td>Number से arctangent की value radians में return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>ceil()	</td>
+                <td>Number से बड़ी या equal उसके पासवाली Integer value return की जाती है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>cos()	</td>
+                
+                <td>Number का cosine return किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>exp()	</td>
+                <td>e को घातांक(ex) देकर value return की जाती है |
+
+                </td>
+            </tr>
+            
+            <tr>
+                <td>floor()	</td>
+                <td>Number से छोटी या equal उसके पासवाली Integer value return की जाती है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>log()	</td>
+                <td>Number का natural logarithm return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>max()	</td>
+                <td>दिए हुए Numbers में से सबसे बड़ी value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>min()	</td>
+                <td>दिए हुए Numbers में से सबसे छोटी value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>pow()	</td>
+                <td>दिए हुए value के साथ उसका power(घातांक) (xy) दिया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>random()	</td>
+                <td>0(include) से 1(exclude) के बीच की value return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>round()	</td>
+                <td>दिए हुए Number को पासवाले Integer को return करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>sin()	</td>
+                <td>Number का sine return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>sqrt()	</td>
+                <td>Number का square root; return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>tan()</td>
+                <td>Number का tangent return किया जाता है |</td>
+            </tr>
+             
+                    </table>
+    </li>
+    <li>
+        <b>Number:-</b>Javascript में Number Object; Numbers पर control करता है | कुछ Number Integer होते है, तो कुछ Numbers Floating-point Numbers होते है | इन Numbers पर operation करके Integer Numbers को Floating-point Numbers भी बनाया जाता है और Floating-point Numbers को Integer भी बनाया जाता है |<br><br>
+
+        Number का Object और Constructor create किया जा सकता है |<br><br>
+        
+        var object_name = new Number(number);
+    </li>
+    <li>
+        <b>Number Properties:-</b>
+        <table id="customers">
+            <tr>
+                <th>Number Properties</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>MAX_VALUE	</td>
+                <td>यहाँ पर Javascript में सबसे बड़ी value होती है |
+                </td>
+            </tr>
+            <tr>
+                <td>MIN_VALUE	</td>
+                <td>यहाँ पर Javascript में सबसे छोटी value होती है |
+                </td>
+            </tr>
+<tr>
+    <td>NaN	</td>
+    <td>ये Not a Number Value होती है |
+    </td>
+</tr>
+<tr>
+    <td>NEGATIVE_INFINITY	</td>
+    <td>ये Negative Infinity value होती है (-infinity)
+    </td>
+</tr>
+<tr>
+    <td>POSITIVE_INFINITY	</td>
+    <td>ये Positive Infinity value होती है (infinity)
+    </td>
+</tr>
+        </table>
+    </li>
+    <li>
+        <b>Converting Type to Number:-</b>
+        <table id="customers">
+            <tr>
+                <th>Number Methods</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Number()	</td>
+                <td>Type को Number में convert किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>parseFloat()	</td>
+                <td>parameter के parse करके floating-point Number return किया जाता है |
+                </td>
+            </tr>
+<tr>
+    <td>parseInt()	</td>
+    <td>parameter के parse करके integer Number return किया जाता है |
+    </td>
+</tr>
+        </table>
+    </li>
+    <li>
+        <b>Number Methods:-</b>
+        <table id="customers">
+            <tr>
+                <th>Number Methods</th>
+                <th>Description</th>
+            </tr>
+<tr>
+    <td>isFinite()	</td>
+    <td>Number Finite है या नहीं ये check किया जाता है और boolean value return की जाती है |
+    </td>
+</tr>
+<tr>
+    <td>isInteger()	</td>
+    <td>Number Integer है या नहीं ये check किया जाता है और boolean value return की जाती है |
+    </td>
+</tr>
+<tr>
+    <td>toNaN()	</td>
+    <td>Number है या नहीं ये check किया जाता है और boolean value return की जाती है |
+    </td>
+</tr>
+<tr>
+    <td>toExponential()	</td>
+    <td>number को exponential notation में उसका string return किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>toFixed()	</td>
+    <td>number को fixed-point notation में उसका string return किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>toPrecision()	</td>
+    <td>number को दिए हुए precision में उसका string return किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>toString()	</td>
+    <td>number को string में convert करके return किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>valueOf()	</td>
+    <td>Number Object को primitive value में convert किया जाता है |
+    </td>
+</tr>
+        </table>
+    </li>
+</ul>
+        </div>
+        <div class="btn">
+            <button>
+                <a href="css.html">Html Tags
+
+                </a></button>
+            <button>
+
+                <a href="index.html"> Css Property</a>
+                </a></button>
+            <button>
+
+                <a href="script.html"> javascript </a>
+                </a></button>
+            <div class="credit"> created by <span> <strong><i> miss.Pratigya jain</i> </strong></span> | Copyright ©
+                2022 all rights reserved </div>
         </div>
 </body>
 </html>
