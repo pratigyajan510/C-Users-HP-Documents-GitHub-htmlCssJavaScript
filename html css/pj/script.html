@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="heding">
-        <h1>javascript</h1>
+        <h1>Javascript</h1>
     </div>
     <div class="btn">
         <button>
@@ -22,12 +22,16 @@
             </a></button>
         <button>
 
-            <a href="script.html"> javascript </a>
+            <a href="script.html"> Javascript </a>
             </a></button>
+            <button>
+
+                <a href="script.html"> React </a>
+                </a></button>
     </div>
     <div class="content">
         <ul>
-         <li>
+        <!--  <li>
 
 
                 <b>Introduction for Javascript :- </b> javascript ये Language एक client-side Language है जिसका इस्तेमाल HTML(HyperText Markup Language) के साथ किया जाता है | Javascript ये Language lighted Language है | <br> <br>
@@ -1438,6 +1442,1101 @@ year : यहाँ पर year दिया जाता है | अगर 2 d
 </tr>
         </table>
     </li>
+    <li>
+        <b>Regular Expression:-</b>हर Programming Language में Regular Expression का जिक्र होता है | Regular Expression ये String को match करने का search pattern होता है | Web Development के Languages में देखे तो Form के Validation में Regular Expression का इस्तेमाल होता है | जैसे Email, UserName, Mobile No के validation के लिए Regular Expression का इस्तेमाल होता है |<br><br>
+        <h3>flag(s) :</h3>  यहाँ पर match करने के लिए g(global), i(case-insensitive/ignoreCase) और m(multiline) ये Modifiers दिए जाते है | <br><br>
+
+        Javascript में Regular Expression के लिए कुछ हिस्से बनाये गए है |<br><br>
+        
+        Brackets <br>
+        Quantifiers <br>
+        Metacharacters <br>
+        Modifiers 
+    </li> 
+    <li>
+        <b>Regular Expression String Methods:-</b>
+        <table id="customers">
+            <tr>
+                <th>String Methods</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>match()	</td>
+                <td>Regular Expression या seperator के जरिये String को split करके match हुए content को return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>replace()	</td>
+                <td>Regular Expression के जरिये String को search करके match हुए content को दिए हुए value से replace किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>search()	</td>
+                <td>Regular Expression के जरिये String को search करके match हुए first occurrence का index return करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>split()	</td>
+                <td>Regular Expression या seperator के जरिये String को split करके match हुए content को return किया जाता है |
+                </td>
+            </tr>
+
+        </table>
+    </li>
+    <li>
+        <b>Regular Expression Brackets:-</b>
+        <table id="customers">
+            <tr>
+                <th>Expression</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>[..]	</td>
+                <td>कोई भी character या digits ढूंढने के लिए दिया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>[^..]</td>
+                <td>कोई भी character या digits दिया जाता है , उसे ढूंढा नहीं जाता |
+
+                </td>
+            </tr>
+            <tr>
+                <td>[0-9]</td>
+                <td>0 से 9 तक के digits को ढूंढा जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>[^0-9]</td>
+                <td>0 से 9 तक के digits को ढूंढा नहीं जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>[A-Z]</td>
+                <td>Uppercase A से लेकर uppercase Z तक characters को ढूंढा जाता है |
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>[^A-Z]</td>
+                <td>Uppercase A से लेकर uppercase Z तक characters को ढूंढा नहीं जाता है |
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>[a-z]</td>
+                <td>lowercase a से लेकर lowercase z तक characters को ढूंढा जाता है |
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>[^a-z]</td>
+                <td>lowercase a से लेकर lowercase z तक characters को ढूंढा नहीं जाता है |
+                </td>
+            </tr>
+            
+
+        </table>
+    </li>
+    <li>
+        <b>Regular Expression Quantifiers:-</b>
+        <table id="customers">
+            <tr>
+                <th>Expression</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>n+</td>
+                <td>String में कम से कम एक 'n' को match होता है |
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>n*</td>
+                <td>String में zero या उससे ज्यादा 'n' occurrences से match होता है |
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>n?</td>
+                <td>String में zero या एक 'n' occurrences से match होता है |
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>n{X}</td>
+                <td>String में से n को sequences of X number तक match किया जाता है |
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>n{X,Y}</td>
+                <td>String में से n को sequences of X number से Y number तक match किया जाता है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>n{X,}</td>
+                <td>String में से n को sequences of कम से कम X number तक किया जाता है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>n$	</td>
+                <td>String में से n को end पर match किया जाता है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>^n	</td>
+                <td>String में से n को start पर match किया जाता है |
+
+                </td>
+            </tr>
+            
+
+        </table>
+    </li>
+    <li>
+        <b>Regular Expression Metacharacters:-</b>
+        <table id="customers">
+            <tr>
+                <th>Expression</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>dot(.)</td>
+                <td>single dot से single character ढूंढा जाता है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td>String में से word के शुरुआत या end के matches ढूंढे जाते है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>String में से word के ढूंढे हुए matches शुरुआत या end पर नहीं होते है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>String में से 0 से 9 numbers तक ढूंढा जाता है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>String में से non-numbers character ढूंढा जाता है |
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>f</td>
+                <td>String में से form-feed character को ढूंढा जाता है |
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>n	</td>
+                <td>String में से newline character को ढूंढा जाता है |
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>s	</td>
+                <td>String में से whitespace character को ढूंढा जाता है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>S	</td>
+                <td>String में से non-whitespace character को ढूंढा जाता है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>t	</td>
+                <td>String में से tab character को ढूंढा जाता है |
+
+
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>v	</td>
+                <td>String में से vertical tab character को ढूंढा जाता है |
+
+
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>w	</td>
+                <td>String में से word character को ढूंढा जाता है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>W	</td>
+                <td>String में से non-word character को ढूंढा जाता है |
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>0	</td>
+                <td>String में से null character को ढूंढा जाता है |
+
+
+                </td>
+            </tr>
+
+            
+
+        </table>
+    </li>
+    <li>
+        <b>Regular Expression Modifiers:-</b>Modifiers Regular Expressions के साथ आखिर में इस्तेमाल किये जाते है | ये Regular Expression को modify करने में मदद करते है |
+        <table id="customers">
+            <tr>
+                <th>Flags	</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>g(global)</td>
+                <td>एक से ज्यादा matches के लिए इस्तेमाल किया जाता है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>m(multiline)</td>
+                <td>हर line के matches के लिए इस्तेमाल किया जाता है |
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>i(case-insensitive)</td>
+                <td>case-insensitive matches के लिए इस्तेमाल किया जाता है |
+
+
+
+                </td>
+            </tr>
+            
+            
+
+        </table>
+    </li>
+    <li>
+        <b>Regular Expression Properties:-</b>
+        <table id="customers">
+            <tr>
+                <th>Properties</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>global</td>
+                <td>Regular Expression के साथ 'g' Modifier का इस्तेमाल किया गया है या नहीं ये check किया जाता है |
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>ignoreCase</td>
+                <td>Regular Expression के साथ 'i' Modifier के इस्तेमाल किया गया है या नहीं ये check किया जाता है |
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>lastIndex</td>
+                <td>matches characters की positions return की जाती है |
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>multiline</td>
+                <td>Regular Expression के साथ 'm' Modifier का इस्तेमाल किया गया है या नहीं ये check किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td><source></td>
+                <td>regular expression को return किया जाता है |
+                </td>
+            </tr>
+            
+            
+
+        </table>
+    </li>
+    <li>
+        <b>Regular Expression Methods:-</b>
+        <table id="customers">
+            <tr>
+                <th>Methods</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>exec()	</td>
+                <td>string के matches को ढूंढा जाता है और पहले match को return किया जाता है |
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>test()</td>
+                <td>string के matches को ढूंढा जाता है और boolean value return की जाती है |
+
+
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>toString</td>
+                <td>Regular Expression string return किया जाता है |
+
+
+
+
+                </td>
+            </tr>
+            
+            
+
+        </table>
+    </li>
+    <li>
+        <b>Element Document Object:-</b>Element Document Object ये HTML Element का वर्णन करता है |<br><br>
+
+        Javascript में Elements पर attributes की लेन-देन की जाती है | जैसे Element पर attribute को set, get या change करना हो, किसी Element का child Element/Node जानना हो<br><br>
+        
+        इसके लिए Javascript में Element Object के लिए कुछ properties और methods दी गयी है |<br><br>
+        
+        अगर HTML Document से Elements को access करना हो तो कुछ Document Object के methods को जानना जरुरी होता है, <br><br>
+        id के जरिये Element को access करना हो तो getElementById() method का इस्तेमाल किया जाता है |<br><br>
+
+class name के जरिये Element को access करना हो तो getElementsByClassName()[] method का इस्तेमाल किया जाता है |<br><br>
+
+name के जरिये Element को access करना हो तो getElementsByName()[] method का इस्तेमाल किया जाता है |<br><br>
+
+Tag name के जरिये Element को access करना हो तो getElementsByTagName()[] method का इस्तेमाल किया जाता है
+    </li>
+    <li>
+        <b>Element Document Object Properties:-</b>
+        <table id="customers">
+            <tr>
+                <th>Properties</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>accessKey	</td>
+                <td>element पर accesskey attribute set, change या return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>attributes</td>
+                <td>Element का NamedNodeMap Object return करता है जिसमे Element/Node के सभी attributes मौजूद होते है |
+                </td>
+            </tr>
+            <tr>
+                <td>childElementCount</td>
+                <td>दिए गए element के child elements को count किया जाता है |
+                </td>
+            </tr>
+
+            <tr>
+                <td>childNodes</td>
+                <td>arent node के child nodes Nodelist object में return किये जाते है |
+                </td>
+            </tr>
+            <tr>
+                <td>children</td>
+                <td>parent element के child element collection; HTMLCollection object में return किये जाते है |
+                </td>
+            </tr>
+
+            <tr>
+                <td>classList</td>
+                <td>class name(s) DOMTokenList के रूप में return किये जाते है |
+                </td>
+            </tr>
+            <tr>
+                <td>className</td>
+                <td>lass name(s) DOMTokenList के रूप में return किये जाते है |
+                </td>
+            </tr>
+            <tr>
+                <td>clientHeight</td>
+                <td>Element की height को padding के साथ पर border और margin को छोडके pixel में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>clientLeft </td>
+                <td>Element की left border की width; pixels में return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>clientTop</td>
+                <td>Element की top border की width; pixels में return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>clientWidth</td>
+                <td>Element की width को padding के साथ पर border और margin को छोडके pixel में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>dir</td>
+                <td>Element की dir attribute की value return की जाती है |
+                </td>
+            </tr>
+
+            <tr>
+                <td>firstChild</td>
+                <td>Element की पहली child node को return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>firstElementChild</td>
+                <td>Element के text/whitespace/newline और comment node को छोडके पहले child element return करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>id</td>
+                <td>Element के id को return या set करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>innerHtml</td>
+                <td>Webpage content dynamically change, set या return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>lastChild</td>
+                <td>Element की आखिरी child node को return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>lastElementChild</td>
+                <td>Element के text/whitespace/newline और comment node को छोडके आखिरी child element return करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>nextElementSibling</td>
+                <td>Element के अगले sibling Element को return किया जाता है |
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>nextSibling</td>
+                <td>Element के अगले sibling node; element के रूप में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>nodeName</td>
+                <td>node का name uppercase में return करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>nodeType</td>
+                <td>node का type; number में return करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>nodeValue</td>
+                <td>node की value return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>offsetHeight</td>
+                <td>padding और border के साथ height; pixel में return की जाती है |
+                </td>
+            </tr>
+
+            <tr>
+                <td>offsetLeft</td>
+                <td>Element की left position; pixel में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>offsetTop</td>
+                <td>Element की top position; pixel में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>offsetWidth</td>
+                <td>padding और border के साथ width pixel मेंreturn की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>parentElement</td>
+                <td>Element का parent Element में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>parentNode</td>
+                <td>Element का parent node Object में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>previousElementSibling</td>
+                <td>Element के पिछले sibling Element को return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>previousSibling</td>
+                <td>Element के पिछले sibling node; element के रूप में return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>scrollHeight</td>
+                <td>border और scrollbar के बिना और padding के साथ पूरे element की height; pixel में return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>scrollLeft</td>
+                <td>Element का content left की ओर से scroll करने के लिए return या pixels में set किये जाते है |
+                </td>
+            </tr>
+            <tr>
+                <td>scrollTop</td>
+                <td>Element का content top की ओर से scroll करने के लिए return या pixels में set किये जाते है |
+                </td>
+            </tr>
+            <tr>
+                <td>scrollWidth</td>
+                <td>border और scrollbar के बिना और padding के साथ पूरे element की width; pixel में return की जाती है |
+                </td>
+            </tr>
+
+            <tr>
+                <td>style</td>
+                <td>Element के style(inline css) attribute पर css property को set या return किया जाता है |
+                </td>
+            </tr>
+            <tr>
+                <td>tabIndex</td>
+                <td>Element के tabIndex इस attribute की value set या return की जाती है |
+                </td>
+            </tr>
+            <tr>
+                <td>tagName</td>
+                <td>Element का tag Name Uppercase में return करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>textContent</td>
+                <td>Element का text content return या set करता है |
+                </td>
+            </tr>
+            <tr>
+                <td>title</td>
+                <td>Element का title attribute को set या return किया जाता है |
+                </td>
+            </tr>
+
+           
+
+
+        </table>
+    </li>
+    <li>
+        <b>Element Document Object Methods:-</b>
+        <table id="customers">
+            <tr>
+                <th>Methods</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>addEventListener()	</td>
+                <td>Event Handler को दिए हुए Element से जोड़ा जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>appendChild()	</td>
+                <td>parent node के child list के end या childNode के end पर node को append किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>blur()</td>
+                <td>Element पर जो focus होता है उसे remove किया जाता है |
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>click()</td>
+                <td>Element पर mouseClick के बराबर होता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>cloneNode()</td>
+                <td>node को copy किया जाता है |
+
+            </tr>
+
+            <tr>
+                <td>contains()</td>
+                <td>Element में node है या नहीं ये boolean value में return किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>focus()</td>
+                <td>Element पर focus किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>getAttribute()</td>
+                <td>Element के attribute की value return की जाती है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>getAttributeNode() </td>
+                <td>Element के attribute node को Attr Object के रूप में return किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>getElementsByClassName()</td>
+                <td>Element की top border की width; pixels में return की जाती है |एक ही class के element के collection को return किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>getElementsByTagName()</td>
+                <td>एक ही Tag Name के element के collection को return किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>hasAttribute()</td>
+                <td>Element पर attribute है या नहीं ये boolean value में return किया जाता है |
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>hasAttributes()</td>
+                <td>Element पर attribute है या नहीं ये boolean value में return किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>hasChildNodes()</td>
+                <td>Element के child Node(s)/element(s) है या नहीं ये boolean value में return किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>insertbefore()</td>
+                <td>Element पर उसका एक नया child node create करके दिए हुए existingNode node से पहले उसे insert किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>isEqualNodes()</td>
+                <td>दिया हुआ node/element और दूसरा node एक जैसे है या नहीं ये boolean value में check किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>isSameNode()</td>
+                <td>node/element और वही node एक जैसे है या नहीं ये boolean value में check किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>querySelector()</td>
+                <td>दिए गए css selector के साथ match करके element से पहले child element को return किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>querySelectorAll()</td>
+                <td>css selector के साथ match करके element से सभी child element को Nodelist object के रूप में return किया जाता है |
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>removeAttribute()</td>
+                <td>Element पर attribute को remove किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>removeChild()</td>
+                <td>Element का child node/element remove किया जाता है और remove किये node को Object में return करता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>removeAttributeNode()</td>
+                <td>Element पर attribute को remove किया जाता है और remove हुए attribute को Attr Object के रूप में return किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>removeEventListener()</td>
+                <td>Element में addEventListener() method से जोड़े गए Event Handler को remove किया जाता है |
+
+                </td>
+            </tr>
+            <tr>
+                <td>replaceChild()</td>
+                <td>Element के old node या existing node को new node से replace किया जाता है |
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>setAttribute()</td>
+                <td>Element पर attribute और उनकी value set की जाती है |
+
+                </td>
+            </tr>
+           
+
+           
+
+
+        </table>
+    </li>-->
+<li>
+    <b>  Window Object      </b>Window Object सभी Browsers को support करता है | Window ये Browser का Object है | Window Object; Browser के window को represent करता है | <br><br>         
+
+    Window Object; Browser Window से परस्पर सम्बन्ध रखता है |<br><br>
+    <table id="customers" >
+        <tr>
+            <th>Method</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>alert()	</td>
+            <td>कुछ message तुरंत दिखने के लिए इस्तेमाल किया जाता है |
+            </td>
+        </tr>
+        <tr>
+            <td>confirm()</td>
+            <td>User से कुछ चीजे accept या verify करने के लिए इस्तेमाल किया जाता है |
+            </td>
+        </tr>
+        <tr>
+            <td>close()</td>
+            <td>current window close हो जाती है |
+            </td>
+        </tr>
+
+        <tr>
+            <td>open()</td>
+            <td>new window open की जाती है |
+            </td>
+        </tr>
+        <tr>
+            <td>prompt()</td>
+            <td>User से input लेने के लिए इस्तेमाल किया जाता है |
+            </td>
+        </tr>
+        <tr>
+            <td>setTimeout()</td>
+            <td>specific time के बाद function को execute किया जाता है |
+            </td>
+        </tr>
+        <tr>
+            <td>clearTimeout()</td>
+            <td>setTimeout() method के execution को clear किया जाता है |
+            </td>
+        </tr>
+        <tr>
+            <td>setInterval()</td>
+            <td>specific time के बाद हर बार function को execute किया जाता है |
+            </td>
+        </tr>
+        <tr>
+            <td>clearInterval()</td>
+            <td>setInterval() द्वारा set किये गए time को clear किया जाता है |
+            </td>
+        </tr>
+
+    </table>
+</li>
+<li>
+    <b>History Object:-</b>History Objects visited URLs की history रखता है |<br><br>
+    <h4>syntax</h4>
+    window.history <br>
+//or <br>
+history <br><br>
+<h4>History Object Property:-</h4>
+<table id="customers">
+    <tr>
+        <th>property</th>
+<th>Description</th>    </tr>
+<tr>
+    <td>length</td>
+    <td>	visited pages की length return की जाती है |</td>
+</tr>
+
+</table> <br><br>
+<h4>History Object Methods</h4>
+<table id="customers">
+    <tr>
+        <th>Methods</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>back()	</td>
+        <td>पीछेवाले URL को load किया जाता है |
+        </td>
+    </tr>
+    <tr>
+        <td>forward()</td>
+        <td>अगले URL को load किया जाता है |
+        </td>
+    </tr>
+    <tr>
+        <td>go()</td>
+        <td>दिए हुए number के URL को load किया जाता है |
+        </td>
+    </tr>
+
+</table>
+</li>
+<li>
+    <b>Screen Object:-</b>Javascript में screen object Browser के screen के बारे में सभी information रखता है |<br><br>
+
+    Browser की screen की width, height जाननी हो तो screen object की properties का इस्तेमाल किया जाता है |<br><br>
+    <h4>syntax</h4><br><br>
+    window.screen <br>
+//or <br>
+screen <br><br>
+<h3>Screen Object Properties</h3> <table id="customers">
+<tr>
+    <th>Screen Properties</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>availWidth	</td>
+    <td>screen की available width return की जाती है |
+    </td>
+</tr>
+<tr>
+    <td>availHeight</td>
+    <td>screen की available height return की जाती है |
+    </td>
+</tr>
+<tr>
+    <td>width</td>
+    <td>screen की width return की जाती है |
+    </td>
+</tr>
+<tr>
+    <td>height</td>
+    <td>screen की height return की जाती है |
+    </td>
+</tr>
+<tr>
+    <td>colorDepth	</td>
+    <td>color depth return की जाती है |
+    </td>
+</tr>
+<tr>
+    <td>pixelDepth	</td>
+    <td>pixel depth return की जाती है |
+    </td>
+</tr>
+</table>
+</li>
+<li>
+    <b>Navigator Object:-</b>Javascript का Navigator Object ये Browser के बारे में सभी information रखता है | <br><br>
+    <h4>syntax</h4>
+    <br><br>
+    window.navigator <br> <br>
+    //or <br>
+navigator <br><br>
+    <h3>Navigator Properties</h3>
+    <table id="customers">
+        <tr>
+            <th>properties</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>appCodeName	</td>
+            <td>Browser का code name return किया जाता है |
+</td>
+        </tr>
+        <tr>
+            <td>appName</td>
+            <td>Browser का  name return किया जाता है |
+            </td>
+        </tr>
+        <tr>
+            <td>appVersion</td>
+<td>Browser का version return किया जाता है |
+</td>        </tr>
+<tr>
+    <td>cookiesEnabled</td>
+    <td>cookie enabled है या नहीं ये boolean में check किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>language</td>
+    <td>Browser के language कू return किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>online</td>
+    <td>Browser online है या नहीं ये boolean में check किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>paltform</td>
+    <td>Browser किस platform पर compile ह रहा है ये check किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>plugins	</td>
+    <td>Browser के plugins array में return किये जाते है |
+    </td>
+</tr>
+<tr>
+    <td>product</td>    
+    <td>Browser का product name return किया जाता है |
+    </td>
+</tr>
+<tr>
+    <td>userAgent	</td>
+    <td>Browser के user agent को return किया जाता है |
+    </td>
+</tr>
+    </table> <br><br>   
+    <table id="customers">
+        <tr>
+            <th>Method</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>javaEnabled()	</td>
+            <td>Browser पर java enabled है या नहीं ये check किया जाता है |
+            </td>
+        </tr>
+
+    </table><br><br>
+    <h3>javaEnabled() Navigator Property:-</h3>javaEnabled() इस Navigator Method से Browser पर java enabled है या नहीं ये boolean value में return किया जाता है | <br><br>अगर Browser पर java enabled होता है तो true return होता है और अगर java disabled होता है तो false return होता है |<br><br>
+    <h4>syntax</h4> <br><br>window.navigator.javaEnabled() <br>
+    //or    <br>
+    navigator.javaEnabled() <br>
+    
+
+</li>
+<li>
+    <b>Document Object:-</b>Document Object ये HTML Document का वर्णन करता है | <br><br>
+
+    जब HTML Document; Browser पर load होता है तब वो एक Document Object हो जाता है |<br><br>
+    
+    Document Object Model(DOM) ये Dynamically; Document की सामग्री को access और modify करना होता है |<br><br>
+    
+    Dynamically कुछ सामग्री जोड़ने के लिए DOM में कुछ methods और properties होती है |<br><br>
+    <h4>syntax</h4>
+    window.document <br>
+
+//or 
+<br>
+
+document <br><br>
+<h3>Specific Document Object Properties</h3>
+<img src="Images\object.png" alt=""> <br><br>
+<h3>HTML DOM</h3>यहाँ पर उच्च स्तरीय HTML Document का DOM tree में वर्णन किया गया है | यहाँ पर एक parent को एक या एक से ज्यादा child nodes होते है | <br> <br>
+
+किसी विशिष्ट Browsers पर दिखाया गया DOM पहले से ही होता है | <br>
+<img src="Images\html.png" alt=""> <br><br>
+Browser पर default DOM check करने के लिए, childNodes इस DOM Property का इस्तेमाल किया जाता है | <br><br>
+
+जो भी Browser; User इस्तेमाल कर रहा है | उस Browser पर empty HTML Document को Browser पर execute करे |
+<br><br>
+उसके बाद f12 या Developer Tool में जाके console पर जाए | <br> <br><br>
+
+<h6>अगर User द्वारा दिए हुए HTML document का DOM कैसा होगा |</h6>
+<img src="Images\HTMLDOM1.png" alt=""> <br><br>
+image पर देखा जाए तो कई पर text nodes आये हुए है | इसका कारण ये है कि अगर Nodes के बीच में newline/whitespace आ जाता है तब ऐसा होता है |<br><br>
+निचे दिए हुए example में p और h4 के text nodes छोडके कई पर भी text nodes नहीं है |<br><br>
+<h4>For ex.</h4>
+< !DOCTYPE html>< html>< head>< title>Document< /title>< /head>< body>< p>Hello World< /p>< h4>Hello Friends< /h4>< /body>< /html> <br><br>
+<img src="Images\HTMLDOM2.png" alt="">
+<br><br>
+<b>Important HTML DOM Properties</b> <br><br>
+<h4>Note:</h4>properties को पढ़ने से पहले getElementById(), getElementsByTagName() को पढ़े, क्योंकि properties के examples में इनका इस्तेमाल किया गया है |<br><br>
+
+Javascript HTML DOM में properties का इस्तेमाल HTML elements का content access या modify करने के लिए किया जाता है | <br><br>
+
+</li>
+
 </ul>
         </div>
         <div class="btn">
@@ -1451,9 +2550,13 @@ year : यहाँ पर year दिया जाता है | अगर 2 d
                 </a></button>
             <button>
 
-                <a href="script.html"> javascript </a>
+                <a href="script.html"> Javascript </a>
                 </a></button>
-            <div class="credit"> created by <span> <strong><i> miss.Pratigya jain</i> </strong></span> | Copyright ©
+                <button>
+
+                    <a href="script.html"> React </a>
+                    </a></button>
+            <div class="credit"> created by <span> <strong><i> Miss.Pratigya jain</i> </strong></span> | Copyright ©
                 2022 all rights reserved </div>
         </div>
 </body>
