@@ -137,4 +137,5 @@ font-weight: bold;
 
  .credit span{
     color:rgb(236, 40, 73);
+    /* transition-rot; */
 }

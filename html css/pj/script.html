@@ -31,7 +31,7 @@
     </div>
     <div class="content">
         <ul>
-        <!--  <li>
+         <li>
 
 
                 <b>Introduction for Javascript :- </b> javascript ये Language एक client-side Language है जिसका इस्तेमाल HTML(HyperText Markup Language) के साथ किया जाता है | Javascript ये Language lighted Language है | <br> <br>
@@ -2268,7 +2268,7 @@ Tag name के जरिये Element को access करना हो तो
 
 
         </table>
-    </li>-->
+    </li>          l
 <li>
     <b>  Window Object      </b>Window Object सभी Browsers को support करता है | Window ये Browser का Object है | Window Object; Browser के window को represent करता है | <br><br>         
 
@@ -2534,6 +2534,235 @@ image पर देखा जाए तो कई पर text nodes आये �
 <h4>Note:</h4>properties को पढ़ने से पहले getElementById(), getElementsByTagName() को पढ़े, क्योंकि properties के examples में इनका इस्तेमाल किया गया है |<br><br>
 
 Javascript HTML DOM में properties का इस्तेमाल HTML elements का content access या modify करने के लिए किया जाता है | <br><br>
+<table id="customers">
+    <tr>
+        <th>Properties</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>anchors</td>
+        <td>HTML Document में से सभी name attribute के साथ के anchor elements को return करता है |
+        </td>
+    </tr>
+    <tr>
+        <td>baseURI</td>
+        <td>HTML Document का base URI(Uniform Resource Identifier) string में return करता है |
+        </td>
+    </tr>
+    <tr>
+        <td>body</td>
+        <td>HTML Document के Body का content dynamically change या set किया जाता है |
+        </td>
+    </tr>
+
+    <tr>
+        <td>documentElement</td>
+        <td>HTML Document का documentElement; Object Element के रूप में return किया जाता है |
+        </td>
+    </tr>
+    <tr>
+        <td>documentURI</td>
+        <td>HTML Document का document URI; String के रूप में return किया जाता है |
+        </td>
+    </tr>
+    <tr>
+        <td>domain</td>
+        <td>domain; String के रूप में return किया जाता है |
+        </td>
+    </tr>
+    <tr>
+        <td>embeds</td>
+        <td>HTML Document से embeds(< embed>) elements को return करता है |
+               </td>
+    </tr>
+    <tr>
+        <td>form</td>
+        <td>HTML Document से forms(< form>) elements को return करता है |<< /td>
+        </td>
+    </tr>
+    <tr>
+        <td>images</td>
+        <td>HTML Document से name attribute वाले सभी image(< img>) elements को return करता है |
+        </td>
+    </tr>
+
+    <tr>
+        <td>lastModifier</td>
+        <td>Current Document last कब modified हुआ है वो date और time string के रूप में return किया जाता है |
+        </td>
+    </tr>
+    <tr>
+        <td>links	</td>
+        <td>HTML Document से href attribute वाले सभी anchor(< a>) elements को return करता है |
+        </td>
+    </tr>
+    <tr>
+        <td>readyState	</td>
+        <td>Current Document के state को return करता है |
+        </td>
+    </tr>
+    <tr>
+        <td>scripts	</td>
+        <td>HTML Document से scripts(< scriptt >) elements को return करता है |
+        </td>
+    </tr>
+    <tr>
+        <td>title	</td>
+        <td>HTML Document का document title; String के रूप में return किया जाता है |
+        </td>
+    </tr>
+    <tr>
+        <td>URL	</td>
+        <td>Current Document का URL string के रूप में return होता है |
+        </td>
+    </tr>
+
+
+</table> <br><br>
+<b>Important HTML DOM Methods</b> <br><br>
+Javascript HTML DOM में methods का इस्तेमाल HTML elements, attributes add करने के लिए या उन्हें modify करने के लिए और आदि काम methods से किये जाते है |<br><br>
+<table id="customers">
+    <tr>
+        <th>Methods</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>addEventListener()	</td>
+        <td>HTML Document में से सभी name attribute के साथ के anchor elements को return करता है |
+        </td>
+    </tr>
+    <tr>
+        <td>close()</td>
+        <td>document पर write करके document को close किया जाता है |
+
+        </td>
+    </tr>
+    <tr>
+        <td>createAttribute()	</td>
+        <td>attribute create किया जाता है |
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>createElement()	</td>
+        <td>Element को create किया जाता है |
+
+        </td>
+    </tr>
+    <tr>
+        <td>createTextNode()	</td>
+        <td>text Node create किया जाता है |
+
+        </td>
+    </tr>
+    <tr>
+        <td>getElementById()	</td>
+        <td>दिए हुए element_id के value का element return किया जाता है |
+
+        </td>
+    </tr>
+    <tr>
+        <td>getElementsByClassName()	</td>
+        <td>दिए हुए class name के सभी elements का collection return किया जाता है |
+
+               </td>
+    </tr>
+    <tr>
+        <td>getElementsByName()	</td>
+        <td>दिए हुए name attribute के value के सभी elements का collection return किया जाता है |
+
+        </td>
+    </tr>
+    <tr>
+        <td>getElementsByTagName()	</td>
+        <td>दिए हुए tag name के सभी elements का collection return किया जाता है |
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>open()</td>
+        <td>document पर write करने के लिए document को open किया जाता है |
+
+        </td>
+    </tr>
+    <tr>
+        <td>querySelector()	</td>
+        <td>दिए गए css selector के साथ match करके document से पहले element को return किया जाता है |
+
+        </td>
+    </tr>
+    <tr>
+        <td>querySelectorAll()	</td>
+        <td>दिए गए css selector के साथ match करके document से सभी element को return किया जाता है |
+
+        </td>
+    </tr>
+    <tr>
+        <td>removeEventListener()	</td>
+        <td>addEventListener() method से जोड़े गए Event Handler को remove किया जाता है |
+
+        </td>
+    </tr>
+    <tr>
+        <td>write()		</td>
+        <td>document पर String, Expression या values write करने के लिए किया जाता है |
+
+        </td>
+    </tr>
+    <tr>
+        <td>writeln()		</td>
+        <td>हर statement के बाद newline character दिया जाता है |
+
+        </td>
+    </tr>
+
+
+</table>
+
+
+</li>
+<li>
+    <b> innerHTML:-</b>innerHTML इस HTML DOM Property का इस्तेमाल Webpage content dynamically change किया जाता है | <br><br>
+
+    innerHTML ये property बिना webpage reload किये भी content change कर देता है | <br><br>
+    <h4>Syntax 1 :</h4> <br><br>
+    innerHTML Property से HTML Document का content set या change करने के लिए, <br>
+
+element.innerHTML = textContent; <br><br>
+<h4>Syntax 2 :</h4> <br><br>
+innerHTML Property से HTML Document का content return करने के लिए, <br>
+
+element.innerHTML;<br><br>
+</li>
+<li>
+    <b>Events:-</b>
+    Javascript में Events ये महत्वपूर्ण हिस्सा है | Javascript Events ये HTML के साथ परस्पर सम्बन्ध रखता है |<br><br>
+
+Events ये DOM(Document Object Model) का एक हिस्सा है | HTML Elements पर attribute के रूप में इनका इस्तेमाल किया जाता है |<br><br>
+
+जब Javascript Events में Element's Attribute के through कोई भी javascript का code execute किया जाता है |<br><br>
+
+जैसे कि,<br><br>
+
+जब user Element पर click करता है | जब User mouse से double click करता है | जब Element mouse hover किया जाता है | जब keyboard की key press की जाती है |<br><br>
+
+जब User कोई भी Event का प्रकार HTML Element में attribute के रूप में इस्तेमाल करता है और जब HTML Document पर वो Event सक्रिय हो जाता है तब उसपर value के रूप में दिया हुआ code; execute हो जाता है |<br><br>
+
+For Example,<br><br>
+
+यहाँ पर जब 'Click Me!' पर click किया जाएगा तो 'myDiv' id के Element में 'Hello World' ये message display होगा | <br><br>
+
+Document में onclick ये event जब सक्रिय हो जाती है तब 'myDiv' id के element में 'Hello World' ये message display होता है | <br><br>
+< div onclick="document.getElementById('myDiv').innerHTML='Hello World'">Click Me!< /div>
+< div id="myDiv">< /div> <br><br>
+<div onclick="document.getElementById('myDiv').innerHTML='Hello World'">
+    <button>Click Me!</button> 
+</div>
+<div id="myDiv">
+
+</div>
 
 </li>
 
