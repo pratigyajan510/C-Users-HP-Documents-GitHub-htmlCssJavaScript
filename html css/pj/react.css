@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  ::-webkit-scrollbar {
+  width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+  background: #888; 
+  }
+  
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  }
+  
+  .heding{
+    background-color: rgb(33, 29, 29);
+    text-decoration:  underline  white;
+    text-align: center;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    /* border: 3px solid black;
+    border-radius: 15px; */
+  
+    /* margin: 32px 0 32px 0 ;
+     */
+    }
+     .heding h1{
+      color: red;
+      /* background-color: black; */
+     }
+  
+  h1,
+  h2, 
+  h3, 
+  h4,
+  h5, 
+  h6{
+  color: rgb(241, 80, 134);
+  }
+  .content{
+    /* color: white; */
+    margin-left: 2%;
+  /* margin-bottom: 20%; */
+  }
+  
+  /* .content li{
+    list-style-type: square;
+    /* list-style-type: NUMBER; */
+  /* margin-bottom: 5%;  */
+  /* font-size: large; */
+  /* text-decoration: double solid; */
+   
+  /* } */ 
+  
+  ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  } 
+  .content li b{
+    color: red;
+    font-size: x-large;
+    
+  }
+  .content li h2{
+    color:rgb(145, 169, 226);
+    font-size: x-large;
+    margin-bottom:10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .content li   p{
+  font-weight: bold;
+    text-align: center;
+  }
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 2px solid rgb(237, 164, 164);
+    padding: 8px;
+  }
+  
+  
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:  #f9b57d;
+    color: white;
+  }
+  .content ol li{
+    margin :0 0 0 35px ;
+    list-style-type: circle;
+  }
+  .btn
+  {
+  background-color: black;
+  border: 2px solid black;
+  }
+  .btn button {
+  
+    background-color: rgb(243, 161, 161);
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: right ;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4% 0 4% 12%;
+    /* margin-left: 15%; */
+  }
+  .btn button:hover{
+    background-color: rgb(240, 238, 238);
+    color: white;
+    /* background-color: black; */
+  }
+  .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding:1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:rgb(234, 224, 224);
+    border-top: 10px;
+  }
+  
+  .credit span{
+    color:rgb(236, 40, 73);
+  }
+
+  .active {  
+     
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);  
+    color: rgb(216, 28, 28);  
+  }  
+    
+ 

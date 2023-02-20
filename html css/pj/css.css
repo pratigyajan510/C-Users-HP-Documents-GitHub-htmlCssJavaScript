@@ -54,13 +54,21 @@ color: rgb(241, 80, 134);
 /* margin-bottom: 20%; */
 }
 
-.content li{
+/* .content li{ */
   /* list-style-type: square; */
-  list-style-type: NUMBER;
-margin-bottom: 5%; 
-font-size: large;
+  /* list-style-type: NUMBER; */
+/* margin-bottom: 5%;  */
+/* font-size: large; */
 /* text-decoration: double solid; */
  
+/* } */
+ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }
 .content li b{
   color: red;
@@ -138,3 +146,8 @@ border: 2px solid black;
 .credit span{
   color:rgb(236, 40, 73);
 }
+.active {  
+     
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);  
+  color: rgb(216, 28, 28);  
+} 
